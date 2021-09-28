@@ -381,10 +381,13 @@ Retirado do Tango by WIRTZ, Dan */
 /* MEU */
 /* Separador dos blocos (espaço à direito dos blocos de texto normais) quando pequeno o espaço horizontal */
 @media screen and (max-width: 640px) {
-    .rm-block-text+.rm-block-separator {
+    .rm-block-text + .rm-block-separator,
+    /* Bloco separator do bloco em foco | em edição */
+    .rm-focused > .rm-block-main > .rm-autocomplete__wrapper + .rm-block-separator {
         width: 5px;
         min-width: 5px;
     }
+}
 
     /* Compensa diminuição do block-separator */
     .rm-full-width {
@@ -402,6 +405,8 @@ Retirado do Tango by WIRTZ, Dan */
         padding-right: 6px
     }
 }
+
+
 
 /* Bullets, 
 Estilo dos bullets
