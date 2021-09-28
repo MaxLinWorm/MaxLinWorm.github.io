@@ -95,8 +95,8 @@ body,
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03) !important;
     background: var(--body-background-color);
     /* para ficar semelhante ao WorkFlowy */
-    margin-left: max(calc((100% - 716px) / 2), 20px);
-    margin-right: max(calc((100% - 716px) / 2), 20px);
+    margin-left: max(calc((100% - 816px) / 2), 20px);
+    margin-right: max(calc((100% - 816px) / 2), 20px);
     padding-left: 8px;
     padding-right: 8px;
 }
