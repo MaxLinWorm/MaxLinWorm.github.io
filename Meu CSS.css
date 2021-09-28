@@ -95,11 +95,56 @@ body,
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03) !important;
     background: var(--body-background-color);
     /* para ficar semelhante ao WorkFlowy */
-    margin-left: max(calc((100% - 916px) / 2), 20px);
-    margin-right: max(calc((100% - 916px) / 2), 20px);
+    margin-left: max(calc((100% - 716px) / 2), 20px);
+    margin-right: max(calc((100% - 716px) / 2), 20px);
     padding-left: 8px;
     padding-right: 8px;
 }
+
+/* MEU */
+@media screen and (max-width: 640px) {
+    /* Separador dos blocos (espaço à direito dos blocos de texto normais) quando pequeno o espaço horizontal */
+    .rm-block-text + .rm-block-separator,
+    /* Bloco separator do bloco em foco | em edição */
+    .rm-focused > .rm-block-main > .rm-autocomplete__wrapper + .rm-block-separator {
+        width: 5px;
+        min-width: 5px;
+    }
+    
+    /* Compensa diminuição do block-separator */
+    .rm-full-width {
+        margin-right: -5px;
+        /* Era - 140*/
+    }
+
+    .rm-code-block {
+        margin-right: -5px;
+        /* Era -140*/
+    }
+
+    .rm-embed-container {
+        margin-right: -3px;
+        padding-right: 6px
+    }
+}
+
+@media screen and (min-width: 640px) {
+    /* Separador dos blocos (espaço à direito dos blocos de texto normais) 
+       quando grande o espaço horizontal */
+    .rm-block-separator {
+        /* Configurações do bloco separador 
+           desabilitado quando sidebar ativo, cf.
+           css do app 
+           .rm-spacing--right-sidebar-open .rm-block-separator,
+           .rm-spacing--left-sidebar-open .rm-block-separator, 
+           #right-sidebar .rm-block-separator, 
+           .mobile .rm-block-separator */
+        flex: 0 0 0px;
+        min-width: 0px;
+        max-width: 10px;
+    }
+}
+
 
 /* Sidebar, topbar sem fundo, da cor do Background
 Retirado de Tango by WIRTZ, Dan e de Better Roam */
@@ -376,33 +421,6 @@ Retirado do Tango by WIRTZ, Dan */
 .rm-query-content {
     background: white;
     border-color: var(--subtle-border-color);
-}
-
-/* MEU */
-@media screen and (max-width: 640px) {
-    /* Separador dos blocos (espaço à direito dos blocos de texto normais) quando pequeno o espaço horizontal */
-    .rm-block-text + .rm-block-separator,
-    /* Bloco separator do bloco em foco | em edição */
-    .rm-focused > .rm-block-main > .rm-autocomplete__wrapper + .rm-block-separator {
-        width: 5px;
-        min-width: 5px;
-    }
-    
-    /* Compensa diminuição do block-separator */
-    .rm-full-width {
-        margin-right: -5px;
-        /* Era - 140*/
-    }
-
-    .rm-code-block {
-        margin-right: -5px;
-        /* Era -140*/
-    }
-
-    .rm-embed-container {
-        margin-right: -3px;
-        padding-right: 6px
-    }
 }
 
 /* Bullets, 
