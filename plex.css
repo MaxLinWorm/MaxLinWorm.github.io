@@ -1,20 +1,41 @@
 /* == IBM PLEX SANS == */
 
-/* Usar Text no lugar de Regular */
+/* Usar Text no lugar de Regular no Light Mode*/
 
-@font-face {
+@media (prefers-color-scheme: light) {
+  @font-face {
     font-family: 'PlexMax';
     src: url('https://maxlinworm.github.io/IBMPlexSans-Text.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PlexMax';
+    src: url('https://maxlinworm.github.io/IBMPlexSans-TextItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
 }
 
-@font-face {
-  font-family: 'PlexMax';
-  src: url('https://maxlinworm.github.io/IBMPlexSans-TextItalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
+/* Usa Regular no Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  @font-face {
+    font-family: 'PlexMax';
+    src: url('https://maxlinworm.github.io/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PlexMax';
+    src: url('https://maxlinworm.github.io/IBMPlexSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
 }
+
 
 /* Text */
 
@@ -41,7 +62,7 @@
   font-style: normal;
 }
 
-@font-face {
+  @font-face {
   font-family: 'PlexMax';
   src: url('https://maxlinworm.github.io/IBMPlexSans-MediumItalic.ttf') format('truetype');
   font-weight: 500;
@@ -57,7 +78,7 @@
   font-style: normal;
 }
 
-@font-face {
+  @font-face {
   font-family: 'PlexMax';
   src: url('https://maxlinworm.github.io/IBMPlexSans-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
