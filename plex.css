@@ -1,17 +1,17 @@
 /* == IBM PLEX SANS == */
 
-/*Regular */
+/* Usar Text no lugar de Regular */
 
 @font-face {
     font-family: 'PlexMax';
-    src: url('https://maxlinworm.github.io/IBMPlexSans-Regular.ttf') format('truetype');
+    src: url('https://maxlinworm.github.io/IBMPlexSans-Text.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'PlexMax';
-  src: url('https://maxlinworm.github.io/IBMPlexSans-Italic.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/IBMPlexSans-TextItalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
