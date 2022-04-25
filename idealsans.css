@@ -1,0 +1,82 @@
+/* == Ideal Sans == */
+
+/* Light */
+
+@font-face {
+  font-family: 'IdealSansMax';
+  src: url('https://maxlinworm.github.io/IdealSans-Light-Pro.ttf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'IdealSansMax';
+src: url('https://maxlinworm.github.io/IdealSans-LightItalic-Pro.ttf') format('opentype');
+font-weight: 300;
+font-style: italic;
+}
+
+
+/* Usar Book como Regular */
+
+@font-face {
+    font-family: 'IdealSansMax';
+    src: url('https://maxlinworm.github.io/IdealSans-Book-Pro.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'IdealSansMax';
+  src: url('https://maxlinworm.github.io/IdealSans-BookItalic-Pro.ttf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+
+@font-face {
+  font-family: 'IdealSansMax';
+  src: url('https://maxlinworm.github.io/IdealSans-Medium-Pro.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'IdealSansMax';
+src: url('https://maxlinworm.github.io/IdealSans-MediumItalic-Pro.ttf') format('opentype');
+font-weight: 500;
+font-style: italic;
+}
+
+/* Semi-Bold */
+
+@font-face {
+  font-family: 'IdealSansMax';
+  src: url('https://maxlinworm.github.io/IdealSans-Semibold-Pro.ttf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IdealSansMax';
+  src: url('https://maxlinworm.github.io/IdealSans-SemiboldItalic-Pro.ttf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'IdealSansMax';
+  src: url('https://maxlinworm.github.io/IdealSans-Bold-Pro.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IdealSansMax';
+  src: url('https://maxlinworm.github.io/IdealSans-BoldItalic-Pro.ttf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
