@@ -1,0 +1,50 @@
+/* == Akkurat == */
+
+/* Light */
+
+@font-face {
+  font-family: 'AkkuratMax';
+  src: url('https://maxlinworm.github.io/Akkurat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'AkkuratMax';
+src: url('https://maxlinworm.github.io/Akkurat-LightItalic.ttf') format('truetype');
+font-weight: 300;
+font-style: italic;
+}
+
+
+/* Regular */
+
+@font-face {
+    font-family: 'AkkuratMax';
+    src: url('https://maxlinworm.github.io/Akkurat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'AkkuratMax';
+  src: url('https://maxlinworm.github.io/Akkurat-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'AkkuratMax';
+  src: url('https://maxlinworm.github.io/Akkurat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AkkuratMax';
+  src: url('https://maxlinworm.github.io/Akkurat-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
