@@ -1,19 +1,39 @@
 /* == iA Writer Quattro == */
 
-/* Usar Text em vez de Regular */
+/* Usar Text em vez de Regular no Light Mode*/
 
-@font-face {
+@media (prefers-color-scheme: light) {
+  @font-face {
+      font-family: 'QuattroMax';
+      src: url('https://maxlinworm.github.io/iAWriterQuattro-Text.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  @font-face {
     font-family: 'QuattroMax';
-    src: url('https://maxlinworm.github.io/iAWriterQuattro-Text.ttf') format('truetype');
+    src: url('https://maxlinworm.github.io/iAWriterQuattro-TextItalic.ttf') format('truetype');
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
+  }
 }
 
-@font-face {
-  font-family: 'QuattroMax';
-  src: url('https://maxlinworm.github.io/iAWriterQuattro-TextItalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
+/* Usa regular no Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  @font-face {
+      font-family: 'QuattroMax';
+      src: url('https://maxlinworm.github.io/iAWriterQuattro-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'QuattroMax';
+    src: url('https://maxlinworm.github.io/iAWriterQuattro-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
 }
 
 /* Text */
