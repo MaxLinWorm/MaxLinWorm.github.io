@@ -1,0 +1,65 @@
+/* == iA Writer Quattro == */
+
+/* Usar Text em vez de Regular */
+
+@font-face {
+    font-family: 'QuattroMax';
+    src: url('https://maxlinworm.github.io/iAWriterQuattro-Text.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuattroMax';
+  src: url('https://maxlinworm.github.io/iAWriterQuattro-TextItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Text */
+
+@font-face {
+  font-family: 'QuattroMax';
+  src: url('https://maxlinworm.github.io/iAWriterQuattro-Text.ttf') format('truetype');
+  font-weight: 450;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuattroMax';
+  src: url('https://maxlinworm.github.io/iAWriterQuattro-TextItalic.ttf') format('truetype');
+  font-weight: 450;
+  font-style: italic;
+}
+
+/* Semi-Bold */
+
+@font-face {
+  font-family: 'QuattroMax';
+  src: url('https://maxlinworm.github.io/iAWriterQuattro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuattroMax';
+  src: url('https://maxlinworm.github.io/iAWriterQuattro-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'QuattroMax';
+  src: url('https://maxlinworm.github.io/iAWriterQuattro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuattroMax';
+  src: url('https://maxlinworm.github.io/iAWriterQuattro-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
