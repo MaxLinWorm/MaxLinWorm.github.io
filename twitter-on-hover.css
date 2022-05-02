@@ -1,0 +1,27 @@
+/* Tweets só com hover, obtido de 
+ * https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/optional.css
+*/
+
+.twitter-tweet iframe {
+  /*margin-top: -14px; */
+  display:none !important;
+  
+}
+
+.twitter-tweet iframe:hover {
+  display:flex !important; 
+  z-index: 1;
+}
+
+.twitter-tweet {
+  margin: 0px !important;
+}
+
+sub + button:hover + div > div.twitter-tweet > iframe {
+  display:flex !important;
+} 
+
+/* Criei para mostrar tweets selecionados */
+.block-highlight-blue .twitter-tweet iframe {
+  display:flex !important;
+}
