@@ -86,3 +86,72 @@ body, html {
    * 1.0714 = 15px */
   font-size: 15.0943px; 
 }
+
+/* AUMENTA BULLETS E REALINHA EM DECORRÊNCIA */
+/* Bullets em si - era 4px */
+.rm-bullet__inner {
+  height: calc(4px + var(--max-bullet-aumento));
+  width: calc(4px + var(--max-bullet-aumento));
+}
+
+.controls, .rm-block__controls {
+  padding-top: calc(4px + var(--max-bullet-aumento));
+}
+
+/* Não sei o que faz
+ * Olhando no Dev Tools
+ * É lá na esquerda superior
+ * Perto do sidebar 
+ * Mudei para compensar aumento do bullet */
+.controls .simple-bullet-outer .simple-bullet-inner, 
+.rm-block__controls .simple-bullet-outer .simple-bullet-inner {
+  height: calc(4px + var(--max-bullet-aumento));
+  width: calc(4px + var(--max-bullet-aumento));
+}
+
+/* Diminui distância do texto e do bullet */
+.controls, .rm-block__controls {
+  flex: 0 0 40px /*48px*/;
+} 
+
+
+
+
+/* ESPAÇAMENTO DO ARTIGO */
+
+/* Se não, embeds se extendiam à direita demais quando sidebar
+ * estava fechado */
+
+.rm-embed-container {
+  margin-right: 0px;/*-116px*/
+}
+
+/* Diminui padding na direita */
+.roam-body .roam-app .roam-main .roam-article {
+padding-right: 30px; /*42 no Roam normal */
+}
+
+/* retira espaço não usado do block separator */
+.rm-block-separator + div[style="min-width: 24px;"] {
+min-width: 0px;
+}
+
+
+
+
+/* Brackets Únicos nos Links Bidirecionais */
+.rm-page-ref__brackets {
+  display: none;
+}
+
+.rm-page-ref--link:hover:before {
+  content: "[";
+  color: var(--co-brackets);
+  font-weight: 300;
+}
+
+.rm-page-ref--link:hover:after {
+  content: "]";
+  color: var(--co-brackets);
+  font-weight: 300;
+}
