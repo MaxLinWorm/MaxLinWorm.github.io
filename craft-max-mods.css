@@ -1,0 +1,88 @@
+:root {
+  /* Universais */
+  --max-ff: 'PlexMax', '-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', 'Inter';
+  /* Fontes importadas 
+   * 'QuattroMax', 'PlexMax', 'AkkuratMax' */
+  --max-fs: 1.06rem;
+  --max-co: var(--co-main);
+  
+  /* Bullets */
+  --max-bullet-aumento: 1px;
+    /* Fechado com children */
+    --bt-bullet__closed: 4px solid rgb(217,220,223); /* 4px, solid, #f8f8f8 */
+    --br-bullet__closed: var(--bt-bullet__closed);
+    --bb-bullet__closed: var(--bt-bullet__closed);
+    --bl-bullet__closed: var(--bt-bullet__closed);
+    
+    --bt-right-sidebar__bullet-closed: var(--bt-bullet__closed);
+    --br-right-sidebar__bullet-closed: var(--bt-bullet__closed);
+    --bb-right-sidebar__bullet-closed: var(--bt-bullet__closed);
+    --bl-right-sidebar__bullet-closed: var(--bt-bullet__closed);    
+  
+  /* Main */
+  --ff-main: var(--max-ff);
+  --fs-main: var(--max-fs); /*1.06rem*/
+  --fw-main: 400;
+
+  /* Headings */
+  --max-headings-ff: var(--max-ff);
+    
+    /* Não sei, diz log book */
+    --co-app__h1: red; /* #202224 */
+    --ff-app__h1: var(--max-headings-ff);
+
+    /* H1 */
+    --ff-level1: var(--max-headings-ff);
+    --fs-level1: 1.5rem;
+    
+    /* H2 */
+    --ff-level2: var(--max-headings-ff);
+    --fs-level2: 1.35rem;
+    
+    /* H3 */
+    --ff-level3: var(--max-headings-ff);
+    --fs-level3: 1.25rem;
+    --fw-level3: 600;
+    
+    /* Page */
+    --ff-page__title: var(--max-headings-ff);
+    --fs-page__title: 1.5rem;
+    --fw-page__title: 700;
+
+  /* Code */
+  --max-code-ff: 'Fira Code', 'Fira Mono', 'Consolas', 'Menlo';
+  --max-code-fs: var(--max-fs);
+  --max-code-co: var(--max-co);
+
+  /* Blocos */
+    --ff-codeblock__code: var(--max-code-ff);
+    --fs-codeblock__code: 0.9rem;
+    --co-codeblock__code: var(--max-code-co);
+
+    /* Inline */
+    --ff-code: var(--max-code-ff);
+    --fs-code: 0.9rem; 
+    --co-code: var(--max-code-co);
+
+  /* Menus */
+  --ff-div: var(--max-ff);
+
+  /* Quotes */
+  --max-quote-ff: var(--max-ff);
+  --max-quote-fs: var(--max-fs);
+  --ff-quote: var(--max-quote-ff);
+  --fs-quote: var(--max-quote-fs); 
+
+  /* Títulos das páginas no linked references */
+  --fs-reference__page-title: var(--max-fs);
+}
+
+body, html {
+  letter-spacing: 0em;
+  /* Era 14px ou seja, 
+   * 1rem = era 14px
+   * 1.2142857rem = 17px; 
+   * 1.1428rem = 16px; 
+   * 1.0714 = 15px */
+  font-size: 15.0943px; 
+}
