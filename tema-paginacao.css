@@ -1,0 +1,36 @@
+/* Paginação */
+:root {
+  --bc-app: var(--bc-left-sidebar__container);
+  --bc-main: var(--bc-left-sidebar__container);
+  --bc-right-sidebar__toprow: var(--bc-app);
+  --bc-right-sidebar__content: var(--bc-app);
+  --bl-right-sidebar__container: none;
+  --max-article-bc:#ffffff;
+  --max-article-bdr: 12px;
+  --max-article-padding: 0px;
+  --max-article-bs: 50px -50px 50px rgba(0,0,0,0.35);
+  /* Masonry */
+    /* OK */
+    --right-sidebar-bg: var(--bc-app); /*rgb(247 248 249) */
+    --masonry-bg: var(--max-article-bc); /* White */ 
+    --masonry-border: var(--br-left-sidebar__container); /* 1px solid lightgrey 
+                                                          * No Craft = 
+                                                          * left sidebar =  1px solid #eaeaea (234, 234, 234);
+                                                          * right sidebar = 1px solid #e8eaea (232, 234, 234); */
+    --main-left-bg: var(--bc-app);
+    --masonry-startWidth: 520px; /* DEFAULT: 550px; Use "unset" to prevent loading in grid like format */
+    --masonry-startHeight: 705.46px; /* DEFAULT: 243px; Use "unset" to prevent loading in grid like format  */
+  
+    /* Não precisa mudar */
+    --masonry-minWidth: 440px;
+    --masonry-maxWidth: 1200px;
+    --masonry-minHeight: 200px;
+  
+    /* Mudar */
+    --right-sidebar-drag-bg: #337ac6;
+    --masonry-scrollbar-bg: lightgrey;
+    --masonry-resizer-color: lightgrey;
+  
+    /* Não usados (opcionais) */
+    --closed-bullet-color: var(--bt-bullet__closed);
+}
