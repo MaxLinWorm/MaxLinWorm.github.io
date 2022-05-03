@@ -1,6 +1,6 @@
 :root {
   /* Universais */
-  --max-ff: 'PlexMax', '-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', 'Inter';
+  --max-ff: 'Triplicate T4','PlexMax', '-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', 'Inter';
   /* Fontes importadas 
    * 'QuattroMax', 'PlexMax', 'AkkuratMax' */
   --max-fs: 1.06rem;
