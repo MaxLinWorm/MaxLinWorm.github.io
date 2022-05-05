@@ -1,0 +1,82 @@
+/* == Freight Text == */
+
+/* Light */
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProLight-Regular.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProLight-Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+/* Usar Book como Regular */
+
+@font-face {
+    font-family: 'FreightTextMax';
+    src: url('https://maxlinworm.github.io/FreightTextProBook-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProBook-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProMedium-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProMedium-Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Semi-Bold */
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProSemibold-Regular.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProSemibold-Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProBold-Regular.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextMax';
+  src: url('https://maxlinworm.github.io/FreightTextProBold-Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
