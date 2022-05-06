@@ -1,0 +1,65 @@
+/* == Signifier == */
+
+/* Light */
+
+@font-face {
+  font-family: 'SignifierMax';
+  src: url('https://maxlinworm.github.io/Signifier-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SignifierMax';
+  src: url('https://maxlinworm.github.io/Signifier-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular */
+
+@font-face {
+  font-family: 'SignifierMax';
+  src: url('https://maxlinworm.github.io/Signifier-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SignifierMax';
+  src: url('https://maxlinworm.github.io/Signifier-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+
+@font-face {
+  font-family: 'SignifierMax';
+  src: url('https://maxlinworm.github.io/Signifier-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SignifierMax';
+  src: url('https://maxlinworm.github.io/Signifier-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'SignifierMax';
+  src: url('https://maxlinworm.github.io/Signifier-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SignifierMax';
+  src: url('https://maxlinworm.github.io/Signifier-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
