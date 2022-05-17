@@ -1,0 +1,65 @@
+/* == Lyon Text == */
+
+/* Usar No. 2 como Regular */
+
+@font-face {
+    font-family: 'LyonTextMax';
+    src: url('https://maxlinworm.github.io/Lyon Text Regular No. 2.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'LyonTextMax';
+  src: url('https://maxlinworm.github.io/Lyon Text Regular No. 2 Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Usar Semi-bold como Medium */
+
+@font-face {
+  font-family: 'LyonTextMax';
+  src: url('https://maxlinworm.github.io/Lyon Text Semibold.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LyonTextMax';
+  src: url('https://maxlinworm.github.io/Lyon Text Semibold Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Semi-Bold */
+
+@font-face {
+  font-family: 'LyonTextMax';
+  src: url('https://maxlinworm.github.io/Lyon Text Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LyonTextMax';
+  src: url('https://maxlinworm.github.io/Lyon Text Semibold Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'LyonTextMax';
+  src: url('https://maxlinworm.github.io/Lyon Text Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LyonTextMax';
+  src: url('https://maxlinworm.github.io/Lyon Text Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
