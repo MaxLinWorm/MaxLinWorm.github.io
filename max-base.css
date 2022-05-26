@@ -1,0 +1,237 @@
+/* Variáveis globais para todos meus temas */
+
+/* Fontes */
+@import url(https://maxlinworm.github.io/freighttext.css);
+
+/* 
+@import url(https://maxlinworm.github.io/heldane.css);
+@import url(https://maxlinworm.github.io/signifier.css);
+@import url(https://maxlinworm.github.io/epicene.css);
+@import url(https://maxlinworm.github.io/lyontext.css);
+*/
+
+/* CORES */
+
+/* Light Mode */
+
+:root {
+    --max_color_primary: rgb(255, 91, 61);
+    --max_color_text: rgb(32, 33, 36); /* Google */
+    --max_color_pag_foreground: white;
+    --max_color_pag_background: white; 
+    --max_color_pag_shadow_c: rgb(60, 64, 67);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme:dark) {
+    :root {
+        --max_color_primary: red;
+        --max_color_text: rgb(232, 234, 237); /* Google */
+        --max_color_pag_foreground: rgb(41, 42, 45);
+        --max_color_pag_background: rgb(32, 33, 36);
+        --max_color_pag_shadow_c: rgb(0, 0, 0);
+    }
+}
+
+/* ELEVATION */
+/* Retirado do google (history) - ver Roam */
+
+/* Light Mode */
+
+:root {
+    --max_elevation-1: 
+        rgba(var(--max_color_pag_shadow_c), .3) 0 1px 2px 0,
+        rgba(var(--max_color_pag_shadow_c), .15) 0 1px 3px 1px;
+    --max_elevation-2: 
+        rgba(var(--max_color_pag_shadow_c), .3) 0 1px 2px 0, 
+        rgba(var(--max_color_pag_shadow_c), .15) 0 2px 6px 2px;
+    --max_elevation-3: 
+        rgba(var(--max_color_pag_shadow_c), .3) 0 1px 3px 0, 
+        rgba(var(--max_color_pag_shadow_c), .15) 0 4px 8px 3px;
+    --max_elevation-4: 
+        rgba(var(--max_color_pag_shadow_c), .3) 0 2px 3px 0, 
+        rgba(var(--max_color_pag_shadow_c), .15) 0 6px 10px 4px;
+    --max_elevation-5: 
+        rgba(var(--max_color_pag_shadow_c), .3) 0 4px 4px 0, 
+        rgba(var(--max_color_pag_shadow_c), .15) 0 8px 12px 6px;
+
+    --max_elevation_brad: 8px; /* border-radius */
+}
+
+/* Tipografia */
+:root {
+
+    /* MAIN */
+    
+    --max_main_links_c: var(--max_color_primary);
+    --max_main_ff_serif: 'FreightTextMax', 'Source Serif Pro', 'Equity Text B', 'Palatino Linotype', Georgia;
+    --max_main_ff_sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Roboto', 'Helvetica', 'Arial', "Segoe UI", sans-serif;
+    --max_main_c: var(--max_color_text);
+
+    /* Modo Página */
+    --max_main_pag_foreground_elevation: var(--max_elevation-2);
+    --max_main_pag_foreground_brad: var(--max_elevation_brad);
+
+
+    /* BODY */
+
+    --max_body_ff_serif: var(--max_main_ff_serif);
+    --max_body_ff_sans:  var(--max_main_ff_sans);
+    --max_body_fs: 19px;
+    --max_body_lh: 1.5em;
+    --max_body_c: var(--max_main_c);
+
+    /* Font feature settings */
+    --max_body_ffs: "kern", "calt", "liga";
+
+    /* Hifens */
+    --max_body_hifens: auto;
+    --max_body_hifens_limit-before: 3;
+    --max_body_hifens_limit-after: 3;
+    --max_body_hifens_limit-chars: 6 3 3;
+    --max_body_hifens_limit-lines: 2;
+    --max_body_hifens_limit-last: always;
+    --max_body_hifens_limit-zone: 8%;
+    --max_body_hifens_wrap: break-word;
+
+
+    /* Espaçamento de Parágrafos */
+
+    /* Indent */
+    --max_body_p-indent_mbs: 0em;   /* margin-block-start */
+    --max_body_p-indent_mbe: 0em;   /* margin-block-end */
+    --max_body_p-indent_ti: 1.3em;  /* text indent */
+
+    /* Espaço */
+    --max_body_p-espaco_mbs: 0.75em; /* margin-block-start */
+    --max_body_p-espaco_mbe: 0em; /* margin-block-end */
+
+    /* HEADINGS */
+
+    /* Geral */
+    --max_h_ff: var(--max_body_ff_serif);
+
+    /* H1 */
+    --max_h1_ff: var(--max_h_ff);
+    --max_h1_fs: 1.4em;
+    --max_h1_fw: 700;
+    --max_h1_lh: 1.35em;
+    --max_h1_mbs: 1.5em;
+    --max_h1_mbe: var(--max_body_p-espaco_mbe);
+
+    /* H2 */
+    --max_h2_ff: var(--max_h_ff);
+    --max_h2_fs: 1.3em;
+    --max_h2_fw: 550;
+    --max_h2_lh: 1.35em;
+    --max_h2_mbs: 1.35em; /* margin-block-start */
+    --max_h2_mbe: var(--max_body_p-espaco_mbe);
+
+    /* H3 */
+    --max_h3_ff: var(--max_h_ff);
+    --max_h3_fs: 1.2em;
+    --max_h3_fw: 500;
+    --max_h3_lh: 1.35em;
+    --max_h3_mbs: 1.35em; /* margin-block-start */
+    --max_h3_mbe: var(--max_body_p-espaco_mbe);
+    
+    /* H4 */
+    --max-h4_ff: var(--max_h_ff);
+    --max_h4_fs: 1.1em;
+    --max_h4_fw: 400;
+    --max_h4_lh: 1.35em;
+    --max_h4_mbs: 1.35em; /* margin-block-start */
+    --max_h4_mbe: var(--max_body_p-espaco_mbe);
+
+    --max_h4_fv: small-caps; /* font-variant */
+    
+    /* H5 */
+    --max-h5_ff: var(--max_h_ff);
+
+    /* H6 */
+    --max-h6_ff: var(--max_h_ff);
+
+    /* Blockquotes */
+    --max_q_mbs: var(--max_body_p-espaco_mbs);
+    --max_q_mbe: var(--max_body_p-espaco_mbe);
+    --max_q_bl: 3px solid var(--max_main_links_c); /* border left */
+    --max_q_pl: 1.5em; /* padding-left */
+
+}
+
+/* Laptop */
+@media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1280px) {
+    :root {
+        --max_body_fs: 18.5px;
+    }
+}
+
+/* Desktop */
+/*
+@media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1280px)
+{
+    :root {
+        --max_body_fs: 18.5px;
+    }
+}
+*/
+
+
+/* Elevations */
+
+/* Cores 
+- Links
+    - Hover
+    - Sublinhado
+        - Hover
+- Foreground
+- Background
+
+
+/* ------- REGRAS -------- */
+
+/* HIFENS */
+p {
+    -webkit-hyphens: var(--max_body_hifens);
+    -webkit-hyphenate-limit-before: var(--max_body_hifens_limit-before);
+    -webkit-hyphenate-limit-after:  var(--max_body_hifens_limit-after);
+    -webkit-hyphenate-limit-chars:  var(--max_body_hifens_limit-chars);
+    -webkit-hyphenate-limit-lines:  var(--max_body_hifens_limit-lines);
+    -webkit-hyphenate-limit-last:   var(--max_body_hifens_limit-last);
+    -webkit-hyphenate-limit-zone:   var(--max_body_hifens_limit-zone);
+    
+    -moz-hyphens:                   var(--max_body_hifens);
+    -moz-hyphenate-limit-chars:     var(--max_body_hifens_limit-chars);
+    -moz-hyphenate-limit-lines:     var(--max_body_hifens_limit-lines);
+    -moz-hyphenate-limit-last:      var(--max_body_hifens_limit-last);
+    -moz-hyphenate-limit-zone:      var(--max_body_hifens_limit-zone);
+    
+    -ms-hyphens:                    var(--max_body_hifens);
+    -ms-hyphenate-limit-chars:      var(--max_body_hifens_limit-chars);
+    -ms-hyphenate-limit-lines:      var(--max_body_hifens_limit-lines);
+    -ms-hyphenate-limit-last:       var(--max_body_hifens_limit-last);
+    -ms-hyphenate-limit-zone:       var(--max_body_hifens_limit-zone);
+    
+    overflow-wrap:                  var(--max_body_hifens_wrap);
+    hyphens:                        var(--max_body_hifens);
+    hyphenate-limit-chars:          var(--max_body_hifens_limit-chars);
+    hyphenate-limit-lines:          var(--max_body_hifens_limit-lines);
+    hyphenate-limit-last:           var(--max_body_hifens_limit-last);
+    hyphenate-limit-zone:           var(--max_body_hifens_limit-zone);
+}
+
+body {
+    font-feature-settings: var(--max_body_ffs);
+    font-variant-ligatures: normal;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Fix para bagunça do line-height quando usa superscript */
+sup {
+    line-height: 0 !important
+  }
