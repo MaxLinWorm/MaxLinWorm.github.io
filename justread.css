@@ -128,6 +128,9 @@ p {
   margin-block-end: var(--max_body_p-espaco_mbe);
 }
 
+/* Parágrafos com indentação
+ * ignora parágrafos centralizados
+ * que são na verdadee títulos */
 p:not([align=center])+p {
   margin-block-start: var(--max_body_p-indent_mbs);
   text-indent: var(--max_body_p-indent_ti);
@@ -149,7 +152,7 @@ blockquote {
   margin-block-start: var(--max_q_mbs);
   margin-block-end: var(--max_q_mbe);
   
-  /*
+  /* TODO (o que é isto?) 
   margin-inline-start: 0;
   margin-inline-end: 0;
   */
