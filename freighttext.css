@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProLight-Regular.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProLight-Regular.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProLight-Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProLight-Italic.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
 }
@@ -21,14 +21,14 @@
 
 @font-face {
     font-family: 'FreightTextMax';
-    src: url('https://maxlinworm.github.io/FreightTextProBook-Regular.otf') format('opentype');
+    src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProBook-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProBook-Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProBook-Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
@@ -37,14 +37,14 @@
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProMedium-Regular.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProMedium-Regular.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProMedium-Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProMedium-Italic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
@@ -53,14 +53,14 @@
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProSemibold-Regular.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProSemibold-Regular.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProSemibold-Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProSemibold-Italic.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
 }
@@ -69,14 +69,14 @@
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProBold-Regular.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProBold-Regular.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FreightTextMax';
-  src: url('https://maxlinworm.github.io/FreightTextProBold-Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/FreightText/FreightTextProBold-Italic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }

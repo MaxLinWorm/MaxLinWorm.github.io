@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: 'EpiceneMax';
-  src: url('https://maxlinworm.github.io/EpiceneText-Light.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Epicene/EpiceneText-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'EpiceneMax';
-  src: url('https://maxlinworm.github.io/EpiceneText-LightItalic.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Epicene/EpiceneText-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
@@ -21,14 +21,14 @@
 
 @font-face {
   font-family: 'EpiceneMax';
-  src: url('https://maxlinworm.github.io/EpiceneText-Regular.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Epicene/EpiceneText-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'EpiceneMax';
-  src: url('https://maxlinworm.github.io/EpiceneText-RegularItalic.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Epicene/EpiceneText-RegularItalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
@@ -37,14 +37,14 @@
 
 @font-face {
   font-family: 'EpiceneMax';
-  src: url('https://maxlinworm.github.io/EpiceneText-Medium.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Epicene/EpiceneText-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'EpiceneMax';
-  src: url('https://maxlinworm.github.io/EpiceneText-MediumItalic.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Epicene/EpiceneText-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -53,14 +53,14 @@
 
 @font-face {
   font-family: 'EpiceneMax';
-  src: url('https://maxlinworm.github.io/EpiceneText-Bold.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Epicene/EpiceneText-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'EpiceneMax';
-  src: url('https://maxlinworm.github.io/EpiceneText-BoldItalic.ttf') format('truetype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Epicene/EpiceneText-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }

@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: 'HeldaneMax';
-  src: url('https://maxlinworm.github.io/Heldane_Text_Regular.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Heldane/Heldane_Text_Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HeldaneMax';
-  src: url('https://maxlinworm.github.io/Heldane_Text_Regular_Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Heldane/Heldane_Text_Regular_Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
@@ -20,14 +20,14 @@
 
 @font-face {
   font-family: 'HeldaneMax';
-  src: url('https://maxlinworm.github.io/Heldane_Text_Medium.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Heldane/Heldane_Text_Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HeldaneMax';
-  src: url('https://maxlinworm.github.io/Heldane_Text_Medium_Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Heldane/Heldane_Text_Medium_Italic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
@@ -36,14 +36,14 @@
 
 @font-face {
   font-family: 'HeldaneMax';
-  src: url('https://maxlinworm.github.io/Heldane_Text_Bold.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Heldane/Heldane_Text_Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HeldaneMax';
-  src: url('https://maxlinworm.github.io/Heldane_Text_Bold_Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Heldane/Heldane_Text_Bold_Italic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }

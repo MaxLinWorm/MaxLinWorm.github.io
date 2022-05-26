@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: 'SignifierMax';
-  src: url('https://maxlinworm.github.io/Signifier-Light.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Signifier/Signifier-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SignifierMax';
-  src: url('https://maxlinworm.github.io/Signifier-LightItalic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Signifier/Signifier-LightItalic.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
 }
@@ -20,14 +20,14 @@
 
 @font-face {
   font-family: 'SignifierMax';
-  src: url('https://maxlinworm.github.io/Signifier-Regular.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Signifier/Signifier-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SignifierMax';
-  src: url('https://maxlinworm.github.io/Signifier-RegularItalic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Signifier/Signifier-RegularItalic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
@@ -36,14 +36,14 @@
 
 @font-face {
   font-family: 'SignifierMax';
-  src: url('https://maxlinworm.github.io/Signifier-Medium.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Signifier/Signifier-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SignifierMax';
-  src: url('https://maxlinworm.github.io/Signifier-MediumItalic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Signifier/Signifier-MediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
@@ -52,14 +52,14 @@
 
 @font-face {
   font-family: 'SignifierMax';
-  src: url('https://maxlinworm.github.io/Signifier-Bold.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Signifier/Signifier-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SignifierMax';
-  src: url('https://maxlinworm.github.io/Signifier-BoldItalic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Signifier/Signifier-BoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }

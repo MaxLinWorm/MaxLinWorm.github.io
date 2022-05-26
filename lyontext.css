@@ -4,14 +4,14 @@
 
 @font-face {
     font-family: 'LyonTextMax';
-    src: url('https://maxlinworm.github.io/Lyon Text Regular No. 2.otf') format('opentype');
+    src: url('https://maxlinworm.github.io/Fonts/Serifs/Lyon/Lyon Text Regular No. 2.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'LyonTextMax';
-  src: url('https://maxlinworm.github.io/Lyon Text Regular No. 2 Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Lyon/Lyon Text Regular No. 2 Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
@@ -20,14 +20,14 @@
 
 @font-face {
   font-family: 'LyonTextMax';
-  src: url('https://maxlinworm.github.io/Lyon Text Semibold.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Lyon/Lyon Text Semibold.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LyonTextMax';
-  src: url('https://maxlinworm.github.io/Lyon Text Semibold Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Lyon/Lyon Text Semibold Italic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
@@ -36,14 +36,14 @@
 
 @font-face {
   font-family: 'LyonTextMax';
-  src: url('https://maxlinworm.github.io/Lyon Text Semibold.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Lyon/Lyon Text Semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LyonTextMax';
-  src: url('https://maxlinworm.github.io/Lyon Text Semibold Italic.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Lyon/Lyon Text Semibold Italic.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
 }
@@ -52,14 +52,14 @@
 
 @font-face {
   font-family: 'LyonTextMax';
-  src: url('https://maxlinworm.github.io/Lyon Text Bold.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Lyon/Lyon Text Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LyonTextMax';
-  src: url('https://maxlinworm.github.io/Lyon Text Bold.otf') format('opentype');
+  src: url('https://maxlinworm.github.io/Fonts/Serifs/Lyon/Lyon Text Bold.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }
