@@ -84,7 +84,7 @@ body {
   padding-left: var(--container-artigo-padding-left);
   padding-right: var(--container-artigo-padding-right);
   background-color: var(--max_color_pag_foreground);
-  border-radius: var(--container-artigo_brad);
+  border-radius: var(--max_main_pag_foreground_brad);
   box-shadow: var(--max_main_pag_foreground_elevation);
 }
 

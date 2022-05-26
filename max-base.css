@@ -36,23 +36,12 @@
 /* ELEVATION */
 /* Retirado do google (history) - ver Roam */
 
-/* Light Mode */
-
 :root {
-    --max_elevation-1: 
-        rgba(var(--max_color_pag_shadow_c), .3) 0 1px 2px 0,
-        rgba(var(--max_color_pag_shadow_c), .15) 0 1px 3px 1px;
-    --max_elevation-2: rgba(var(--max_color_pag_shadow_c), .3) 0 1px 2px 0, 
-        rgba(var(--max_color_pag_shadow_c), .15) 0 2px 6px 2px;
-    --max_elevation-3: 
-        rgba(var(--max_color_pag_shadow_c), .3) 0 1px 3px 0, 
-        rgba(var(--max_color_pag_shadow_c), .15) 0 4px 8px 3px;
-    --max_elevation-4: 
-        rgba(var(--max_color_pag_shadow_c), .3) 0 2px 3px 0, 
-        rgba(var(--max_color_pag_shadow_c), .15) 0 6px 10px 4px;
-    --max_elevation-5: 
-        rgba(var(--max_color_pag_shadow_c), .3) 0 4px 4px 0, 
-        rgba(var(--max_color_pag_shadow_c), .15) 0 8px 12px 6px;
+    --max_elevation-1: rgba(var(--max_color_pag_shadow_c), .3) 0 1px 2px 0, rgba(var(--max_color_pag_shadow_c), .15) 0 1px 3px 1px;
+    --max_elevation-2: rgba(var(--max_color_pag_shadow_c), .3) 0 1px 2px 0, rgba(var(--max_color_pag_shadow_c), .15) 0 2px 6px 2px;
+    --max_elevation-3: rgba(var(--max_color_pag_shadow_c), .3) 0 1px 3px 0, rgba(var(--max_color_pag_shadow_c), .15) 0 4px 8px 3px;
+    --max_elevation-4: rgba(var(--max_color_pag_shadow_c), .3) 0 2px 3px 0, rgba(var(--max_color_pag_shadow_c), .15) 0 6px 10px 4px;
+    --max_elevation-5: rgba(var(--max_color_pag_shadow_c), .3) 0 4px 4px 0, rgba(var(--max_color_pag_shadow_c), .15) 0 8px 12px 6px;
 
     --max_elevation_brad: 8px; /* border-radius */
 }
