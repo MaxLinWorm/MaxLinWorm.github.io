@@ -116,7 +116,7 @@
     --max_h1_fs: 1.4em;
     --max_h1_fw: 550;
     --max_h1_lh: 1.35em;
-    --max_h1_ls: 0.075em; /* Letterspacing */
+    --max_h1_ls: -0.05em; /* Letterspacing */
 
     --max_h1_mbs: 1.5em;
     --max_h1_mbe: var(--max_body_p-espaco_mbe);
@@ -128,7 +128,7 @@
     --max_h2_fs: 1.3em;
     --max_h2_fw: 550;
     --max_h2_lh: 1.35em;
-    --max_h2_ls: 0.065em; /* Letterspacing */
+    --max_h2_ls: -0.03em; /* Letterspacing */
 
     --max_h2_mbs: 1.35em; /* margin-block-start */
     --max_h2_mbe: var(--max_body_p-espaco_mbe);
@@ -140,7 +140,7 @@
     --max_h3_fs: 1.2em;
     --max_h3_fw: 500;
     --max_h3_lh: 1.35em;
-    --max_h3_ls: 0.05em; /* Letterspacing */
+    --max_h3_ls: -0.02em; /* Letterspacing */
 
     --max_h3_mbs: 1.35em; /* margin-block-start */
     --max_h3_mbe: var(--max_body_p-espaco_mbe);
@@ -166,7 +166,7 @@
     --max-h6_ff: var(--max_h_ff);
 
     /* BLOCKQUOTES */
-    
+
     --max_q_mbs: var(--max_body_p-espaco_mbs);
     --max_q_mbe: var(--max_body_p-espaco_mbe);
     --max_q_bl: 3px solid var(--max_main_links_c); /* border left */
