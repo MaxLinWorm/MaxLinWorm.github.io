@@ -172,6 +172,30 @@
     --max_q_bl: 3px solid var(--max_main_links_c); /* border left */
     --max_q_pl: 1.5em; /* padding-left */
 
+    /* HORIZONTAL RULES
+     * parecido com Shady Characters */
+
+    --max_hr_fs: var(--max_body_fs); 
+    --max_hr_lh: var(--max_body_lh);
+
+    --max_hr_position: relative; /* Position */
+    --max_hr_height: 3em; /* Height */
+
+    --max_hr_margin: 0em; /* Margin */
+    --max_hr_padding: 0em; /* Padding */
+
+    --max_hr_border: 0; /* Border */
+    --max_hr_outline: 0; /* Outline */
+
+    --max_hr-before_dislay: block;
+    --max_hr-before_position: absolute;
+    --max_hr-before_left: 0;
+    --max_hr-before_right: 0;
+    --max_hr-before_top: 0;
+    --max_hr-before_bottom: 0;
+    --max_hr-before_pt: .9em; /*padding-top*/
+    --max_hr-before_content: "⁂";
+    --max_hr-before_ta: center; /* text-align */
 }
 
 /* Laptop */

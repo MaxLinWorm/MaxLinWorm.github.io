@@ -237,11 +237,29 @@ h4 {
 /* HORIZONTAL RULE */
 
 hr {
-  height: 1px;
-  background-color: #d8d8d8;
-  border: none;
+  font-size: var(--max_hr_fs);
+  line-height: var(--max_hr_lh);
+  position: var(--max_hr_position);
+  height: var(--max_hr_height);
+  margin: var(--max_hr_margin);
+  padding: var(--max_hr_padding);
+  border: var(--max_hr_border);
+  outline: var(--max_hr_outline);
+
+  background-color: none;
   width: 100%;
-  margin: 0
+}
+
+hr::before {
+  display: var(--max_hr-before_dislay);
+  position: var(--max_hr-before_position);
+  left: var(--max_hr-before_left);
+  right: var(--max_hr-before_right);
+  top: var(--max_hr-before_top);
+  bottom: var(--max_hr-before_bottom);
+  padding-top: var(--max_hr-before_pt);
+  content: var(--max_hr-before_content);
+  text-align: var(--max_hr-before_ta);
 }
 
 /* LINKS */
