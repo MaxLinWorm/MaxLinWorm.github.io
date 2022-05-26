@@ -152,10 +152,9 @@ blockquote {
   margin-block-start: var(--max_q_mbs);
   margin-block-end: var(--max_q_mbe);
   
-  /* TODO (o que é isto?) 
+  /* Retira espaçamento lateral */
   margin-inline-start: 0;
   margin-inline-end: 0;
-  */
 
   border-left: var(--max_q_bl);
   padding-left: var(--max_q_pl);

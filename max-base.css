@@ -171,6 +171,9 @@
     --max_q_mbe: var(--max_body_p-espaco_mbe);
     --max_q_bl: 3px solid var(--max_main_links_c); /* border left */
     --max_q_pl: 1.5em; /* padding-left */
+    --max_q_mis: 0; /*margin-inline-star */
+    --max_q_mie: 0; /*margin-inline-end */
+
 
     /* HORIZONTAL RULES
      * parecido com Shady Characters */
