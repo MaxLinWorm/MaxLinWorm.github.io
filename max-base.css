@@ -114,8 +114,10 @@
     /* H1 */
     --max_h1_ff: var(--max_h_ff);
     --max_h1_fs: 1.4em;
-    --max_h1_fw: 700;
+    --max_h1_fw: 550;
     --max_h1_lh: 1.35em;
+    --max_h1_ls: 0.075em; /* Letterspacing */
+
     --max_h1_mbs: 1.5em;
     --max_h1_mbe: var(--max_body_p-espaco_mbe);
 
@@ -124,6 +126,8 @@
     --max_h2_fs: 1.3em;
     --max_h2_fw: 550;
     --max_h2_lh: 1.35em;
+    --max_h3_ls: 0.065em; /* Letterspacing */
+
     --max_h2_mbs: 1.35em; /* margin-block-start */
     --max_h2_mbe: var(--max_body_p-espaco_mbe);
 
@@ -132,6 +136,8 @@
     --max_h3_fs: 1.2em;
     --max_h3_fw: 500;
     --max_h3_lh: 1.35em;
+    --max_h3_ls: 0.05em; /* Letterspacing */
+
     --max_h3_mbs: 1.35em; /* margin-block-start */
     --max_h3_mbe: var(--max_body_p-espaco_mbe);
     
@@ -140,6 +146,8 @@
     --max_h4_fs: 1.1em;
     --max_h4_fw: 400;
     --max_h4_lh: 1.35em;
+    --max_h4_ls: 0.05em; /* Letterspacing por causa do small caps*/
+
     --max_h4_mbs: 1.35em; /* margin-block-start */
     --max_h4_mbe: var(--max_body_p-espaco_mbe);
 
@@ -181,15 +189,13 @@
 */
 
 
-/* Elevations */
+/* Horizontal Rules */
 
 /* Cores 
 - Links
     - Hover
     - Sublinhado
         - Hover
-- Foreground
-- Background
 
 
 /* ------- REGRAS -------- */
