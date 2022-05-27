@@ -78,7 +78,7 @@
     --max_cont_pag_foreground_pb: 50px;
 
     --max_cont_pag_foreground_mw: calc(
-        31em 
+        34.375em 
         + var(--max_cont_pag_foreground_pl) 
         + var(--max_cont_pag_foreground_pr)
     );
