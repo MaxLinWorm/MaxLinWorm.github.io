@@ -78,7 +78,7 @@
     --max_cont_pag_foreground_pb: 50px;
 
     --max_cont_pag_foreground_mw: calc(
-        31em 
+        29.72972em 
         + var(--max_cont_pag_foreground_pl) 
         + var(--max_cont_pag_foreground_pr)
     );
@@ -157,6 +157,18 @@
 
     /* Geral */
     --max_h_ff: var(--max_body_ff_serif);
+
+    /* Title */
+    --max_ht_ff: var(--max_h_ff);
+    --max_ht_fs: 2em;
+    --max_ht_fw: 500;
+    --max_ht_lh: 1.3em;
+    --max_ht_ls: 0em; /* Letterspacing */
+
+    --max_ht_mbs: 1.5em;
+    --max_ht_mbe: 1em;
+
+    --max_ht_fv: normal;
 
     /* H1 */
     --max_h1_ff: var(--max_h_ff);
@@ -275,6 +287,25 @@
 
 
 /* ------- REGRAS -------- */
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-feature-settings: var(--max_body_ffs);
+    font-variant-ligatures: normal;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+}
+
+blockquote {
+    font-style: normal;
+}
+
+/* Fix para bagunça do line-height quando usa superscript */
+sup {
+    line-height: 0 !important
+}
 
 /* HIFENS */
 p {
@@ -305,19 +336,3 @@ p {
     hyphenate-limit-last:           var(--max_body_hifens_limit-last);
     hyphenate-limit-zone:           var(--max_body_hifens_limit-zone);
 }
-
-body {
-    font-feature-settings: var(--max_body_ffs);
-    font-variant-ligatures: normal;
-    font-kerning: normal;
-    text-rendering: optimizeLegibility;
-}
-
-blockquote {
-    font-style: normal;
-}
-
-/* Fix para bagunça do line-height quando usa superscript */
-sup {
-    line-height: 0 !important
-  }
