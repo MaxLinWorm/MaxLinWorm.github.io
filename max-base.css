@@ -76,12 +76,12 @@
     --max_cont_pag_foreground_pr: 125px;
     --max_cont_pag_foreground_pl: 125px;
     --max_cont_pag_foreground_pb: 50px;
-
-    --max_cont_pag_foreground_mw: calc(
-        34.375em 
+    
+    /* Totaliza 580px a coluna de texto */
+    --max_cont_pag_foreground_mw: calc(36.25em 
         + var(--max_cont_pag_foreground_pl) 
-        + var(--max_cont_pag_foreground_pr)
-    );
+        + var(--max_cont_pag_foreground_pr) 
+    ); 
     --max_cont_pag_foreground_elevation: var(--max_elevation-2);
     --max_cont_pag_foreground_brad: var(--max_elevation_brad);
 }
