@@ -29,6 +29,7 @@
     line-height:    var(--max_body_lh);
     font-family:    var(--max_body_ff_serif);
     color:          var(--max_body_c);
+    text-align: left
 }
 
 /* Com indent para separar parágrafos */
