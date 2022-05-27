@@ -78,7 +78,7 @@
     --max_cont_pag_foreground_pb: 50px;
 
     --max_cont_pag_foreground_mw: calc(
-        29.72972em 
+        31em 
         + var(--max_cont_pag_foreground_pl) 
         + var(--max_cont_pag_foreground_pr)
     );
@@ -287,6 +287,8 @@
 
 
 /* ------- REGRAS -------- */
+
+/* Para normalizar uso de rem */
 :root {
     font-size: 16px;
 }
