@@ -34,7 +34,7 @@
 /* Com indent para separar parágrafos */
 
 .bodyCopy p {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 
     margin-block-start: var(--max_body_p-espaco_mbs);
