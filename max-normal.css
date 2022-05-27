@@ -1,0 +1,152 @@
+@import url(https://maxlinworm.github.io/max-base.css);
+
+/* CONTAINERS */
+
+.contBackground {
+    background-color: var(--max_cont_pag_background_bg);
+    margin: 0px;
+    padding: 0px;
+}
+
+.contForeground {
+    background-color:   var(--max_cont_pag_foreground_bg);
+    margin:             var(--max_cont_pag_foreground_margin);
+
+    padding-top:        var(--max_cont_pag_foreground_pt);
+    padding-right:      var(--max_cont_pag_foreground_pr);
+    padding-left:       var(--max_cont_pag_foreground_pl);
+    padding-bottom:     var(--max_cont_pag_foreground_pb);
+
+    max-width:          var(--max_cont_pag_foreground_mw);
+    box-shadow:         var(--max_cont_pag_foreground_elevation);
+    border-radius:      var(--max_cont_pag_foreground_brad);
+}
+
+/* BODY COPY */
+
+.bodycopy {
+    font-size:      var(--max_body_fs);
+    line-height:    var(--max_body_lh);
+    font-family:    var(--max_body_ff_serif);
+    color:          var(--max_body_c);
+}
+
+/* Com indent para separar parágrafos */
+
+.bodyCopy p {
+    margin: 0 auto;
+    padding: 0;
+
+    margin-block-start: var(--max_body_p-espaco_mbs);
+    margin-block-end:   var(--max_body_p-espaco_mbe);
+}
+
+.bodyCopy p:not([align=center]) + p,
+.bodyCopy p:not([style='text-align:center']) + p {
+    margin-block-start: var(--max_body_p-indent_mbs);
+    text-indent:        var(--max_body_p-indent_ti);
+}
+
+/* BLOCKQUOTES*/
+
+blockquote {
+    padding: 0;
+    margin: 0 auto;
+
+    margin-block-start: var(--max_q_mbs);
+    margin-block-end:   var(--max_q_mbe);
+    
+    /* Retira espaçamento lateral */
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  
+    border-left:  var(--max_q_bl);
+    padding-left: var(--max_q_pl);
+}
+
+blockquote p {
+    font-size:   var(--max_body_fs);
+    line-height: var(--max_body_lh);
+}
+
+/* HEADINGS */
+
+h1 {
+    font-family:        var(--max_h1_ff);
+    font-size:          var(--max_h1_fs);
+    font-weight:        var(--max_h1_fw);
+    line-height:        var(--max_h1_lh);
+    letter-spacing:     var(--max_h1_ls);
+  
+    margin-block-start: var(--max_h1_mbs);
+    margin-block-end:   var(--max_h1_mbe);
+  
+    font-variant:       var(--max_h1_fv);
+}
+  
+h2 {
+    font-family:        var(--max_h2_ff);
+    font-size:          var(--max_h2_fs);
+    font-weight:        var(--max_h2_fw);
+    line-height:        var(--max_h2_lh);
+    letter-spacing:     var(--max_h2_ls);
+  
+    margin-block-start: var(--max_h2_mbs);
+    margin-block-end:   var(--max_h2_mbe);
+  
+    font-variant:       var(--max_h2_fv);
+}
+  
+h3 {
+    font-family:        var(--max_h3_ff);
+    font-size:          var(--max_h3_fs);
+    font-weight:        var(--max_h3_fw);
+    line-height:        var(--max_h3_lh);
+    letter-spacing:     var(--max_h3_ls);
+  
+    margin-block-start: var(--max_h3_mbs);
+    margin-block-end:   var(--max_h3_mbe);
+  
+    font-variant:       var(--max_h3_fv);  
+}
+  
+h4 {
+    font-family:        var(--max_h4_ff);
+    font-size:          var(--max_h4_fs);
+    font-weight:        var(--max_h4_fw);
+    line-height:        var(--max_h4_lh);
+    letter-spacing:     var(--max_h4_ls);
+  
+    margin-block-start: var(--max_h4_mbs);
+    margin-block-end:   var(--max_h4_mbe);
+  
+    font-variant:       var(--max_h4_fv);
+}
+
+/* HORIZONTAL RULE */
+
+hr {
+    font-size:   var(--max_hr_fs);
+    line-height: var(--max_hr_lh);
+    position:    var(--max_hr_position);
+    height:      var(--max_hr_height);
+    margin:      var(--max_hr_margin);
+    padding:     var(--max_hr_padding);
+    border:      var(--max_hr_border);
+    outline:     var(--max_hr_outline);
+  
+    background-color: none;
+    width: 100%;
+}
+  
+hr::before {
+    display:        var(--max_hr-before_dislay);
+    position:       var(--max_hr-before_position);
+    left:           var(--max_hr-before_left);
+    right:          var(--max_hr-before_right);
+    top:            var(--max_hr-before_top);
+    bottom:         var(--max_hr-before_bottom);
+    padding-top:    var(--max_hr-before_pt);
+    content:        var(--max_hr-before_content);
+    text-align:     var(--max_hr-before_ta);
+}

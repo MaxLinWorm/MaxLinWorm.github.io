@@ -10,6 +10,8 @@
 @import url(https://maxlinworm.github.io/Fonts/lyontext.css);
 */
 
+/* ---- VARIÁVEIS ---- */
+
 /* CORES */
 
 /* Light Mode */
@@ -20,7 +22,8 @@
     --max_color_pag_foreground: white;
     --max_color_pag_background: white; 
     --max_color_pag_shadow_c-rgb: 60, 64, 67;
-    --max_color_pag_shadow_c: rgb(var(--max_color_pag_shadow_c-rgb));
+    --max_color_pag_shadow_c: rgb(
+        var(--max_color_pag_shadow_c-rgb) );
 }
 
 /* Dark Mode */
@@ -31,7 +34,8 @@
         --max_color_pag_foreground: rgb(41, 42, 45);
         --max_color_pag_background: rgb(32, 33, 36);
         --max_color_pag_shadow_c-rgb: 0, 0, 0;
-        --max_color_pag_shadow_c: rgb(var(--max_color_pag_shadow_c-rgb));
+        --max_color_pag_shadow_c: rgb(
+            var(--max_color_pag_shadow_c-rgb) );
     }
 }
 
@@ -58,7 +62,36 @@
     --max_elevation_brad: 8px; /* border-radius */
 }
 
-/* Tipografia */
+/* CONTAINERS - CARDS */
+
+:root {
+    /* Background */
+    --max_cont_pag_background_bg: var(--max_color_pag_background);
+
+    /* Foreground */
+    --max_cont_pag_foreground_bg: var(--max_color_pag_foreground);
+    --max_cont_pag_foreground_margin: 70px auto 30px;
+    
+    --max_cont_pag_foreground_pt: 30px;
+    --max_cont_pag_foreground_pr: 125px;
+    --max_cont_pag_foreground_pl: 125px;
+    --max_cont_pag_foreground_pb: 20px;
+
+    --max_cont_pag_foreground_mw: calc(
+        31em 
+        + var(--max_cont_pag_foreground_pl) 
+        + var(--max_cont_pag_foreground_pr)
+    );
+    --max_cont_pag_foreground_elevation: var(--max_elevation-2);
+    --max_cont_pag_foreground_brad: var(--max_elevation_brad);
+}
+
+/* Dark Mode */
+
+
+
+/* TIPOGRAFIA */
+
 :root {
 
     /* MAIN */
@@ -67,11 +100,6 @@
     --max_main_ff_serif: 'FreightTextMax', 'Source Serif Pro', 'Equity Text B', 'Palatino Linotype', Georgia;
     --max_main_ff_sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Roboto', 'Helvetica', 'Arial', "Segoe UI", sans-serif;
     --max_main_c: var(--max_color_text);
-
-    /* Modo Página */
-    --max_main_pag_foreground_elevation: var(--max_elevation-2);
-    --max_main_pag_foreground_brad: var(--max_elevation_brad);
-
 
     /* BODY */
 
@@ -173,7 +201,34 @@
     --max_q_pl: 1.5em; /* padding-left */
     --max_q_mis: 0; /*margin-inline-star */
     --max_q_mie: 0; /*margin-inline-end */
+}
 
+/* Laptop */
+@media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1280px) {
+    :root {
+        --max_body_fs: 18.5px;
+    }
+}
+
+/* Desktop */
+/*
+@media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1280px)
+{
+    :root {
+        --max_body_fs: 18.5px;
+    }
+}
+*/
+
+
+
+/* OUTROS ELEMENTOS */
+
+:root {
 
     /* HORIZONTAL RULES
      * parecido com Shady Characters */
@@ -201,29 +256,6 @@
     --max_hr-before_ta: center; /* text-align */
 }
 
-/* Laptop */
-@media screen 
-    and (min-device-width: 1200px) 
-    and (max-device-width: 1280px) {
-    :root {
-        --max_body_fs: 18.5px;
-    }
-}
-
-/* Desktop */
-/*
-@media screen 
-    and (min-device-width: 1200px) 
-    and (max-device-width: 1280px)
-{
-    :root {
-        --max_body_fs: 18.5px;
-    }
-}
-*/
-
-
-/* Horizontal Rules */
 
 /* Cores 
 - Links
