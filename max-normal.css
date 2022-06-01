@@ -70,6 +70,23 @@ blockquote p {
     line-height: var(--max_body_lh);
 }
 
+/* CODE */
+.codeBlock {
+    font-family: var(--max_code_ff);
+    font-size: var(--max_code_fs);
+    line-height: var(--max_code_lh);
+    font-weight: var(--max_code_fw);
+
+    font-feature-settings: var(--max_code_ffs);
+    -webkit-font-feature-settings: var(--max_code_ffs);
+    -moz-font-feature-settings: var(--max_code_ffs);
+    -ms-font-feature-settings: var(--max_code_ffs);
+
+    font-variant: var(--max_code_fv);
+    font-variant-ligatures: var(--max_code_fvl);
+    font-variant-alternates: var(--max_code_fva);
+}
+
 /* LISTS */
 
 p ul {
