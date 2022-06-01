@@ -70,6 +70,14 @@ blockquote p {
     line-height: var(--max_body_lh);
 }
 
+/* LISTS */
+
+p ul {
+    margin-block-start:     var(--max_ul_mbs);
+    margin-block-end:       var(--max_ul_mbe);
+    margin-inline-start:    var(--max_ul_mis);
+}
+
 /* HEADINGS */
 
 h1 {

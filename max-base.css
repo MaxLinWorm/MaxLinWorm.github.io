@@ -369,9 +369,3 @@ p {
     hyphenate-limit-last:           var(--max_body_hifens_limit-last);
     hyphenate-limit-zone:           var(--max_body_hifens_limit-zone);
 }
-
-p ul {
-    margin-block-start: var(--max_ul_mbs);
-    margin-block-end: var(--max_ul_mbe);
-    margin-inline-start: var(--max_ul_mis);
-}
