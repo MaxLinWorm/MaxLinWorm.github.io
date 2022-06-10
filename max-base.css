@@ -19,6 +19,7 @@
 :root {
     --max_color_primary: rgb(255, 91, 61);
     --max_color_text: rgb(32, 33, 36); /* Google */
+    --max_color_text_muted: rgb(55, 56, 59);
     --max_color_pag_foreground: white;
     --max_color_pag_background: white; 
     --max_color_pag_shadow_c-rgb: 60, 64, 67;

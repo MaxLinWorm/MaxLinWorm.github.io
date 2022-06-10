@@ -190,6 +190,19 @@ p ul {
 
 /* HEADINGS */
 
+.headingTitle {
+    font-family: var(--max_ht_ff);
+    font-size: var(--max_ht_fs);
+    font-weight: var(--max_ht_fw);
+    line-height: var(--max_ht_lh);
+    letter-spacing: var(--max_ht_ls);
+
+    margin-block-start: var(--max_ht_mbs);
+    margin-block-end: var(--max_ht_mbe);
+
+    font-variant: var(--max_ht_fv);
+}
+
 h1 {
     font-family:        var(--max_h1_ff);
     font-size:          var(--max_h1_fs);
