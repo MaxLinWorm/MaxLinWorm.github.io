@@ -90,9 +90,11 @@ pre code {
     background-color: var(--max_cont_pag_background_bg);
     margin: 0px;
     padding: 0px;
+    max-width: none;
 }
 
 .contForeground {
+    font-size:          var(--max_body_fs);
     background-color:   var(--max_cont_pag_foreground_bg);
     margin:             var(--max_cont_pag_foreground_margin);
 
