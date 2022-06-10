@@ -149,6 +149,7 @@ blockquote {
   
     border-left:  var(--max_q_bl);
     padding-left: var(--max_q_pl);
+    opacity: 1;
 }
 
 blockquote, 
@@ -158,6 +159,7 @@ blockquote p {
     font-family:    var(--max_body_ff_serif);
     color:          var(--max_body_c);
     text-align: left;
+    opacity: 1;
 }
 
 /* CODE */
