@@ -77,8 +77,8 @@
     --max_cont_pag_foreground_pl: 125px;
     --max_cont_pag_foreground_pb: 50px;
     
-    /* Totaliza 580px a coluna de texto */
-    --max_cont_pag_foreground_mw: calc(36.25em 
+    /* Totaliza 580px a coluna de texto com fs 18.5 */
+    --max_cont_pag_foreground_mw: calc(30.81em 
         + var(--max_cont_pag_foreground_pl) 
         + var(--max_cont_pag_foreground_pr) 
     ); 
@@ -233,7 +233,7 @@
     --max_h3_fv: normal;
 
     /* H4 */
-    --max-h4_ff: var(--max_h_ff);
+    --max_h4_ff: var(--max_h_ff);
     --max_h4_fs: 1.1em;
     --max_h4_fw: 400;
     --max_h4_lh: 1.35em;
@@ -245,10 +245,10 @@
     --max_h4_fv: small-caps; /* font-variant */
     
     /* H5 */
-    --max-h5_ff: var(--max_h_ff);
+    --max_h5_ff: var(--max_h_ff);
 
     /* H6 */
-    --max-h6_ff: var(--max_h_ff);
+    --max_h6_ff: var(--max_h_ff);
 }
 
 /* Laptop */
