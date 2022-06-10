@@ -149,9 +149,13 @@ blockquote {
     padding-left: var(--max_q_pl);
 }
 
+blockquote, 
 blockquote p {
-    font-size:   var(--max_body_fs);
-    line-height: var(--max_body_lh);
+    font-size:      var(--max_body_fs);
+    line-height:    var(--max_body_lh);
+    font-family:    var(--max_body_ff_serif);
+    color:          var(--max_body_c);
+    text-align: left;
 }
 
 /* CODE */
