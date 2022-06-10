@@ -5,7 +5,7 @@
   :root {
     --container-artigo-padding-left: 125px;
     --container-artigo-padding-right: 125px;
-    --container-geral-max-width: calc(31em 
+    --container-geral-max-width: calc(30.81em 
         + var(--container-artigo-padding-left)
         + var(--container-artigo-padding-right)
     );
@@ -33,7 +33,7 @@
   :root {
     --container-artigo-padding-left: 0px;
     --container-artigo-padding-right: 0px;
-    --container-geral-max-width: 550px;
+    --container-geral-max-width: 570px;
 
     --max_color_pag_background: rgb(17, 17, 17);
     --container-artigo-border-radius: none;
@@ -62,11 +62,9 @@
 
 body {
     background-color: var(--max_color_pag_background);
-    /*
     font-family:      var(--max_body_ff_serif);
     line-height:      var(--max_body_lh);
     font-size:        var(--max_body_fs);
-    */
     color:            var(--max_body_c);
 }
 
@@ -163,7 +161,7 @@ p:not([style='text-align:center'])
     margin-block-start: var(--max_h2_mbs) !important;
     margin-block-end: var(--max_h2_mbe) !important;
     text-align: left !important;
-    text-indent: 0 !important
+    text-indent: 0 !important;
 }
 
 /* BLOCKQUOTES */
@@ -182,7 +180,7 @@ blockquote {
 
 blockquote p {
     font-size:   var(--max_body_fs);
-    line-height: var(--max_body_lh)
+    line-height: var(--max_body_lh);
 }
 
 /* HEADINGS */
