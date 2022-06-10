@@ -32,6 +32,7 @@
     :root {
         --max_color_primary: magenta;
         --max_color_text: rgb(232, 234, 237); /* Google */
+        --max_color_text_muted: rgb(212, 214, 216);
         --max_color_pag_foreground: rgb(41, 42, 45);
         --max_color_pag_background: rgb(32, 33, 36);
         --max_color_pag_shadow_c-rgb: 0, 0, 0;
