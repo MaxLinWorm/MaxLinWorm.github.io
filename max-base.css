@@ -154,7 +154,7 @@
     --max_q_mbs: var(--max_body_p-espaco_mbs);
     --max_q_mbe: var(--max_body_p-espaco_mbe);
     --max_q_bl: var(--max_q_border-size) solid var(--max_main_links_c); /* border left */
-    --max_q_pl: var(--max_body_p-indent_ti); /* padding-left */
+    --max_q_pl: calc(var(--max_body_p-indent_ti) - var(--max_q_border-size)); /* padding-left */
     --max_q_mis: 0; /*margin-inline-star */
     --max_q_mie: 0; /*margin-inline-end */
 
