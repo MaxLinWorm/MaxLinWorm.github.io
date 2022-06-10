@@ -6,7 +6,7 @@
     --container-artigo-padding-left: 125px;
     --container-artigo-padding-right: 125px;
     --container-geral-max-width: calc(31em 
-        + var(--container-artigo-padding-left) 
+        + var(--container-artigo-padding-left)
         + var(--container-artigo-padding-right)
     );
 
@@ -62,9 +62,11 @@
 
 body {
     background-color: var(--max_color_pag_background);
+    /*
     font-family:      var(--max_body_ff_serif);
     line-height:      var(--max_body_lh);
     font-size:        var(--max_body_fs);
+    */
     color:            var(--max_body_c);
 }
 
@@ -99,8 +101,8 @@ body {
     padding-left:     var(--container-artigo-padding-left);
     padding-right:    var(--container-artigo-padding-right);
     background-color: var(--max_color_pag_foreground);
-    border-radius:    var(--max_main_pag_foreground_brad);
-    box-shadow:       var(--max_main_pag_foreground_elevation);
+    border-radius:    var(--max_cont_pag_foreground_brad);
+    box-shadow:       var(--max_cont_pag_foreground_elevation);
 }
 
 /* Outros */
