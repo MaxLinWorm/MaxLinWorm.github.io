@@ -86,12 +86,16 @@ pre code {
 
 /* CONTAINERS */
 
+/* Background */
+
 .contBackground {
     background-color: var(--max_cont_pag_background_bg);
     margin: 0px;
     padding: 0px;
     max-width: none;
 }
+
+/* Foreground */
 
 .contForeground {
     font-size:          var(--max_body_fs);
@@ -126,6 +130,7 @@ pre code {
 
     margin-block-start: var(--max_body_p-espaco_mbs);
     margin-block-end:   var(--max_body_p-espaco_mbe);
+    text-indent: 0;
 }
 
 .bodyCopy p:not([align=center]) + p,
