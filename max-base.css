@@ -1,9 +1,9 @@
 /* Variáveis globais para todos meus temas */
 
 /* Fontes */
-@import url(https://maxlinworm.github.io/Fonts/freighttext.css);
 
 /* 
+@import url(https://maxlinworm.github.io/Fonts/freighttext.css);
 @import url(https://maxlinworm.github.io/Fonts/heldane.css);
 @import url(https://maxlinworm.github.io/Fonts/signifier.css);
 @import url(https://maxlinworm.github.io/Fonts/epicene.css);
@@ -114,7 +114,7 @@
     /* MAIN */
     
     --max_main_links_c: var(--max_color_primary);
-    --max_main_ff_serif: 'FreightTextMax', 'Source Serif Pro', 'Equity Text B', 'Palatino Linotype', Georgia;
+    --max_main_ff_serif: /*'FreightTextMax',*/ 'Source Serif Pro', 'Equity Text B', 'Palatino Linotype', Georgia;
     --max_main_ff_sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Roboto', 'Helvetica', 'Arial', "Segoe UI", sans-serif;
     --max_main_c: var(--max_color_text);
 
