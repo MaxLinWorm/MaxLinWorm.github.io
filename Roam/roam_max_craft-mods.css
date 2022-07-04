@@ -101,6 +101,7 @@ html {
 }
 
 /* AUMENTA BULLETS E REALINHA EM DECORRÊNCIA */
+
 /* Bullets em si - era 4px */
 .rm-bullet__inner {
     height: calc(4px + var(--max-bullet-aumento));
@@ -129,9 +130,6 @@ html {
     flex: 0 0 40px /*48px*/
     ;
 }
-
-
-
 
 /* ESPAÇAMENTO DO ARTIGO */
 
@@ -190,4 +188,35 @@ html {
 .rm-heading-level-3>.rm-block__self .rm-block__input,
 .roam-body .roam-app .roam-main .roam-article .rm-heading-level-3.rm-block>div>div>textarea {
     line-height: var(--max-headings-h3-lh);
+}
+
+
+/* Fix dos linked references filter ficarem overlapping */
+
+/* Lista */
+div.bp3-transition-container.bp3-popover-enter-done
+  >div.bp3-popover[style*='transform-origin']
+  >div.bp3-popover-content
+  >div[style*='max-width: 600px']
+  >div[style*='display: flex']
+  >div:nth-child(4)
+  >div
+  >div
+  >button {
+    color: red !important;
+    height: auto;
+}
+
+/* Selecionados */
+div.bp3-transition-container.bp3-popover-enter-done
+  >div.bp3-popover[style*='transform-origin']
+  >div.bp3-popover-content
+  >div[style*='max-width: 600px']
+  >div[style*='display: flex']
+  >div.flex-h-box
+  >div[style*='flex: 1']
+  >div[style*='padding-top: 8px;']
+  >button {
+    color: magenta !important;
+    height: auto;
 }
