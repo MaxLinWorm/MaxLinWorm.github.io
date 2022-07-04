@@ -115,7 +115,7 @@
     
     --max_main_links_c: var(--max_color_primary);
     --max_main_ff_serif: /*'FreightTextMax',*/ 'Source Serif Pro', 'Equity Text B', 'Palatino Linotype', Georgia;
-    --max_main_ff_sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Roboto', 'Helvetica', 'Arial', "Segoe UI", sans-serif;
+    --max_main_ff_sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', "Segoe UI", sans-serif;
     --max_main_c: var(--max_color_text);
 
     /* BODY */
@@ -166,8 +166,8 @@
     --max_ul_mis: var(--max_body_p-indent_ti);
 
     /* CODE */
-    --max_code_fs: 14px; /* 14 para hasklig, source, cascadia, operator e consolas */
-    --max_code_lh: 1.3; /* 1.3 para hasklig, source, cascadia, operator e consolas */
+    --max_code_fs: 14px; /* 14 para hasklig, source, cascadia, operator e consolas. 13 para Fira */
+    --max_code_lh: 1.3; /* 1.3 para hasklig, source, cascadia, operator e consolas 1.4 para Fira */
 
     /* para fira code: 'dlig', 'calt', 'liga', 'ss03', 'ss05' 
        para cascadia: 'dlig', 'calt', 'liga', 'ss19' 
