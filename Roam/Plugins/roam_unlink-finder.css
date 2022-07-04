@@ -1,6 +1,7 @@
 /* ROAM JS Unlink Finder de https://roamresearch.com/#/app/tylerwince-public/page/KSqFD-LIJ*/
 /* CSS Tooltip Container */
-.alias-word-match:before, .fuzzy-word-match:before {
+.alias-word-match:before, 
+.fuzzy-word-match:before {
     content: attr(data-text); /* here's the magic */
     position:absolute;
     
@@ -25,7 +26,8 @@
 }
   
 /* CSS Arrow */
-.alias-word-match:after, .fuzzy-word-match:after {
+.alias-word-match:after, 
+.fuzzy-word-match:after {
     content: "";
     position:absolute;
 
@@ -51,6 +53,6 @@
 .alias-word-match:hover:after, 
 .fuzzy-word-match:hover:before, 
 .fuzzy-word-match:hover:after {
-opacity: 0.95;
-display:block;
-  }
+    opacity: 0.95;
+    display:block;
+}

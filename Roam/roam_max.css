@@ -1,4 +1,5 @@
 /* Fontes */
+/*
 @import url('https://maxlinworm.github.io/Fonts/plex.css');
 @import url('https://maxlinworm.github.io/Fonts/quattro.css');
 @import url('https://maxlinworm.github.io/Fonts/akkurat.css');
@@ -7,18 +8,19 @@
 @import url('https://maxlinworm.github.io/Fonts/epicene.css');
 @import url('https://maxlinworm.github.io/Fonts/heldane.css');
 @import url('https://maxlinworm.github.io/Fonts/signifier.css');
+*/
 
-/* Tema Principal */
+/* Tema Principal - Craft */
 @import url('https://rcvd.github.io/roam-css-system/themes/craft.css');
+
+/* Minhas mods ao Tema Principal */
+@import url('https://maxlinworm.github.io/Roam/roam_max_craft-mods.css');
+
+/* Twitter on Hover */
+@import url('https://maxlinworm.github.io/Roam/roam_max_twitter-on-hover.css');
 
 /* Masonry */
 /*@import url('https://gitmurf.github.io/masonry-vanilla/masonry-main.css');*/
-
-/* Minhas mods ao Tema Principal */
-@import url('https://maxlinworm.github.io/craft-max-mods.css');
-
-/* Twitter on Hover */
-@import url('https://maxlinworm.github.io/twitter-on-hover.css');
 
 /* Minhas mods ao Masonry */
 
@@ -27,4 +29,4 @@
 @import url('https://c3founder.github.io/Roam-Enhancement/enhancedPDF.css');
 
 /* Roam/JS Unline Finder */
-@import url('https://maxlinworm.github.io/Unlink Finder.css');
+@import url('https://maxlinworm.github.io/Roam/Plugins/roam_unlink-finder.css');
