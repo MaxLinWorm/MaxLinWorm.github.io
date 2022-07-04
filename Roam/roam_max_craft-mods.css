@@ -147,13 +147,13 @@ html {
     display: none;
 }
 
-.rm-page-ref--link:hover:before {
+.rm-page-ref--link:before {
     content: "[";
     color: var(--co-brackets);
     font-weight: 300;
 }
 
-.rm-page-ref--link:hover:after {
+.rm-page-ref--link:after {
     content: "]";
     color: var(--co-brackets);
     font-weight: 300;
