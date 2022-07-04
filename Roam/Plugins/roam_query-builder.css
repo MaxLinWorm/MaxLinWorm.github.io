@@ -1,0 +1,27 @@
+/* VARIÁVEIS */
+
+#right-sidebar .roamjs-query-page {
+    --queryB-width: 100%;
+}
+
+.roamjs-query-page {
+    --queryB-width: 900px;
+}
+
+
+/* REGRAS */
+
+/* Se não usar, buga quando tiver pouco espaço horizontal */
+.roamjs-query-results-view {
+    overflow-x: auto;
+}
+
+#roamjs-query-page-ZN2isWTJc {
+    width: var(--queryB-width);
+    position: relative !important;
+
+}
+
+#roamjs-query-page-ZN2isWTJc table {
+    table-layout: auto !important;
+}
