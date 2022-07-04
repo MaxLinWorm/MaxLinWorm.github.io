@@ -70,12 +70,9 @@
 
     /* Quotes */
     --max-quote-ff: var(--max-ff);
-    /*--max-quote-fs: var(--max-fs);*/
+    --max-quote-fs: var(--fs-main);
     --ff-quote: var(--max-quote-ff);
     --fs-quote: var(--max-quote-fs);
-
-    /* Títulos das páginas no linked references */
-    /*--fs-reference__page-title: var(--max-fs);*/
 }
 
 @media(prefers-color-scheme: dark) {
@@ -91,13 +88,7 @@
 body,
 html {
     letter-spacing: 0em;
-    /* Era 14px ou seja, 
-       1rem = era 14px
-       1.2142857rem = 17px; 
-       1.1428rem = 16px; 
-       1.0714 = 15px 
-    */
-    font-size: 15.0943px;
+    font-size: 15.0943px; /* Era 14. Escolhi pq o --fs-main é 1.06rem, de forma que totaliza 16px*/
 }
 
 /* AUMENTA BULLETS E REALINHA EM DECORRÊNCIA */
@@ -148,6 +139,8 @@ html {
 .rm-block-separator+div[style="min-width: 24px;"] {
     min-width: 0px;
 }
+
+/* BRACKETS DOS LINKS */
 
 /* Brackets Únicos nos Links Bidirecionais */
 .rm-page-ref__brackets {
