@@ -1,16 +1,16 @@
+@import url(https://maxlinworm.github.io/max-base.css);
+
 :root {
-    /* Universais */
-    --max-ff: '-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', 'Inter';
-    /* Fontes importadas 
-   * 'QuattroMax', 'PlexMax', 'AkkuratMax' */
-    --max-fs: 1.06rem;
+    /* UNIVERSAIS */
+    --max-ff: var(--max_main_ff_sans);
+    /*--max-fs: 1.06rem; */
     --max-co: var(--co-main);
 
     /* Bullets */
     --max-bullet-aumento: 1px;
-    /* Fechado com children */
-    --bt-bullet__closed: 4px solid rgb(217, 220, 223);
-    /* 4px, solid, #f8f8f8 */
+
+    /* Bullet Fechado com children */
+    --bt-bullet__closed: 4px solid rgb(217, 220, 223); /* 4px, solid, #f8f8f8 */
     --br-bullet__closed: var(--bt-bullet__closed);
     --bb-bullet__closed: var(--bt-bullet__closed);
     --bl-bullet__closed: var(--bt-bullet__closed);
@@ -20,18 +20,16 @@
     --bb-right-sidebar__bullet-closed: var(--bt-bullet__closed);
     --bl-right-sidebar__bullet-closed: var(--bt-bullet__closed);
 
-    /* Main */
+    /* MAIN */
     --ff-main: var(--max-ff);
-    --fs-main: var(--max-fs);
-    /*1.06rem*/
+    /*--fs-main: var(--max-fs);*/
     --fw-main: 400;
 
-    /* Headings */
+    /* HEADINGS */
     --max-headings-ff: var(--max-ff);
 
     /* Não sei, diz log book */
-    --co-app__h1: red;
-    /* #202224 */
+    --co-app__h1: red; /* #202224 */
     --ff-app__h1: var(--max-headings-ff);
 
     /* H1 */
@@ -55,35 +53,33 @@
     --fs-page__title: 1.5rem;
     --fw-page__title: 700;
 
-    /* Code */
-    --max-code-ff: 'Fira Code', 'Fira Mono', 'Consolas', 'Menlo';
-    --max-code-fs: var(--max-fs);
-    --max-code-co: var(--max-co);
+    /* CODE */
 
     /* Blocos */
-    --ff-codeblock__code: var(--max-code-ff);
-    --fs-codeblock__code: 0.9rem;
-    --co-codeblock__code: var(--max-code-co);
+    --ff-codeblock__code: var(--max_code_ff);
+    --fs-codeblock__code: var(--max_code_fs);
+    --co-codeblock__code: var(--max-co);
 
     /* Inline */
-    --ff-code: var(--max-code-ff);
-    --fs-code: 0.9rem;
-    --co-code: var(--max-code-co);
+    --ff-code: var(--max_code_ff);
+    --fs-code: var(--max_code_fs);
+    --co-code: var(--max-co);
 
     /* Menus */
     --ff-div: var(--max-ff);
 
     /* Quotes */
     --max-quote-ff: var(--max-ff);
-    --max-quote-fs: var(--max-fs);
+    /*--max-quote-fs: var(--max-fs);*/
     --ff-quote: var(--max-quote-ff);
     --fs-quote: var(--max-quote-fs);
 
     /* Títulos das páginas no linked references */
-    --fs-reference__page-title: var(--max-fs);
+    /*--fs-reference__page-title: var(--max-fs);*/
 }
 
 @media(prefers-color-scheme: dark) {
+    /* Cor dos bullets */
     :root {
         --bt-bullet__closed: 4px solid #4c4c4c;
         --br-bullet__closed: var(--bt-bullet__closed);
@@ -92,23 +88,15 @@
     }
 }
 
-/* QUery Builder */
-#right-sidebar .roamjs-query-page {
-    --queryB-width: 100%;
-}
-
-.roamjs-query-page {
-    --queryB-width: 900px;
-}
-
 body,
 html {
     letter-spacing: 0em;
     /* Era 14px ou seja, 
-   * 1rem = era 14px
-   * 1.2142857rem = 17px; 
-   * 1.1428rem = 16px; 
-   * 1.0714 = 15px */
+       1rem = era 14px
+       1.2142857rem = 17px; 
+       1.1428rem = 16px; 
+       1.0714 = 15px 
+    */
     font-size: 15.0943px;
 }
 
@@ -125,10 +113,10 @@ html {
 }
 
 /* Não sei o que faz
- * Olhando no Dev Tools
- * É lá na esquerda superior
- * Perto do sidebar 
- * Mudei para compensar aumento do bullet */
+   Olhando no Dev Tools
+   É lá na esquerda superior
+   Perto do sidebar 
+   Mudei para compensar aumento do bullet */
 .controls .simple-bullet-outer .simple-bullet-inner,
 .rm-block__controls .simple-bullet-outer .simple-bullet-inner {
     height: calc(4px + var(--max-bullet-aumento));
@@ -138,8 +126,7 @@ html {
 /* Diminui distância do texto e do bullet */
 .controls,
 .rm-block__controls {
-    flex: 0 0 40px
-        /*48px*/
+    flex: 0 0 40px /*48px*/
     ;
 }
 
@@ -149,26 +136,20 @@ html {
 /* ESPAÇAMENTO DO ARTIGO */
 
 /* Se não, embeds se extendiam à direita demais quando sidebar
- * estava fechado */
-
+   estava fechado */
 .rm-embed-container {
-    margin-right: 0px;
-    /*-116px*/
+    margin-right: 0px; /*-116px*/
 }
 
 /* Diminui padding na direita */
 .roam-body .roam-app .roam-main .roam-article {
-    padding-right: 30px;
-    /*42 no Roam normal */
+    padding-right: 30px; /*42 no Roam normal */
 }
 
 /* retira espaço não usado do block separator */
 .rm-block-separator+div[style="min-width: 24px;"] {
     min-width: 0px;
 }
-
-
-
 
 /* Brackets Únicos nos Links Bidirecionais */
 .rm-page-ref__brackets {
@@ -188,27 +169,7 @@ html {
 }
 
 
-/* Query Builder */
-
-
-/* Se não usar, buga quando tiver pouco espaço horizontal */
-.roamjs-query-results-view {
-    overflow-x: auto;
-}
-
-#roamjs-query-page-ZN2isWTJc {
-    width: var(--queryB-width);
-
-    position: relative !important;
-
-}
-
-#roamjs-query-page-ZN2isWTJc table {
-    table-layout: auto !important;
-}
-
-
-/* Headings */
+/* HEADINGS */
 
 /* H1 */
 .rm-level1,
@@ -217,12 +178,14 @@ html {
     line-height: var(--max-headings-h1-lh);
 }
 
+/* H2 */
 .rm-level2,
 .rm-heading-level-2>.rm-block__self .rm-block__input,
 .roam-body .roam-app .roam-main .roam-article .rm-heading-level-2.rm-block>div>div>textarea {
     line-height: var(--max-headings-h2-lh);
 }
 
+/* H3 */
 .rm-level3,
 .rm-heading-level-3>.rm-block__self .rm-block__input,
 .roam-body .roam-app .roam-main .roam-article .rm-heading-level-3.rm-block>div>div>textarea {
