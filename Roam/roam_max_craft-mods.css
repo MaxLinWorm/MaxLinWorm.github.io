@@ -159,6 +159,11 @@ html {
     font-weight: 300;
 }
 
+/* Nos block mentions */
+span.rm-page-ref__brackets {
+    display: none;
+}
+
 
 /* HEADINGS */
 
@@ -196,7 +201,6 @@ div.bp3-transition-container.bp3-popover-enter-done
   >div
   >div
   >button {
-    color: red !important;
     height: auto;
 }
 
@@ -210,6 +214,5 @@ div.bp3-transition-container.bp3-popover-enter-done
   >div[style*='flex: 1']
   >div[style*='padding-top: 8px;']
   >button {
-    color: magenta !important;
     height: auto;
 }
