@@ -1,0 +1,79 @@
+/* == SAN FRANCISCO PRO TEXT == */
+
+/* Light */
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Medium */
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Semi-Bold */
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-SemiBoldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
