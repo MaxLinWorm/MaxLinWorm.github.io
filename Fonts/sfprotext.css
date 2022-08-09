@@ -50,14 +50,14 @@
 
 @font-face {
     font-family: 'SFProTextMax';
-    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-SemiBold.otf') format('opentype');
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-Semibold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SFProTextMax';
-    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-SemiBoldItalic.otf') format('opentype');
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-SemiboldItalic.otf') format('opentype');
     font-weight: 600;
     font-style: italic;
 }
