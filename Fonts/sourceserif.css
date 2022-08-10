@@ -3,14 +3,14 @@
 /* Light */
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-LightIt.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
@@ -20,14 +20,14 @@
 /* Usar Book como Regular */
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-It.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
@@ -36,14 +36,14 @@
 /* Medium */
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Semibold.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-SemiboldIt.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
@@ -52,14 +52,14 @@
 /* Semi-Bold */
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-SemiboldIt.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
@@ -68,14 +68,14 @@
 /* Bold */
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FreightTextMax';
+    font-family: 'SourceSerifMax';
     src: url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-BoldIt.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
