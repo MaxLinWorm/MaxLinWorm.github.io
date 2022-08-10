@@ -77,3 +77,19 @@
     font-weight: 700;
     font-style: italic;
 }
+
+/* Heavy (800) */
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProTextMax';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/SFProText/SF-Pro-Text-HeavyItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
