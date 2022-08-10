@@ -1,0 +1,85 @@
+/* == iA Writer Duo == */
+
+/* Usar Text em vez de Regular no Light Mode*/
+
+@media (prefers-color-scheme: light) {
+  @font-face {
+      font-family: 'DuoMax';
+      src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-Text20.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DuoMax';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-TextItalic20.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+/* Usa regular no Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  @font-face {
+      font-family: 'DuoMax';
+      src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-Regular20.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DuoMax';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-Italic20.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+/* Text */
+
+@font-face {
+  font-family: 'DuoMax';
+  src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-Text20.ttf') format('truetype');
+  font-weight: 450;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DuoMax';
+  src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-TextItalic20.ttf') format('truetype');
+  font-weight: 450;
+  font-style: italic;
+}
+
+/* Semi-Bold */
+
+@font-face {
+  font-family: 'DuoMax';
+  src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-SemiBold20.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DuoMax';
+  src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-SemiBoldItalic20.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'DuoMax';
+  src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-Bold20.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DuoMax';
+  src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterDuo/iAWriterDuo-BoldItalic20.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
