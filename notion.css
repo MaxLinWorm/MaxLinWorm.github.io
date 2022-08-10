@@ -185,7 +185,15 @@
 
 /* === REGRAS === */
 
-/* --- === MODIFICAÇÕES DE UI === --- */
+/* --- TIPOGRAFIA --- */
+
+/* Retira letterspacing do mono, porque a fonte que eu uso já tem */
+
+.notion-page-content[style*="font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; letter-spacing: 0.055em;"] {
+    letter-spacing: normal;
+}
+
+/* --- MODIFICAÇÕES DE UI --- */
 
 /* REMOVE BOTÃO DE AJUDA */
 .notion-help-button.notion-focusable {
