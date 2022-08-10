@@ -1,0 +1,464 @@
+/* @import url(https://maxlinworm.github.io/notion.css);*/
+
+/* Fontes */
+    /* iA Writer Duo */
+        /*
+        @font-face {
+            font-family: "iAWriterDuo5";
+            font-weight: 450;
+            font-style: normal;
+            src: local("iA Writer Duo Text 5"), url("iAWriterDuo-Regular5.ttf");
+        } */
+
+        @font-face {
+            font-family: "iAWriterDuo";
+            font-weight: 400;
+            font-style: normal;
+            src: local("iA Writer Duo Regular"), url("iAWriterDuo-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "iAWriterDuo";
+            font-weight: 400;
+            font-style: italic;
+            src: local("iA Writer Duo Italic"), url("iAWriterDuo-Italic.ttf");
+        }
+
+        @font-face {
+            font-family: "iAWriterDuo";
+            font-weight: 450;
+            font-style: normal;
+            src: local("iA Writer Duo Text"), url("iAWriterDuo-Text.ttf");
+        }
+
+        @font-face {
+            font-family: "iAWriterDuo";
+            font-weight: 450;
+            font-style: italic;
+            src: local("iA Writer Duo Text Italic"), url("iAWriterDuo-TextItalic.ttf");
+        }
+
+        @font-face {
+            font-family: "iAWriterDuo";
+            font-weight: 600;
+            font-style: normal;
+            src: local("iA Writer Duo Semibold"), url("iAWriterDuo-Semibold.ttf");
+        }
+
+        @font-face {
+            font-family: "iAWriterDuo";
+            font-weight: 600;
+            font-style: italic;
+            src: local("iA Writer Duo Semibold Italic"), url("iAWriterDuo-SemiboldItalic.ttf");
+        }
+
+        @font-face {
+            font-family: "iAWriterDuo";
+            font-weight: 700;
+            font-style: normal;
+            src: local("iA Writer Duo Bold"), url("iAWriterDuo-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: "iAWriterDuo";
+            font-weight: 700;
+            font-style: italic;
+            src: local("iA Writer Duo Bold Italic"), url("iAWriterDuo-BoldItalic.ttf");
+        }
+        
+/* === VARIÁVEIS === */
+    :root {
+    /* UI */
+        /** dark **/
+            --theme_dark--font_sans: 'SF Pro Text', 'Segoe UI';
+            --theme_dark--font_code: Consolas, 'Operator Mono', 'Liberation Mono', Menlo, Courier, monospace;
+            
+        /** light **/
+            --theme_light--font_sans: 'SF Pro Text', 'Segoe UI';
+            --theme_light--font_code: Consolas, 'Operator Mono', 'Liberation Mono', Menlo, Courier, monospace;
+
+    /* TIPOGRAFIA NAS PÁGINAS */
+        /* Ainda que somente queira mudar a sans e a Mono,
+           com o Enhancer sou obrigado a mudar a tipografia de tudo
+           pois ele muda a tipografia das outras fontes */
+        
+        /* UNIVERSAIS */
+            /* SANS - DEFAULt */
+                    --max-font: 'SF Pro Text';
+                    --max-weight: 400;
+                    --max-font-size: var(--orig-font-size);
+                    --max-line-height: 1.5rem;
+                    --orig-font-size: 16px;
+                    --orig-line-height: 24px;
+                    --orig-font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";'
+                }
+                /* Título da página */
+                    .notion-scroller.vertical.horizontal .notion-page-block{
+                        --max-font: 'SF Pro Text';
+                        font-family: var(--max-font) !important;
+                    }
+
+            /* MONOSPACED */
+                .notion-page-content[style*='font-family: iawriter-mono'] {
+                    --max-font: 'iAWriterDuo', 'iA Writer Duo Text', 'TheSansMono Office', 'Operator Mono', 'Consolas', monospace;
+                    --max-weight: 450;
+                    --orig-font-size: 15px;
+                    --orig-line-height: 24px;
+                    --orig-font-family: iawriter-mono;
+                    --max-font-size: var(--orig-font-size);
+                    --max-line-height: var(--orig-line-height);
+                    font-family: var(--max-font) !important;
+                }
+                /* Título da página */
+                    .notion-scroller.vertical.horizontal .notion-page-block[style*='font-family: iawriter-mono'],
+                    .notion-scroller.vertical.horizontal .notion-page-content[style*='font-family: iawriter-mono'] .notion-page-block{
+                        --max-font: 'iAWriterDuo', 'iA Writer Duo', 'TheSansMono Office', 'Operator Mono', 'Consolas', monospace;
+                        font-family: var(--max-font) !important;
+                    }
+                
+                /* Dark Mode no monospaced */
+                    .notion-body.dark .notion-page-content[style*='font-family: iawriter-mono'] {
+                        --max-font: 'iAWriterDuo', 'iA Writer Duo', 'TheSansMono Office', 'Operator Mono', 'Consolas', monospace;
+                        --max-weight: 400; 
+                    }
+
+            /* SERIF */
+                .notion-page-content[style*='font-family: Lyon-Text'] {
+                    --max-font: 'Lyon-Text';
+                    --max-weight: 400;
+                    --orig-font-size: 17px;
+                    --orig-line-height: 27.2px;
+                    --orig-font-family: 'Lyon-Text';
+                    --max-font-size: var(--orig-font-size);
+                    --max-line-height: var(--orig-line-height);
+                    
+                }
+                /* Título da página */
+                .notion-scroller.vertical.horizontal .notion-page-block[style*='font-family: Lyon-Text'],
+                .notion-scroller.vertical.horizontal .notion-page-content[style*='font-family: Lyon-Text'] .notion-page-block{
+                    --max-font: 'Lyon-Text';
+                    font-family: var(--max-font) !important;
+                }
+
+        /* TIREI PORQUE ESTOU USANDO ZOOM */
+            /* MONITOR PEQUENO = PADRÃO 
+                @media (max-height: 720px) {
+                    /* SANS - DEFAULt 
+                        :root { 
+                            --max-font-size: 16px;
+                        }
+
+                    /* MONOSPACED 
+                        .notion-page-content[style*='font-family: iawriter-mono'] {
+                            --max-font-size: 15px;
+                        }
+
+                    /* SERIF 
+                        .notion-page-content[style*='font-family: Lyon-Text'] {
+                            --max-font-size: 17px;
+                        }
+                }
+                
+            /* MONITOR GRANDE = AUMENTA TAMANHO DA PÁGINA E DA FONTE 
+                @media (min-height: 721px) {
+                    /* SANS - DEFAULt 
+                        :root { 
+                            --max-font-size: 17px;
+                        }
+
+                    /* MONOSPACED 
+                        .notion-page-content[style*='font-family: iawriter-mono'] {
+                            --max-font-size: 16px;
+                        }
+
+                    /* SERIF 
+                        .notion-page-content[style*='font-family: Lyon-Text'] {
+                            --max-font-size: 18px;
+                        }
+
+                    /* Aumenta o tamanho da página 
+                        .notion-page-content[style*='width: 900px'] {
+                            width: 1100px !important;
+                        } 
+                }
+/* REMOVE BOTÃO DE AJUDA */
+.notion-help-button.notion-focusable {
+    display: none !important;
+}
+
+
+/* TIPOGRAFIA */
+    /* Elementos de UI */
+        [style*='Segoe UI'] {
+            font-family: var(--max-font) !important;
+        }
+    /* Parágrafo normal */
+        .notion-text-block {
+            font-family: var(--max-font);
+            font-weight: var(--max-weight);
+            font-size: var(--max-font-size);
+            line-height: var(--max-line-height) !important;
+        }
+
+        /* Reseta modificações do Notion Enhancer */
+        .notion-page-content .notion-selectable.notion-text-block {
+            --theme--text-block_line-height: var(--max-line-height);
+        }
+
+    /* Lista numerada */
+        .notion-numbered_list-block {
+            font-family: var(--max-font);
+            font-weight: var(--max-weight);
+            font-size: var(--max-font-size);
+            line-height: var(--max-line-height);
+        }
+
+        .notion-numbered_list-block > div > div[style='margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);']{
+        min-height: calc(calc(var(--orig-font-size) * 1.5) + 3px + 3px) !important;
+        font-variant-numeric: lining-nums;
+        }
+
+    /* Bullets com toggle */
+    .notion-toggle-block {
+        font-family: var(--max-font);
+        font-weight: var(--max-weight);
+        font-size: var(--max-font-size);
+        line-height: var(--max-line-height);
+    }
+
+    /* Bullets sem toggle - Lista Não numerada - Lista sem ordem */
+        .notion-bulleted_list-block {
+            font-family: var(--max-font);
+            font-weight: var(--max-weight);
+            font-size: var(--max-font-size);
+            line-height: var(--max-line-height);
+        }
+
+        /* Realinhar bullet em razão da mudança no tamanho da fonte */
+            .notion-bulleted_list-block > div > div[style='margin-right: 2px; width: 24px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);'] {
+                min-height: calc(calc(var(--orig-font-size) * 1.5) + 3px + 3px) !important
+            }
+
+            .notion-bulleted_list-block > div > div > div[style='font-size: 1.5em; line-height: 1; margin-bottom: 0.1em;'] {
+                margin-bottom: calc(var(--orig-font-size) * 0.1) !important;
+                font-size: calc(var(--orig-font-size) * 1.5) !important;
+                font-family: var(--orig-font-family) !important;
+            }
+
+    /* Quotes */
+        .notion-quote-block > div {
+            font-family: var(--max-font);
+            font-weight: var(--max-weight);
+            font-size: var(--max-font-size) !important;
+            line-height: var(--max-line-height);
+        }
+
+        .notion-quote-block > div > div[style*='max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); border-left: 3px solid currentcolor;']{
+            border-left: 2px solid currentcolor !important;
+        }
+
+    /* Headings */
+        .notion-header-block > div,
+        .notion-sub_header-block > div,
+        .notion-sub_sub_header-block > div {
+            font-family: var(--max-font) !important;
+        }
+
+        /* Heading 1 
+            .notion-header-block > div {
+                font-size: calc(var(--max-font-size) * 1.875) !important;
+                
+            }
+
+        /* Heading 2 
+            .notion-sub_header-block > div {
+                font-size: calc(var(--max-font-size) * 1.5) !important;
+                
+            }
+
+        /* Heading 3 
+            .notion-sub_sub_header-block > div {
+                font-size: calc(var(--max-font-size) * 1.25) !important;
+            }
+
+/* --- === MODIFICAÇÕES DE UI === --- */
+    /* Margens quando tamanho é pequeno */
+        @media (max-width: 520px) {
+            .notion-page-content[style*='padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right))'] {
+                padding-left: calc(18px + env(safe-area-inset-left)) !important;
+                padding-right: calc(18px + env(safe-area-inset-right)) !important;
+            }
+            .notion-text-block,
+            .notion-toggle-block {
+                max-width: 100% !important
+            }
+        }
+/* === FULL-WIDTH PAGES === */
+/* Conteúdo da página */
+/*
+.notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 16px; line-height: 1.5; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh;'],
+/* Conteúdo da página small-text sans*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 14px; line-height: 1.5; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh;'],
+/* Conteúdo da página small-text serif*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 15px; line-height: 1.6; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh; font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo", NanumMyeongjo, Batang, serif;'],
+/* Conteúdo da página serif*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 17px; line-height: 1.6; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh; font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo", NanumMyeongjo, Batang, serif;'],
+/* Conteúdo da página Mono*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 15px; line-height: 1.6; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh; font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; letter-spacing: 0.055em;'],
+/* Conteúdo da página small-text Mono*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 14px; line-height: 1.6; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh; font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; letter-spacing: 0.055em;'],
+/* Título da página */
+/*
+    [style*="padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); max-width: 100%; width: 100%;"]
+/* NÃO SEI 
+    ,[style*="padding-left: 96px; padding-right: 96px;"]*/
+/*
+{
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+}
+
+/* linked DBs */
+/* Conteúdo da página */
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 16px; line-height: 1.5; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh;'] .notion-collection_view-block[style*='align-self: center;'],
+/* Conteúdo da página small-text sans*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 14px; line-height: 1.5; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh;'] .notion-collection_view-block[style*='align-self: center;'],
+/* Conteúdo da página small-text serif*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 15px; line-height: 1.6; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh; font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo", NanumMyeongjo, Batang, serif;'] .notion-collection_view-block[style*='align-self: center;'],
+/* Conteúdo da página serif*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 17px; line-height: 1.6; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh; font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo", NanumMyeongjo, Batang, serif;'] .notion-collection_view-block[style*='align-self: center;'],
+    /* Conteúdo da página Mono*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 15px; line-height: 1.6; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh; font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; letter-spacing: 0.055em;'] .notion-collection_view-block[style*='align-self: center;'],
+/* Conteúdo da página small-text Mono*/
+/*
+    .notion-page-content[style='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 14px; line-height: 1.6; color: rgb(55, 53, 47); padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); padding-bottom: 30vh; font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; letter-spacing: 0.055em;'] .notion-collection_view-block[style*='align-self: center;']
+{
+    align-self: flex-end !important;
+}
+
+/* Conteúdo que não DBs */
+/*
+.notion-page-content[style*='max-width: 100%'] *[style*='max-width:'] {
+    max-width: 100% !important;
+}
+
+/* DBS FULL-PAGE */
+/* Títulos de páginas de DBs full-page */
+/*
+.notion-scroller.vertical.horizontal > div > div[style='padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); max-width: 100%; margin-bottom: 8px; width: 100%;'] {
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+}
+
+/* Seletor de views */
+/*
+.notion-scroller.vertical.horizontal > div[style='min-height: 42px; padding-left: 96px; padding-right: 96px; flex-shrink: 0; z-index: 1; overflow: visible; position: sticky; left: 0px;']:nth-child(2) {
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+}
+
+/* DB em si */
+/*
+.notion-table-view[style='position: relative; float: left; min-width: 100%; user-select: none; padding-bottom: 180px; padding-left: 96px; padding-right: 96px;'] {
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+}
+
+/* === SEARCH AUTO-COMPLETE === */
+
+    /* Tabelas de autopreenchimento das relações */
+    /* O código abaixo quebra as linhas. O problema é que o 
+       botão de hover para adicionar não segue, pois não
+       é no mesmo container 
+    .notion-scroller.horizontal[style='min-height: auto; padding-bottom: 16px; z-index: 1; overflow: auto hidden; margin-right: 0px; margin-bottom: 0px;'] .notion-focusable[style*=' height: 31px'] {
+        height: fit-content !important;
+    } */
+
+    /* Cabeçalhos */
+    div[style^='display: flex; align-items: center; position: relative; flex-direction: column; transform-origin: 50% bottom; left: 0px; opacity: 1; bottom: 0px;'] div[style^='display: flex; align-items: center; line-height: 120%; min-width: 0px; font-size: 14px; width: 300px; color: rgba(55, 53, 47, 0.65); padding-left: 8px;'] {
+        width: 1200px !important;
+    }
+
+    /* Items */
+    .notion-scroller.horizontal div[style^='display: block; width: 300px; border-right: none; white-space: nowrap; min-height: 32px; cursor: default; height: 32px; padding: 5px 8px 6px; font-size: 14px; overflow: hidden;'] {
+        width: 1200px !important;
+        /*height: fit-content !important;*/
+       
+    }
+    /*
+   .notion-scroller.horizontal div[style^='display: block; width: 300px; border-right: none; white-space: nowrap; min-height: 32px; cursor: default; height: 32px; padding: 5px 8px 6px; font-size: 14px; overflow: hidden;'] > span {
+        overflow: visible !important;
+        white-space: normal !important;
+        height: fit-content !important;    
+    } */
+
+    /* No search para preencher relações */
+    div[style^='display: flex; align-items: center; line-height: 120%; min-width: 0px; font-size: 14px; width: 300px; color: rgba(55, 53, 47, 0.6); padding-left: 8px;'] {
+        width: 1200px !important;
+    }
+
+/* Search-autocomplete do mention */
+    .notion-overlay-container.notion-default-overlay-container div[style="border-radius: 3px; background: white; position: relative; max-width: calc(100vw - 24px); box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px; overflow: hidden;"] div[style='display: flex; flex-direction: column; width: 330px; min-width: 180px; max-width: calc(100vw - 24px); height: 100%; max-height: 40vh;']{
+        width: 500px !important;
+    } 
+
+    .notion-overlay-container.notion-default-overlay-container div[style="border-radius: 3px; background: white; position: relative; max-width: calc(100vw - 24px); box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px; overflow: hidden;"] div[style='display: flex; flex-direction: column; width: 330px; min-width: 180px; max-width: calc(100vw - 24px); height: 100%; max-height: 40vh;'] .notion-scroller.vertical .notranslate.notion-focusable .notranslate[style='white-space: nowrap; overflow: hidden; text-overflow: ellipsis;' ]{
+        overflow: visible !important;
+        white-space: normal !important;
+    } 
+
+/* Table of contents */
+.notion-selectable.notion-table_of_contents-block .notranslate[style='white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background-image: linear-gradient(to right, rgba(55, 53, 47, 0.16) 0%, rgba(55, 53, 47, 0.16) 100%); background-repeat: repeat-x; background-position: 0px 100%; background-size: 100% 1px;'] {
+    white-space: normal !important;
+    overflow: visible !important;
+    background-image: none !important;
+}
+
+/* ---=== NOTION ENHANCER ===---*/
+/* Outliner (de Headings) */
+    .outline-header > a {
+        overflow: visible;
+        white-space: normal;
+    }
+
+
+
+/* === OUTROS SNIPPETS PARA TESTAR === */
+
+    /* Cover Image e Icon */
+    /*
+    [style^='position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; height: 30vh;'] {
+    height: 12vh !important;
+    }
+    [style^='position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; height: 30vh;']
+    img {
+    height: 12vh !important;
+    }
+    /*
+
+    /* Margens e Padding dos DBS full page*/
+    /*
+    [style^='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 16px; color: rgba(255, 255, 255, 0.9); padding: 0px 96px 30vh;']
+    .notion-table-view,
+    [class='notion-scroller'] > .notion-table-view {
+    padding-left: 35px !important;
+    padding-right: 15px !important;
+    min-width: 0% !important;
+    }
+    [style^='flex-shrink: 0; flex-grow: 1; width: 100%; max-width: 100%; display: flex; align-items: center; flex-direction: column; font-size: 16px; color: rgba(255, 255, 255, 0.9); padding: 0px 96px 30vh;']
+    .notion-selectable
+    .notion-scroller.horizontal::-webkit-scrollbar-track {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    */
