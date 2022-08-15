@@ -13,6 +13,16 @@
 /* Tema Principal - Craft */
 @import url('https://rcvd.github.io/roam-css-system/themes/craft.css');
 
+/* Módulos do CSS Theme*/
+/* Imagens dinâmicas */
+@import url('https://rcvd.github.io/roam-css-system/modules/dynamic-images.css');
+
+/* Centered Search */
+@import url('https://rcvd.github.io/roam-css-system/modules/centered-search.css');
+
+/* Hide Roam Logo */
+@import url('https://rcvd.github.io/roam-css-system/modules/hide-logo.css.css');
+
 /* Minhas mods ao Tema Principal */
 @import url('https://maxlinworm.github.io/Roam/roam_max_craft-mods.css');
 
