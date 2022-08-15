@@ -91,6 +91,17 @@
     }
 }
 
+/* TAGS ESPECIAIS */
+
+/* Smartblocks */
+[data-path-page-links*='SmartBlock'] {
+    --max-smartblock-ff: var(--ff-code);
+    --max-smartblock-fs: var(--fs-code);
+    --max-smartblock-lh: 20px;
+    --ff-main: var(--max-smartblock-ff);
+    --fs-main: var(--max-smartblock-fs);
+}
+
 body,
 html {
     letter-spacing: 0em;
