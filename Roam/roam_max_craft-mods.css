@@ -68,7 +68,7 @@
 
     /* Inline */
     --ff-code: var(--max_code_ff);
-    --fs-code: var(--max_code_fs);
+    --fs-code: 16px;
     --co-code: var(--max-co);
 
     /* MENUS */
