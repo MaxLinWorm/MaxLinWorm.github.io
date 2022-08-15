@@ -102,6 +102,20 @@
     --fs-main: var(--max-smartblock-fs);
 }
 
+/* BOTÕES, principalmente para usar com Smartblocks e query builder */
+
+.bp3-portal {
+    --bc-button: white;
+}
+
+/* Restaura outline/contorno no botão em foco
+   útil para navegação por keyboard
+*/
+.bp3-portal :focus {
+    outline: rgb(207, 206, 207) auto 2px;
+    /*rgba(19,124,189,0.6) auto 2px; */
+}
+
 body,
 html {
     letter-spacing: 0em;
