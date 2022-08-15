@@ -20,6 +20,12 @@
     --bb-right-sidebar__bullet-closed: var(--bt-bullet__closed);
     --bl-right-sidebar__bullet-closed: var(--bt-bullet__closed);
 
+    /* Indicadores de Block references */
+    --bc-ref-count--active: var(--bc-button--hover);
+    
+    /* Aumenta contraste do Multibar - Linha guias de hierarquia do Outline */
+    --br-multibar: 2px solid rgb(236, 237, 236);
+
     /* MAIN */
     --ff-main: var(--max-ff);
     /*--fs-main: var(--max-fs);*/
@@ -65,10 +71,10 @@
     --fs-code: var(--max_code_fs);
     --co-code: var(--max-co);
 
-    /* Menus */
+    /* MENUS */
     --ff-div: var(--max-ff);
 
-    /* Quotes */
+    /* QUOTES */
     --max-quote-ff: var(--max-ff);
     --max-quote-fs: var(--fs-main);
     --ff-quote: var(--max-quote-ff);
