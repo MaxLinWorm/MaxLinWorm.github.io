@@ -105,7 +105,7 @@
 /* BOTÕES, principalmente para usar com Smartblocks e query builder */
 
 .bp3-portal {
-    --bc-button: white;
+    --bc-button: var(--bc-input);
 }
 
 /* Restaura outline/contorno no botão em foco
