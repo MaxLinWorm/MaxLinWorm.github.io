@@ -79,6 +79,8 @@
     --max-quote-fs: var(--fs-main);
     --ff-quote: var(--max-quote-ff);
     --fs-quote: var(--max-quote-fs);
+    --bc-quote: inherit;
+    --bl-quote: 1px solid var(--co-quote);
 }
 
 @media(prefers-color-scheme: dark) {
