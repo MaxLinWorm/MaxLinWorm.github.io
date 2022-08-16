@@ -75,12 +75,17 @@
     --ff-div: var(--max-ff);
 
     /* QUOTES */
+
+    --max-bl-quote: 2px solid var(--max_color_text_muted);
+    /* Margin */
+    --max-ma-quote: 10px 0px 0px 0px;
+    /* Padding */
+    --max-pa-quote: 0px 0px 0px 15px;
     --max-quote-ff: var(--max-ff);
     --max-quote-fs: var(--fs-main);
     --ff-quote: var(--max-quote-ff);
     --fs-quote: var(--max-quote-fs);
     --bc-quote: inherit;
-    --bl-quote: 1px solid var(--co-quote);
 }
 
 @media(prefers-color-scheme: dark) {
@@ -116,6 +121,34 @@
 .bp3-portal :focus {
     outline: rgb(207, 206, 207) auto 2px;
     /*rgba(19,124,189,0.6) auto 2px; */
+}
+
+/* Fix dos linked references filter ficarem overlapping */
+
+/* Lista */
+div.bp3-transition-container.bp3-popover-enter-done
+  >div.bp3-popover[style*='transform-origin']
+  >div.bp3-popover-content
+  >div[style*='max-width: 600px']
+  >div[style*='display: flex']
+  >div:nth-child(4)
+  >div
+  >div
+  >button {
+    height: auto;
+}
+
+/* Selecionados */
+div.bp3-transition-container.bp3-popover-enter-done
+  >div.bp3-popover[style*='transform-origin']
+  >div.bp3-popover-content
+  >div[style*='max-width: 600px']
+  >div[style*='display: flex']
+  >div.flex-h-box
+  >div[style*='flex: 1']
+  >div[style*='padding-top: 8px;']
+  >button {
+    height: auto;
 }
 
 body,
@@ -221,31 +254,9 @@ span.rm-page-ref__brackets {
     line-height: var(--max-headings-h3-lh);
 }
 
-
-/* Fix dos linked references filter ficarem overlapping */
-
-/* Lista */
-div.bp3-transition-container.bp3-popover-enter-done
-  >div.bp3-popover[style*='transform-origin']
-  >div.bp3-popover-content
-  >div[style*='max-width: 600px']
-  >div[style*='display: flex']
-  >div:nth-child(4)
-  >div
-  >div
-  >button {
-    height: auto;
-}
-
-/* Selecionados */
-div.bp3-transition-container.bp3-popover-enter-done
-  >div.bp3-popover[style*='transform-origin']
-  >div.bp3-popover-content
-  >div[style*='max-width: 600px']
-  >div[style*='display: flex']
-  >div.flex-h-box
-  >div[style*='flex: 1']
-  >div[style*='padding-top: 8px;']
-  >button {
-    height: auto;
+/* Quotes */
+.rm-bq {
+    margin: var(--max-ma-quote);
+    padding: var(--max-pa-quote);
+    border-left: var(--max-bl-quote);
 }
