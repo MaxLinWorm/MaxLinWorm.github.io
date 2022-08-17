@@ -100,6 +100,13 @@
     }
 }
 
+/* Fix para itens de menu ativos no smartblocks não são diferentes introduzidos em 2022-08-16 por https://github.com/rcvd/roam-css-system/commit/9363709624d9e528ac3e96529bbe0e4c4aec68be */
+
+.bp3-menu-item.bp3-active.bp3-intent-primary.bp3-popover-dismiss {
+    --co-menu__item: var(--co-menu__menu-item--active);
+}
+
+
 /* TAGS ESPECIAIS */
 
 /* Smartblocks */
