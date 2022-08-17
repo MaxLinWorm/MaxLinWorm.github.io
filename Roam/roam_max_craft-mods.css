@@ -1,5 +1,7 @@
 @import url(https://maxlinworm.github.io/max-base.css);
 
+
+/* === VARIÁVEIS === */
 :root {
     /* UNIVERSAIS */
     --max-ff: var(--max_main_ff_sans);
@@ -108,6 +110,10 @@
     --fs-main: var(--max-smartblock-fs);
 }
 
+
+
+/* ==== REGRAS === */
+
 /* BOTÕES, principalmente para usar com Smartblocks e query builder */
 
 /*
@@ -185,8 +191,7 @@ html {
 /* Diminui distância do texto e do bullet */
 .controls,
 .rm-block__controls {
-    flex: 0 0 40px /*48px*/
-    ;
+    flex: 0 0 40px; /*48px*/
 }
 
 /* ESPAÇAMENTO DO ARTIGO */
