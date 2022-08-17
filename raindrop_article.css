@@ -1,0 +1,276 @@
+@import url('https://maxlinworm.github.io/max-base.css');
+
+/* NORMALIZAÇÂO */
+
+/* ------- REGRAS -------- */
+
+
+/* Normaliza box-sizing para border-box
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+
+html {
+    box-sizing: border-box;
+    background-color: var(--max_cont_pag_background_bg);
+    margin: 0px;
+    padding: 0px;
+    max-width: none;
+}
+
+/* Foreground */
+
+body {
+    max-width: 570px;
+    ;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-feature-settings: var(--max_body_ffs);
+    font-variant-ligatures: normal;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+}
+
+body blockquote {
+    font-style: normal;
+}
+
+/* Fix para bagunça do line-height quando usa superscript */
+body sup {
+    line-height: 0 !important
+}
+
+/* HIFENS */
+body p {
+    -webkit-hyphens: var(--max_body_hifens);
+    -webkit-hyphenate-limit-before: var(--max_body_hifens_limit-before);
+    -webkit-hyphenate-limit-after: var(--max_body_hifens_limit-after);
+    -webkit-hyphenate-limit-chars: var(--max_body_hifens_limit-chars);
+    -webkit-hyphenate-limit-lines: var(--max_body_hifens_limit-lines);
+    -webkit-hyphenate-limit-last: var(--max_body_hifens_limit-last);
+    -webkit-hyphenate-limit-zone: var(--max_body_hifens_limit-zone);
+
+    -moz-hyphens: var(--max_body_hifens);
+    -moz-hyphenate-limit-chars: var(--max_body_hifens_limit-chars);
+    -moz-hyphenate-limit-lines: var(--max_body_hifens_limit-lines);
+    -moz-hyphenate-limit-last: var(--max_body_hifens_limit-last);
+    -moz-hyphenate-limit-zone: var(--max_body_hifens_limit-zone);
+
+    -ms-hyphens: var(--max_body_hifens);
+    -ms-hyphenate-limit-chars: var(--max_body_hifens_limit-chars);
+    -ms-hyphenate-limit-lines: var(--max_body_hifens_limit-lines);
+    -ms-hyphenate-limit-last: var(--max_body_hifens_limit-last);
+    -ms-hyphenate-limit-zone: var(--max_body_hifens_limit-zone);
+
+    overflow-wrap: var(--max_body_hifens_wrap);
+    hyphens: var(--max_body_hifens);
+    hyphenate-limit-chars: var(--max_body_hifens_limit-chars);
+    hyphenate-limit-lines: var(--max_body_hifens_limit-lines);
+    hyphenate-limit-last: var(--max_body_hifens_limit-last);
+    hyphenate-limit-zone: var(--max_body_hifens_limit-zone);
+}
+
+body pre code {
+    font-family: var(--max_code_ff);
+    font-size: var(--max_code_fs);
+    line-height: var(--max_code_lh);
+    font-weight: var(--max_code_fw);
+
+    font-feature-settings: var(--max_code_ffs);
+    -webkit-font-feature-settings: var(--max_code_ffs);
+    -moz-font-feature-settings: var(--max_code_ffs);
+    -ms-font-feature-settings: var(--max_code_ffs);
+
+    font-variant: var(--max_code_fv);
+    font-variant-ligatures: var(--max_code_fvl);
+    font-variant-alternates: var(--max_code_fva);
+}
+
+/* CONTAINERS */
+
+/* MAIN */
+
+body a {
+    color: var(--max_main_links_c);
+}
+
+/* BODY COPY */
+
+body {
+    font-size: var(--max_body_fs);
+    line-height: var(--max_body_lh);
+    font-family: var(--max_body_ff_serif);
+    color: var(--max_body_c);
+    text-align: left
+}
+
+/* Com indent para separar parágrafos */
+
+body p {
+    margin: 0;
+    padding: 0;
+
+    margin-block-start: var(--max_body_p-espaco_mbs);
+    margin-block-end: var(--max_body_p-espaco_mbe);
+    text-indent: 0;
+}
+
+body p:not([align=center])+p,
+body p:not([style='text-align:center'])+p {
+    margin-block-start: var(--max_body_p-indent_mbs);
+    text-indent: var(--max_body_p-indent_ti);
+}
+
+/* BLOCKQUOTES*/
+
+body blockquote {
+    padding: 0;
+    margin: 0 auto;
+
+    margin-block-start: var(--max_q_mbs);
+    margin-block-end: var(--max_q_mbe);
+
+    /* Retira espaçamento lateral */
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+    border-left: var(--max_q_bl);
+    padding-left: var(--max_q_pl);
+    opacity: 1;
+}
+
+body blockquote,
+body blockquote p {
+    font-size: var(--max_body_fs);
+    line-height: var(--max_body_lh);
+    font-family: var(--max_body_ff_serif);
+    color: var(--max_body_c);
+    text-align: left;
+    opacity: 1;
+}
+
+/* CODE */
+
+body .codeBlock {
+    font-family: var(--max_code_ff);
+    font-size: var(--max_code_fs);
+    line-height: var(--max_code_lh);
+    font-weight: var(--max_code_fw);
+
+    font-feature-settings: var(--max_code_ffs);
+    -webkit-font-feature-settings: var(--max_code_ffs);
+    -moz-font-feature-settings: var(--max_code_ffs);
+    -ms-font-feature-settings: var(--max_code_ffs);
+
+    font-variant: var(--max_code_fv);
+    font-variant-ligatures: var(--max_code_fvl);
+    font-variant-alternates: var(--max_code_fva);
+}
+
+/* LISTS */
+
+body p ul {
+    margin-block-start: var(--max_ul_mbs);
+    margin-block-end: var(--max_ul_mbe);
+    margin-inline-start: var(--max_ul_mis);
+}
+
+/* HEADINGS */
+
+body h1:first-of-type {
+    font-family: var(--max_ht_ff);
+    font-size: var(--max_ht_fs);
+    font-weight: var(--max_ht_fw);
+    line-height: var(--max_ht_lh);
+    letter-spacing: var(--max_ht_ls);
+
+    margin-block-start: var(--max_ht_mbs);
+    margin-block-end: var(--max_ht_mbe);
+
+    font-variant: var(--max_ht_fv);
+}
+
+body h1:not(:first-of-type) {
+    font-family: var(--max_h1_ff);
+    font-size: var(--max_h1_fs);
+    font-weight: var(--max_h1_fw);
+    line-height: var(--max_h1_lh);
+    letter-spacing: var(--max_h1_ls);
+
+    margin-block-start: var(--max_h1_mbs);
+    margin-block-end: var(--max_h1_mbe);
+
+    font-variant: var(--max_h1_fv);
+}
+
+body h2 {
+    font-family: var(--max_h2_ff);
+    font-size: var(--max_h2_fs);
+    font-weight: var(--max_h2_fw);
+    line-height: var(--max_h2_lh);
+    letter-spacing: var(--max_h2_ls);
+
+    margin-block-start: var(--max_h2_mbs);
+    margin-block-end: var(--max_h2_mbe);
+
+    font-variant: var(--max_h2_fv);
+}
+
+body h3 {
+    font-family: var(--max_h3_ff);
+    font-size: var(--max_h3_fs);
+    font-weight: var(--max_h3_fw);
+    line-height: var(--max_h3_lh);
+    letter-spacing: var(--max_h3_ls);
+
+    margin-block-start: var(--max_h3_mbs);
+    margin-block-end: var(--max_h3_mbe);
+
+    font-variant: var(--max_h3_fv);
+}
+
+body h4 {
+    font-family: var(--max_h4_ff);
+    font-size: var(--max_h4_fs);
+    font-weight: var(--max_h4_fw);
+    line-height: var(--max_h4_lh);
+    letter-spacing: var(--max_h4_ls);
+
+    margin-block-start: var(--max_h4_mbs);
+    margin-block-end: var(--max_h4_mbe);
+
+    font-variant: var(--max_h4_fv);
+}
+
+/* HORIZONTAL RULE */
+
+body hr {
+    font-size: var(--max_hr_fs);
+    line-height: var(--max_hr_lh);
+    position: var(--max_hr_position);
+    height: var(--max_hr_height);
+    margin: var(--max_hr_margin);
+    padding: var(--max_hr_padding);
+    border: var(--max_hr_border);
+    outline: var(--max_hr_outline);
+
+    background-color: none;
+    width: 100%;
+}
+
+body hr::before {
+    display: var(--max_hr-before_dislay);
+    position: var(--max_hr-before_position);
+    left: var(--max_hr-before_left);
+    right: var(--max_hr-before_right);
+    top: var(--max_hr-before_top);
+    bottom: var(--max_hr-before_bottom);
+    padding-top: var(--max_hr-before_pt);
+    content: var(--max_hr-before_content);
+    text-align: var(--max_hr-before_ta);
+}
