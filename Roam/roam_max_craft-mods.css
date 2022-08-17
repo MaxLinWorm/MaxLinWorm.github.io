@@ -68,7 +68,7 @@
 
     /* Inline */
     --ff-code: var(--max_code_ff);
-    --fs-code: 16px;
+    --fs-code: var(--max_code_fs);
     --co-code: var(--max-co);
 
     /* MENUS */
@@ -103,8 +103,7 @@
 /* Smartblocks */
 [data-path-page-links*='SmartBlock'] {
     --max-smartblock-ff: var(--ff-code);
-    --max-smartblock-fs: var(--fs-code);
-    --max-smartblock-lh: 20px;
+    --max-smartblock-fs: 16px;
     --ff-main: var(--max-smartblock-ff);
     --fs-main: var(--max-smartblock-fs);
 }
