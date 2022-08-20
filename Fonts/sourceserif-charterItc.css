@@ -1,0 +1,156 @@
+/* == Troca ITC Charter por Source Serif == */
+
+/* Light */
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Light'),
+        local('SourceSerifPro-Light'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Light Italic'),
+        local('SourceSerifPro-LightIt'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/* Usar Book como Regular */
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro'),
+        local('SourceSerifPro-Regular'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Italic'),
+        local('SourceSerifPro-It'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-It.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Medium */
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Semibold'),
+        local('SourceSerifPro-Semibold'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Semibold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Semibold Italic'),
+        local('SourceSerifPro-SemiboldIt'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-SemiboldIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Semi-Bold */
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Semibold'),
+        local('SourceSerifPro-Semibold'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Semibold Italic'),
+        local('SourceSerifPro-SemiboldIt'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-SemiboldIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Bold'),
+        local('SourceSerifPro-Bold'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Bold Italic'),
+        local('SourceSerifPro-BoldIt'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-BoldIt.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Heavy */
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Black'),
+        local('SourceSerifPro-Black'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Black Italic'),
+        local('SourceSerifPro-BlackIt'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-BoldIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Black */
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Black'),
+        local('SourceSerifPro-Black'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CharterITC';
+    src:
+        local('Source Serif Pro Black Italic'),
+        local('SourceSerifPro-BlackIt'),
+        url('https://maxlinworm.github.io/Fonts/Serifs/SourceSerif/SourceSerif4-BoldIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
