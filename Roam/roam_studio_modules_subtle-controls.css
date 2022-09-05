@@ -8,11 +8,13 @@
     opacity: 1;
 }
 
-.rm-focused>.rm-block-main>.controls>.rm-bullet {
+/*.rm-focused>*/
+.rm-block:focus-within>.rm-block-main>.controls>.rm-bullet {
     opacity: 1;
 }
 
-.rm-focused>.rm-block-main>.controls>.rm-bullet>.bp3-popover-wrapper .rm-bullet__inner {
+/*.rm-focused>*/
+.rm-block:focus-within>.rm-block-main>.controls>.rm-bullet>.bp3-popover-wrapper .rm-bullet__inner {
     background-color: #9E2B0E;
 }
 
@@ -24,7 +26,8 @@
     opacity: 1;
 }
 
-.rm-focused>.rm-block-children>.rm-multibar {
+/*.rm-focused>*/
+.rm-block:focus-within>.rm-block-children>.rm-multibar {
     opacity: 1;
 }
 
