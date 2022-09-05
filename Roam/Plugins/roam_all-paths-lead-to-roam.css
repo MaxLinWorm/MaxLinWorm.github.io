@@ -1,0 +1,24 @@
+/* All Paths Lead to Roam */
+
+:root {
+    --max-scope-highlight: rgb(33, 150, 243);
+    --max-scope-highlight-co: rgb(39, 77, 115);
+    --max-scope-highlight-bg-c: rgba(25, 192, 255, .15);
+    /* Igual ao tema --bb-block-ref: 2px solid #d0d1d3 */
+    --max-block-ref-bb-co: #d0d1d3;
+}
+
+.path-highlighted+.roam-block .rm-page-ref,
+.path-highlighted+.roam-block .rm-alias {
+    color: var(--max-scope-highlight-co);
+    font-weight: 500;
+    background-color: var(--max-scope-highlight-bg-c);
+    border-radius: 5px;
+
+}
+
+
+/* Não mudar cor do underline em block refs */
+.path-highlighted+.roam-block .rm-block-ref {
+    border-bottom-color: var(--max-block-ref-bb-co);
+}
