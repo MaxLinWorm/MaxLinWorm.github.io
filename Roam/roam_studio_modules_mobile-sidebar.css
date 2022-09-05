@@ -1,0 +1,7 @@
+/* Obtido de https://github.com/rcvd/RoamStudio/blob/master/src/RoamStudio/modules/mobile-sidebar.css */
+
+@media screen and (max-width: 600px) {
+    .roam-app>.flex-h-box {
+        flex-direction: column;
+    }
+}
