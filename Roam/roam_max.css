@@ -21,7 +21,7 @@
 @import url('https://rcvd.github.io/roam-css-system/modules/centered-search.css');
 
 /* Hide Roam Logo */
-@import url('https://rcvd.github.io/roam-css-system/modules/hide-logo.css.css');
+@import url('https://rcvd.github.io/roam-css-system/modules/hide-logo.css');
 
 /* Minhas mods ao Tema Principal */
 @import url('https://maxlinworm.github.io/Roam/roam_max_craft-mods.css');
@@ -43,3 +43,6 @@
 
 /* Query Builder */
 @import url('https://maxlinworm.github.io/Roam/Plugins/roam_query-builder.css');
+
+/* All Paths Lead to Roam */
+@import url('https://maxlinworm.github.io/Roam/Plugins/roam_all-paths-lead-to-roam.css');
