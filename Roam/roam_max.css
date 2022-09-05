@@ -13,7 +13,10 @@
 /* Tema Principal - Craft */
 @import url('https://rcvd.github.io/roam-css-system/themes/craft.css');
 
+
+
 /* Módulos do CSS Theme*/
+
 /* Imagens dinâmicas */
 @import url('https://rcvd.github.io/roam-css-system/modules/dynamic-images.css');
 
@@ -23,8 +26,28 @@
 /* Hide Roam Logo */
 @import url('https://rcvd.github.io/roam-css-system/modules/hide-logo.css');
 
+
+
+/* Módulos do Roam Studio */
+
+/* Advanced Heading Spacing */
+@import url('https://maxlinworm.github.io/Roam/roam_studio_modules_headings.css');
+
+/* Subtle Controls */
+@import url('https://maxlinworm.github.io/Roam/roam_studio_modules_subtle-controls.css');
+
+/* Bullet Effects */
+@import url('https://maxlinworm.github.io/Roam/roam_studio_modules_hover-bullets.css');
+
+/* Mobile Side-bar */
+@import url('https://maxlinworm.github.io/Roam/roam_studio_modules_mobile-sidebar.css');
+
+
+
 /* Minhas mods ao Tema Principal */
 @import url('https://maxlinworm.github.io/Roam/roam_max_craft-mods.css');
+
+
 
 /* Twitter on Hover */
 @import url('https://maxlinworm.github.io/Roam/roam_max_twitter-on-hover.css');
