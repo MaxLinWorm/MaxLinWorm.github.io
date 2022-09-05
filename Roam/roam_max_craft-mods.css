@@ -118,6 +118,22 @@
 }
 
 
+/* Arquivado */
+[data-page-links*='Status-Arquivado'] {
+    --max-arq-co: rgb(176, 176, 176);
+    --co-main: var(--max-arq-co);
+    --co-page__link: var(--max-arq-co);
+}
+
+[data-page-links*='Status-Arquivado']>.rm-block-main {
+    text-decoration: line-through;
+}
+
+/* Descendentes com ancestrais com tag */
+[data-path-page-links*='Status-Arquivado'] {
+    text-decoration: none;
+}
+
 
 /* ==== REGRAS === */
 
