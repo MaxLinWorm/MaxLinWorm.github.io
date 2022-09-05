@@ -1,27 +1,65 @@
 /* VARIÁVEIS */
 
-#right-sidebar .roamjs-query-page {
+.roamjs-query-page {
     --queryB-width: 100%;
 }
 
-.roamjs-query-page {
-    --queryB-width: 900px;
+/* Font Size no Query Builder */
+
+.roamjs-query-builder-parent tbody {
+    --fs-main: 14px;
 }
 
+/* Line hight */
+.roamjs-query-builder-parent tbody .roam-block {
+    line-height: 20px;
+}
 
 /* REGRAS */
 
-/* Se não usar, buga quando tiver pouco espaço horizontal */
-.roamjs-query-results-view {
-    overflow-x: auto;
-}
-
-#roamjs-query-page-ZN2isWTJc {
+/* Tamanho da tabela */
+.roamjs-query-page {
     width: var(--queryB-width);
     position: relative !important;
 
 }
 
-#roamjs-query-page-ZN2isWTJc table {
+.roamjs-query-page table {
     table-layout: auto !important;
+}
+
+
+/* Diminui recuo à esquerda em embeds no query builder */
+
+.roamjs-query-builder-parent tbody .roamjs-query-embed .controls,
+.roamjs-query-builder-parent tbody .roamjs-query-embed .rm-block__controls {
+    flex: 0 0 20px;
+    padding-left: 0px
+}
+
+.roamjs-query-builder-parent tbody .roamjs-query-embed .block-expand {
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+.roamjs-query-builder-parent tbody .roamjs-query-embed span.bp3-icon-standard {
+    font-size: 16px;
+    margin-left: -12px;
+}
+
+.roamjs-query-builder-parent tbody .roamjs-query-embed .rm-bullet {
+    font-size: 10px;
+    margin-top: 3px;
+    margin-left: 0px;
+}
+
+.roamjs-query-builder-parent tbody .roamjs-query-embed .rm-bullet .rm-bullet__inner {
+    width: 4px;
+    height: 4px;
+}
+
+/* Multibar */
+.roamjs-query-builder-parent tbody .roamjs-query-embed .rm-multibar {
+    margin-left: -17px;
+    /*border-left-color: black;*/
 }
