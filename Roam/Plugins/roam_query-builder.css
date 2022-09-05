@@ -10,12 +10,13 @@
     --fs-main: 14px;
 }
 
+/* REGRAS */
+
 /* Line hight */
 .roamjs-query-builder-parent tbody .roam-block {
     line-height: 20px;
 }
 
-/* REGRAS */
 
 /* Tamanho da tabela */
 .roamjs-query-page {
