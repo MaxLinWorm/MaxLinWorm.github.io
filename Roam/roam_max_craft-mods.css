@@ -281,6 +281,70 @@ span.rm-page-ref__brackets {
     border-left: var(--max-bl-quote);
 }
 
+/* EMBED */
+
+/* Normal */
+
+/* Embed (CSS do site) */
+.rm-embed-container--block {
+    padding-left: 1px
+        /*2px*/
+    ;
+}
+
+/* Embed expandido para mostrar
+   bullet original  */
+.rm-embed-container--block.rm-embed-show-bullet {
+    padding-left: 0px
+        /*2px*/
+    ;
+    margin-left: -5px;
+}
+
+/* EMBED PATHS */
+.rm-embed-path {
+    /* igual embed normal do tema */
+    background-color: var(--bc-embed);
+    border-top: var(--bt-embed);
+    border-right: var(--br-embed);
+    border-bottom: var(--bb-embed);
+    border-left: var(--bl-embed);
+    border-radius: var(--bd-embed);
+}
+
+.rm-embed-path {
+    /* Iguais embed normal do site  */
+    margin-left: -5px;
+    /*-4px;*/
+    padding-left: 3px;
+    /*2px*/
+    margin-bottom: -4px;
+
+}
+
+.rm-embed-path>.rm-embed-path__inner>.rm-inline-reference>.roam-block-container.rm-block {
+    margin-left: -11px;
+}
+
+
+/* HIGHLIGHT do Embeds quando navego 
+Tree acima */
+
+/* Retira border e colocar outline 
+   do transcluído em embeds / backlinks
+   para melhorar alinhamento */
+.block-highlight-yellow>.rm-block__self {
+    border: none;
+    outline: 3px solid;
+    outline-color: var(--highlight-color)
+}
+
+/* BLOCK VERSIONS */
+
+.rm-select-version-button.rm-button-selected {
+    background-color: var(--highlight-color);
+}
+
 /* TAGS ESPECIAIS */
 
 /* Arquivado */
