@@ -74,6 +74,7 @@
     --co-code: var(--max-co);
 
     /* MENUS */
+
     --ff-div: var(--max-ff);
 
     /* QUOTES */
@@ -97,6 +98,15 @@
         --br-bullet__closed: var(--bt-bullet__closed);
         --bb-bullet__closed: var(--bt-bullet__closed);
         --bl-bullet__closed: var(--bt-bullet__closed);
+    }
+}
+
+:root {
+    --max-codeblock-maxheight: 700px;
+}
+@media screen and (max-height: 700px){
+    :root {
+        --max-codeblock-maxheight: 500px;
     }
 }
 
@@ -126,7 +136,7 @@
 }
 
 
-/* ==== REGRAS === */
+/* === REGRAS === */
 
 /* BOTÕES, principalmente para usar com Smartblocks e query builder */
 
@@ -274,7 +284,8 @@ span.rm-page-ref__brackets {
     line-height: var(--max-headings-h3-lh);
 }
 
-/* Quotes */
+/* QUOTES */
+
 .rm-bq {
     margin: var(--max-ma-quote);
     padding: var(--max-pa-quote);
@@ -343,6 +354,16 @@ Tree acima */
 
 .rm-select-version-button.rm-button-selected {
     background-color: var(--highlight-color);
+}
+
+
+/* CODE BLOCKS */
+
+/* Max-height dos code blocks */
+div.rm-article-wrapper div.cm-editor,
+div#roam-right-sidebar-content div.cm-editor {
+    max-height: var(--max-codeblock-maxheight);
+    overflow-y: auto;
 }
 
 /* TAGS ESPECIAIS */
