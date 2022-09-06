@@ -95,14 +95,14 @@
 :root {
     --max_q_border-size: 2.5px;
 
-    --max_code_ff: /*'fira code retina', 'fira mono', 'Hasklig', */'Source Code Pro', 'Fira Mono', 'Cascadia Code', 'operator mono', 'IBM Plex Mono', 'Consolas', monospace;
-    --max_code_fw: 425; /* 325 para operator, 450 para hasklig */
+    --max_code_ff: 'Cartograph CF',/*'fira code retina', 'fira mono', 'Hasklig', */'Source Code Pro', 'Fira Mono', 'Cascadia Code', 'operator mono', 'IBM Plex Mono', 'Consolas', monospace;
+    --max_code_fw: 430; /* 325 para operator, 450 para hasklig */
 }
 
 @media (prefers-color-scheme:dark) {
     :root {
         --max_q_border-size: 1.5px;
-        --max_code_ff: /*'fira code', 'fira mono', 'Hasklig', */'Source Code Pro', 'Fira Mono', 'Cascadia Code', 'operator mono', 'IBM Plex Mono', 'Consolas', monospace;
+        --max_code_ff: 'Cartograph CF',/*'fira code', 'fira mono', 'Hasklig', */'Source Code Pro', 'Fira Mono', 'Cascadia Code', 'operator mono', 'IBM Plex Mono', 'Consolas', monospace;
         --max_code_fw: 400; /* 325 para operator */
     }
 }
@@ -171,15 +171,17 @@
 
     /* para fira code: 'dlig', 'calt', 'liga', 'ss03', 'ss05' 
        para cascadia: 'dlig', 'calt', 'liga', 'ss19' 
-       para source code 'calt', 'dlig', 'liga', 'clig', 'zero', 'ss06'*/
-    --max_code_ffs: 'calt', 'dlig', 'liga', 'clig', 'zero', 'ss06';
+       para source code 'calt', 'dlig', 'liga', 'clig', 'zero', 'ss06'
+       para Cartograph: 'calt', 'dlig', 'liga', 'clig', 'zero'
+    */
+    --max_code_ffs: 'calt', 'dlig', 'liga', 'clig', 'zero';
 
     /* font-variant */
-    --max_code_fv: common-ligatures discretionary-ligatures no-historical-ligatures contextual styleset(ss06); 
+    --max_code_fv: common-ligatures discretionary-ligatures no-historical-ligatures contextual /*styleset(ss06)*/; 
     /* font-variant-ligatures */
     --max_code_fvl: common-ligatures discretionary-ligatures no-historical-ligatures contextual;
     /* font-variant-alternates */
-    --max_code_fva: styleset(ss06);
+    --max_code_fva: /*styleset(ss06)*/;
 
     /* HEADINGS */
 
