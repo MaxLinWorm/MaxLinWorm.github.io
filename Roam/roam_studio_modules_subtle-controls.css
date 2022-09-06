@@ -26,8 +26,11 @@
     opacity: 1;
 }
 
-/*.rm-focused>*/
-.rm-block:focus-within>.rm-block-children>.rm-multibar {
+/* Abaixo, substituindo `.rm-focused>` por
+   `.rm-block:focus-within>`, mudaria para mostrar também 
+   os multibars dos ancestrais
+*/
+.rm-focused>.rm-block-children>.rm-multibar {
     opacity: 1;
 }
 
