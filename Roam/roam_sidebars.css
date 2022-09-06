@@ -1,0 +1,38 @@
+/* Obtido de https://github.com/paulovieira/roam-scrollbars/blob/main/extension.js 
+   Retirei só o que queria, principalmente mudando os do search
+*/
+
+:root {
+    --max-sidebar-grande: 6px;
+    --max-sidebar-pequena: 4px;
+    --max-sidebar-firefox-width: thin;
+    --max-sidebar-firefox-color: rgba(0, 0, 0, .25) transparent;
+}
+
+/* Chrome e Safari */
+
+/* Main View */
+div.rm-article-wrapper::-webkit-scrollbar,
+/* Sidebar */
+div#roam-right-sidebar-content::-webkit-scrollbar {
+    width: var(--max-sidebar-grande);
+}
+
+/* Firefox */
+div.rm-article-wrapper, 
+div#roam-right-sidebar-content {
+    scrollbar-width: var(--max-sidebar-firefox-width);
+    scrollbar-color: var(--max-sidebar-firefox-color);
+}
+
+/* Search or Create */
+
+div.rm-find-or-create-wrapper ul.rm-find-or-create__menu::-webkit-scrollbar {
+    width: var(--max-sidebar-pequena);
+}
+
+/* Code blocks */
+div.rm-article-wrapper div.cm-scroller::-webkit-scrollbar,
+div#roam-right-sidebar-content div.cm-scroller::-webkit-scrollbar {
+    width: var(--max-sidebar-pequena);
+}
