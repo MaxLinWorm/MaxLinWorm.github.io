@@ -17,8 +17,23 @@
 
 }
 
-
 /* Não mudar cor do underline em block refs */
 .path-highlighted+.roam-block .rm-block-ref {
     border-bottom-color: var(--max-block-ref-bb-co);
+}
+
+/* Headings no path-highlighted | All Paths Lead to Roam | Scope Highlighter */
+.rm-heading-level-1>.rm-block__self .path-highlighted+.rm-block__input .rm-page-ref,
+.rm-heading-level-1>.rm-block__self .path-highlighted+.rm-block__input .rm-alias {
+    font-weight: var(--fw-level1) !important;
+}
+
+.rm-heading-level-2>.rm-block__self .path-highlighted+.rm-block__input .rm-page-ref,
+.rm-heading-level-2>.rm-block__self .path-highlighted+.rm-block__input .rm-alias {
+    font-weight: var(--fw-level2) !important;
+}
+
+.rm-heading-level-3>.rm-block__self .path-highlighted+.rm-block__input .rm-page-ref,
+.rm-heading-level-3>.rm-block__self .path-highlighted+.rm-block__input .rm-alias {
+    font-weight: var(--fw-level3) !important;
 }
