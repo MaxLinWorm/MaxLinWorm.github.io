@@ -89,6 +89,12 @@
     --ff-quote: var(--max-quote-ff);
     --fs-quote: var(--max-quote-fs);
     --bc-quote: inherit;
+
+    /* SIDEBAR */
+    --ff-starred__page: var(--max-ff);
+    --ff-starred__title: var(--max-ff);
+    --ff-logbutton: var(--max-ff);
+    --ff-left-sidebar__db-title: var(--max-ff);
 }
 
 @media(prefers-color-scheme: dark) {
@@ -186,6 +192,19 @@ body,
 html {
     letter-spacing: 0em;
     font-size: 15.0943px; /* Era 14. Escolhi pq o --fs-main é 1.06rem, de forma que totaliza 16px*/
+}
+
+/* SIDEBAR */
+
+/* Wrap */
+.starred-pages-wrapper .starred-pages a>div {
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* Troca espaço por NBSP */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page::before {
+    content: "›\00a0\00a0";
 }
 
 /* AUMENTA BULLETS E REALINHA EM DECORRÊNCIA */
@@ -382,6 +401,8 @@ div#roam-right-sidebar-content div.cm-editor {
     max-height: var(--max-codeblock-maxheight);
     overflow-y: auto;
 }
+
+
 
 /* TAGS ESPECIAIS */
 
