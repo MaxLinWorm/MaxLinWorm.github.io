@@ -1,0 +1,94 @@
+@import url(https://maxlinworm.github.io/Fonts/sf-googlesans.css);
+@import url(https://maxlinworm.github.io/Fonts/sf-arial.css);
+
+
+/* Retira sidebar de apps 
+div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:not(:hover):has(+:not(.aqn.aIH.nH.oy8Mbf.apV:hover)),
+div.aeN.WR.a6o.anZ.nH.oy8Mbf:not(:hover):has(+:not(.aqn.aIH.nH.oy8Mbf.apV:hover)){
+    visibility: hidden;
+    width: 0px !important;
+    min-width: 0px !important;
+    max-width: 0px !important;
+}
+*/
+
+/*
+body > div > div.nH > div:has(:not(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover)) div.aeN.WR.a6o.anZ.nH.oy8Mbf:not(:hover),
+body > div > div.nH > div:has(:not(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover)) div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:not(:hover) {
+    visibility: hidden;
+    width: 0px !important;
+    min-width: 0px !important;
+    max-width: 0px !important;
+}
+
+*/
+div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA,
+div.aeN.WR.a6o.anZ.nH.oy8Mbf {
+    visibility: hidden;
+    width: 0px !important;
+    min-width: 0px !important;
+    max-width: 0px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Checa se o botão de menu tem hover, 
+   retrocedendo até um ancestral em comum 
+   (entre o o botão e o sidebar),
+   e seleciona o sidebar */
+body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA,
+/* Se o hover passar para o sidebar, mantém visível */
+div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:hover,
+body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) div.aeN.WR.a6o.anZ.nH.oy8Mbf,
+div.aeN.WR.a6o.anZ.nH.oy8Mbf:hover {
+    visibility: visible;
+    width: 68px !important;
+    min-width: 68px !important;
+    max-width: 68px !important;
+    transition: all 0.1s ease-in-out;
+}
+
+/* LISTA DE EMAILS */
+
+/* Read */
+.yO {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+/* Unread */
+
+.zE {
+    background-color: rgba(0, 0, 0, 0.02)
+}
+
+
+/* SEARCH BAR*/
+
+.nH .qp .aJf[method="get"][role="search"] {
+    margin-left: 0px;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Seletores iguais aos do sidebar */
+body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) .nH .qp .aJf[method="get"][role="search"],
+body>div>div.nH>div:has(* div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:hover) .nH .qp .aJf[method="get"][role="search"],
+body>div>div.nH>div:has(* div.aeN.WR.a6o.anZ.nH.oy8Mbf:hover) .nH .qp .aJf[method="get"][role="search"] {
+    margin-left: 68px;
+    transition: all 0.1s ease-in-out;
+}
+
+.w-asV:not(:hover) {
+    color: transparent;
+    background-color: transparent;
+
+}
+
+/* Cor e border do search */
+form.aJf {
+    background-color: white;
+    border: 1px solid rgba(32, 33, 36, 0.122);
+}
+
+/* Border do principal para match do search */
+.bkK>.nH {
+    border: 1px solid rgba(32, 33, 36, 0.122);
+}
