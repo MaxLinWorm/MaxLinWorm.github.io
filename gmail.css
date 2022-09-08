@@ -2,26 +2,9 @@
 @import url(https://maxlinworm.github.io/Fonts/sf-arial.css);
 
 
-/* Retira sidebar de apps 
-div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:not(:hover):has(+:not(.aqn.aIH.nH.oy8Mbf.apV:hover)),
-div.aeN.WR.a6o.anZ.nH.oy8Mbf:not(:hover):has(+:not(.aqn.aIH.nH.oy8Mbf.apV:hover)){
-    visibility: hidden;
-    width: 0px !important;
-    min-width: 0px !important;
-    max-width: 0px !important;
-}
-*/
+/* SIDEBAR DE APPS */
 
-/*
-body > div > div.nH > div:has(:not(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover)) div.aeN.WR.a6o.anZ.nH.oy8Mbf:not(:hover),
-body > div > div.nH > div:has(:not(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover)) div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:not(:hover) {
-    visibility: hidden;
-    width: 0px !important;
-    min-width: 0px !important;
-    max-width: 0px !important;
-}
-
-*/
+/* Esconde sidebar */
 div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA,
 div.aeN.WR.a6o.anZ.nH.oy8Mbf {
     visibility: hidden;
@@ -30,7 +13,7 @@ div.aeN.WR.a6o.anZ.nH.oy8Mbf {
     max-width: 0px !important;
     transition: all 0.2s ease-in-out;
 }
-
+/* Mostra sidebar */
 /* Checa se o botão de menu tem hover, 
    retrocedendo até um ancestral em comum 
    (entre o o botão e o sidebar),
@@ -46,20 +29,6 @@ div.aeN.WR.a6o.anZ.nH.oy8Mbf:hover {
     max-width: 68px !important;
     transition: all 0.1s ease-in-out;
 }
-
-/* LISTA DE EMAILS */
-
-/* Read */
-.yO {
-    background-color: rgba(0, 0, 0, 0)
-}
-
-/* Unread */
-
-.zE {
-    background-color: rgba(0, 0, 0, 0.02)
-}
-
 
 /* SEARCH BAR*/
 
@@ -88,7 +57,20 @@ form.aJf {
     border: 1px solid rgba(32, 33, 36, 0.122);
 }
 
+/* LISTA DE EMAILS */
+
 /* Border do principal para match do search */
 .bkK>.nH {
     border: 1px solid rgba(32, 33, 36, 0.122);
+}
+
+/* Read */
+.yO {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+/* Unread */
+
+.zE {
+    background-color: rgba(0, 0, 0, 0.02)
 }
