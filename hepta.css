@@ -205,61 +205,76 @@
 /* Headings */
 
 /* Títulos auto-numerados */
-.ProseMirror.ProseMirror-hepta-style h1:first-child {
+:not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h1:first-child,
+.Journal_full__1c520 {
     counter-reset: level1Header;
 }
 
-.ProseMirror.ProseMirror-hepta-style h1:not(:first-child) {
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h1:not(:first-child),
+.ProseMirror.ProseMirror-hepta-style h1 {
     counter-reset: level2Header;
 }
 
-.ProseMirror.ProseMirror-hepta-style h2:not(:first-child) {
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h2:not(:first-child),
+.ProseMirror.ProseMirror-hepta-style h2 {
     counter-reset: level3Header;
 }
 
-.ProseMirror.ProseMirror-hepta-style h3:not(:first-child) {
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h3:not(:first-child),
+.ProseMirror.ProseMirror-hepta-style h3 {
     counter-reset: level4Header;
 }
 
-.ProseMirror.ProseMirror-hepta-style h4:not(:first-child) {
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h4:not(:first-child),
+.ProseMirror.ProseMirror-hepta-style h4 {
     counter-reset: level5Header;
 }
 
-.ProseMirror.ProseMirror-hepta-style h5:not(:first-child) {
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h5:not(:first-child),
+.ProseMirror.ProseMirror-hepta-style h5 {
     counter-reset: level6Header;
 }
 
-
-.ProseMirror.ProseMirror-hepta-style h6:not(:first-child) {
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h6:not(:first-child),
+.ProseMirror.ProseMirror-hepta-style h6 {
     counter-reset: none;
 }
 
-.ProseMirror.ProseMirror-hepta-style h1:not(:first-child):before {
+
+
+
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h1:not(:first-child):before,
+.Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h1:before  {
     counter-increment: level1Header;
     content: counter(level1Header) ". "
 }
 
-.ProseMirror.ProseMirror-hepta-style h2:not(:first-child):before {
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h2:not(:first-child):before,
+.Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h2:before  {
     counter-increment: level2Header;
     content: counter(level1Header) "."counter(level2Header) ". ";
 }
 
-.ProseMirror.ProseMirror-hepta-style h3:not(:first-child):before {
+:not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h3:not(:first-child):before,
+.Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h3:before  {
     counter-increment: level3Header;
     content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) ". ";
 }
 
-.ProseMirror.ProseMirror-hepta-style h4:not(:first-child):before {
+:not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h4:not(:first-child):before,
+.Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h4:before  {
     counter-increment: level4Header;
     content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) ". ";
 }
 
-.ProseMirror.ProseMirror-hepta-style h5:not(:first-child):before {
+:not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h5:not(:first-child):before,
+.Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h5:before  {
     counter-increment: level5Header;
     content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) ". ";
 }
 
-.ProseMirror.ProseMirror-hepta-style h6:not(:first-child):before {
+:not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h6:not(:first-child):before,
+.Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h6:before  {
     counter-increment: level6Header;
     content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) "."counter(level6Header) ". ";
 }
@@ -481,4 +496,3 @@
 .ProseMirror.ProseMirror-hepta-style p:not(:first-child) {
     margin-top: var(--max-card-open-p-mt);
 }
-
