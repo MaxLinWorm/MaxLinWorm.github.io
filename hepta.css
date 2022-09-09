@@ -4,7 +4,6 @@
 
     /* COMUNS */
     --font-family-default: 'SF Pro Text', 'Roboto', 'Arial';
-    --max-card-open-fs: 16px; /*17px*/
 
     /* WHITEBOARD */
     --max-card-whiteboard-fs: 24px; /*18px*/
@@ -79,7 +78,9 @@
 
     /* OPEN CARDS | SIDEBAR */
 
-    /* Headings */
+    --max-card-open-fs: 17px; /*17px*/
+
+    /* HEADINGS */
     /* H1 */
     --max-card-open-h1-fs: 1.875em; /* 1.875em */
     --max-card-open-h1-fw: var(--max-card-whiteboard-h1-fw) /* 600 */;
