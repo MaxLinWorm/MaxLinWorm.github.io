@@ -138,6 +138,71 @@
 
 /* === REGRAS === */
 
+/* COMUNS */
+
+/* Headings */
+
+/* Títulos auto-numerados */
+.ProseMirror.ProseMirror-hepta-style h1:first-child {
+    counter-reset: level1Header;
+}
+
+.ProseMirror.ProseMirror-hepta-style h1:not(:first-child) {
+    counter-reset: level2Header;
+}
+
+.ProseMirror.ProseMirror-hepta-style h2:not(:first-child) {
+    counter-reset: level3Header;
+}
+
+.ProseMirror.ProseMirror-hepta-style h3:not(:first-child) {
+    counter-reset: level4Header;
+}
+
+.ProseMirror.ProseMirror-hepta-style h4:not(:first-child) {
+    counter-reset: level5Header;
+}
+
+.ProseMirror.ProseMirror-hepta-style h5:not(:first-child) {
+    counter-reset: level6Header;
+}
+
+
+.ProseMirror.ProseMirror-hepta-style h6:not(:first-child) {
+    counter-reset: none;
+}
+
+.ProseMirror.ProseMirror-hepta-style h1:not(:first-child):before {
+    counter-increment: level1Header;
+    content: counter(level1Header) ". "
+}
+
+.ProseMirror.ProseMirror-hepta-style h2:not(:first-child):before {
+    counter-increment: level2Header;
+    content: counter(level1Header) "."counter(level2Header) ". ";
+}
+
+.ProseMirror.ProseMirror-hepta-style h3:not(:first-child):before {
+    counter-increment: level3Header;
+    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) ". ";
+}
+
+.ProseMirror.ProseMirror-hepta-style h4:not(:first-child):before {
+    counter-increment: level4Header;
+    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) ". ";
+}
+
+.ProseMirror.ProseMirror-hepta-style h5:not(:first-child):before {
+    counter-increment: level5Header;
+    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) ". ";
+}
+
+.ProseMirror.ProseMirror-hepta-style h6:not(:first-child):before {
+    counter-increment: level6Header;
+    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) "."counter(level6Header) ". ";
+}
+
+
 /* WHITE BOARD */
 
 /* Cards no whiteboard */
