@@ -1,6 +1,8 @@
 /* === VARIÁVEIS === */
 
 :root {
+
+    /* COMUNS */
     --font-family-default: 'SF Pro Text', 'Roboto', 'Arial';
     --max-card-open-fs: 16px; /*17px*/
 
@@ -69,6 +71,12 @@
     --max-card-whiteboard-p-mb: 2px;/* 4px */
     --max-card-whiteboard-p-pd: 2px 3px; /* 2px 3px */
 
+    /* Parágrafos */
+    --max-card-whiteboard-p-lh: 1.5; /* 1.5*/
+    --max-card-whiteboard-p-mt: 3px;/* 4px */
+    --max-card-whiteboard-p-mb: 2px;/* 4px */
+    --max-card-whiteboard-p-pd: 2px 3px; /* 2px 3px */
+
     /* OPEN CARDS | SIDEBAR */
 
     /* Headings */
@@ -132,9 +140,62 @@
     --max-card-open-p-mt: 3px;/* 4px */
     --max-card-open-p-mb: 2px;/* 4px */
     --max-card-open-p-pd: 2px 3px; /* 2px 3px */
+}
+
+
+.CardInstance_wrapper__3dlnz .ProseMirror.ProseMirror-hepta-style :is(h1, h2, h3, h4, h5, h6)+ :is(h1, h2, h3, h4, h5, h6) {
+    --max-card-whiteboard-h1-mb: var(--max-card-whiteboard-p-mb);
+    --max-card-whiteboard-h1-pd: var(--max-card-whiteboard-p-pd);
+    --max-card-whiteboard-h1-mt: var(--max-card-whiteboard-p-mt);
+
+    --max-card-whiteboard-h2-mb: var(--max-card-whiteboard-h1-mb);
+    --max-card-whiteboard-h2-pd: var(--max-card-whiteboard-h1-pd);
+    --max-card-whiteboard-h2-mt: var(--max-card-whiteboard-h1-mt);
+
+    --max-card-whiteboard-h3-mb: var(--max-card-whiteboard-h1-mb);
+    --max-card-whiteboard-h3-pd: var(--max-card-whiteboard-h1-pd);
+    --max-card-whiteboard-h3-mt: var(--max-card-whiteboard-h1-mt);
+
+    --max-card-whiteboard-h4-mb: var(--max-card-whiteboard-h1-mb);
+    --max-card-whiteboard-h4-pd: var(--max-card-whiteboard-h1-pd);
+    --max-card-whiteboard-h4-mt: var(--max-card-whiteboard-h1-mt);
+    
+    --max-card-whiteboard-h5-mb: var(--max-card-whiteboard-h1-mb);
+    --max-card-whiteboard-h5-pd: var(--max-card-whiteboard-h1-pd);
+    --max-card-whiteboard-h5-mt: var(--max-card-whiteboard-h1-mt);
+
+    --max-card-whiteboard-h6-mb: var(--max-card-whiteboard-h1-mb);
+    --max-card-whiteboard-h6-pd: var(--max-card-whiteboard-h1-pd);
+    --max-card-whiteboard-h6-mt: var(--max-card-whiteboard-h1-mt);
 
 }
 
+.ProseMirror.ProseMirror-hepta-style :is(h1, h2, h3, h4, h5, h6)+ :is(h1, h2, h3, h4, h5, h6) {
+    --max-card-open-h1-mb: var(--max-card-open-p-mb);
+    --max-card-open-h1-pd: var(--max-card-open-p-pd);
+    --max-card-open-h1-mt: var(--max-card-open-p-mt);
+
+    --max-card-open-h2-mb: var(--max-card-open-h1-mb);
+    --max-card-open-h2-pd: var(--max-card-open-h1-pd);
+    --max-card-open-h2-mt: var(--max-card-open-h1-mt);
+
+    --max-card-open-h3-mb: var(--max-card-open-h1-mb);
+    --max-card-open-h3-pd: var(--max-card-open-h1-pd);
+    --max-card-open-h3-mt: var(--max-card-open-h1-mt);
+
+    --max-card-open-h4-mb: var(--max-card-open-h1-mb);
+    --max-card-open-h4-pd: var(--max-card-open-h1-pd);
+    --max-card-open-h4-mt: var(--max-card-open-h1-mt);
+
+    --max-card-open-h5-mb: var(--max-card-open-h1-mb);
+    --max-card-open-h5-pd: var(--max-card-open-h1-pd);
+    --max-card-open-h5-mt: var(--max-card-open-h1-mt);
+
+    --max-card-open-h6-mb: var(--max-card-open-h1-mb);
+    --max-card-open-h6-pd: var(--max-card-open-h1-pd);
+    --max-card-open-h6-mt: var(--max-card-open-h1-mt);
+
+}
 
 /* === REGRAS === */
 
