@@ -6,7 +6,7 @@
     --font-family-default: 'SF Pro Text', 'Roboto', 'Arial';
 
     /* WHITEBOARD */
-    --max-card-whiteboard-fs: 24px; /*18px*/
+    --max-card-whiteboard-fs: 20px; /*18px orig; 24px 90% no desktop*/
 
     /* Headings */
     /* H1 */
@@ -78,7 +78,7 @@
 
     /* OPEN CARDS | SIDEBAR */
 
-    --max-card-open-fs: 17px; /*17px*/
+    --max-card-open-fs: 16px; /*17px orig e 90%*/
 
     /* HEADINGS */
     /* H1 */
