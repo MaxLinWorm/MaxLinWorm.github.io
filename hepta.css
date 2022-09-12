@@ -10,7 +10,9 @@
 
     /* Headings */
     /* H1 */
-    --max-card-whiteboard-h1-fs: 1.7em; /*1.875em*/
+    --max-card-whiteboard-h1-fs_num: 1.5; /* 1.875 */
+    --max-card-whiteboard-h1-fs: calc(var(--max-card-whiteboard-h1-fs_num) * 1em);
+    /*1.875em*/
     --max-card-whiteboard-h1-fw: 700 /* 600 */;
     --max-card-whiteboard-h1-lh: 1.3;
     --max-card-whiteboard-h1-mt: .85em; /*1.1em*/
@@ -19,7 +21,7 @@
     --max-card-whiteboard-h1-fv: normal;
     
     /* H2 */
-    --max-card-whiteboard-h2-fs: 1.5em; /*1.5em*/
+    --max-card-whiteboard-h2-fs: 1.35em; /*1.5em*/
     --max-card-whiteboard-h2-fw: 700 /* 600 */;
     --max-card-whiteboard-h2-lh: 1.3;
     --max-card-whiteboard-h2-mt: .65em;  /* 1em */
@@ -28,7 +30,7 @@
     --max-card-whiteboard-h2-fv: normal;
 
     /* H3 */
-    --max-card-whiteboard-h3-fs: 1.3em; /*1.17em*/
+    --max-card-whiteboard-h3-fs: 1.2em; /*1.17em*/
     --max-card-whiteboard-h3-fw: 500 /* 600 */;
     --max-card-whiteboard-h3-lh: 1.3;
     --max-card-whiteboard-h3-mt: .5em; /*.9em */
@@ -37,7 +39,7 @@
     --max-card-whiteboard-h3-fv: normal;
 
     /* H4 */
-    --max-card-whiteboard-h4-fs: 1.2em; /*18px (=1em)*/
+    --max-card-whiteboard-h4-fs: 1.1em; /*18px (=1em)*/
     --max-card-whiteboard-h4-fw: 500 /* 600 */;
     --max-card-whiteboard-h4-lh: 1.3;
     --max-card-whiteboard-h4-mt: var(--max-card-whiteboard-h3-mt);/* 1.33em User style */
@@ -46,7 +48,7 @@
     --max-card-whiteboard-h4-fv: small-caps;
 
     /* H5 */
-    --max-card-whiteboard-h5-fs: 1.125em; /*18px (=1em)*/
+    --max-card-whiteboard-h5-fs: 1em; /*18px (=1em)*/
     --max-card-whiteboard-h5-fw: 400; /* 600 */
     --max-card-whiteboard-h5-lh: 1.3;
     --max-card-whiteboard-h5-mt: var(--max-card-whiteboard-h3-mt);/* 1.33em User style */
@@ -55,7 +57,7 @@
     --max-card-whiteboard-h5-fv: small-caps;
 
     /* H6 */
-    --max-card-whiteboard-h6-fs: 1.125em; /*18px (=1em)*/
+    --max-card-whiteboard-h6-fs: 1em; /*18px (=1em)*/
     --max-card-whiteboard-h6-fw: 400; /* 600 */
     --max-card-whiteboard-h6-lh: 1.3;
     --max-card-whiteboard-h6-mt: var(--max-card-whiteboard-h3-mt);/* 1.33em User style */
@@ -248,37 +250,37 @@
 :not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h1:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h1:before  {
     counter-increment: level1Header;
-    content: counter(level1Header) ". "
+    content: counter(level1Header) ".\00a0"
 }
 
 :not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h2:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h2:before  {
     counter-increment: level2Header;
-    content: counter(level1Header) "."counter(level2Header) ". ";
+    content: counter(level1Header) "."counter(level2Header) ".\00a0";
 }
 
 :not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h3:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h3:before  {
     counter-increment: level3Header;
-    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) ". ";
+    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) ".\00a0";
 }
 
 :not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h4:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h4:before  {
     counter-increment: level4Header;
-    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) ". ";
+    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) ".\00a0";
 }
 
 :not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h5:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h5:before  {
     counter-increment: level5Header;
-    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) ". ";
+    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) ".\00a0";
 }
 
 :not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h6:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h6:before  {
     counter-increment: level6Header;
-    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) "."counter(level6Header) ". ";
+    content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) "."counter(level6Header) ".\00a0";
 }
 
 
@@ -287,6 +289,12 @@
 /* Cards no whiteboard */
 .CardInstance_wrapper__3dlnz .ProseMirror.ProseMirror-hepta-style {
     font-size: var(--max-card-whiteboard-fs);
+}
+
+/* Título de cards folded */
+.mx-auto.truncate.px-2.text-body {
+    font-size: calc(var(--max-card-whiteboard-h1-fs_num) * var(--max-card-whiteboard-fs));
+    line-height: var(--max-card-whiteboard-h1-lh);
 }
 
 /* H1*/
