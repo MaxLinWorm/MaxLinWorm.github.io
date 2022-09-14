@@ -10,7 +10,7 @@
 
     /* Headings */
     /* H1 */
-    --max-card-whiteboard-h1-fs_num: 1.5; /* 1.875 */
+    --max-card-whiteboard-h1-fs_num: 1.35; /* 1.875 */
     --max-card-whiteboard-h1-fs: calc(var(--max-card-whiteboard-h1-fs_num) * 1em);
     /*1.875em*/
     --max-card-whiteboard-h1-fw: 700 /* 600 */;
@@ -21,7 +21,7 @@
     --max-card-whiteboard-h1-fv: normal;
     
     /* H2 */
-    --max-card-whiteboard-h2-fs: 1.35em; /*1.5em*/
+    --max-card-whiteboard-h2-fs: 1.2em; /*1.5em*/
     --max-card-whiteboard-h2-fw: 700 /* 600 */;
     --max-card-whiteboard-h2-lh: 1.3;
     --max-card-whiteboard-h2-mt: .65em;  /* 1em */
@@ -30,7 +30,7 @@
     --max-card-whiteboard-h2-fv: normal;
 
     /* H3 */
-    --max-card-whiteboard-h3-fs: 1.2em; /*1.17em*/
+    --max-card-whiteboard-h3-fs: 1.125em; /*1.17em*/
     --max-card-whiteboard-h3-fw: 500 /* 600 */;
     --max-card-whiteboard-h3-lh: 1.3;
     --max-card-whiteboard-h3-mt: .5em; /*.9em */
@@ -48,7 +48,7 @@
     --max-card-whiteboard-h4-fv: small-caps;
 
     /* H5 */
-    --max-card-whiteboard-h5-fs: 1em; /*18px (=1em)*/
+    --max-card-whiteboard-h5-fs: 1.1em; /*18px (=1em)*/
     --max-card-whiteboard-h5-fw: 400; /* 600 */
     --max-card-whiteboard-h5-lh: 1.3;
     --max-card-whiteboard-h5-mt: var(--max-card-whiteboard-h3-mt);/* 1.33em User style */
@@ -57,7 +57,7 @@
     --max-card-whiteboard-h5-fv: small-caps;
 
     /* H6 */
-    --max-card-whiteboard-h6-fs: 1em; /*18px (=1em)*/
+    --max-card-whiteboard-h6-fs: 1.1em; /*18px (=1em)*/
     --max-card-whiteboard-h6-fw: 400; /* 600 */
     --max-card-whiteboard-h6-lh: 1.3;
     --max-card-whiteboard-h6-mt: var(--max-card-whiteboard-h3-mt);/* 1.33em User style */
@@ -82,7 +82,7 @@
 
     /* HEADINGS */
     /* H1 */
-    --max-card-open-h1-fs: 1.875em; /* 1.875em */
+    --max-card-open-h1-fs: 1.5em; /* 1.875em */
     --max-card-open-h1-fw: var(--max-card-whiteboard-h1-fw) /* 600 */;
     --max-card-open-h1-lh: var(--max-card-whiteboard-h1-lh); /* 1.3 */
     --max-card-open-h1-mt: 1.1em; /* 1.1em */
@@ -91,7 +91,7 @@
     --max-card-open-h1-fv: normal;
     
     /* H2 */
-    --max-card-open-h2-fs: 1.55em; /* 1.5em */
+    --max-card-open-h2-fs: 1.35em; /* 1.5em */
     --max-card-open-h2-fw: var(--max-card-whiteboard-h2-fw) /* 600 */;
     --max-card-open-h2-lh: var(--max-card-whiteboard-h2-lh); /* 1.3 */
     --max-card-open-h2-mt: 1em; /*1em*/ 
@@ -100,7 +100,7 @@
     --max-card-open-h2-fv: normal;
 
     /* H3 */
-    --max-card-open-h3-fs: 1.35em; /* 1.17em */
+    --max-card-open-h3-fs: 1.3em; /* 1.17em */
     --max-card-open-h3-fw: var(--max-card-whiteboard-h3-fw) /* 600 */;
     --max-card-open-h3-lh: var(--max-card-whiteboard-h3-lh);
     --max-card-open-h3-mt: .85em; /* .9em */
@@ -109,7 +109,7 @@
     --max-card-open-h3-fv: normal;
 
     /* H4 */
-    --max-card-open-h4-fs: 1.2em; /*18px (=1em)*/
+    --max-card-open-h4-fs: 1.15em; /*18px (=1em)*/
     --max-card-open-h4-fw: var(--max-card-whiteboard-h4-fw); /* 600 */;
     --max-card-open-h4-lh: var(--max-card-whiteboard-h4-lh); /* 1.3 */
     --max-card-open-h4-mt: var(--max-card-open-h3-mt);/* 1.33em User style */
@@ -137,7 +137,7 @@
     --max-card-open-h6-fst: italic;
 
     /* Parágrafos */
-    --max-card-open-p-lh: 1.5; /* 1.5*/
+    --max-card-open-p-lh: 1.35; /* 1.5*/
     --max-card-open-p-mt: 3px;/* 4px */
     --max-card-open-p-mb: 2px;/* 4px */
     --max-card-open-p-pd: 2px 3px; /* 2px 3px */
@@ -206,6 +206,16 @@
 
 /* COMUNS */
 
+/* Sem wrap estranho no auto-suggest de links */
+.SuggestionMenu_container__3jfSh .break-all.text-label {
+    word-break: normal
+}
+
+/* Links internos em highlights */
+.ProseMirror a[data-internal-href] mark {
+    color: var(--active-item);
+}
+
 /* Headings */
 
 /* Títulos auto-numerados */
@@ -250,37 +260,43 @@
 :not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h1:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h1:before  {
     counter-increment: level1Header;
-    content: counter(level1Header) ".\00a0"
+    content: counter(level1Header) ".\00a0";
+    font-size: .85em;
 }
 
 :not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h2:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h2:before  {
     counter-increment: level2Header;
     content: counter(level1Header) "."counter(level2Header) ".\00a0";
+    font-size: .85em;
 }
 
 :not(.Journal_full__1c520)>.ProseMirror.ProseMirror-hepta-style h3:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h3:before  {
     counter-increment: level3Header;
     content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) ".\00a0";
+    font-size: .85em;
 }
 
 :not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h4:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h4:before  {
     counter-increment: level4Header;
     content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) ".\00a0";
+    font-size: .85em;
 }
 
 :not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h5:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h5:before  {
     counter-increment: level5Header;
     content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) ".\00a0";
+    font-size: .85em;
 }
 
 :not(.Journal_full__1c520) > .ProseMirror.ProseMirror-hepta-style h6:not(:first-child):before,
 .Journal_full__1c520 .ProseMirror.ProseMirror-hepta-style h6:before  {
     counter-increment: level6Header;
     content: counter(level1Header) "."counter(level2Header) "."counter(level3Header) "."counter(level4Header) "."counter(level5Header) "."counter(level6Header) ".\00a0";
+    font-size: .85em;
 }
 
 
@@ -295,6 +311,26 @@
 .mx-auto.truncate.px-2.text-body {
     font-size: calc(var(--max-card-whiteboard-h1-fs_num) * var(--max-card-whiteboard-fs));
     line-height: var(--max-card-whiteboard-h1-lh);
+}
+
+/* Toolbar transparente */
+
+#root .absolute.top-0.bg-whiteboard-background.p-2 {
+    background-color: transparent
+}
+
+/* Íconres com fundo */
+#root>div>div:nth-child(2)>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.flex.min-w-0.flex-grow.items-center.gap-x-2>div.flex.items-center.gap-x-2>div>div:nth-child(1)>svg,
+#root>div>div:nth-child(2)>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.flex.min-w-0.flex-grow.items-center.gap-x-2>div.flex.items-center.gap-x-2>div>div:nth-child(2)>svg,
+#root>div>div:nth-child(2)>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.flex.min-w-0.flex-grow.items-center.gap-x-2>div.ml-1.min-w-0.flex.select-none.items-center.text-label.font-medium.text-middle-hard-grey>input,
+#root>div>div>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.flex.min-w-0.flex-grow.items-center.gap-x-2>div.flex.items-center.gap-x-2,
+#root>div>div>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.ml-auto.flex.items-center.gap-x-2,
+#root>div>div:nth-child(2)>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.ml-auto.flex.items-center.gap-x-2,
+#root>div>div>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.flex.min-w-0.flex-grow.items-center.gap-x-2>div.ml-1.min-w-0.flex.select-none.items-center.text-label.font-medium.text-middle-hard-grey {
+    /* --whiteboard-background #eeeded rgb(238 237 237) */
+    background-color: rgb(238 237 237 / 95%);
+    border-radius: 8px;
+    color: black;
 }
 
 /* H1*/
