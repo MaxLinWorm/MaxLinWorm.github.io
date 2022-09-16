@@ -93,8 +93,6 @@ pre code {
 
 /* CONTAINERS */
 
-
-
 /* Background */
 
 .contBackground {
@@ -152,9 +150,12 @@ pre code {
 
 blockquote {
     padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 0 auto;
-
+    margin-top:         var(--max_q_mbs);
     margin-block-start: var(--max_q_mbs);
+    margin-bottom:      var(--max_q_mbe);
     margin-block-end:   var(--max_q_mbe);
     
     /* Retira espaçamento lateral */
@@ -174,6 +175,13 @@ blockquote p {
     color:          var(--max_body_c);
     text-align: left;
     opacity: 1;
+}
+
+blockquote p {
+    margin: 0px;
+    margin-top: 0px; 
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 /* CODE */
