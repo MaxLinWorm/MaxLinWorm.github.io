@@ -121,7 +121,7 @@ pre code {
 
 /* BODY COPY */
 
-.bodycopy {
+.bodyCopy {
     font-size:      var(--max_body_fs);
     line-height:    var(--max_body_lh);
     font-family:    var(--max_body_ff_serif);
@@ -131,6 +131,7 @@ pre code {
 
 /* Com indent para separar parágrafos */
 
+/* Primeiro parágrafo - com espaço */
 .bodyCopy p {
     margin: 0;
     padding: 0;
@@ -140,6 +141,19 @@ pre code {
     text-indent: 0;
 }
 
+/* Parágrafo depois de lista - sem espaço e sem indent */
+.bodyCopy ul + p {
+    margin-block-start: var(--max_body_p-indent_mbs);
+    text-indent: 0;
+}
+
+/* Parágrafo depois de quote - sem espaço e sem indent */
+.bodyCopy blockquote + p {
+    margin-block-start: var(--max_body_p-indent_mbs);
+    text-indent: 0;
+}
+
+/* Parágrafo seguido de parágrafo - sem espaço com indent */
 .bodyCopy p:not([align=center]) + p,
 .bodyCopy p:not([style='text-align:center']) + p {
     margin-block-start: var(--max_body_p-indent_mbs);
@@ -157,22 +171,25 @@ blockquote {
     margin-block-start: var(--max_q_mbs);
     margin-bottom:      var(--max_q_mbe);
     margin-block-end:   var(--max_q_mbe);
+
+    margin-left: 0px;
+    margin-inline-start: 0px;
     
-    /* Retira espaçamento lateral */
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-  
-    border-left:  var(--max_q_bl);
-    padding-left: var(--max_q_pl);
+    padding-top:        var(--max_q_pt);
+    padding-right:      var(--max_q_pr);
+    padding-bottom:     var(--max_q_pb);
+    padding-left:       var(--max_q_pl);
+
+    border-left:        var(--max_q_bl);
     opacity: 1;
 }
 
 blockquote, 
 blockquote p {
-    font-size:      var(--max_body_fs);
-    line-height:    var(--max_body_lh);
-    font-family:    var(--max_body_ff_serif);
-    color:          var(--max_body_c);
+    font-size:          var(--max_body_fs);
+    line-height:        var(--max_body_lh);
+    font-family:        var(--max_body_ff_serif);
+    color:              var(--max_body_c);
     text-align: left;
     opacity: 1;
 }
@@ -187,10 +204,10 @@ blockquote p {
 /* CODE */
 
 .codeBlock {
-    font-family: var(--max_code_ff);
-    font-size: var(--max_code_fs);
-    line-height: var(--max_code_lh);
-    font-weight: var(--max_code_fw);
+    font-family:        var(--max_code_ff);
+    font-size:          var(--max_code_fs);
+    line-height:        var(--max_code_lh);
+    font-weight:        var(--max_code_fw);
 
     font-feature-settings: var(--max_code_ffs);
     -webkit-font-feature-settings: var(--max_code_ffs);
@@ -204,7 +221,19 @@ blockquote p {
 
 /* LISTS */
 
-p ul {
+/* Unordered | bullet list */
+
+.bodyCopy ul {
+    margin-top:             0px;
+    margin-right:           0px;
+    margin-bottom:          0px;
+    margin-left:            0px;
+
+    padding-top:            0px;
+    padding-right:          0px;
+    padding-bottom:         0px;
+    padding-left:           0px;
+
     margin-block-start:     var(--max_ul_mbs);
     margin-block-end:       var(--max_ul_mbe);
     margin-inline-start:    var(--max_ul_mis);

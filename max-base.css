@@ -79,8 +79,8 @@
     --max_cont_pag_foreground_pl: 125px;
     --max_cont_pag_foreground_pb: 50px;
     
-    /* Totaliza 690px a coluna de texto com fs 18.5 */
-    --max_cont_pag_foreground_mw: calc(37.29em
+    /* Totaliza 660px a coluna de texto com fs 18.5 */
+    --max_cont_pag_foreground_mw: calc(35.68em
         + var(--max_cont_pag_foreground_pl) 
         + var(--max_cont_pag_foreground_pr) 
     ); 
@@ -153,19 +153,26 @@
 
     /* BLOCKQUOTES */
 
-    --max_q_mbs: calc(var(--max_body_p-espaco_mbs) * 2) /* 1.5em */;
-    --max_q_mbe: calc(var(--max_body_p-espaco_mbs) * 2) /* 1.5em */;
+    --max_q_mbs: 0.333em;
+    /* Maior que top porque visualmente necessário */
+    --max_q_mbe: 0.4em;
+    
+    --max_q_pt: calc(var(--max_body_p-espaco_mbs) / 3);
+    --max_q_pr: calc(var(--max_body_p-indent_ti) * 1.25) - var(--max_q_border-size); /* padding-right */
+    /* Maior que top porque visualmente necessário */
+    --max_q_pb: calc(var(--max_body_p-espaco_mbs) / 2.5);
+    --max_q_pl: calc((var(--max_body_p-indent_ti) * 1.25) - var(--max_q_border-size)); /* padding-left */
+
     --max_q_bl: var(--max_q_border-size) solid var(--max_main_links_c); /* border left */
-    --max_q_pl: calc(var(--max_body_p-indent_ti) - var(--max_q_border-size)); /* padding-left */
-    --max_q_mis: 0; /*margin-inline-star */
-    --max_q_mie: 0; /*margin-inline-end */
 
     /* LISTS */
-    --max_ul_mbs: var(--max_body_p-espaco_mbs);
-    --max_ul_mbe: var(--max_body_p-espaco_mbs);
-    --max_ul_mis: var(--max_body_p-indent_ti);
+    --max_ul_mbs: calc(var(--max_body_p-espaco_mbs) / 3);
+    /* Maior porque visualmente é necessário */
+    --max_ul_mbe: calc(var(--max_body_p-espaco_mbs) / 2.5);
+    --max_ul_mis: calc(var(--max_body_p-indent_ti) * 1.25);
 
     /* CODE */
+
     --max_code_fs: 14px; /* 14 para hasklig, source, cascadia, operator e consolas. 13 para Fira */
     --max_code_lh: 1.3; /* 1.3 para hasklig, source, cascadia, operator e consolas 1.4 para Fira */
 
