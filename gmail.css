@@ -4,9 +4,11 @@
 
 /* SIDEBAR DE APPS */
 
+/* html:not(.simplify) = sem simplify habilitado
+
 /* Esconde sidebar */
-div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA,
-div.aeN.WR.a6o.anZ.nH.oy8Mbf {
+html:not(.simplify) div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA,
+html:not(.simplify) div.aeN.WR.a6o.anZ.nH.oy8Mbf {
     visibility: hidden;
     width: 0px !important;
     min-width: 0px !important;
@@ -18,11 +20,11 @@ div.aeN.WR.a6o.anZ.nH.oy8Mbf {
    retrocedendo até um ancestral em comum 
    (entre o o botão e o sidebar),
    e seleciona o sidebar */
-body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA,
+html:not(.simplify) body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA,
+html:not(.simplify) body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) div.aeN.WR.a6o.anZ.nH.oy8Mbf,
 /* Se o hover passar para o sidebar, mantém visível */
-div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:hover,
-body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) div.aeN.WR.a6o.anZ.nH.oy8Mbf,
-div.aeN.WR.a6o.anZ.nH.oy8Mbf:hover {
+html:not(.simplify) div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:hover,
+html:not(.simplify) div.aeN.WR.a6o.anZ.nH.oy8Mbf:hover {
     visibility: visible;
     width: 68px !important;
     min-width: 68px !important;
@@ -32,27 +34,27 @@ div.aeN.WR.a6o.anZ.nH.oy8Mbf:hover {
 
 /* SEARCH BAR*/
 
-.nH .qp .aJf[method="get"][role="search"] {
+html:not(.simplify) .nH .qp .aJf[method="get"][role="search"] {
     margin-left: 0px;
     transition: all 0.1s ease-in-out;
 }
 
 /* Seletores iguais aos do sidebar */
-body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) .nH .qp .aJf[method="get"][role="search"],
-body>div>div.nH>div:has(* div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:hover) .nH .qp .aJf[method="get"][role="search"],
-body>div>div.nH>div:has(* div.aeN.WR.a6o.anZ.nH.oy8Mbf:hover) .nH .qp .aJf[method="get"][role="search"] {
+html:not(.simplify) body>div>div.nH>div:has(* div.gb_Kd.gb_2c.gb_3c > div.gb_zc:first-child:hover) .nH .qp .aJf[method="get"][role="search"],
+html:not(.simplify) body>div>div.nH>div:has(* div.aeN.WR.a6o.anZ.nH.oy8Mbf.aBA:hover) .nH .qp .aJf[method="get"][role="search"],
+html:not(.simplify) body>div>div.nH>div:has(* div.aeN.WR.a6o.anZ.nH.oy8Mbf:hover) .nH .qp .aJf[method="get"][role="search"] {
     margin-left: 68px;
     transition: all 0.1s ease-in-out;
 }
 
-.w-asV:not(:hover) {
+html:not(.simplify) .w-asV:not(:hover) {
     color: transparent;
     background-color: transparent;
 
 }
 
 /* Cor e border do search */
-form.aJf {
+html:not(.simplify) form.aJf {
     background-color: white;
     border: 1px solid rgba(32, 33, 36, 0.122);
 }
@@ -60,17 +62,17 @@ form.aJf {
 /* LISTA DE EMAILS */
 
 /* Border do principal para match do search */
-.bkK>.nH {
+html:not(.simplify) .bkK>.nH {
     border: 1px solid rgba(32, 33, 36, 0.122);
 }
 
 /* Read */
-.yO {
+html:not(.simplify) .yO {
     background-color: rgba(0, 0, 0, 0)
 }
 
 /* Unread */
 
-.zE {
+html:not(.simplify) .zE {
     background-color: rgba(0, 0, 0, 0.02)
 }
