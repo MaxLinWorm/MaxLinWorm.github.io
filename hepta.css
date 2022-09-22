@@ -3,7 +3,7 @@
 :root {
 
     /* COMUNS */
-    --font-family-default: 'SF Pro Text', 'Roboto', 'Arial';
+    --font-family-default: 'SF Pro Text', 'Roboto', 'Arial' !important;
 
     /* WHITEBOARD */
     --max-card-whiteboard-fs: 22px; /*18px orig; 24px 90% no desktop*/
