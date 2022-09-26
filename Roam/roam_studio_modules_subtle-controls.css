@@ -1,5 +1,7 @@
 /* Obtido de https://github.com/rcvd/RoamStudio/blob/master/src/RoamStudio/modules/subtle-controls.css */
 
+/* Retirei bullets porque fica
+muito escondido se tem children collapsed 
 .rm-block .rm-bullet {
     opacity: 0.2;
 }
@@ -8,15 +10,18 @@
     opacity: 1;
 }
 
-/*.rm-focused>*/
+
+/*.rm-focused>
 .rm-block:focus-within>.rm-block-main>.controls>.rm-bullet {
     opacity: 1;
 }
 
-/*.rm-focused>*/
+/*.rm-focused>
 .rm-block:focus-within>.rm-block-main>.controls>.rm-bullet>.bp3-popover-wrapper .rm-bullet__inner {
     background-color: #9E2B0E;
 }
+
+*/
 
 .rm-block .rm-multibar {
     opacity: 0.2;
