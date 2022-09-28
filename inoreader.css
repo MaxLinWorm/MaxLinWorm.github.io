@@ -79,7 +79,8 @@ body {
 
 /* BODY COPY */
 
-body.font_family_georgia .article_content {
+body.font_family_georgia .article_content,
+body.font_family_georgia.font_size_0 .article_content {
     font-size: var(--max_body_fs);
     line-height: var(--max_body_lh);
     font-family: var(--max_body_ff_serif);
