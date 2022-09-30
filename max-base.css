@@ -80,7 +80,8 @@
     --max_cont_pag_foreground_pb: 50px;
     
     /* Totaliza 660px a coluna de texto com fs 18.5 */
-    --max_cont_pag_foreground_mw: calc(35.68em
+    --max_cont_pag_foreground_mw-f: 33.68em;
+    --max_cont_pag_foreground_mw: calc(var(--max_cont_pag_foreground_mw-f)
         + var(--max_cont_pag_foreground_pl) 
         + var(--max_cont_pag_foreground_pr) 
     ); 
