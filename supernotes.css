@@ -1,0 +1,36 @@
+.markdown-body,
+body,
+#root,
+.ͼ10 .cm-content {
+    font-family: 'SF Pro Text';
+    letter-spacing: 0px;
+    line-height: 1.5;
+}
+
+.ͼ10 .cm-line {
+    line-height: 1.5;
+}
+
+.ͼz {
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-family: 'SF Pro Text';
+}
+
+.ͼz .cm-line {
+    font-family: 'SF Pro Text';
+}
+
+span,
+button,
+input,
+textarea,
+.css-108k2xd,
+.css-1j4sibe {
+    letter-spacing: 0px;
+}
+
+#root {
+    font-weight: 400;
+}
