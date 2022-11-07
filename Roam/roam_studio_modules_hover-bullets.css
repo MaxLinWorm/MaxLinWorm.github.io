@@ -1,12 +1,3 @@
-/* Obtido de https://github.com/rcvd/RoamStudio/blob/master/src/RoamStudio/modules/bullet-effects.css */
-
 .rm-bullet:hover .rm-bullet__inner {
-    width: 9px;
-    height: 9px;
-    border: 2px solid transparent;
     transition: all /*0.2s*/0.05s ease-in-out;
-}
-
-.rm-bullet.rm-bullet--closed:hover .rm-bullet__inner {
-    border: 2px solid transparent;
 }

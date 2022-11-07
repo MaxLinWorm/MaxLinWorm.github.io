@@ -1,48 +1,12 @@
 /* Obtido de https://github.com/rcvd/RoamStudio/blob/master/src/RoamStudio/modules/subtle-controls.css */
 
 /* Retirei bullets porque fica
-muito escondido se tem children collapsed 
+muito escondido se tem children collapsed */
 .rm-block .rm-bullet {
     opacity: 0.2;
 }
 
-.rm-block:hover>.rm-block-main>.controls>.rm-bullet {
-    opacity: 1;
-}
-
-
-/*.rm-focused>
-.rm-block:focus-within>.rm-block-main>.controls>.rm-bullet {
-    opacity: 1;
-}
-
-/*.rm-focused>
-.rm-block:focus-within>.rm-block-main>.controls>.rm-bullet>.bp3-popover-wrapper .rm-bullet__inner {
-    background-color: #9E2B0E;
-}
-
-*/
-
-.rm-block .rm-multibar {
-    opacity: 0.2;
-}
-
-.rm-block:hover>.rm-block-children>.rm-multibar {
-    opacity: 1;
-}
-
-/* Abaixo, substituindo `.rm-focused>` por
-   `.rm-block:focus-within>`, mudaria para mostrar também 
-   os multibars dos ancestrais
-*/
-.rm-focused>.rm-block-children>.rm-multibar {
-    opacity: 1;
-}
-
-.rm-ref-page-view .rm-title-arrow-wrapper>.rm-caret {
-    opacity: 0.2;
-}
-
-.rm-ref-page-view:hover .rm-title-arrow-wrapper>.rm-caret {
+/* Multibar dos ancestrais*/
+.rm-block:focus-within>.rm-block-children>.rm-multibar {
     opacity: 1;
 }

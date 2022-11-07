@@ -10,26 +10,10 @@
 @import url('https://maxlinworm.github.io/Fonts/signifier.css');
 */
 
-/* Tema Principal - Craft */
-@import url('https://rcvd.github.io/roam-css-system/themes/craft.css');
+/* Minhas mods ao Tema Principal */
+@import url('https://maxlinworm.github.io/Roam/roam_max_craft-mods.css');
 
-
-
-/* Módulos do CSS Theme*/
-
-/* Imagens dinâmicas */
-@import url('https://rcvd.github.io/roam-css-system/modules/dynamic-images.css');
-
-/* Centered Search */
-@import url('https://rcvd.github.io/roam-css-system/modules/centered-search.css');
-
-/* Hide Roam Logo */
-@import url('https://rcvd.github.io/roam-css-system/modules/hide-logo.css');
-
-
-
-/* Módulos do Roam Studio */
-
+/* Mods dos Módulos do Roam Studio */
 /* Advanced Heading Spacing */
 @import url('https://maxlinworm.github.io/Roam/roam_studio_modules_headings.css');
 
@@ -39,32 +23,27 @@
 /* Bullet Effects */
 @import url('https://maxlinworm.github.io/Roam/roam_studio_modules_hover-bullets.css');
 
-/* Mobile Side-bar */
-@import url('https://maxlinworm.github.io/Roam/roam_studio_modules_mobile-sidebar.css');
 
+/* OUTROS */
 
-
-/* Minhas mods ao Tema Principal */
-@import url('https://maxlinworm.github.io/Roam/roam_max_craft-mods.css');
-
-/* Sidebars */
-@import url('https://maxlinworm.github.io/Roam/roam_max_sidebars.css');
-
-
+/* Scrollbars */
+@import url('https://maxlinworm.github.io/Roam/roam_max_scrollbars.css');
 
 /* Twitter on Hover */
 @import url('https://maxlinworm.github.io/Roam/roam_max_twitter-on-hover.css');
+
+
+/* PLUGINS */
 
 /* Masonry */
 /*@import url('https://gitmurf.github.io/masonry-vanilla/masonry-main.css');*/
 
 /* Minhas mods ao Masonry */
 
-
 /* Meta/Tipo/Autor/C3Founder - CCC Roam Enhancement - PDF */
 @import url('https://c3founder.github.io/Roam-Enhancement/enhancedPDF.css');
 
-/* Roam/JS Unline Finder */
+/* Roam/JS Unlink Finder */
 @import url('https://maxlinworm.github.io/Roam/Plugins/roam_unlink-finder.css');
 
 /* Query Builder */
