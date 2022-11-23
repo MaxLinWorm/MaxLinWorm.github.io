@@ -59,14 +59,14 @@
 
 @font-face {
     font-family: 'iawriter-mono';
-    src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterMono/iAWriterMono-SemiBold20.ttf') format('truetype');
+    src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterMono/iAWriterMono-Semibold20.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'iawriter-mono';
-    src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterMono/iAWriterMono-SemiBoldItalic20.ttf') format('truetype');
+    src: url('https://maxlinworm.github.io/Fonts/Mono/iAWriterMono/iAWriterMono-SemiboldItalic20.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
