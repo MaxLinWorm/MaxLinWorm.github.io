@@ -94,7 +94,7 @@
 
 /* Retira letterspacing do mono, porque a fonte que eu uso já tem */
 
-.notion-page-content[style*="font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; letter-spacing: 0.055em;"] {
+.notion-page-content[style*="font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; font-size: 15px; letter-spacing: 0.055em;"] {
     letter-spacing: normal !important;
 }
 
