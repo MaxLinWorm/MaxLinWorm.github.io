@@ -118,6 +118,26 @@
     }
 }
 
+/* Top Bar Hidden in Focus Mode */
+
+/* Esconde topbar quando transparente (escrevendo) 
+   Usei height porque consigo colocar transição */
+.notion-topbar[style*="opacity: 0"] {
+    /*display: none !important;*/
+    height: 0px !important;
+}
+
+/* Transição */
+.notion-topbar[style*="opacity: 1"] {
+    /*transition: opacity 300ms ease 0s, color 300ms ease 0s;*/
+    transition: opacity 300ms ease 2s, color 300ms ease 2s, height 300ms ease 2s !important;
+}
+
+.notion-topbar[style*="opacity: 0"] {
+    /*transition: opacity 300ms ease 0s, color 300ms ease 0s;*/
+    transition: opacity 300ms ease 0s, color 300ms ease 0s, height 300ms ease 2s !important;
+}
+
 /* === SEARCH AUTO-COMPLETE === */
 
 /* Tabelas de autopreenchimento das relações */
