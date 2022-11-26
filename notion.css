@@ -92,10 +92,24 @@
 
 /* --- TIPOGRAFIA --- */
 
+/* Título de páginas */
+div.notion-page-block[style*='font-size: 40px'] {
+    letter-spacing: -0.03em;
+}
+
+/* Mono */
 /* Retira letterspacing do mono, porque a fonte que eu uso já tem */
 
 .notion-page-content[style*="font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; font-size: 15px; letter-spacing: 0.055em;"] {
     letter-spacing: normal !important;
+}
+
+
+/* Sans */
+/* Body Sans*/
+/* Perfeito para SF Pro Text que eu hosto no GitHub (mais espaçada)*/
+.notion-page-content[style*="font-size: 16px;"] {
+    letter-spacing: -0.025em;
 }
 
 /* --- MODIFICAÇÕES DE UI --- */
