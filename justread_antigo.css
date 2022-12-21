@@ -1,0 +1,326 @@
+@import url(https://maxlinworm.github.io/freighttext.css);
+@import url(https://maxlinworm.github.io/heldane.css);
+@import url(https://maxlinworm.github.io/signifier.css);
+@import url(https://maxlinworm.github.io/epicene.css);
+@import url(https://maxlinworm.github.io/justread.css);
+
+:root {
+    --font-family-texto: 'FreightTextMax', 'EpiceneMax', 'Source Serif Pro', 'Equity Text B', 'Mercury Text G3', 'Franziska Pro', 'Adobe Caslon Pro', 'Palatino Linotype', Georgia;
+    --font-family-headings1: var(--font-family-texto);
+    --font-family-headings3: var(--font-family-texto);
+    --font-size-main: 18.5px;
+    --line-height-main: 1.45em
+}
+
+@media (prefers-color-scheme:light) {
+    :root {
+        --container-artigo-padding-left: 125px;
+        --container-artigo-padding-right: 125px;
+        --container-geral-max-width: calc(30em + var(--container-artigo-padding-left) + var(--container-artigo-padding-right));
+        --container-artigo-background-color: rgb(237, 235, 228);
+        --container-artigo-border-radius: 10px;
+        --container-artigo-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+        --body-background-color: #f5f4f0;
+        --body-color: rgb(55, 53, 42);
+        --a-color: rgb(255, 91, 61);
+        --a-border-color: rgba(255, 91, 61, .5);
+        --a-hover-color: rgb(166, 50, 30);
+        --a-hover-border-color: rgba(166, 50, 30, .75)
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    :root {
+        --container-geral-max-width: 550px;
+        --container-artigo-padding-left: 0px;
+        --container-artigo-padding-right: 0px;
+        --container-artigo-background-color: rgb(17, 17, 17);
+        --container-artigo-border-radius: none;
+        --container-artigo-box-shadow: none;
+        --body-background-color: rgb(17, 17, 17);
+        --body-color: rgb(187, 187, 187);
+        --a-color: rgb(235, 235, 235);
+        --a-border-color: rgb(136, 136, 136);
+        --a-hover-color: rgb(255, 255, 255);
+        --a-hover-border-color: rgb(156, 156, 156);
+        filter: brightness(.8) contrast(1.2)
+    }
+}
+
+@media screen {
+    * {
+        box-sizing: border-box
+    }
+}
+
+.simple-container {
+    max-width: var(--container-geral-max-width);
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 20px
+}
+
+@media (max-width:750px) {
+    .simple-container {
+        padding-left: 50px;
+        padding-right: 50px
+    }
+}
+
+@media (max-width:450px) {
+    .simple-container {
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+.simple-article-container {
+    display: block;
+    padding-left: var(--container-artigo-padding-left);
+    padding-right: var(--container-artigo-padding-right);
+    background-color: var(--container-artigo-background-color);
+    border-radius: var(--container-artigo-border-radius);
+    box-shadow: var(--container-artigo-box-shadow);
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
+    -moz-hyphens: auto;
+    -moz-hyphenate-limit-chars: 6 3 3;
+    -moz-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-last: always;
+    -moz-hyphenate-limit-zone: 8%;
+    -ms-hyphens: auto;
+    -ms-hyphenate-limit-chars: 6 3 3;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-last: always;
+    -ms-hyphenate-limit-zone: 8%;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-last: always;
+    hyphenate-limit-zone: 8%
+}
+
+.simple-date {
+    display: inline-block;
+    font-family: "Source Sans Pro Light", sans-serif;
+    font-size: 18px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 1px solid #d8d8d8
+}
+
+.rtl .simple-date {
+    border-left: 1px solid #d8d8d8;
+    border-right: none;
+    padding-right: 0;
+    padding-left: 15px
+}
+
+.simple-author {
+    display: inline-block;
+    font-family: "Source Sans Pro Semibold", sans-serif;
+    font-size: 18px;
+    color: #27aae1;
+    line-height: 22px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.rtl .simple-author {
+    padding-left: 0;
+    padding-right: 10px
+}
+
+body {
+    background-color: var(--body-background-color);
+    font-family: var(--font-family-texto);
+    line-height: var(--line-height-main);
+    font-size: var(--font-size-main);
+    color: var(--body-color);
+    font-feature-settings: "kern", "calt", "liga";
+    font-variant-ligatures: normal;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility
+}
+
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0.75em
+}
+
+blockquote {
+    margin-block-start: 0em;
+    margin-block-end: 0.75em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border-left: 3px solid var(--a-color);
+    padding-left: 1.5em
+}
+
+blockquote p {
+    font-size: var(--font-size-main);
+    line-height: var(--line-height-main)
+}
+
+sup {
+    line-height: 0 !important
+}
+
+h1.simple-title {
+    font-size: 2em;
+    margin-block-end: 1.5em
+}
+
+h1,
+h2 {
+    font-family: var(--font-family-headings1);
+    font-weight: 600
+}
+
+h1 {
+    font-size: 1.4em;
+    line-height: 1.35em;
+    margin-block-start: 1.5em;
+    margin-block-end: 0.75em
+}
+
+h2 {
+    font-size: 1.3em;
+    line-height: 1.35em;
+    margin-block-start: 1.35em;
+    margin-block-end: 0.75em
+}
+
+h3 {
+    font-family: var(--font-family-headings3);
+    font-size: 1.2em;
+    line-height: 1.35em;
+    margin-block-start: 1.35em;
+    margin-block-end: 0.55em;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    border-top: none;
+    font-weight: 500
+}
+
+h4 {
+    font-family: var(--font-family-headings3);
+    font-size: 1.1em;
+    line-height: 1.35em;
+    margin-block-start: 1.35em;
+    margin-block-end: 0.55em;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    border-top: none;
+    font-weight: 400;
+    font-variant: small-caps
+}
+
+hr {
+    height: 1px;
+    background-color: #d8d8d8;
+    border: none;
+    width: 100%;
+    margin: 0
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--a-color);
+    border-bottom: .05em solid;
+    border-color: var(--a-border-color)
+}
+
+a[href]:hover {
+    color: var(--a-hover-color);
+    text-decoration: none;
+    border-color: var(--a-hover-border-color)
+}
+
+a[href^="#_ft"] {
+    font-size: .65em;
+    vertical-align: super;
+    line-height: 0
+}
+
+.image a,
+a.image,
+a[href$=gif],
+a[href$=jpe],
+a[href$=jpeg],
+a[href$=jpg],
+a[href$=png],
+a[href^=\#],
+img a[href] {
+    border: none;
+    border-bottom: none;
+    border-bottom-color: none
+}
+
+.image a:hover,
+a.image:hover,
+a[href$=gif]:hover,
+a[href$=jpe]:hover,
+a[href$=jpeg]:hover,
+a[href$=jpg]:hover,
+a[href$=png]:hover,
+a[href^=\#]:hover,
+img a[href]:hover {
+    border: none;
+    border-bottom-color: none
+}
+
+li {
+    line-height: 1.5em
+}
+
+pre {
+    background-color: #e0e0e0;
+    padding: 10px;
+    overflow: auto
+}
+
+[class*=sidebar],
+[id*=sidebar],
+aside {
+    max-width: 90%;
+    margin: 0 auto;
+    border: 1px solid #d3d3d3;
+    padding: 5px 15px
+}
+
+[class*=emoji],
+[class*=icon] {
+    width: 1em
+}
+
+img {
+    max-width: 100%
+}
+
+.youtubeContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 25px
+}
+
+iframe[src*="youtube.com/embed/"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
