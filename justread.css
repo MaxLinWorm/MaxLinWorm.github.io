@@ -101,6 +101,33 @@ body {
     background-color: var(--max_color_pag_foreground);
     border-radius:    var(--max_cont_pag_foreground_brad);
     box-shadow:       var(--max_cont_pag_foreground_elevation);
+
+    -webkit-hyphens: var(--max_body_hifens);
+    -webkit-hyphenate-limit-before: var(--max_body_hifens_limit-before);
+    -webkit-hyphenate-limit-after: var(--max_body_hifens_limit-after);
+    -webkit-hyphenate-limit-chars: var(--max_body_hifens_limit-chars);
+    -webkit-hyphenate-limit-lines: var(--max_body_hifens_limit-lines);
+    -webkit-hyphenate-limit-last: var(--max_body_hifens_limit-last);
+    -webkit-hyphenate-limit-zone: var(--max_body_hifens_limit-zone);
+
+    -moz-hyphens: var(--max_body_hifens);
+    -moz-hyphenate-limit-chars: var(--max_body_hifens_limit-chars);
+    -moz-hyphenate-limit-lines: var(--max_body_hifens_limit-lines);
+    -moz-hyphenate-limit-last: var(--max_body_hifens_limit-last);
+    -moz-hyphenate-limit-zone: var(--max_body_hifens_limit-zone);
+
+    -ms-hyphens: var(--max_body_hifens);
+    -ms-hyphenate-limit-chars: var(--max_body_hifens_limit-chars);
+    -ms-hyphenate-limit-lines: var(--max_body_hifens_limit-lines);
+    -ms-hyphenate-limit-last: var(--max_body_hifens_limit-last);
+    -ms-hyphenate-limit-zone: var(--max_body_hifens_limit-zone);
+
+    overflow-wrap: var(--max_body_hifens_wrap);
+    hyphens: var(--max_body_hifens);
+    hyphenate-limit-chars: var(--max_body_hifens_limit-chars);
+    hyphenate-limit-lines: var(--max_body_hifens_limit-lines);
+    hyphenate-limit-last: var(--max_body_hifens_limit-last);
+    hyphenate-limit-zone: var(--max_body_hifens_limit-zone);
 }
 
 /* Outros */
