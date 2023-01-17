@@ -87,6 +87,18 @@
     font-style: italic;
 }
 
+:root {
+    --m-trans-delay: 200ms;
+    /*300ms*/
+    --m-ease-delay-1: 2s;
+    /* 2s */
+    --m-ease-delay-0: 0s;
+    --m-transition-1: opacity var(--m-trans-delay) ease 2s, color var(--m-trans-delay) ease var(--m-ease-delay-1), height var(--m-trans-delay) var(--m-ease-delay-1) !important;
+    /*opacity 300ms ease 0s, color 300ms ease 0s; */
+    --m-transition-0: opacity var(--m-trans-delay) ease 0s, color var(--m-trans-delay) ease var(--m-ease-delay-0), height var(--m-trans-delay) ease var(--m-ease-delay-0);
+    /*opacity 300ms ease 0s, color 300ms ease 0s;*/
+}
+
 
 /* === REGRAS === */
 
@@ -138,18 +150,31 @@ div.notion-page-block[style*='font-size: 40px'] {
    Usei height porque consigo colocar transição */
 .notion-topbar[style*="opacity: 0"] {
     /*display: none !important;*/
-    height: 0px !important;
+    height: 0px !important; /* 45px */
+}
+
+.notion-cursor-listener:has(.notion-topbar[style*="opacity: 0"]) .notion-frame {
+    height: 100vh !important; /* calc(100vh + 45px) */
 }
 
 /* Transição */
+
 .notion-topbar[style*="opacity: 1"] {
     /*transition: opacity 300ms ease 0s, color 300ms ease 0s;*/
-    transition: opacity 300ms ease 2s, color 300ms ease 2s, height 300ms ease 2s !important;
+    transition: var(--m-transition-1) !important
 }
 
 .notion-topbar[style*="opacity: 0"] {
     /*transition: opacity 300ms ease 0s, color 300ms ease 0s;*/
-    transition: opacity 300ms ease 0s, color 300ms ease 0s, height 300ms ease 2s !important;
+    transition: var(--m-transition-0) !important;
+}
+
+.notion-cursor-listener:has(.notion-topbar[style*="opacity: 1"]) .notion-frame {
+    transition: var(--m-transition-1) !important;
+}
+
+.notion-cursor-listener:has(.notion-topbar[style*="opacity: 0"]) .notion-frame {
+    transition: var(--m-transition-0) !important;
 }
 
 /* === SEARCH AUTO-COMPLETE === */
