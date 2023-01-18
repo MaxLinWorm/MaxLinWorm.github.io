@@ -477,6 +477,9 @@ div[data-is-folded="true"] {
 div[data-is-folded="true"] div.truncate.text-body.font-semibold.text-primary.px-2 {
     font-size: var(--max-card-whiteboard-fs);
     font-size: var(--max-card-whiteboard-folded-fs);
+    line-height: 1;
+    padding-left: 4px; /* 8px */
+    padding-right: 4px; /* 8px */
 }
 
 /* Text Objects */
