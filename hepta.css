@@ -76,8 +76,8 @@
     --max-card-whiteboard-ul-lh: var(--max-card-whiteboard-p-lh); /* 1.5 */
     --max-card-whiteboard-ol-lh: var(--max-card-whiteboard-p-lh); /* 1.5 */
 
-    /* Text object */
-    --max-textobject-fs: var(--max-card-whiteboard-h1-fs);
+    /* Folded Cards */
+    --max-card-whiteboard-folded-fs: var(--max-card-whiteboard-h1-fs);
 
     /* OPEN CARDS | SIDEBAR */
 
@@ -465,11 +465,16 @@
     line-height: calc((var(--max-card-whiteboard-ol-lh) * var(--max-card-whiteboard-fs)) + 5px) !important; 
 }
 
-/* Text Objects */
+/* Folded Cards */
 
 div[data-is-folded="true"] div.truncate.text-body.font-semibold.text-primary.px-2 {
     font-size: var(--max-card-whiteboard-fs);
-    font-size: var(--max-textobject-fs);
+    font-size: var(--max-card-whiteboard-folded-fs);
+}
+
+/* Text Objects */
+div[data-object-type="textElement"] > textarea {
+    font-size: var(--max-card-whiteboard-fs);
 }
 
 
