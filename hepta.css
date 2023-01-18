@@ -79,6 +79,9 @@
     /* Folded Cards */
     --max-card-whiteboard-folded-fs: var(--max-card-whiteboard-h1-fs);
 
+    /* Text Object */
+    --max-textobject-fs: var(--max-card-whiteboard-fs);
+
     /* OPEN CARDS | SIDEBAR */
 
     --max-card-open-fs: 16px; /*17px orig e 90%*/
@@ -467,6 +470,10 @@
 
 /* Folded Cards */
 
+div[data-is-folded="true"] {
+    font-size: var(--max-card-whiteboard-fs);
+}
+
 div[data-is-folded="true"] div.truncate.text-body.font-semibold.text-primary.px-2 {
     font-size: var(--max-card-whiteboard-fs);
     font-size: var(--max-card-whiteboard-folded-fs);
@@ -474,7 +481,7 @@ div[data-is-folded="true"] div.truncate.text-body.font-semibold.text-primary.px-
 
 /* Text Objects */
 div[data-object-type="textElement"] > textarea {
-    font-size: var(--max-card-whiteboard-fs);
+    font-size: var(--max-textobject-fs);
 }
 
 
