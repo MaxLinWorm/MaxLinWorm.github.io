@@ -76,6 +76,9 @@
     --max-card-whiteboard-ul-lh: var(--max-card-whiteboard-p-lh); /* 1.5 */
     --max-card-whiteboard-ol-lh: var(--max-card-whiteboard-p-lh); /* 1.5 */
 
+    /* Text object */
+    --max-textobject-fs: var(--max-card-whiteboard-h1-fs);
+
     /* OPEN CARDS | SIDEBAR */
 
     --max-card-open-fs: 16px; /*17px orig e 90%*/
@@ -319,7 +322,7 @@
     background-color: transparent
 }
 
-/* Íconres com fundo */
+/* Ícones com fundo */
 #root>div>div:nth-child(2)>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.flex.min-w-0.flex-grow.items-center.gap-x-2>div.flex.items-center.gap-x-2>div>div:nth-child(1)>svg,
 #root>div>div:nth-child(2)>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.flex.min-w-0.flex-grow.items-center.gap-x-2>div.flex.items-center.gap-x-2>div>div:nth-child(2)>svg,
 #root>div>div:nth-child(2)>div.absolute.top-0.z-10.box-border.flex.items-center.gap-x-4.bg-whiteboard-background.p-2>div.flex.min-w-0.flex-grow.items-center.gap-x-2>div.ml-1.min-w-0.flex.select-none.items-center.text-label.font-medium.text-middle-hard-grey>input,
@@ -460,6 +463,12 @@
 .CardInstance_wrapper__3dlnz .ProseMirror.ProseMirror-hepta-style ol .mr-2.ordered-item {
     /* Orig 31px do marker e 27px o do conteúdo, ou seja, != de 4px */
     line-height: calc((var(--max-card-whiteboard-ol-lh) * var(--max-card-whiteboard-fs)) + 5px) !important; 
+}
+
+/* Text Objects */
+
+div[data-is-folded="true"] div.truncate.text-body.font-semibold.text-primary.px-2 {
+    font-size: var(--max-textobject-fs);
 }
 
 
