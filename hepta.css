@@ -472,6 +472,7 @@
 
 div[data-is-folded="true"] {
     font-size: var(--max-card-whiteboard-fs);
+    /*
     height: 66px !important; /* 62px */
 }
 
