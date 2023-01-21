@@ -4,16 +4,22 @@
 
     /* COMUNS */
     --font-family-default: 'SF Pro Text', 'Roboto', 'Arial' !important;
+    --max-body-ff: 'Triplicate T4', 'Cartograph CF', 'Source Serif Pro', 'Courier';
 
     /* WHITEBOARD */
-    --max-card-whiteboard-fs: 22px; /*18px orig; 24px 90% no desktop*/
+    --max-card-whiteboard-fs: 16px; /*18px orig; 24px 90% no desktop*/
 
     /* Headings */
+
+    /* Título */
+    --max-card-whiteboard-title-fs_num: 1.85; /* 1.875 */
+    --max-card-whiteboard-title-fs: calc(var(--max-card-whiteboard-title-fs_num) * 1em);
+
     /* H1 */
     --max-card-whiteboard-h1-fs_num: 1.35; /* 1.875 */
     --max-card-whiteboard-h1-fs: calc(var(--max-card-whiteboard-h1-fs_num) * 1em);
     /*1.875em*/
-    --max-card-whiteboard-h1-fw: 700 /* 600 */;
+    --max-card-whiteboard-h1-fw: 700; /* 600 */
     --max-card-whiteboard-h1-lh: 1.3;
     --max-card-whiteboard-h1-mt: .85em; /*1.1em*/
     --max-card-whiteboard-h1-mb: .25em;
@@ -22,7 +28,7 @@
     
     /* H2 */
     --max-card-whiteboard-h2-fs: 1.2em; /*1.5em*/
-    --max-card-whiteboard-h2-fw: 700 /* 600 */;
+    --max-card-whiteboard-h2-fw: 700; /* 600 */
     --max-card-whiteboard-h2-lh: 1.3;
     --max-card-whiteboard-h2-mt: .65em;  /* 1em */
     --max-card-whiteboard-h2-mb: .25em;
@@ -31,7 +37,7 @@
 
     /* H3 */
     --max-card-whiteboard-h3-fs: 1.125em; /*1.17em*/
-    --max-card-whiteboard-h3-fw: 500 /* 600 */;
+    --max-card-whiteboard-h3-fw: 500; /* 600 */
     --max-card-whiteboard-h3-lh: 1.3;
     --max-card-whiteboard-h3-mt: .5em; /*.9em */
     --max-card-whiteboard-h3-mb: .25em;
@@ -39,20 +45,20 @@
     --max-card-whiteboard-h3-fv: normal;
 
     /* H4 */
-    --max-card-whiteboard-h4-fs: 1.1em; /*18px (=1em)*/
-    --max-card-whiteboard-h4-fw: 500 /* 600 */;
+    --max-card-whiteboard-h4-fs: 1.1em; /* 18px (=1em) */
+    --max-card-whiteboard-h4-fw: 500; /* 600 */
     --max-card-whiteboard-h4-lh: 1.3;
-    --max-card-whiteboard-h4-mt: var(--max-card-whiteboard-h3-mt);/* 1.33em User style */
-    --max-card-whiteboard-h4-mb: var(--max-card-whiteboard-h3-mb);/* 1.33em User style */
+    --max-card-whiteboard-h4-mt: var(--max-card-whiteboard-h3-mt); /* 1.33em User style */
+    --max-card-whiteboard-h4-mb: var(--max-card-whiteboard-h3-mb); /* 1.33em User style */
     --max-card-whiteboard-h4-pd: 0px 0px; /* sem estilo */
     --max-card-whiteboard-h4-fv: small-caps;
 
     /* H5 */
-    --max-card-whiteboard-h5-fs: 1.1em; /*18px (=1em)*/
+    --max-card-whiteboard-h5-fs: 1.1em; /* 18px (=1em) */
     --max-card-whiteboard-h5-fw: 400; /* 600 */
     --max-card-whiteboard-h5-lh: 1.3;
-    --max-card-whiteboard-h5-mt: var(--max-card-whiteboard-h3-mt);/* 1.33em User style */
-    --max-card-whiteboard-h5-mb: var(--max-card-whiteboard-h3-mb);/* 1.33em User style */
+    --max-card-whiteboard-h5-mt: var(--max-card-whiteboard-h3-mt); /* 1.33em User style */
+    --max-card-whiteboard-h5-mb: var(--max-card-whiteboard-h3-mb); /* 1.33em User style */
     --max-card-whiteboard-h5-pd: 0px 0px; /* sem estilo */
     --max-card-whiteboard-h5-fv: small-caps;
 
@@ -60,16 +66,16 @@
     --max-card-whiteboard-h6-fs: 1.1em; /*18px (=1em)*/
     --max-card-whiteboard-h6-fw: 400; /* 600 */
     --max-card-whiteboard-h6-lh: 1.3;
-    --max-card-whiteboard-h6-mt: var(--max-card-whiteboard-h3-mt);/* 1.33em User style */
-    --max-card-whiteboard-h6-mb: var(--max-card-whiteboard-h3-mb);/* 1.33em User style */
+    --max-card-whiteboard-h6-mt: var(--max-card-whiteboard-h3-mt); /* 1.33em User style */
+    --max-card-whiteboard-h6-mb: var(--max-card-whiteboard-h3-mb); /* 1.33em User style */
     --max-card-whiteboard-h6-pd: 0px 0px; /* sem estilo */
     --max-card-whiteboard-h6-fv: normal;
     --max-card-whiteboard-h6-fst: italic;
 
     /* Parágrafos */
-    --max-card-whiteboard-p-lh: 1.35; /* 1.5*/
-    --max-card-whiteboard-p-mt: 3px;/* 4px */
-    --max-card-whiteboard-p-mb: 2px;/* 4px */
+    --max-card-whiteboard-p-lh: 1.5; /* 1.35 para SF; orig 1.5*/
+    --max-card-whiteboard-p-mt: 6px; /* 3px para SF; orig 4px */
+    --max-card-whiteboard-p-mb: 6px; /* 2px para SF; orig 4px */
     --max-card-whiteboard-p-pd: 2px 3px; /* 2px 3px */
 
     /* Listas */
@@ -81,6 +87,8 @@
 
     /* Text Object */
     --max-textobject-fs: var(--max-card-whiteboard-fs);
+    --max-textobject-ff: var(--max-body-ff);
+    --max-textobject-lh: var(--max-card-whiteboard-p-lh);
 
     /* PDF Annotation Object */
     --max-pdfannotation-fs: var(--max-card-whiteboard-fs);
@@ -89,14 +97,18 @@
     --max-pdfannotation-mb: var(--max-card-whiteboard-p-mb);
     --max-pdfannotation-pd: var(--max-card-whiteboard-p-pd);
 
+
+
+
+
     /* OPEN CARDS | SIDEBAR */
 
-    --max-card-open-fs: 16px; /*17px orig e 90%*/
+    --max-card-open-fs: 17px; /*16px SF; 17px orig e 90%*/
 
     /* HEADINGS */
     /* H1 */
     --max-card-open-h1-fs: 1.5em; /* 1.875em */
-    --max-card-open-h1-fw: var(--max-card-whiteboard-h1-fw) /* 600 */;
+    --max-card-open-h1-fw: var(--max-card-whiteboard-h1-fw); /* 600 */
     --max-card-open-h1-lh: var(--max-card-whiteboard-h1-lh); /* 1.3 */
     --max-card-open-h1-mt: 1.1em; /* 1.1em */
     --max-card-open-h1-mb: .25em;
@@ -105,7 +117,7 @@
     
     /* H2 */
     --max-card-open-h2-fs: 1.35em; /* 1.5em */
-    --max-card-open-h2-fw: var(--max-card-whiteboard-h2-fw) /* 600 */;
+    --max-card-open-h2-fw: var(--max-card-whiteboard-h2-fw); /* 600 */
     --max-card-open-h2-lh: var(--max-card-whiteboard-h2-lh); /* 1.3 */
     --max-card-open-h2-mt: 1em; /*1em*/ 
     --max-card-open-h2-mb: .25em;
@@ -114,7 +126,7 @@
 
     /* H3 */
     --max-card-open-h3-fs: 1.3em; /* 1.17em */
-    --max-card-open-h3-fw: var(--max-card-whiteboard-h3-fw) /* 600 */;
+    --max-card-open-h3-fw: var(--max-card-whiteboard-h3-fw); /* 600 */
     --max-card-open-h3-lh: var(--max-card-whiteboard-h3-lh);
     --max-card-open-h3-mt: .85em; /* .9em */
     --max-card-open-h3-mb: .25em;
@@ -123,10 +135,10 @@
 
     /* H4 */
     --max-card-open-h4-fs: 1.15em; /*18px (=1em)*/
-    --max-card-open-h4-fw: var(--max-card-whiteboard-h4-fw); /* 600 */;
+    --max-card-open-h4-fw: var(--max-card-whiteboard-h4-fw); /* 600 */
     --max-card-open-h4-lh: var(--max-card-whiteboard-h4-lh); /* 1.3 */
-    --max-card-open-h4-mt: var(--max-card-open-h3-mt);/* 1.33em User style */
-    --max-card-open-h4-mb: var(--max-card-open-h3-mb);/* 1.33em User style */
+    --max-card-open-h4-mt: var(--max-card-open-h3-mt); /* 1.33em User style */
+    --max-card-open-h4-mb: var(--max-card-open-h3-mb); /* 1.33em User style */
     --max-card-open-h4-pd: 0px 0px; /* sem estilo */
     --max-card-open-h4-fv: small-caps;
 
@@ -134,8 +146,8 @@
     --max-card-open-h5-fs: 1.1em; /*18px (=1em)*/
     --max-card-open-h5-fw: var(--max-card-whiteboard-h5-fw); /* 600 */
     --max-card-open-h5-lh: var(--max-card-whiteboard-h5-lh); /* 1.3 */
-    --max-card-open-h5-mt: var(--max-card-open-h3-mt);/* 1.33em User style */
-    --max-card-open-h5-mb: var(--max-card-open-h3-mb);/* 1.33em User style */
+    --max-card-open-h5-mt: var(--max-card-open-h3-mt); /* 1.33em User style */
+    --max-card-open-h5-mb: var(--max-card-open-h3-mb); /* 1.33em User style */
     --max-card-open-h5-pd: 0px 0px; /* sem estilo */
     --max-card-open-h5-fv: small-caps;
 
@@ -143,16 +155,16 @@
     --max-card-open-h6-fs: 1.15em; /*18px (=1em)*/
     --max-card-open-h6-fw: var(--max-card-whiteboard-h6-fw); /* 600 */
     --max-card-open-h6-lh: var(--max-card-whiteboard-h6-lh);
-    --max-card-open-h6-mt: var(--max-card-open-h3-mt);/* 1.33em User style */
-    --max-card-open-h6-mb: var(--max-card-open-h3-mb);/* 1.33em User style */
+    --max-card-open-h6-mt: var(--max-card-open-h3-mt); /* 1.33em User style */
+    --max-card-open-h6-mb: var(--max-card-open-h3-mb); /* 1.33em User style */
     --max-card-open-h6-pd: 0px 0px; /* sem estilo */
     --max-card-open-h6-fv: normal;
     --max-card-open-h6-fst: italic;
 
     /* Parágrafos */
-    --max-card-open-p-lh: 1.35; /* 1.5*/
-    --max-card-open-p-mt: 3px;/* 4px */
-    --max-card-open-p-mb: 2px;/* 4px */
+    --max-card-open-p-lh: 1.6; /* 1.35 para SF; orig 1.5*/
+    --max-card-open-p-mt: 6px; /* 3px para SF; orig 4px */
+    --max-card-open-p-mb: 6px; /* 2px para SF; orig 4px */
     --max-card-open-p-pd: 2px 3px; /* 2px 3px */
 
     /* Listas */
@@ -160,12 +172,20 @@
     --max-card-open-ol-lh: var(--max-card-open-p-lh); /* 1.5 */
 }
 
+/* HEADINGS */
 
+/* Retira espaçamentos de Headings
+   quando for sub-heading sem texto
+   que o preceda
+*/
+
+/* Cards no Whiteboard */
 .CardInstance_wrapper__3dlnz .ProseMirror.ProseMirror-hepta-style :is(h1, h2, h3, h4, h5, h6)+ :is(h1, h2, h3, h4, h5, h6) {
     --max-card-whiteboard-h1-mb: var(--max-card-whiteboard-p-mb);
     --max-card-whiteboard-h1-pd: var(--max-card-whiteboard-p-pd);
     --max-card-whiteboard-h1-mt: var(--max-card-whiteboard-p-mt);
 
+    /* Aplicar mesma configuração para níveis restantes */
     --max-card-whiteboard-h2-mb: var(--max-card-whiteboard-h1-mb);
     --max-card-whiteboard-h2-pd: var(--max-card-whiteboard-h1-pd);
     --max-card-whiteboard-h2-mt: var(--max-card-whiteboard-h1-mt);
@@ -188,6 +208,7 @@
 
 }
 
+/* Cards abertos */
 .ProseMirror.ProseMirror-hepta-style :is(h1, h2, h3, h4, h5, h6)+ :is(h1, h2, h3, h4, h5, h6) {
     --max-card-open-h1-mb: var(--max-card-open-p-mb);
     --max-card-open-h1-pd: var(--max-card-open-p-pd);
@@ -215,6 +236,13 @@
 
 }
 
+/* BODY */
+
+.ProseMirror.ProseMirror-hepta-style {
+    --font-family-default: var(--max-body-ff);
+}
+
+
 /* === REGRAS === */
 
 /* COMUNS */
@@ -227,6 +255,11 @@
 /* Links internos em highlights */
 .ProseMirror a[data-internal-href] mark {
     color: var(--active-item);
+}
+
+/* BODY */
+.ProseMirror.ProseMirror-hepta-style {
+    font-family: var(--font-family-default);
 }
 
 /* Headings */
@@ -315,16 +348,7 @@
 
 /* WHITE BOARD */
 
-/* Cards no whiteboard */
-.CardInstance_wrapper__3dlnz .ProseMirror.ProseMirror-hepta-style {
-    font-size: var(--max-card-whiteboard-fs);
-}
-
-/* Título de cards folded */
-.mx-auto.truncate.px-2.text-body {
-    font-size: calc(var(--max-card-whiteboard-h1-fs_num) * var(--max-card-whiteboard-fs));
-    line-height: var(--max-card-whiteboard-h1-lh);
-}
+/* UI */
 
 /* Toolbar transparente */
 
@@ -344,6 +368,26 @@
     background-color: rgb(238 237 237 / 95%);
     border-radius: 8px;
     color: black;
+}
+
+/* TIPOGRAFIA */
+
+/* Cards no whiteboard */
+.CardInstance_wrapper__3dlnz .ProseMirror.ProseMirror-hepta-style {
+    font-size: var(--max-card-whiteboard-fs);
+}
+
+/* Título de cards folded */
+.mx-auto.truncate.px-2.text-body {
+    font-size: calc(var(--max-card-whiteboard-h1-fs_num) * var(--max-card-whiteboard-fs));
+    line-height: var(--max-card-whiteboard-h1-lh);
+}
+
+/* HEADINGS */
+
+/* Título */
+.CardInstance_wrapper__3dlnz .ProseMirror.ProseMirror-hepta-style h1:first-child {
+    font-size: var(--max-card-whiteboard-title-fs);
 }
 
 /* H1*/
@@ -494,18 +538,19 @@ div[data-is-folded="true"] div.truncate.text-body.font-semibold.text-primary.px-
 /* Text Objects */
 div[data-object-type="textElement"] > textarea {
     font-size: var(--max-textobject-fs);
+    font-family: var(--max-textobject-ff);
 }
 
 /* PDF Annotations */
 
-div[data-object-type="highlightElementInstance"] p {
+div[data-object-type="highlightElementInstance"] .ProseMirror.ProseMirror-hepta-style p {
     font-size: var(--max-pdfannotation-fs);
     line-height: var(--max-pdfannotation-lh);
     margin-bottom: var(--max-pdfannotation-mb);
     padding: var(--max-pdfannotation-pd);
 }
 
-div[data-object-type="highlightElementInstance"] p:not(:first-child) {
+div[data-object-type="highlightElementInstance"] .ProseMirror.ProseMirror-hepta-style p:not(:first-child) {
     margin-top: var(--max-pdfannotation-mt);
 }
 
