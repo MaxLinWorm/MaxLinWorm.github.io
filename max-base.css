@@ -269,7 +269,7 @@
         and (min-device-width: 1200px) 
         and (max-device-width: 1280px) {
     :root {
-        --max_body_fs: 18.5px;
+        --max_body_fs: 20px;
     }
 }
 
