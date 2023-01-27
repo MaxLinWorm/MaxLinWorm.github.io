@@ -173,7 +173,7 @@
 
     /* CODE */
     --max_code_ff: var(--max_body_ff_mono);
-    --max_code_fs: 15px; /* 15 para triplicate, 14 para cartograph, hasklig, source, cascadia, operator e consolas. 13 para Fira */
+    --max_code_fs: 14px; /* 14 para cartograph, triplicate, hasklig, source, cascadia, operator e consolas. 13 para Fira */
     --max_code_lh: 1.3; /* 1.3 para cartograph, triplicate, hasklig, source, cascadia, operator e consolas 1.4 para Fira */
 
     /* para fira code: 'dlig', 'calt', 'liga', 'ss03', 'ss05' 
