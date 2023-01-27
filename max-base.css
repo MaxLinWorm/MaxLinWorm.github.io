@@ -96,15 +96,12 @@
 
 :root {
     --max_q_border-size: 2.5px;
-
-    --max_code_ff: 'Cartograph CF',/*'fira code retina', 'fira mono', 'Hasklig', */'Source Code Pro', 'Fira Mono', 'Cascadia Code', 'operator mono', 'IBM Plex Mono', 'Consolas', monospace;
     --max_code_fw: 430; /* 325 para operator, 450 para hasklig */
 }
 
 @media (prefers-color-scheme:dark) {
     :root {
         --max_q_border-size: 1.5px;
-        --max_code_ff: 'Cartograph CF',/*'fira code', 'fira mono', 'Hasklig', */'Source Code Pro', 'Fira Mono', 'Cascadia Code', 'operator mono', 'IBM Plex Mono', 'Consolas', monospace;
         --max_code_fw: 400; /* 325 para operator */
     }
 }
@@ -124,6 +121,7 @@
 
     --max_body_ff_serif: var(--max_main_ff_serif);
     --max_body_ff_sans:  var(--max_main_ff_sans);
+    --max_body_ff_mono: 'Triplicate T4', 'Cartograph CF',/*'fira code retina', 'fira mono', 'Hasklig', */'Source Code Pro', 'Fira Mono', 'Cascadia Code', 'operator mono', 'IBM Plex Mono', 'Consolas', monospace;
     --max_body_fs: 21px;
     --max_body_lh: 1.4em;
     --max_body_c: var(--max_main_c);
@@ -174,19 +172,20 @@
     --max_ul_mis: calc(var(--max_body_p-indent_ti) * 1.25);
 
     /* CODE */
-
-    --max_code_fs: 14px; /* 14 para hasklig, source, cascadia, operator e consolas. 13 para Fira */
-    --max_code_lh: 1.3; /* 1.3 para hasklig, source, cascadia, operator e consolas 1.4 para Fira */
+    --max_code_ff: var(--max_body_ff_mono);
+    --max_code_fs: 15px; /* 15 para triplicate, 14 para cartograph, hasklig, source, cascadia, operator e consolas. 13 para Fira */
+    --max_code_lh: 1.3; /* 1.3 para cartograph, triplicate, hasklig, source, cascadia, operator e consolas 1.4 para Fira */
 
     /* para fira code: 'dlig', 'calt', 'liga', 'ss03', 'ss05' 
        para cascadia: 'dlig', 'calt', 'liga', 'ss19' 
        para source code 'calt', 'dlig', 'liga', 'clig', 'zero', 'ss06'
        para Cartograph: 'calt', 'dlig', 'liga', 'clig', 'zero'
+       para Triplicate: ''
     */
-    --max_code_ffs: 'calt', 'dlig', 'liga', 'clig', 'zero';
+    --max_code_ffs: 'ss02';
 
     /* font-variant */
-    --max_code_fv: common-ligatures discretionary-ligatures no-historical-ligatures contextual /*styleset(ss06)*/; 
+    --max_code_fv: styleset(ss02) common-ligatures discretionary-ligatures no-historical-ligatures contextual /*styleset(ss06)*/; 
     /* font-variant-ligatures */
     --max_code_fvl: common-ligatures discretionary-ligatures no-historical-ligatures contextual;
     /* font-variant-alternates */
