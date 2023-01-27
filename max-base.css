@@ -122,6 +122,9 @@
     --max_body_ff_serif: var(--max_main_ff_serif);
     --max_body_ff_sans:  var(--max_main_ff_sans);
     --max_body_ff_mono: 'Triplicate T4', 'Cartograph CF',/*'fira code retina', 'fira mono', 'Hasklig', */'Source Code Pro', 'Fira Mono', 'Cascadia Code', 'operator mono', 'IBM Plex Mono', 'Consolas', monospace;
+    
+    /* Proportional usando triplicate */
+    --max_body_ffs_mono: 'ss01';
     --max_body_fs: 21px;
     --max_body_lh: 1.4em;
     --max_body_c: var(--max_main_c);
