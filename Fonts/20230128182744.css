@@ -1,0 +1,19 @@
+/* C4 */
+
+/* Regular */
+
+@font-face {
+    font-family: '20230128182744';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/20230128182744/20230128180637.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: '20230128182744';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/20230128182744/20230128181501.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
