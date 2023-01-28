@@ -1,0 +1,53 @@
+/* T4 */
+
+/* Regular */
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/20230128175226/20230128175533.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/20230128175226/20230128180449.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/20230128175226/20230128180516.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/20230128175226/20230128180528.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* C4 */
+
+/* Regular */
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/20230128175226/20230128180637.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Mono/20230128175226/20230128181501.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
