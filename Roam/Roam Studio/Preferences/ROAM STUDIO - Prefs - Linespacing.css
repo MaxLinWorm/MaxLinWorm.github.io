@@ -1,0 +1,35 @@
+
+/* 3c7fa4f - 2022-11-08 
+   
+   Gerado a partir de build.ts
+
+   ".roam-block, .rm-block__input {line-height: calc(var(--fs-main) + 8px); min-height: calc(var(--fs-main) + 16px); padding-top: 4px;};"+"rm-level1, .rm-heading-level-1 > .rm-block__self .rm-block__input, .rm-heading-level-1 > .rm-block__self > .controls, .rm-heading-level-1 > .rm-block__self > .rm-block__controls {line-height: calc(var(--fs-main__level1) + 8px);}"+"rm-level2, .rm-heading-level-2 > .rm-block__self .rm-block__input, .rm-heading-level-2 > .rm-block__self > .controls, .rm-heading-level-2 > .rm-block__self > .rm-block__controls {line-height: calc(var(--fs-main__level2) + 8px);}"+"rm-level3, .rm-heading-level-3 > .rm-block__self .rm-block__input, .rm-heading-level-3 > .rm-block__self > .controls, .rm-heading-level-3 > .rm-block__self > .rm-block__controls {line-height: calc(var(--fs-main__level3) + 8px);}"
+*/
+
+.roam-block,
+.rm-block__input {
+    line-height: calc(var(--fs-main) + 8px);
+    min-height: calc(var(--fs-main) + 16px);
+    padding-top: 4px;
+}
+
+rm-level1,
+.rm-heading-level-1>.rm-block__self .rm-block__input,
+.rm-heading-level-1>.rm-block__self>.controls,
+.rm-heading-level-1>.rm-block__self>.rm-block__controls {
+    line-height: calc(var(--fs-main__level1) + 8px);
+}
+
+rm-level2,
+.rm-heading-level-2>.rm-block__self .rm-block__input,
+.rm-heading-level-2>.rm-block__self>.controls,
+.rm-heading-level-2>.rm-block__self>.rm-block__controls {
+    line-height: calc(var(--fs-main__level2) + 8px);
+}
+
+rm-level3,
+.rm-heading-level-3>.rm-block__self .rm-block__input,
+.rm-heading-level-3>.rm-block__self>.controls,
+.rm-heading-level-3>.rm-block__self>.rm-block__controls {
+    line-height: calc(var(--fs-main__level3) + 8px);
+}
