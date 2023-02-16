@@ -1,12 +1,46 @@
-/* Obtido de https://github.com/rcvd/RoamStudio/blob/master/src/RoamStudio/modules/subtle-controls.css */
+/*0.2 */
 
-/* Retirei bullets porque fica
-muito escondido se tem children collapsed */
 .rm-block .rm-bullet {
+    opacity: 1;
+}
+
+/*
+.rm-block:hover>.rm-block-main>.controls>.rm-bullet {
+    opacity: 1;
+}
+
+.rm-focused>.rm-block-main>.controls>.rm-bullet {
+    opacity: 1;
+}
+
+.rm-focused>.rm-block-main>.controls>.rm-bullet>.bp3-popover-wrapper .rm-bullet__inner {
+    background-color: #9E2B0E;
+}
+
+*/
+.rm-block .rm-multibar {
     opacity: 0.2;
 }
 
-/* Multibar dos ancestrais*/
+.rm-block:hover>.rm-block-children>.rm-multibar {
+    opacity: 1;
+}
+
+.rm-focused>.rm-block-children>.rm-multibar {
+    opacity: 1;
+}
+
+.rm-ref-page-view .rm-title-arrow-wrapper>.rm-caret {
+    opacity: 0.2;
+}
+
+.rm-ref-page-view:hover .rm-title-arrow-wrapper>.rm-caret {
+    opacity: 1;
+}
+
+/* MAX */
+
+/* Multibar dos ancestrais com foco */
 .rm-block:focus-within>.rm-block-children>.rm-multibar {
     opacity: 1;
 }
