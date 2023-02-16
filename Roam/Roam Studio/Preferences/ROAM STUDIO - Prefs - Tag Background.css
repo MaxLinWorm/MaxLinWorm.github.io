@@ -1,0 +1,17 @@
+
+/* 3c7fa4f - 2022-11-08 
+   
+   Gerado a partir de build.ts
+
+   style.textContent = `.rm-page-ref--tag, span[data-tag="tags"] {padding: 2px 5px;}:root {--bc-main__tags: var(--cl-${tagColor}-${colorStyle});--bc-main__tags--hover: var(--cl-${tagColor}-${colorStyle})}`;
+*/
+
+.rm-page-ref--tag,
+span[data-tag="tags"] {
+    padding: 2px 5px;
+}
+
+:root {
+    --bc-main__tags: var(--cl-gray-500);
+    --bc-main__tags--hover: var(--cl-gray-500)
+}

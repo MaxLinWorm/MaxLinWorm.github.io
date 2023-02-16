@@ -1,0 +1,13 @@
+
+/* 3c7fa4f - 2022-11-08 
+   
+   Gerado a partir de build.ts
+
+    `@media screen and (max-width: 600px) { :root {--fs-app__html: ${fontSize}px;};}`;
+*/
+
+@media screen and (max-width: 600px) {
+    :root {
+        --fs-app__html: 16px;
+    };
+}

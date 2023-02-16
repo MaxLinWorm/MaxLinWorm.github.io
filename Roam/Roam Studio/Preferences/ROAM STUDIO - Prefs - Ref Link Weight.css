@@ -1,0 +1,11 @@
+
+/* 3c7fa4f - 2022-11-08 
+   
+   Gerado a partir de build.ts
+
+   `:root {--fw-reference__page-title: ${settings["css-reference-link-weight"]}};`;
+*/
+
+:root {
+    --fw-reference__page-title: Theme Default
+}

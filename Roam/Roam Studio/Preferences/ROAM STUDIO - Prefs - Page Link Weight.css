@@ -1,0 +1,12 @@
+
+/* 3c7fa4f - 2022-11-08 
+   
+   Gerado a partir de build.ts
+
+    `:root {--fw-main__page-link: ${settings["css-page-link-weight"]};--fw-main__a: ${settings["css-page-link-weight"]};--fw-main__alias: ${settings["css-page-link-weight"]};}`;
+*/
+:root {
+    --fw-main__page-link: Theme Default;
+    --fw-main__a: Theme Default;
+    --fw-main__alias: Theme Default;
+}

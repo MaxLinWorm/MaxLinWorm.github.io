@@ -1,0 +1,38 @@
+
+/* 3c7fa4f - 2022-11-08 
+   
+   Gerado a partir de build.ts
+
+    `:root {--bb-main__page-link: ${borderStyle}var(--cl-${linkColor}-${linkBrightLight});--bb-main__a: ${borderStyle}var(--cl-${linkColor}-${linkBrightLight});--bb-main__alias: ${borderStyle}var(--cl-${linkColor}-${linkBrightLight});--bb-main__page-link--hover: ${borderStyle}var(--cl-${linkColor}-${linkBrightLight});--bb-main__a--hover: ${borderStyle}var(--cl-${linkColor}-${linkBrightLight});--bb-main__alias--hover: ${borderStyle}var(--cl-${linkColor}-${linkBrightLight});}` +
+    `@media (prefers-color-scheme: dark) {:root {--bb-main__page-link: ${borderStyle}var(--cl-${linkColor}-${linkBrightDark});--bb-main__a: ${borderStyle}var(--cl-${linkColor}-${linkBrightDark});--bb-main__alias: ${borderStyle}var(--cl-${linkColor}-${linkBrightDark});--bb-main__page-link--hover: ${borderStyle}var(--cl-${linkColor}-${linkBrightDark});--bb-main__a--hover: ${borderStyle}var(--cl-${linkColor}-${linkBrightDark});--bb-main__alias--hover: ${borderStyle}var(--cl-${linkColor}-${linkBrightDark});}`;
+*/
+:root {
+    --max-pageref-bb-wt: 2px;
+}
+
+/* Mobile */
+@media (max-device-width: 1023px) {
+    :root {
+        --max-pageref-bb-wt: 1.5px;
+    }
+}
+
+:root {
+    --bb-main__page-link: var(--max-pageref-bb-wt) solid var(--cl-gray-300);
+    --bb-main__a: var(--max-pageref-bb-wt) solid var(--cl-gray-300);
+    --bb-main__alias: var(--max-pageref-bb-wt) solid var(--cl-gray-300);
+    --bb-main__page-link--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-300);
+    --bb-main__a--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-300);
+    --bb-main__alias--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-300);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bb-main__page-link: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+        --bb-main__a: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+        --bb-main__alias: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+        --bb-main__page-link--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+        --bb-main__a--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+        --bb-main__alias--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+    }
+}

@@ -1,0 +1,20 @@
+
+/* 3c7fa4f - 2022-11-08 
+   
+   Gerado a partir de build.ts
+
+   `:root {--co-main__tags: var(--cl-${tagColor}-${colorStyleLight});--co-main__tags--hover: var(--cl-${tagColor}-${colorStyleLight});}` +
+    `@media (prefers-color-scheme: dark) {:root {--co-main__tags: var(--cl-${tagColor}-${colorStyleDark});--co-main__tags--hover: var(--cl-${tagColor}-${colorStyleDark});}}`;
+*/
+
+:root {
+    --co-main__tags: var(--cl-gray-100);
+    --co-main__tags--hover: var(--cl-gray-100);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --co-main__tags: var(--cl-gray-900);
+        --co-main__tags--hover: var(--cl-gray-900);
+    }
+}
