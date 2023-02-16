@@ -1,0 +1,452 @@
+/* IGUAL AO GITHUB 2023-01-26 */
+@import url(https://maxlinworm.github.io/max-base.css);
+@import url('https://maxlinworm.github.io/Fonts/20230128175226.css');
+
+/* Só para tirar prova real */
+
+
+/* === VARIÁVEIS === */
+
+:root {
+    /* UNIVERSAIS */
+    
+    /* Início Fonts */
+    /*
+    --ff-allpages: var(--max-ui-ff);
+    */
+    --ff-app__div: inherit;    
+
+    --ff-emoji-mart: 'Comic Sans MS';
+    --ff-find-or-create__wrapper-large: 'Comic Sans MS';
+    --ff-help__category-name: 'Comic Sans MS';
+
+    --ff-help__component-description: 'Comic Sans MS';
+    --ff-help__component-notation: 'Comic Sans MS';/*Roboto Mono, ui-monospace, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; */
+
+    --ff-help__resource-description: 'Comic Sans MS';
+    --ff-help__resource-title: 'Comic Sans MS';
+    
+    --ff-help: 'Comic Sans MS';
+    
+    --ff-input__search-placeholder: 'Comic Sans MS';
+    --ff-input: 'Comic Sans MS';
+    
+    --ff-main__pomodoro: 'Comic Sans MS';
+    
+    --ff-popover: 'Comic Sans MS';
+    
+    /* Page References - Backlinks */
+    --ff-reference: 'Comic Sans MS';
+    
+    --ff-right-sidebar__helper-text: 'Comic Sans MS';
+    
+    
+    --ff-settings__extensions-container: 'Comic Sans MS';
+    --ff-settings__hotkeys: 'Comic Sans MS', Roboto Mono, ui-monospace, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    
+    
+    --ff-toast: 'Comic Sans MS';
+    --ff-tooltip: 'Comic Sans MS';
+}
+
+/* --- USER INTERFACE UI --- 
+   ========================= */
+
+/* SETTINGS */
+
+/* Tamanho Máximo para Settings */
+.rm-settings--desktop {
+    max-width: 1000px;
+}
+
+/* Tamanho máximo para Roam Depot */
+.rm-extensions-marketplace-dialog--desktop {
+    max-width: 1200px;
+}
+
+/* ALL PAGES */
+.rm-all-pages .rm-pages-title-matching-block {
+    max-width: var(--max-allpages-mw);
+    color: var(--max-allpages-co);
+    font-family: var(--max-allpages-ff);
+    font-feature-settings: var(--max-allpages-ffs);
+}
+
+/* Filtro ativado*/
+.rm-pages-toolbar .toolbar-search-group .filter-button:has(.filter-icon.filtered) {
+    background-color: var(--max-allpages-filtered-bc);
+}
+
+
+/* LEFT SIDEBAR */
+
+/* Favorites */
+
+/* Wrap */
+.starred-pages-wrapper .starred-pages a>div {
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* Troca espaço por NBSP */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page::before {
+    content: "›\00a0\00a0";
+}
+
+/* RIGHT SIDEBAR */
+/* Tamanho Máximo */
+
+#right-sidebar .sidebar-content .rm-sidebar-window {
+    max-width: var(--max-rightsidebar-mw);
+    margin-right: var(--max-rightsidebar-mr);
+    margin-left: var(--max-rightsidebar-ml);
+}
+
+
+/* TOPBAR */
+
+/* Igualar altura das toolbars */
+/* Centro */
+div.roam-app:not(.mobile) .rm-topbar {
+    height: var(--max-topbar-h);
+}
+
+/* Left Sidebar */
+.roam-body div.roam-app:not(.mobile) .roam-sidebar-container .roam-sidebar-content .top-row {
+    height: var(--max-topbar-h);
+}
+
+/* Right Sidebar */
+
+/* Expanded */
+div.roam-app:not(.mobile) #right-sidebar>.flex-h-box {
+    height: var(--max-topbar-h);
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+/* Floating */
+/* Compensa diminuição do topbar para
+   facilitar movimentação do mouse sem 
+   que seja dispensado o sidebar por hover
+   no vão 
+*/
+div.roam-app:not(.mobile) div.roam-sidebar-container[style='left: 0px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; top: 45px;'] {
+    top: var(--max-rightsidebar-float-top) !important;
+}
+
+/* Compensa tamanho do container à diminuição do topbar */
+.roam-body .roam-app .roam-body-main {
+    flex: 0 0 calc(100% - var(--max-rightsidebar-float-top));
+}
+
+/* BOTÕES DE CHAR COUNT */
+button.bp3-button[data-roamjs-smartblock-button="true"] {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    min-width: fit-content;
+    min-height: fit-content;
+    vertical-align: baseline
+}
+
+/* EMBEDS NORMAIS */
+
+/* Retira espaçamento à direita, 
+   para alinhar com bullets normais */
+.rm-spacing--right-sidebar-open .rm-embed-container,
+.rm-spacing--left-sidebar-open .rm-embed-container,
+#right-sidebar .rm-embed-container,
+.mobile .rm-embed-container,
+.rm-write-only-page .rm-embed-container {
+    /* 32px Craft Theme */
+    margin-right: 0px;
+    /* -10px Craft Theme e Fixes 
+       para igualar começo do texto com o bullet*/
+    margin-left: -8.75px
+}
+
+.rm-embed-container--block {
+    /* Craft Theme = 4px
+       Vanilla = 2px*/
+    padding-left: 4px;
+}
+
+/* Embed expandido para mostrar
+   bullet original  */
+.rm-embed-container--block.rm-embed-show-bullet {
+    /*2px*/
+    padding-left: 2.5px
+}
+
+/* EMBED PATHS */
+
+.rm-embed-path {
+    /* igual embed normal do tema */
+    background-color: var(--bc-embed);
+    border-top: var(--bt-embed);
+    border-right: var(--br-embed);
+    border-bottom: var(--bb-embed);
+    border-left: var(--bl-embed);
+    border-radius: var(--bd-embed);
+}
+
+.rm-embed-path {
+    /* Iguais embed normal do site  */
+    margin-left: -5px;
+    /*-4px;*/
+    padding-left: 3px;
+    /*2px*/
+    margin-bottom: -4px;
+
+}
+
+.rm-embed-path>.rm-embed-path__inner>.rm-inline-reference>.roam-block-container.rm-block {
+    margin-left: -11px;
+}
+
+/* BDL TRANSCLUSION - HIGHLIGHT 
+   das Transclusões quando navego 
+   Tree acima 
+*/
+
+/* Retira border e colocar outline 
+   do transcluído em embeds / backlinks
+   para melhorar alinhamento */
+.block-highlight-yellow>.rm-block__self {
+    border: none;
+    outline: 3px solid;
+    outline-color: var(--highlight-color)
+}
+
+/* BLOCK VERSIONS */
+
+.rm-select-version-button.rm-button-selected {
+    background-color: var(--highlight-color);
+}
+
+/* CODE BLOCKS */
+
+/* Max-height dos code blocks */
+div.rm-article-wrapper div.cm-editor,
+div#roam-right-sidebar-content div.cm-editor {
+    max-height: var(--max-codeblock-maxheight);
+    overflow-y: auto;
+}
+
+/* Alinha Code Block ao Embed */
+.rm-inline-code-block {
+    margin-left: -10px;
+}
+
+/* BULLETS */
+
+/* Diminui distância do texto e do bullet */
+.controls,
+.rm-block__controls {
+    flex: 0 0 var(--max-bullets-espacamento); /*48px*/
+}
+
+/* PAGE REFS */
+
+/* Brackets */
+
+/* Brackets Únicos nos Links Bidirecionais */
+
+span.rm-page-ref__brackets {
+    display: none;
+}
+
+.rm-page-ref.rm-page-ref--link:before {
+    content: "[";
+    color: var(--fs-main);
+    font-weight: 400;
+}
+
+.rm-page-ref--link:after {
+    content: "]";
+    color: var(--fs-main);
+    font-weight: 400;
+}
+
+/* Cor dos links no breadcrumb */
+
+.rm-zoom .rm-zoom-item .rm-page-ref,
+.rm-zoom-path .rm-zoom-item .rm-page-ref {
+    color: var(--co-main__zoom-item);
+}
+
+/* Page Refs Hover */
+
+.rm-page-ref:hover {
+    font-weight: var(--max-page-ref-hover-fw);
+    background-color: var(--max-page-ref-hover-bc);
+    border-radius: var(--max-page-ref-hover-bd);
+}
+
+/* BLOCK REFS */
+
+/* Realinhar botão de block refs */
+
+/* Normal */
+.bp3-button.bp3-small.block-ref-count-button {
+    margin-top: 4px;
+}
+
+/* H1 */
+.rm-level1 .bp3-button.bp3-small.block-ref-count-button,
+.rm-heading-level-1>.rm-block-main .bp3-button.bp3-small.block-ref-count-button {
+    margin-top: calc(30px + 4px);
+}
+
+/* H2 */
+.rm-level2 .bp3-button.bp3-small.block-ref-count-button,
+.rm-heading-level-2>.rm-block-main .bp3-button.bp3-small.block-ref-count-button,
+.rm-level3 .bp3-button.bp3-small.block-ref-count-button,
+.rm-heading-level-3>.rm-block-main .bp3-button.bp3-small.block-ref-count-button {
+    margin-top: calc(15px + 4px);
+}
+
+/* H3 */
+.rm-block--closed.rm-level1 .bp3-button.bp3-small.block-ref-count-button,
+.rm-block--closed.rm-heading-level-1 .bp3-button.bp3-small.block-ref-count-button,
+.rm-block--closed.rm-level2 .bp3-button.bp3-small.block-ref-count-button,
+.rm-block--closed.rm-heading-level-2 .bp3-button.bp3-small.block-ref-count-button,
+.rm-block--closed.rm-level3 .bp3-button.bp3-small.block-ref-count-button,
+.rm-block--closed.rm-heading-level-3 .bp3-button.bp3-small.block-ref-count-button {
+    margin-top: 4px;
+}
+
+/* INLINE BLOCK REFS */
+.rm-reference-footnote .rm-active {
+    color: var(--max-blockref-inline-active-co);
+    background-color: var(--max-blockref-inline-active-bc);
+}
+
+/* TAGS ESPECIAIS */
+
+/* Headings de esferas */
+div[data-page-links='["@Tra"]'].rm-heading-level-3>.rm-block-main.rm-block__self>.roam-block,
+div[data-page-links='["@MGJ"]'].rm-heading-level-3>.rm-block-main.rm-block__self>.roam-block,
+div[data-page-links='["@Max"]'].rm-heading-level-3>.rm-block-main.rm-block__self>.roam-block,
+div[data-page-links='["@Par"]'].rm-heading-level-3>.rm-block-main.rm-block__self>.roam-block,
+div[data-page-links='["@SAEVA"]'].rm-heading-level-3>.rm-block-main.rm-block__self>.roam-block,
+div[data-page-links='["@Dir"]'].rm-heading-level-3>.rm-block-main.rm-block__self>.roam-block,
+div[data-page-links='["@Out"]'].rm-heading-level-3>.rm-block-main.rm-block__self>.roam-block {
+    /* igual ao embed */
+    background-color: var(--bc-embed);
+    border-color: var(--cl-gray-50);
+    border-radius: var(--bd-embed);
+    border-top: var(--bt-embed);
+    border-right: var(--br-embed);
+    border-bottom: var(--bb-embed);
+    border-left: var(--bl-embed);
+}
+
+/* Arquivado */
+[data-page-links*='Status-Arquivado']>.rm-block-main {
+    text-decoration: line-through;
+}
+
+/* Descendentes com ancestrais com tag */
+[data-path-page-links*='Status-Arquivado'] {
+    text-decoration: none;
+}
+
+
+
+/* --- TIPOGRAFIA ----
+   =================== */
+
+/* Não configurado pelo tema ou Vanilla 
+   Vi que pega "Outline of" e "References to" no Sidebar */
+body {
+    font-family: var(--max-ui-ff);
+}
+
+
+/* BODY */
+/* Para usar triplicate "semi proporcional" */
+.roam-body .roam-app .roam-main .roam-article, 
+.roam-body .roam-app .roam-main .roam-article textarea, 
+.roam-block-container .rm-block-main, 
+.roam-block-container .rm-block-main, 
+.roam-block-container textarea, 
+.roam-block {
+    font-feature-settings: var(--max_body_ffs_mono);
+}
+
+/* HEADINGS */
+
+/* H1 */
+.rm-level1,
+.rm-heading-level-1>.rm-block__self .rm-block__input,
+.roam-body .roam-app .roam-main .roam-article .rm-heading-level-1.rm-block>div>div>textarea {
+    line-height: var(--max-headings-h1-lh);
+}
+
+/* H2 */
+.rm-level2,
+.rm-heading-level-2>.rm-block__self .rm-block__input,
+.roam-body .roam-app .roam-main .roam-article .rm-heading-level-2.rm-block>div>div>textarea {
+    line-height: var(--max-headings-h2-lh);
+}
+
+/* H3 */
+.rm-level3,
+.rm-heading-level-3>.rm-block__self .rm-block__input,
+.roam-body .roam-app .roam-main .roam-article .rm-heading-level-3.rm-block>div>div>textarea {
+    line-height: var(--max-headings-h3-lh);
+}
+
+/* Page Title */
+.roam-body .roam-app .roam-main .roam-article .rm-title-editing-display, 
+.roam-body .roam-app .roam-main .roam-article .rm-title-display {
+    line-height: var(--max-headings-title-lh);
+}
+
+
+
+/* QUOTES */
+
+.rm-bq {
+    margin: var(--max-quote-ma);
+    padding: var(--max-quote-pa);
+}
+
+/* CODE BLOCKS */
+
+/* Tipografia */
+.cm-content .cm-line,
+.cm-gutters{
+    font-feature-settings: var(--max_code_ffs);
+    -webkit-font-feature-settings: var(--max_code_ffs);
+    -moz-font-feature-settings: var(--max_code_ffs);
+    -ms-font-feature-settings: var(--max_code_ffs);
+
+    font-variant: var(--max_code_fv);
+    font-variant-ligatures: var(--max_code_fvl);
+    font-variant-alternates: var(--max_code_fva);
+
+}
+
+.ͼ1 .cm-scroller div {
+    line-height: var(--max_code_lh);
+}
+
+/* INLINE CODE */
+
+code {
+    font-feature-settings: var(--max_code_ffs);
+}
+
+/* === MOBILE === */
+
+/* Diminui search bar para
+   tentar aumentar quantidade
+   de ícones (princ sidebar) 
+*/
+div.roam-app.mobile .rm-find-or-create-wrapper {
+    flex: 0 1 10px !important;
+}

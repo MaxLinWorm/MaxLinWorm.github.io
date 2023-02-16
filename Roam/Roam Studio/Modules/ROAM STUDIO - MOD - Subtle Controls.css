@@ -1,9 +1,10 @@
 /* 3c7fa4f - 2022-11-08 */
 
 .rm-block .rm-bullet {
-    opacity: 0.2;
+    opacity: 1;
 }
 
+/*
 .rm-block:hover>.rm-block-main>.controls>.rm-bullet {
     opacity: 1;
 }
@@ -16,6 +17,7 @@
     background-color: #9E2B0E;
 }
 
+*/
 .rm-block .rm-multibar {
     opacity: 0.2;
 }
@@ -33,5 +35,12 @@
 }
 
 .rm-ref-page-view:hover .rm-title-arrow-wrapper>.rm-caret {
+    opacity: 1;
+}
+
+/* MAX */
+
+/* Multibar dos ancestrais com foco */
+.rm-block:focus-within>.rm-block-children>.rm-multibar {
     opacity: 1;
 }

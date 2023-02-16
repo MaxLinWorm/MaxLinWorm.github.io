@@ -1,0 +1,141 @@
+/* Variáveis */
+@import url(https://maxlinworm.github.io/max-base.css);
+@import url('https://maxlinworm.github.io/Fonts/20230128175226.css');
+
+:root {
+    /* --- UNIVERSAIS ---
+       ================== */
+    
+    /* FONTS */
+    --max-ui-ff: /*Georgia */var(--max_main_ff_sans);
+    --max-body-ff: var(--max_body_ff_mono);
+
+
+    /* --- UI ---
+       ========== */
+
+    /* ALL PAGES */
+
+    --max-allpages-mw: 700px;
+    --max-allpages-co: var(--co-main);
+    --max-allpages-ff: var(--max-body-ff);
+    --max-allpages-ffs: var(--max_body_ffs_mono);
+    --max-allpages-filtered-bc: var(--max-blockref-inline-active-bc);
+
+    /* TOPBAR E FLOATING RIGHT SIDEBAR */
+
+    --max-topbar-h: 30px;
+    --max-rightsidebar-float-top: var(--max-topbar-h);
+
+    /* RIGHT SIDEBAR */
+    /* Tamanho Máximo */
+    --max-rightsidebar-mw: calc(800px + 24px + 44px + 30px);
+    --max-rightsidebar-mr: auto;
+    --max-rightsidebar-ml: auto;
+
+    /* MULTIBAR */
+    --max-multibar-br-rgb: rgb(236, 237, 236);
+    --max-multibar-br: 2px solid var(--max-multibar-br-rgb);
+
+    /* BORDERS */
+
+    /* Era CL-GRAY-150 = 241,241,241*/
+    --max-border-light-rgb: rgb(208, 208, 208);
+    --max-border-light: 1px solid var(--max-border-light-rgb);
+
+    /* BULLETS */
+
+    /* 
+    48px no tema = alinha bullets com
+    início do texto parent 
+    */
+
+    --max-bullets-espacamento: 36px;
+
+    /* PAGE REFS */
+
+    /* Page refs on hover */
+    --max-page-ref-hover-fw: 500;
+    --max-page-ref-hover-bc: var(--bc-main__date-link);
+    --max-page-ref-hover-bd: 5px;
+
+    /* BLOCK REFS */
+
+    /* Inline Block Refs */
+
+    /* Ativadas | Expandidas */
+    
+    /* Vanilla = #F5F8FA */
+    --max-blockref-inline-active-co: var(--co-main__tags);
+
+    /* Vanilla = #5C7080 */
+    --max-blockref-inline-active-bc: var(--bc-main__tags);
+
+    /* CODE BLOCKS */
+    --max-codeblock-maxheight: 700px;
+
+
+    /* --- TIPOGRAFIA ---
+       ================== */
+
+    /* HEADINGS */
+    --max-headings-ff: var(--max-body-ff);
+    
+    /* h1 */
+    --max-headings-h1-lh: 1.35em;
+
+    /* h2 */
+    --max-headings-h2-lh: 1.35em;
+
+    /* h3 */
+    --max-headings-h3-lh: 1.35em;
+
+    /* Page Title */
+    /* calc(var(--fs-main__page-title) + 8px)*/
+    --max-headings-title-lh: 1.35em;
+
+    /* QUOTES */
+    /* Margin */
+    --max-quote-ma: 10px 0px 0px 0px;
+    /* Padding */
+    --max-quote-pa: 0px 0px 0px 15px;
+
+
+
+}
+
+/* --- TAGS ESPECIAIS ---
+   ====================== */
+
+[data-page-links*='Status-Arquivado'] {
+    --max-arq-co: rgb(176, 176, 176);
+}
+
+
+/* --- DARK MODE ---
+   ================= */
+
+   /* TD Mudar cores */
+@media (prefers-color-scheme:dark) {
+    :root {
+        --max-arq-co: rgb(176, 176, 176);
+        --max-multibar-br-rgb: rgb(236, 237, 236);
+        --max-border-light-rgb: rgb(208, 208, 208);
+    }
+}
+
+
+/* --- MOBILE ---
+   ============== */
+
+/* POR ALTURA */
+@media screen and (max-height: 700px) {
+    :root {
+        
+        /* CODE BLOCKS */
+        
+        --max-codeblock-maxheight: 500px;
+    }
+}
+
+

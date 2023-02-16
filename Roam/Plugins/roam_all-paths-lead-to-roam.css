@@ -38,15 +38,15 @@
 /* Headings no path-highlighted | All Paths Lead to Roam | Scope Highlighter */
 .rm-heading-level-1>.rm-block__self .path-highlighted+.rm-block__input .rm-page-ref,
 .rm-heading-level-1>.rm-block__self .path-highlighted+.rm-block__input .rm-alias {
-    font-weight: var(--fw-level1) !important;
+    font-weight: var(--fw-main__level1) !important;
 }
 
 .rm-heading-level-2>.rm-block__self .path-highlighted+.rm-block__input .rm-page-ref,
 .rm-heading-level-2>.rm-block__self .path-highlighted+.rm-block__input .rm-alias {
-    font-weight: var(--fw-level2) !important;
+    font-weight: var(--fw-main__level2) !important;
 }
 
 .rm-heading-level-3>.rm-block__self .path-highlighted+.rm-block__input .rm-page-ref,
 .rm-heading-level-3>.rm-block__self .path-highlighted+.rm-block__input .rm-alias {
-    font-weight: var(--fw-level3) !important;
+    font-weight: var(--fs-main__level3) !important;
 }

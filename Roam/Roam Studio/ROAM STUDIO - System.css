@@ -1891,7 +1891,7 @@ h3.bp3-heading {
 	border-top: 			var(--bt-log-page);
 }
 
-.roam-block a:not(.bp3-menu-item):hover, .roam-block a:not(.bp3-menu-item):focus, #right-sidebar a:not(.bp3-menu-item):hover, .#right-sidebar a:not(.bp3-menu-item):focus, .rm-help a:hover {
+.roam-block a:not(.bp3-menu-item):hover, .roam-block a:not(.bp3-menu-item):focus, #right-sidebar a:not(.bp3-menu-item):hover, #right-sidebar a:not(.bp3-menu-item):focus, .rm-help a:hover {
 	border-bottom: 			var(--bb-main__a--hover);
 	color: 					var(--co-main__a--hover);
 	-webkit-text-decoration: 		var(--td-main__a--hover);

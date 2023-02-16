@@ -1,0 +1,13 @@
+/* TAGS ESPECIAIS */
+
+/* Smartblocks */
+[data-path-page-links*='SmartBlock'] {
+    --ff-main: var(--max-code-ff);
+}
+
+
+/* Arquivado */
+[data-page-links*='Status-Arquivado'] {
+    --co-main: var(--max-arq-co);
+    --co-page__link: var(--max-arq-co);
+}
