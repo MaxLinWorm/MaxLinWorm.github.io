@@ -1,5 +1,6 @@
 /* 3149fe7 - 2023-02-13 */
 
+
 /* Re-color Roam Research Logo */
 #roam-sidebar-logo img {
     --webkit-filter: brightness(30%);
@@ -101,7 +102,7 @@
     --td-allpages__title-text: none;
     --fw-allpages__title-text: 600;
     --bc-allpages: var(--cl-white);
-    --ff-allpages: var(--max-ui-ff);
+    --ff-allpages: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-allpages: 15px;
     --ff-app__div: inherit;
     --fs-app__div: inherit;
@@ -256,7 +257,7 @@
     --bd-button: 5px;
     --sd-button: none;
     --co-button: var(--cl-gray-850);
-    --ff-button: var(--max-ui-ff);
+    --ff-button: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-button: 0.9rem;
     --bc-codeblock__activeline--focus: var(--cl-gray-150);
     --bc-codeblock__activeline: transparent;
@@ -271,10 +272,7 @@
     --bl-codeblock__button--hover: transparent;
     --sd-codeblock__button--hover: none;
     --co-codeblock__button--hover: var(--cl-gray-600);
-    /* Gutters e settings (barra abaixo) */
-
-    --bc-codeblock__button: var(--bc-embed);
-
+    --bc-codeblock__button: var(--cl-gray-75);
     --bt-codeblock__button: transparent;
     --br-codeblock__button: transparent;
     --bb-codeblock__button: transparent;
@@ -284,33 +282,20 @@
     --co-codeblock__button: var(--cl-gray-600);
     --fs-codeblock__button: 0.9rem;
     --co-codeblock__classname: var(--cl-blue-600);
-    /* Code Blocks */
-
-    --co-codeblock__code: var(--co-main);
-    /* Code Blocks */
-
-    --ff-codeblock__code: var(--max_code_ff);
-    /* Code Blocks */
-
-    --fs-codeblock__code: var(--max_code_fs);
-
+    --co-codeblock__code: var(--cl-gray-700);
+    --ff-codeblock__code: Roboto Mono, ui-monospace, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    --fs-codeblock__code: 0.9rem;
     --co-codeblock__comment: var(--cl-yellow-700);
     --br-codeblock__cursor: transparent;
     --bl-codeblock__cursor: 2px solid var(--cl-gray-900);
     --co-codeblock__def: var(--cl-blue-600);
     --co-codeblock__error: var(--cl-red-500);
     --co-codeblock__gutter: var(--cl-gray-600);
-    /* CB > Numeração gutter code block */
-
-    --ff-codeblock__gutter: var(--max_code_ff);
-
+    --ff-codeblock__gutter: Roboto Mono, ui-monospace, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     --fs-codeblock__gutter: 1rem;
     --ft-codeblock__gutter: normal;
-    --fw-codeblock__gutter: normal;    
-    /* Cor Background dos cantos = embed */
-
-    --bc-codeblock__gutters: var(--bc-embed);
-
+    --fw-codeblock__gutter: normal;
+    --bc-codeblock__gutters: var(--cl-gray-75);
     --bt-codeblock__gutters: transparent;
     --br-codeblock__gutters: transparent;
     --bb-codeblock__gutters: transparent;
@@ -332,10 +317,7 @@
     --bc-codeblock__searching: transparent;
     --bc-codeblock__selected--focus: var(--cl-gray-300);
     --bc-codeblock__selected: var(--cl-gray-200);
-    /* Gutters e settings (barra abaixo) */
-
-    --bc-codeblock__settings-bar: var(--bc-embed);
-
+    --bc-codeblock__settings-bar: var(--cl-gray-75);
     --bt-codeblock__settings-bar: transparent;
     --bd-codeblock__settings-bar: 5px;
     --co-codeblock__string: var(--cl-red-900);
@@ -345,19 +327,10 @@
     --co-codeblock__variable: var(--cl-blue-700);
     --co-codeblock__variable-2: var(--cl-blue-700);
     --bc-codeblock: var(--cl-gray-75);
-    /* Borders = Embed */
-
-    --bt-codeblock: var(--bt-embed);
-    /* Borders = Embed */
-
-    --br-codeblock: var(--br-embed);
-    /* Borders = Embed */
-
-    --bb-codeblock: var(--bb-embed);
-    /* Borders = Embed */
-
-    --bl-codeblock: var(--bl-embed);
-
+    --bt-codeblock: transparent;
+    --br-codeblock: transparent;
+    --bb-codeblock: transparent;
+    --bl-codeblock: transparent;
     --bd-codeblock: 5px;
     --co-codeblock: var(--cl-gray-850);
     --bc-commandpalette__input--focus: var(--cl-gray-250);
@@ -558,9 +531,7 @@
     --bc-datepicker: var(--cl-gray-100);
     --bd-datepicker: 8px;
     --co-datepicker: var(--cl-gray-850);
-
-    --ff-datepicker: var(--max-ui-ff);
-
+    --ff-datepicker: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-datepicker: 0.9rem;
     --bc-dialog__autobackup: transparent;
     --bt-dialog__autobackup: transparent;
@@ -618,9 +589,7 @@
     --bd-dialog: 10px;
     --sd-dialog: 3px 3px 11px 3px rgba(0, 0, 0, 0.1);
     --co-dialog: var(--cl-gray-850);
-
-    --ff-dialog: var(--max-ui-ff);
-
+    --ff-dialog: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-dialog: 0.9rem;
     --co-drawer__button-icon: var(--cl-x);
     --co-drawer__heading: var(--cl-gray-850);
@@ -671,10 +640,7 @@
     --bd-elevation: 5px;
     --sd-elevation: 3px 3px 11px 3px rgba(0, 0, 0, 0.1);
     --co-elevation: var(--cl-gray-850);
-    /* Ref autocompl */
-
-    --ff-elevation: var(--max-ui-ff);
-
+    --ff-elevation: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-elevation: 0.9rem;
     --bc-embed__container-10: var(--cl-gray-150);
     --bt-embed__container-10: 1px solid var(--cl-gray-200);
@@ -743,10 +709,7 @@
     --br-embed: 1px solid var(--cl-gray-200);
     --bb-embed: 1px solid var(--cl-gray-200);
     --bl-embed: 1px solid var(--cl-gray-200);
-    /* Embed Border Radius Igual ao Code Block - era 0 */
-
-    --bd-embed: var(--bd-codeblock);
-
+    --bd-embed: 0px;
     --bc-embed-page__margin: var(--cl-gray-150);
     --bl-embed-page__margin: 2px solid var(--cl-gray-200);
     --bt-embed-page__reference-main: 1px solid var(--cl-gray-100);
@@ -1092,9 +1055,7 @@
     --fw-graph-dropdown__sign-out: normal;
     --op-graph-dropdown__sign-out: 1;
     --sd-graph-dropdown: none;
-
-    --ff-graph-dropdown: var(--max-ui-ff);
-
+    --ff-graph-dropdown: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-graph-dropdown: 0.9rem;
     --fw-graph-dropdown: normal;
     --op-graph-dropdown: 1;
@@ -1300,13 +1261,12 @@
     --tt-left-sidebar__starred-title: none;
     --bc-left-sidebar__toprow--hover: var(--cl-gray-100);
     --bc-left-sidebar__toprow: var(--cl-gray-100);
-    --bb-left-sidebar__toprow: var(--max-border-light);
+    --bb-left-sidebar__toprow: 1px solid var(--cl-gray-250);
     --bc-left-sidebar: var(--cl-gray-100);
-    --br-left-sidebar: var(--max-border-light);
-    --ff-left-sidebar: var(--max-ui-ff);
+    --br-left-sidebar: 1px solid var(--cl-gray-250);
+    --ff-left-sidebar: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --co-log-page__h1: var(--cl-gray-550);
-    --ff-log-page__h1: var(--max-headings-ff);
-
+    --ff-log-page__h1: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-log-page__h1: 1.4rem;
     --ft-log-page__h1: normal;
     --fw-log-page__h1: normal;
@@ -1437,15 +1397,11 @@
     --bb-main__inline-code: 1px solid var(--cl-gray-300);
     --bl-main__inline-code: 1px solid var(--cl-gray-300);
     --bd-main__inline-code: 5px;
-    --co-main__inline-code: var(--co-main);
-    --ff-main__inline-code: var(--max_code_ff);
-
+    --co-main__inline-code: var(--cl-gray-850);
+    --ff-main__inline-code: Roboto Mono, ui-monospace, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     --fs-main__inline-code: 0.9rem;
-    /* Indicadores de Block references expandidos */
-
-    --bc-main__inline-ref-count--active: var(--bc-button__minimal--hover);
-    --co-main__inline-ref-count--active: var(--co-main);
-
+    --bc-main__inline-ref-count--active: transparent;
+    --co-main__inline-ref-count--active: var(--cl-gray-850);
     --fw-main__inline-ref-count--active: 600;
     --op-main__inline-ref-count--active: 1;
     --bc-main__inline-ref-count--hover: var(--cl-gray-200);
@@ -1463,50 +1419,28 @@
     --bc-main__inline-references: var(--cl-gray-150);
     --bb-main__level1: transparent;
     --co-main__level1: var(--cl-gray-850);
-
-    /* H1 */
-
-    --ff-main__level1: var(--max-headings-ff);
-
-    /* H1 */
-
-    --fs-main__level1: var(--max-headings-h1-fs);
-
+    --ff-main__level1: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --fs-main__level1: 1.4rem;
     --ft-main__level1: normal;
     --fw-main__level1: 700;
     --tt-main__level1: none;
     --bb-main__level2: transparent;
     --co-main__level2: var(--cl-gray-850);
-    /* H2 */
-
-    --ff-main__level2: var(--max-headings-ff);
-    /* H2 */
-
-    --fs-main__level2: var(--max-headings-h2-fs);
-
+    --ff-main__level2: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --fs-main__level2: 1.3rem;
     --ft-main__level2: normal;
     --fw-main__level2: 700;
     --tt-main__level2: none;
     --bb-main__level3: transparent;
     --co-main__level3: var(--cl-gray-850);
-
-    /* H3 */
-
-    --ff-main__level3: var(--max-headings-ff);
-
-    /* H3 */
-
-    --fs-main__level3: var(--max-headings-h3-fs);
-
+    --ff-main__level3: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --fs-main__level3: 1.2rem;
     --ft-main__level3: normal;
     --fw-main__level3: 600;
     --tt-main__level3: none;
     --bd-main__modal-image: 10px;
     --br-main__multibar--hover: 4px solid var(--cl-gray-400);
-    /* linhas guia de hierarquia do outline */
-
-    --br-main__multibar: var(--max-multibar-br);
-
+    --br-main__multibar: 2px solid var(--cl-gray-125);
     --bb-main__namespace--hover: 1px dashed var(--cl-gray-900);
     --co-main__namespace--hover: var(--cl-gray-850);
     --td-main__namespace--hover: none;
@@ -1518,21 +1452,12 @@
     --co-main__page-link--hover: var(--cl-gray-700);
     --td-main__page-link--hover: none;
     --bb-main__page-link: 3px solid var(--cl-gray-300);
-    /* Links para página */
-
-    --co-main__page-link: var(--co-main);
-
+    --co-main__page-link: var(--cl-gray-700);
     --fw-main__page-link: inherit;
     --td-main__page-link: none;
     --co-main__page-title: var(--cl-gray-850);
-
-    /* Page Title */
-    --ff-main__page-title: var(--max-headings-ff);
-
-    /* Page Title */
-
-    --fs-main__page-title: var(--max-headings-h1-fs);
-
+    --ff-main__page-title: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --fs-main__page-title: 1.4rem;
     --ft-main__page-title: normal;
     --fw-main__page-title: bold;
     --tt-main__page-title: none;
@@ -1598,19 +1523,11 @@
     --bt-main__quote: transparent;
     --br-main__quote: transparent;
     --bb-main__quote: transparent;
-    /* BQ no article */
-
-    --bl-main__quote: 2px solid var(--max_color_text_muted);
-
+    --bl-main__quote: 4px solid var(--cl-gray-800);
     --bd-main__quote: 0px;
     --co-main__quote: var(--cl-gray-850);
-    /* Quote - Font */
-
-    --ff-main__quote: var(--max-body-ff);
-    /* Quote - Font Size */
-
-    --fs-main__quote: var(--fs-main);
-
+    --ff-main__quote: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --fs-main__quote: 1rem;
     --ft-main__quote: normal;
     --fw-main__quote: normal;
     --bt-main__rm-E: 1px solid var(--cl-gray-300);
@@ -1676,10 +1593,7 @@
     --bl-main__tags: transparent;
     --bd-main__tags: 15px;
     --co-main__tags: var(--cl-gray-550);
-    /* Ts no article */
-
-    --ff-main__tags: var(--max-ui-ff);
-
+    --ff-main__tags: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-main__tags: 0.9rem;
     --ft-main__tags: normal;
     --fw-main__tags: normal;
@@ -1692,19 +1606,13 @@
     --fw-main__version-button--selected: bold;
     --co-main__version-button: var(--cl-gray-500);
     --bb-main__version-choice: transparent;
-    --co-main__zoom-item: var(--max-breadcrumbs-co);
-    /* Path | Breadcrumbs do Zoom no Título */
-
-    --ff-main__zoom-item: var(--max-ui-ff);
-
+    --co-main__zoom-item: var(--cl-gray-500);
+    --ff-main__zoom-item: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-main__zoom-item: 1rem;
     --bc-main__zoom-mask: transparent;
     --bc-main: var(--cl-white);
     --co-main: var(--cl-gray-850);
-    /* Body */
-
-    --ff-main: var(--max-body-ff);
-
+    --ff-main: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-main: 1rem;
     --fw-main: normal;
     --bc-menu__button--active: var(--cl-gray-300);
@@ -1802,9 +1710,7 @@
     --bc-menu: var(--cl-gray-100);
     --bd-menu: 5px;
     --co-menu: var(--cl-gray-850);
-
-    --ff-menu: var(--max-ui-ff);
-
+    --ff-menu: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-menu: 0.9rem;
     --co-mobile-bar__icon: var(--cl-gray-850);
     --bc-mobile-bar: var(--cl-gray-200);
@@ -1824,10 +1730,7 @@
     --fs-popover: 0.9rem;
     --bb-reference__linked-title: transparent;
     --co-reference__linked-title: var(--cl-gray-850);
-    /* References (Backlinks) - Linkados expanded */
-
-    --ff-reference__linked-title: var(--ff-reference__linked-title-closed);
-
+    --ff-reference__linked-title: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-reference__linked-title: 1rem;
     --ft-reference__linked-title: normal;
     --fw-reference__linked-title: 500;
@@ -1835,58 +1738,38 @@
     --bt-reference__linked-title-closed: transparent;
     --bb-reference__linked-title-closed: transparent;
     --co-reference__linked-title-closed: var(--cl-gray-500);
-    /* References (Backlinks) - Linkados collapsed */
-
-    --ff-reference__linked-title-closed: var(--max-ui-ff);
-
+    --ff-reference__linked-title-closed: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-reference__linked-title-closed: 1rem;
     --ft-reference__linked-title-closed: normal;
     --fw-reference__linked-title-closed: 500;
     --tt-reference__linked-title-closed: none;
-    /* Linha separadora do contador de número de referências era CL-GRAY-200 */
-
-    --bt-reference__mentions: var(--max-border-light);
-
+    --bt-reference__mentions: 1px solid var(--cl-gray-200);
     --bc-reference__nested-refs: transparent;
     --bb-reference__page-title--hover: ;
     --co-reference__page-title--hover: var(--cl-gray-850);
     --td-reference__page-title--hover: none;
     --bb-reference__page-title: ;
-    /* References (Backlinks) -  Título da página */
-
-    --co-reference__page-title: var(--co-main);
-    --ff-reference__page-title: var(--max-ui-ff);
-    --fs-reference__page-title: var(--fs-main__level3);
-    --fw-reference__page-title: var(--fw-main__level3);
-
+    --co-reference__page-title: var(--cl-gray-850);
+    --ff-reference__page-title: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --fs-reference__page-title: 1rem;
+    --fw-reference__page-title: 500;
     --td-reference__page-title: none;
     --bb-reference__unlinked-title: transparent;
     --co-reference__unlinked-title: var(--cl-gray-850);
-    /* References (Backlinks) - Unlinked expanded */
-
-    --ff-reference__unlinked-title: var(--ff-reference__linked-title-closed);
-
+    --ff-reference__unlinked-title: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-reference__unlinked-title: 1rem;
     --ft-reference__unlinked-title: normal;
     --fw-reference__unlinked-title: 500;
     --tt-reference__unlinked-title: none;
     --bb-reference__unlinked-title-closed: transparent;
     --co-reference__unlinked-title-closed: var(--cl-gray-500);
-    /* References (Backlinks) - Unlinked collapsed */
-
-    --ff-reference__unlinked-title-closed: var(--ff-reference__linked-title-closed);
-
+    --ff-reference__unlinked-title-closed: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-reference__unlinked-title-closed: 1rem;
     --ft-reference__unlinked-title-closed: normal;
     --fw-reference__unlinked-title-closed: 500;
     --tt-reference__unlinked-title-closed: none;
-    /* Path zoom | Breadcrumbs de mentions - backlinks */
-
-    --co-reference__zoom-item: var(--co-main__zoom-item);
-    /* BDLs - Path | Breadcrumbs */
-
-    --ff-reference__zoom-item: var(--max-ui-ff);
-
+    --co-reference__zoom-item: var(--cl-gray-500);
+    --ff-reference__zoom-item: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-reference__zoom-item: 1rem;
     --ff-reference: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-reference: 1rem;
@@ -1897,22 +1780,11 @@
     --bc-right-sidebar__bullet-ghost: var(--cl-gray-500);
     --bc-right-sidebar__bullet-inner: var(--cl-gray-900);
     --bc-right-sidebar__codeblock: var(--cl-gray-75);
-    /* Code Block no Sidebar = Code Block Normal */
-
-    --bt-right-sidebar__codeblock: var(--bt-codeblock);
-
-    /* Code Block no Sidebar = Code Block Normal */
-    --br-right-sidebar__codeblock: var(--br-codeblock);
-
-    /* Code Block no Sidebar = Code Block Normal */
-    --bb-right-sidebar__codeblock: var(--bb-codeblock);
-
-    /* Code Block no Sidebar = Code Block Normal */
-    --bl-right-sidebar__codeblock: var(--bl-codeblock);
-
-    /* Code Block no Sidebar = Code Block Normal */
-    --bd-right-sidebar__codeblock: var(--bd-codeblock);
-
+    --bt-right-sidebar__codeblock: transparent;
+    --br-right-sidebar__codeblock: transparent;
+    --bb-right-sidebar__codeblock: transparent;
+    --bl-right-sidebar__codeblock: transparent;
+    --bd-right-sidebar__codeblock: 5px;
     --co-right-sidebar__codeblock: var(--cl-gray-850);
     --bc-right-sidebar__codeblock-activeline--focus: transparent;
     --bc-right-sidebar__codeblock-activeline: transparent;
@@ -1923,10 +1795,7 @@
     --bl-right-sidebar__codeblock-button--hover: transparent;
     --sd-right-sidebar__codeblock-button--hover: none;
     --co-right-sidebar__codeblock-button--hover: var(--cl-gray-600);
-    /* Code Block no Sidebar = Code Block Normal */
-
-    --bc-right-sidebar__codeblock-button: var(--bc-codeblock__button);
-
+    --bc-right-sidebar__codeblock-button: var(--cl-gray-75);
     --bt-right-sidebar__codeblock-button: transparent;
     --br-right-sidebar__codeblock-button: transparent;
     --bb-right-sidebar__codeblock-button: transparent;
@@ -1935,10 +1804,7 @@
     --sd-right-sidebar__codeblock-button: none;
     --co-right-sidebar__codeblock-button: var(--cl-gray-600);
     --fs-right-sidebar__codeblock-button: 1rem;
-    /* Code Block no Sidebar = Code Block Normal */
-
-    --bc-right-sidebar__codeblock-gutters: var(--bc-codeblock__gutters);
-
+    --bc-right-sidebar__codeblock-gutters: var(--cl-gray-75);
     --bt-right-sidebar__codeblock-gutters: transparent;
     --br-right-sidebar__codeblock-gutters: transparent;
     --bb-right-sidebar__codeblock-gutters: transparent;
@@ -1946,40 +1812,28 @@
     --bd-right-sidebar__codeblock-gutters: 5px;
     --co-right-sidebar__codeblock-gutters: var(--cl-gray-600);
     --bc-right-sidebar__codeblock-language-chooser: var(--cl-gray-75);
-    /* Code Block no Sidebar = Code Block Normal */
-
-    --bc-right-sidebar__codeblock-settings-bar: var(--bc-codeblock__settings-bar);
-
+    --bc-right-sidebar__codeblock-settings-bar: var(--cl-gray-75);
     --bt-right-sidebar__codeblock-settings-bar: transparent;
     --bd-right-sidebar__codeblock-settings-bar: 5px;
     --bc-right-sidebar__content: var(--cl-white);
     --co-right-sidebar__h1: var(--cl-gray-700);
-
-    /* Page Title de outline expandido no sidebar */
-    --ff-right-sidebar__h1: var(--max-headings-ff);
-
-    /* Page Title de outline expandido no sidebar */
-    --fs-right-sidebar__h1: var(--fs-main__level1);
-
+    --ff-right-sidebar__h1: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --fs-right-sidebar__h1: 1rem;
     --fw-right-sidebar__h1: 600;
     --co-right-sidebar__helper-text: var(--cl-gray-600);
     --ff-right-sidebar__helper-text: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-right-sidebar__helper-text: 0.9rem;
     --bc-right-sidebar__inline-references: var(--cl-gray-100);
+    --bc-right-sidebar__search-item--hover: var(--cl-gray-50);
+    --bd-right-sidebar__search-item--hover: 5px;
+    --bc-right-sidebar__search: var(--cl-white);
     --bc-right-sidebar__toprow: var(--cl-white);
-
-    /* Right Sidebar - Border */
-    --bb-right-sidebar__toprow: var(--max-border-light);
-
-    /* Right Sidebar - Border */
-    --bb-right-sidebar__window: var(--max-border-light);
-
+    --bb-right-sidebar__toprow: 1px solid var(--cl-gray-150);
+    --bb-right-sidebar__window: 1px solid var(--cl-gray-150);
     --fs-right-sidebar__window: 1rem;
     --co-right-sidebar__window-headers: var(--cl-gray-850);
     --bc-right-sidebar: var(--cl-white);
-    /* Right Sidebar - Border */
-    --bl-right-sidebar: var(--max-border-light);
-
+    --bl-right-sidebar: 1px solid var(--cl-gray-150);
     --bc-roam-css-js__button--active: var(--cl-orange-600);
     --bt-roam-css-js__button--active: transparent;
     --br-roam-css-js__button--active: transparent;
@@ -2022,10 +1876,7 @@
     --bl-roam-css-js__container-inactive: transparent;
     --bd-roam-css-js__container-inactive: 5px;
     --co-roam-css-js__container-inactive: var(--cl-red-850);
-    /* Avisos de CSS e JS */
-
-    --ff-roam-css-js: var(--max-ui-ff);
-
+    --ff-roam-css-js: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-roam-css-js: 0.9rem;
     --bc-settings__auth-provider: transparent;
     --bt-settings__auth-provider: 1px solid var(--cl-gray-300);
@@ -2191,10 +2042,7 @@
     --bc-settings: var(--cl-white);
     --bd-settings: 10px;
     --co-settings: var(--cl-gray-850);
-    /* STNG menu, pega várias partes no menu */
-
-    --ff-settings: var(--max-ui-ff);
-
+    --ff-settings: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     --fs-settings: 0.9rem;
     --co-toast__button: var(--cl-white);
     --op-toast__button: 1;
@@ -2263,7 +2111,7 @@
     --bc-topbar__sync--saving-remote: var(--cl-red-500);
     --bc-topbar__sync--synced: var(--cl-green-500);
     --bc-topbar: var(--cl-white);
-    --bb-topbar: var(--max-border-light);
+    --bb-topbar: 1px solid var(--cl-gray-150);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2371,9 +2219,7 @@
         --td-allpages__title-text: none;
         --fw-allpages__title-text: 600;
         --bc-allpages: var(--cl-gray-825);
-
-        --ff-allpages: var(--max-ui-ff);
-
+        --ff-allpages: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-allpages: 15px;
         --ff-app__div: inherit;
         --fs-app__div: inherit;
@@ -2528,9 +2374,7 @@
         --bd-button: 5px;
         --sd-button: none;
         --co-button: var(--cl-gray-300);
-
-        --ff-button: var(--max-ui-ff);
-
+        --ff-button: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-button: 0.9rem;
         --bc-codeblock__activeline--focus: var(--cl-gray-800);
         --bc-codeblock__activeline: transparent;
@@ -2545,9 +2389,7 @@
         --bl-codeblock__button--hover: transparent;
         --sd-codeblock__button--hover: none;
         --co-codeblock__button--hover: var(--cl-gray-550);
-
-        --bc-codeblock__button: var(--bc-embed);
-
+        --bc-codeblock__button: var(--cl-gray-775);
         --bt-codeblock__button: transparent;
         --br-codeblock__button: transparent;
         --bb-codeblock__button: transparent;
@@ -2557,26 +2399,20 @@
         --co-codeblock__button: var(--cl-gray-550);
         --fs-codeblock__button: 0.9rem;
         --co-codeblock__classname: var(--cl-blue-300);
-
-        --co-codeblock__code: var(--co-main);
-        --ff-codeblock__code: var(--max_code_ff);
-        --fs-codeblock__code: var(--max_code_fs);
-
+        --co-codeblock__code: var(--cl-gray-450);
+        --ff-codeblock__code: Roboto Mono, ui-monospace, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+        --fs-codeblock__code: 0.9rem;
         --co-codeblock__comment: var(--cl-yellow-200);
         --br-codeblock__cursor: transparent;
         --bl-codeblock__cursor: 2px solid var(--cl-gray-50);
         --co-codeblock__def: var(--cl-blue-300);
         --co-codeblock__error: var(--cl-red-400);
         --co-codeblock__gutter: var(--cl-gray-550);
-
-        --ff-codeblock__gutter: var(--max_code_ff);
-
+        --ff-codeblock__gutter: Roboto Mono, ui-monospace, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
         --fs-codeblock__gutter: 1rem;
         --ft-codeblock__gutter: normal;
         --fw-codeblock__gutter: normal;
-
-        --bc-codeblock__gutters: var(--bc-embed);
-
+        --bc-codeblock__gutters: var(--cl-gray-775);
         --bt-codeblock__gutters: transparent;
         --br-codeblock__gutters: transparent;
         --bb-codeblock__gutters: transparent;
@@ -2598,9 +2434,7 @@
         --bc-codeblock__searching: transparent;
         --bc-codeblock__selected--focus: var(--cl-gray-600);
         --bc-codeblock__selected: var(--cl-gray-700);
-
-        --bc-codeblock__settings-bar: var(--bc-embed);
-
+        --bc-codeblock__settings-bar: var(--cl-gray-775);
         --bt-codeblock__settings-bar: transparent;
         --bd-codeblock__settings-bar: 5px;
         --co-codeblock__string: var(--cl-red-50);
@@ -2610,12 +2444,10 @@
         --co-codeblock__variable: var(--cl-blue-200);
         --co-codeblock__variable-2: var(--cl-blue-200);
         --bc-codeblock: var(--cl-gray-775);
-
-        --bt-codeblock: var(--bt-embed);
-        --br-codeblock: var(--bt-embed);
-        --bb-codeblock: var(--bt-embed);
-        --bl-codeblock: var(--bt-embed);
-
+        --bt-codeblock: transparent;
+        --br-codeblock: transparent;
+        --bb-codeblock: transparent;
+        --bl-codeblock: transparent;
         --bd-codeblock: 5px;
         --co-codeblock: var(--cl-gray-400);
         --bc-commandpalette__input--focus: var(--cl-gray-875);
@@ -2816,9 +2648,7 @@
         --bc-datepicker: var(--cl-gray-975);
         --bd-datepicker: 8px;
         --co-datepicker: var(--cl-gray-125);
-
-        --ff-datepicker: var(--max-ui-ff);
-
+        --ff-datepicker: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-datepicker: 0.9rem;
         --bc-dialog__autobackup: transparent;
         --bt-dialog__autobackup: transparent;
@@ -2876,9 +2706,7 @@
         --bd-dialog: 10px;
         --sd-dialog: 3px 3px 11px 3px rgba(0, 0, 0, 0.1);
         --co-dialog: var(--cl-gray-400);
-
-        --ff-dialog: var(--max-ui-ff);
-
+        --ff-dialog: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-dialog: 0.9rem;
         --co-drawer__button-icon: var(--cl-gray-400);
         --co-drawer__heading: var(--cl-gray-400);
@@ -2929,9 +2757,7 @@
         --bd-elevation: 5px;
         --sd-elevation: 3px 3px 11px 3px rgba(0, 0, 0, 0.1);
         --co-elevation: var(--cl-gray-400);
-
-        --ff-elevation: var(--max-ui-ff);
-
+        --ff-elevation: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-elevation: 0.9rem;
         --bc-embed__container-10: var(--cl-gray-825);
         --bt-embed__container-10: 1px solid var(--cl-gray-800);
@@ -3000,7 +2826,7 @@
         --br-embed: 1px solid var(--cl-gray-800);
         --bb-embed: 1px solid var(--cl-gray-800);
         --bl-embed: 1px solid var(--cl-gray-800);
-        --bd-embed: var(--bd-codeblock);
+        --bd-embed: 0px;
         --bc-embed-page__margin: var(--cl-gray-725);
         --bl-embed-page__margin: 2px solid var(--cl-gray-600);
         --bt-embed-page__reference-main: 1px solid var(--cl-gray-800);
@@ -3346,9 +3172,7 @@
         --fw-graph-dropdown__sign-out: normal;
         --op-graph-dropdown__sign-out: 1;
         --sd-graph-dropdown: none;
-
-        --ff-graph-dropdown: var(--max-ui-ff);
-
+        --ff-graph-dropdown: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-graph-dropdown: 0.9rem;
         --fw-graph-dropdown: normal;
         --op-graph-dropdown: 1;
@@ -3554,19 +3378,12 @@
         --tt-left-sidebar__starred-title: none;
         --bc-left-sidebar__toprow--hover: var(--cl-gray-875);
         --bc-left-sidebar__toprow: var(--cl-gray-875);
-
-        --bb-left-sidebar__toprow: var(--max-border-light);
-
+        --bb-left-sidebar__toprow: 1px solid var(--cl-gray-775);
         --bc-left-sidebar: var(--cl-gray-875);
-
-        --br-left-sidebar: var(--max-border-light);
-
-        --ff-left-sidebar: var(--max-ui-ff);
-
+        --br-left-sidebar: 1px solid var(--cl-gray-775);
+        --ff-left-sidebar: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --co-log-page__h1: var(--cl-gray-550);
-
-        --ff-log-page__h1: var(--max-headings-ff);
-
+        --ff-log-page__h1: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-log-page__h1: 1.4rem;
         --ft-log-page__h1: normal;
         --fw-log-page__h1: normal;
@@ -3645,13 +3462,10 @@
         --bd-main__bp3-tag: 5px;
         --co-main__bp3-tag: var(--cl-gray-800);
         --co-main__brackets: var(--cl-gray-550);
-        /* Contraste Collapsed */
-
-        --bt-main__bullet-closed: 4px solid #4c4c4c;
-        --br-main__bullet-closed: var(--bt-main__bullet-closed);
-        --bb-main__bullet-closed: var(--bt-main__bullet-closed);
-        --bl-main__bullet-closed: var(--bt-main__bullet-closed);
-    
+        --bt-main__bullet-closed: 4px solid var(--cl-gray-675);
+        --br-main__bullet-closed: 4px solid var(--cl-gray-675);
+        --bb-main__bullet-closed: 4px solid var(--cl-gray-675);
+        --bl-main__bullet-closed: 4px solid var(--cl-gray-675);
         --bc-main__bullet-ghost: var(--cl-gray-550);
         --bc-main__bullet-inner: var(--cl-gray-350);
         --co-main__caret: var(--cl-gray-400);
@@ -3700,17 +3514,11 @@
         --bb-main__inline-code: 1px solid var(--cl-gray-675);
         --bl-main__inline-code: 1px solid var(--cl-gray-675);
         --bd-main__inline-code: 5px;
-
-        --co-main__inline-code: var(--co-main);
-
-        --ff-main__inline-code: var(--max_code_ff);
-
+        --co-main__inline-code: var(--cl-gray-125);
+        --ff-main__inline-code: Roboto Mono, ui-monospace, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
         --fs-main__inline-code: 0.9rem;
-
-        --bc-main__inline-ref-count--active: var(--bc-button__minimal--hover);
-
-        --co-main__inline-ref-count--active: var(--co-main);
-
+        --bc-main__inline-ref-count--active: transparent;
+        --co-main__inline-ref-count--active: var(--cl-gray-400);
         --fw-main__inline-ref-count--active: 600;
         --op-main__inline-ref-count--active: 1;
         --bc-main__inline-ref-count--hover: var(--cl-gray-800);
@@ -3728,36 +3536,28 @@
         --bc-main__inline-references: var(--cl-gray-800);
         --bb-main__level1: transparent;
         --co-main__level1: var(--cl-gray-125);
-
-        --ff-main__level1: var(--max-headings-ff);
-        --fs-main__level1: var(--max-headings-h1-fs);
-        
+        --ff-main__level1: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+        --fs-main__level1: 1.4rem;
         --ft-main__level1: normal;
         --fw-main__level1: 700;
         --tt-main__level1: none;
         --bb-main__level2: transparent;
         --co-main__level2: var(--cl-gray-125);
-        
-        --ff-main__level2: var(--max-headings-ff);
-        --fs-main__level2: var(--max-headings-h2-fs);
-        
+        --ff-main__level2: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+        --fs-main__level2: 1.3rem;
         --ft-main__level2: normal;
         --fw-main__level2: 700;
         --tt-main__level2: none;
         --bb-main__level3: transparent;
         --co-main__level3: var(--cl-gray-125);
-        
-        --ff-main__level3: var(--max-headings-ff);
-        --fs-main__level3: var(--max-headings-h3-fs);
-        
+        --ff-main__level3: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+        --fs-main__level3: 1.2rem;
         --ft-main__level3: normal;
         --fw-main__level3: 600;
         --tt-main__level3: none;
         --bd-main__modal-image: 10px;
         --br-main__multibar--hover: 4px solid var(--cl-gray-600);
-
-        --br-main__multibar: var(--max-multibar-br);
-
+        --br-main__multibar: 2px solid var(--cl-gray-750);
         --bb-main__namespace--hover: 1px dashed var(--cl-gray-550);
         --co-main__namespace--hover: var(--cl-gray-400);
         --td-main__namespace--hover: none;
@@ -3769,16 +3569,12 @@
         --co-main__page-link--hover: var(--cl-gray-300);
         --td-main__page-link--hover: none;
         --bb-main__page-link: 3px solid var(--cl-gray-525);
-
-        --co-main__page-link: var(--co-main);
-
-        --fw-main__page-link: ;
+        --co-main__page-link: var(--cl-gray-300);
+        --fw-main__page-link: inherit;
         --td-main__page-link: none;
         --co-main__page-title: var(--cl-gray-125);
-
-        --ff-main__page-title: var(--max-headings-ff);
-        --fs-main__page-title: var(--max-headings-h1-fs);
-
+        --ff-main__page-title: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+        --fs-main__page-title: 1.4rem;
         --ft-main__page-title: normal;
         --fw-main__page-title: bold;
         --tt-main__page-title: none;
@@ -3844,15 +3640,11 @@
         --bt-main__quote: transparent;
         --br-main__quote: transparent;
         --bb-main__quote: transparent;
-
-        --bl-main__quote: 2px solid var(--max_color_text_muted);
-
+        --bl-main__quote: 4px solid var(--cl-gray-300);
         --bd-main__quote: 0px;
         --co-main__quote: var(--cl-gray-125);
-
-        --ff-main__quote: var(--max-body-ff);
-        --fs-main__quote: var(--fs-main);
-
+        --ff-main__quote: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+        --fs-main__quote: 1rem;
         --ft-main__quote: normal;
         --fw-main__quote: normal;
         --bt-main__rm-E: 1px solid var(--cl-gray-550);
@@ -3918,9 +3710,7 @@
         --bl-main__tags: transparent;
         --bd-main__tags: 15px;
         --co-main__tags: var(--cl-gray-450);
-
-        --ff-main__tags: var(--max-ui-ff);
-
+        --ff-main__tags: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-main__tags: 0.9rem;
         --ft-main__tags: normal;
         --fw-main__tags: normal;
@@ -3933,17 +3723,13 @@
         --fw-main__version-button--selected: bold;
         --co-main__version-button: var(--cl-gray-500);
         --bb-main__version-choice: transparent;
-
-        --co-main__zoom-item: var(--max-breadcrumbs-co);
-        --ff-main__zoom-item: var(--max-ui-ff);
-
+        --co-main__zoom-item: var(--cl-gray-500);
+        --ff-main__zoom-item: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-main__zoom-item: 1rem;
         --bc-main__zoom-mask: transparent;
         --bc-main: var(--cl-gray-825);
         --co-main: var(--cl-gray-125);
-
-        --ff-main: var(--max-body-ff);
-
+        --ff-main: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-main: 1rem;
         --fw-main: normal;
         --bc-menu__button--active: var(--cl-gray-675);
@@ -4041,9 +3827,7 @@
         --bc-menu: var(--cl-gray-950);
         --bd-menu: 5px;
         --co-menu: var(--cl-gray-300);
-
-        --ff-menu: var(--max-ui-ff);
-
+        --ff-menu: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-menu: 0.9rem;
         --co-mobile-bar__icon: var(--cl-gray-350);
         --bc-mobile-bar: var(--cl-black);
@@ -4063,10 +3847,7 @@
         --fs-popover: 0.9rem;
         --bb-reference__linked-title: transparent;
         --co-reference__linked-title: var(--cl-gray-400);
-
-
-        --ff-reference__linked-title: var(--ff-reference__linked-title-closed);
-
+        --ff-reference__linked-title: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-reference__linked-title: 1rem;
         --ft-reference__linked-title: normal;
         --fw-reference__linked-title: 500;
@@ -4074,69 +3855,53 @@
         --bt-reference__linked-title-closed: transparent;
         --bb-reference__linked-title-closed: transparent;
         --co-reference__linked-title-closed: var(--cl-gray-550);
-
-        --ff-reference__linked-title-closed: var(--max-ui-ff);
-
+        --ff-reference__linked-title-closed: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-reference__linked-title-closed: 1rem;
         --ft-reference__linked-title-closed: normal;
         --fw-reference__linked-title-closed: 500;
         --tt-reference__linked-title-closed: none;
-
-        --bt-reference__mentions: var(--max-border-light);
-
+        --bt-reference__mentions: 2px solid var(--cl-gray-750);
         --bc-reference__nested-refs: transparent;
-        --bb-reference__page-title--hover: ;
+        --bb-reference__page-title--hover: transparent;
         --co-reference__page-title--hover: var(--cl-gray-400);
         --td-reference__page-title--hover: none;
-        --bb-reference__page-title: ;
-        /* BDL  PT */
-
-        --co-reference__page-title: var(--co-main);
-        --ff-reference__page-title: var(--max-ui-ff);
-        --fs-reference__page-title: var(--fs-main__level3);
-        --fw-reference__page-title: var(--fw-main__level3);
-
+        --bb-reference__page-title: transparent;
+        --co-reference__page-title: var(--cl-gray-400);
+        --ff-reference__page-title: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+        --fs-reference__page-title: 1rem;
+        --fw-reference__page-title: 500;
         --td-reference__page-title: none;
         --bb-reference__unlinked-title: transparent;
-        --co-reference__unlinked-title: var(--cl-gray-550);
-
-        --ff-reference__unlinked-title: var(--ff-reference__linked-title-closed);
-
+        --co-reference__unlinked-title: var(--cl-gray-400);
+        --ff-reference__unlinked-title: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-reference__unlinked-title: 1rem;
         --ft-reference__unlinked-title: normal;
         --fw-reference__unlinked-title: 500;
         --tt-reference__unlinked-title: none;
         --bb-reference__unlinked-title-closed: transparent;
         --co-reference__unlinked-title-closed: var(--cl-gray-550);
-
-        --ff-reference__unlinked-title-closed: var(--ff-reference__linked-title-closed);
-
+        --ff-reference__unlinked-title-closed: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-reference__unlinked-title-closed: 1rem;
         --ft-reference__unlinked-title-closed: normal;
         --fw-reference__unlinked-title-closed: 500;
         --tt-reference__unlinked-title-closed: none;
-
-        --co-reference__zoom-item: var(--co-main__zoom-item);
-        --ff-reference__zoom-item: var(--max-ui-ff);
-
+        --co-reference__zoom-item: var(--cl-gray-550);
+        --ff-reference__zoom-item: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-reference__zoom-item: 1rem;
         --ff-reference: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-reference: 1rem;
-        /* Contraste Collapsed */
-        --bt-right-sidebar__bullet-closed: var(--bt-main__bullet-closed);
-        --br-right-sidebar__bullet-closed: var(--bt-main__bullet-closed);
-        --bb-right-sidebar__bullet-closed: var(--bt-main__bullet-closed);
-        --bl-right-sidebar__bullet-closed: var(--bt-main__bullet-closed);
+        --bt-right-sidebar__bullet-closed: 4px solid var(--cl-gray-600);
+        --br-right-sidebar__bullet-closed: 4px solid var(--cl-gray-600);
+        --bb-right-sidebar__bullet-closed: 4px solid var(--cl-gray-600);
+        --bl-right-sidebar__bullet-closed: 4px solid var(--cl-gray-600);
         --bc-right-sidebar__bullet-ghost: var(--cl-gray-550);
         --bc-right-sidebar__bullet-inner: var(--cl-gray-400);
         --bc-right-sidebar__codeblock: var(--cl-gray-775);
-
-        --bt-right-sidebar__codeblock: var(--bt-codeblock);
-        --br-right-sidebar__codeblock: var(--br-codeblock);
-        --bb-right-sidebar__codeblock: var(--bb-codeblock);
-        --bl-right-sidebar__codeblock: var(--bl-codeblock);
-        --bd-right-sidebar__codeblock: var(--bd-codeblock);
-
+        --bt-right-sidebar__codeblock: transparent;
+        --br-right-sidebar__codeblock: transparent;
+        --bb-right-sidebar__codeblock: transparent;
+        --bl-right-sidebar__codeblock: transparent;
+        --bd-right-sidebar__codeblock: 5px;
         --co-right-sidebar__codeblock: var(--cl-gray-400);
         --bc-right-sidebar__codeblock-activeline--focus: var(--cl-gray-800);
         --bc-right-sidebar__codeblock-activeline: transparent;
@@ -4147,9 +3912,7 @@
         --bl-right-sidebar__codeblock-button--hover: transparent;
         --sd-right-sidebar__codeblock-button--hover: none;
         --co-right-sidebar__codeblock-button--hover: var(--cl-gray-550);
-
-        --bc-right-sidebar__codeblock-button: var(--bc-codeblock__button);
-
+        --bc-right-sidebar__codeblock-button: transparent;
         --bt-right-sidebar__codeblock-button: transparent;
         --br-right-sidebar__codeblock-button: transparent;
         --bb-right-sidebar__codeblock-button: transparent;
@@ -4158,7 +3921,7 @@
         --sd-right-sidebar__codeblock-button: none;
         --co-right-sidebar__codeblock-button: var(--cl-gray-550);
         --fs-right-sidebar__codeblock-button: 1rem;
-        --bc-right-sidebar__codeblock-gutters: var(--bc-codeblock__gutters);
+        --bc-right-sidebar__codeblock-gutters: var(--cl-gray-775);
         --bt-right-sidebar__codeblock-gutters: transparent;
         --br-right-sidebar__codeblock-gutters: transparent;
         --bb-right-sidebar__codeblock-gutters: transparent;
@@ -4166,17 +3929,13 @@
         --bd-right-sidebar__codeblock-gutters: 5px;
         --co-right-sidebar__codeblock-gutters: var(--cl-gray-550);
         --bc-right-sidebar__codeblock-language-chooser: var(--cl-gray-775);
-
-        --bc-right-sidebar__codeblock-settings-bar: var(--bc-codeblock__settings-bar);
-
+        --bc-right-sidebar__codeblock-settings-bar: var(--cl-gray-775);
         --bt-right-sidebar__codeblock-settings-bar: transparent;
         --bd-right-sidebar__codeblock-settings-bar: 5px;
         --bc-right-sidebar__content: var(--cl-gray-825);
         --co-right-sidebar__h1: var(--cl-gray-450);
-
-        --ff-right-sidebar__h1: var(--max-headings-ff);
-        --fs-right-sidebar__h1: var(--fs-main__level1);
-
+        --ff-right-sidebar__h1: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+        --fs-right-sidebar__h1: 1rem;
         --fw-right-sidebar__h1: 600;
         --co-right-sidebar__helper-text: var(--cl-gray-300);
         --ff-right-sidebar__helper-text: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
@@ -4186,16 +3945,12 @@
         --bd-right-sidebar__search-item--hover: 5px;
         --bc-right-sidebar__search: var(--cl-gray-825);
         --bc-right-sidebar__toprow: var(--cl-gray-825);
-
-        --bb-right-sidebar__toprow: var(--max-border-light);
-        --bb-right-sidebar__window: var(--max-border-light);
-
+        --bb-right-sidebar__toprow: 1px solid var(--cl-gray-725);
+        --bb-right-sidebar__window: 1px solid var(--cl-gray-725);
         --fs-right-sidebar__window: 1rem;
         --co-right-sidebar__window-headers: var(--cl-gray-400);
         --bc-right-sidebar: var(--cl-gray-825);
-
-        --bl-right-sidebar: var(--max-border-light);
-
+        --bl-right-sidebar: 1px solid var(--cl-gray-725);
         --bc-roam-css-js__button--active: var(--cl-orange-600);
         --bt-roam-css-js__button--active: transparent;
         --br-roam-css-js__button--active: transparent;
@@ -4238,9 +3993,7 @@
         --bl-roam-css-js__container-inactive: transparent;
         --bd-roam-css-js__container-inactive: 5px;
         --co-roam-css-js__container-inactive: var(--cl-red-350);
-
-        --ff-roam-css-js: var(--max-ui-ff);
-
+        --ff-roam-css-js: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-roam-css-js: 0.9rem;
         --bc-settings__auth-provider: transparent;
         --bt-settings__auth-provider: 1px solid var(--cl-gray-600);
@@ -4406,9 +4159,7 @@
         --bc-settings: var(--cl-gray-825);
         --bd-settings: 10px;
         --co-settings: var(--cl-gray-450);
-
-        --ff-settings: var(--max-ui-ff);
-
+        --ff-settings: -apple-system, BlinkMacSystemFont, Inter, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
         --fs-settings: 0.9rem;
         --co-toast__button: var(--cl-white);
         --op-toast__button: 1;
@@ -4477,6 +4228,6 @@
         --bc-topbar__sync--saving-remote: var(--cl-red-700);
         --bc-topbar__sync--synced: var(--cl-green-700);
         --bc-topbar: var(--cl-gray-825);
-        --bb-topbar: var(--max-border-light);
+        --bb-topbar: 1px solid var(--cl-gray-725);
     }
 }

@@ -223,7 +223,7 @@ button.bp3-button[data-roamjs-smartblock-button="true"] {
 /* BLOCK VERSIONS */
 
 .rm-select-version-button.rm-button-selected {
-    background-color: var(--highlight-color);
+    background-color: var(--max-blockref-inline-active-bc);
 }
 
 /* CODE BLOCKS */
