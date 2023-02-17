@@ -1,7 +1,4 @@
 /* Variáveis */
-@import url(https://maxlinworm.github.io/max-base.css);
-@import url('https://maxlinworm.github.io/Fonts/20230128175226.css');
-
 :root {
     /* --- UNIVERSAIS ---
        ================== */
@@ -74,6 +71,9 @@
     /* CODE BLOCKS */
     --max-codeblock-maxheight: 700px;
 
+    /* BREADCRUMBS */
+    --max-breadcrumbs-co: var(--cl-gray-600);
+
 
     /* --- TIPOGRAFIA ---
        ================== */
@@ -83,12 +83,15 @@
     
     /* h1 */
     --max-headings-h1-lh: 1.35em;
+    --max-headings-h1-fs: 1.5rem;
 
     /* h2 */
     --max-headings-h2-lh: 1.35em;
+    --max-headings-h2-fs: 1.35em;
 
     /* h3 */
     --max-headings-h3-lh: 1.35em;
+    --max-headings-h3-fs: 1.25em;
 
     /* Page Title */
     /* calc(var(--fs-main__page-title) + 8px)*/
@@ -104,12 +107,6 @@
 
 }
 
-/* --- TAGS ESPECIAIS ---
-   ====================== */
-
-[data-page-links*='Status-Arquivado'] {
-    --max-arq-co: rgb(176, 176, 176);
-}
 
 
 /* --- DARK MODE ---
@@ -121,6 +118,8 @@
         --max-arq-co: rgb(176, 176, 176);
         --max-multibar-br-rgb: rgb(236, 237, 236);
         --max-border-light-rgb: rgb(208, 208, 208);
+        /* OK */
+        --max-breadcrumbs-co: var(--cl-gray-500);
     }
 }
 
@@ -139,3 +138,10 @@
 }
 
 
+
+/* --- TAGS ESPECIAIS ---
+   ====================== */
+
+[data-page-links*='Status-Arquivado'] {
+    --max-arq-co: rgb(176, 176, 176);
+}

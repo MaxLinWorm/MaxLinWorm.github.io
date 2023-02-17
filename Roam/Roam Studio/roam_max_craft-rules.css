@@ -1,7 +1,3 @@
-/* IGUAL AO GITHUB 2023-01-26 */
-@import url(https://maxlinworm.github.io/max-base.css);
-@import url('https://maxlinworm.github.io/Fonts/20230128175226.css');
-
 /* Só para tirar prova real */
 
 
@@ -11,9 +7,7 @@
     /* UNIVERSAIS */
     
     /* Início Fonts */
-    /*
-    --ff-allpages: var(--max-ui-ff);
-    */
+
     --ff-app__div: inherit;    
 
     --ff-emoji-mart: 'Comic Sans MS';
@@ -51,7 +45,13 @@
 
 /* --- USER INTERFACE UI --- 
    ========================= */
-
+/* BUTTONS */
+button,
+input,
+select,
+textarea {
+    font-family: var(--max-ui-ff);
+}
 /* SETTINGS */
 
 /* Tamanho Máximo para Settings */
