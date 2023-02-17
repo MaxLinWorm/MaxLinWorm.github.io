@@ -1,5 +1,15 @@
 /* 3c7fa4f - 2022-11-08 */
 
+:root {
+    --max-subtleControls-op: 0.2;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --max-subtleControls-op: 0.3;
+    }
+}
+
 .rm-block .rm-bullet {
     opacity: 1;
 }
@@ -19,7 +29,7 @@
 
 */
 .rm-block .rm-multibar {
-    opacity: 0.2;
+    opacity: var(--max-subtleControls-op);
 }
 
 .rm-block:hover>.rm-block-children>.rm-multibar {
@@ -31,7 +41,7 @@
 }
 
 .rm-ref-page-view .rm-title-arrow-wrapper>.rm-caret {
-    opacity: 0.2;
+    opacity: var(--max-subtleControls-op);
 }
 
 .rm-ref-page-view:hover .rm-title-arrow-wrapper>.rm-caret {

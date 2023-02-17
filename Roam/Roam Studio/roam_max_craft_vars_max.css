@@ -115,9 +115,9 @@
    /* TD Mudar cores */
 @media (prefers-color-scheme:dark) {
     :root {
-        --max-arq-co: rgb(176, 176, 176);
-        --max-multibar-br-rgb: rgb(236, 237, 236);
-        --max-border-light-rgb: rgb(208, 208, 208);
+        --max-arq-co: rgb(128, 128, 128);
+        --max-multibar-br-rgb: rgb(79, 79, 79);
+        --max-border-light-rgb: rgb(68, 68, 68);
         /* OK */
         --max-breadcrumbs-co: var(--cl-gray-500);
     }
