@@ -10,21 +10,136 @@
 @import url('https://maxlinworm.github.io/Fonts/signifier.css');
 */
 
-/* Minhas mods ao Tema Principal */
-@import url('https://maxlinworm.github.io/Roam/roam_max_craft-mods.css');
+/* --- MAX BASE ---
+   ================ */
 
-/* Mods dos Módulos do Roam Studio */
+@import url(https://maxlinworm.github.io/max-base.css);
+
+
+
+
+/* --- ROAM STUDIO CRAFT ---
+   ========================= */
+
+/* SYSTEM */
+
+/* System (Regras) */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/ROAM STUDIO - System.css');
+
+/* Fixes */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/ROAM STUDIO - Fixes.css');
+
+/* Fonts */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/ROAM STUDIO - Fonts.css');
+
+
+
+/* THEMES */
+
+/* Theme Common */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/ROAM STUDIO - Craft Common.css');
+
+/* Theme Auto com minhas Mods */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/ROAM STUDIO - Craft Auto.css');
+
+
+
+/* PREFERENCES */
+
+/* Linespacing - tem regras */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Preferences/ROAM STUDIO - Prefs - Linespacing.css');
+
+/* Font-size */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Preferences/ROAM STUDIO - Prefs - Base Font Size.css');
+
+/* Mobile */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Preferences/ROAM STUDIO - Prefs - Mobile Font Size.css');
+
+/* Page link - Style */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Preferences/ROAM STUDIO - Prefs - Page Link Style.css');
+
+/* Tag Color */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Preferences/ROAM STUDIO - Prefs - Tag Color.css');
+
+/* Tag Background */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Preferences/ROAM STUDIO - Prefs - Tag Background.css');
+
+/* Date Color */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Preferences/ROAM STUDIO - Prefs - Date Color.css');
+
+
+
+/* MÓDULOS */
+
 /* Advanced Heading Spacing */
-@import url('https://maxlinworm.github.io/Roam/roam_studio_modules_headings.css');
 
-/* Subtle Controls */
-@import url('https://maxlinworm.github.io/Roam/roam_studio_modules_subtle-controls.css');
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - Headings.css');
 
 /* Bullet Effects */
-@import url('https://maxlinworm.github.io/Roam/roam_studio_modules_hover-bullets.css');
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - Bullet fx.css');
+
+/* Centered Search */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - Centered Search.css');
+
+/* Dynamic Images */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - Dynamic Images.css');
+
+/* Hide Logo */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - Hide Logo.css');
+
+/* Hide Shortcuts */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - Hide Shortcuts.css');
+
+/* Mobile Sidebar */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - Mobile Sidebar.css');
+
+/* No Animations */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - No Animations.css');
+
+/* Subtle Controls */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/Modules/ROAM STUDIO - Mod - Subtle Controls.css');
 
 
-/* OUTROS */
+
+/* MODS MAX */
+
+/* Gerais */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/roam_max_craft_vars_max.css');
+
+/* Tags Especiais */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/roam_max_craft_vars_tags.css');
+
+/* Regras */
+
+@import url('https://maxlinworm.github.io/Roam/Roam Studio/roam_max_craft_rules.css');
+
+
+/* --- OUTROS ---
+   ============== */
+
+/* MAX */
 
 /* Scrollbars */
 @import url('https://maxlinworm.github.io/Roam/roam_max_scrollbars.css');
@@ -32,22 +147,19 @@
 /* Twitter on Hover */
 @import url('https://maxlinworm.github.io/Roam/roam_max_twitter-on-hover.css');
 
-
 /* PLUGINS */
 
-/* Masonry */
-/*@import url('https://gitmurf.github.io/masonry-vanilla/masonry-main.css');*/
-
-/* Minhas mods ao Masonry */
-
-/* Meta/Tipo/Autor/C3Founder - CCC Roam Enhancement - PDF */
-@import url('https://c3founder.github.io/Roam-Enhancement/enhancedPDF.css');
+/* All Paths Lead to Roam */
+@import url('https://maxlinworm.github.io/Roam/Plugins/roam_all-paths-lead-to-roam.css');
 
 /* Roam/JS Unlink Finder */
 @import url('https://maxlinworm.github.io/Roam/Plugins/roam_unlink-finder.css');
 
-/* Query Builder */
+/* TEM UPDATE NO STUDIO */
+
+/* Query Builder 
 @import url('https://maxlinworm.github.io/Roam/Plugins/roam_query-builder.css');
 
-/* All Paths Lead to Roam */
-@import url('https://maxlinworm.github.io/Roam/Plugins/roam_all-paths-lead-to-roam.css');
+/* Meta/Tipo/Autor/C3Founder - CCC Roam Enhancement - PDF */
+@import url('https://c3founder.github.io/Roam-Enhancement/enhancedPDF.css');
+
