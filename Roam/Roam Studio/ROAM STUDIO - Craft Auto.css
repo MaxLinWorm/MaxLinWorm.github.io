@@ -1858,8 +1858,8 @@
 
     --co-reference__page-title: var(--co-main);
     --ff-reference__page-title: var(--max-ui-ff);
-    --fs-reference__page-title: var(--fs-main__level3);
-    --fw-reference__page-title: var(--fw-main__level3);
+    --fs-reference__page-title: var(--max-references-pagetitle-fs);
+    --fw-reference__page-title: var(--max-references-pagetitle-fw);
 
     --td-reference__page-title: none;
     --bb-reference__unlinked-title: transparent;
@@ -4097,8 +4097,8 @@
 
         --co-reference__page-title: var(--co-main);
         --ff-reference__page-title: var(--max-ui-ff);
-        --fs-reference__page-title: var(--fs-main__level3);
-        --fw-reference__page-title: var(--fw-main__level3);
+        --fs-reference__page-title: var(--max-references-pagetitle-fs);
+        --fw-reference__page-title: var(--max-references-pagetitle-fw);
 
         --td-reference__page-title: none;
         --bb-reference__unlinked-title: transparent;

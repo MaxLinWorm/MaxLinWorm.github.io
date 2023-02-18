@@ -74,6 +74,10 @@
     /* BREADCRUMBS */
     --max-breadcrumbs-co: var(--cl-gray-600);
 
+    /* BACKLINKS | REFERENCES */
+    --max-references-pagetitle-fs: 1.1rem;
+    --max-references-pagetitle-fw: 500;
+
 
     /* --- TIPOGRAFIA ---
        ================== */
@@ -103,6 +107,9 @@
     --max-quote-ma: 10px 0px 0px 0px;
     /* Padding */
     --max-quote-pa: 0px 0px 0px 15px;
+
+    /* BACKLINKS | REFERENCES */
+    --max-references-pagetitle-fw: 400;
 
 
 
