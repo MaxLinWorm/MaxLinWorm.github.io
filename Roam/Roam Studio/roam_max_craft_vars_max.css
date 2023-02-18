@@ -83,15 +83,15 @@
     
     /* h1 */
     --max-headings-h1-lh: 1.35em;
-    --max-headings-h1-fs: 1.5rem;
+    --max-headings-h1-fs: 1.4rem;
 
     /* h2 */
-    --max-headings-h2-lh: 1.35em;
+    --max-headings-h2-lh: 1.25em;
     --max-headings-h2-fs: 1.35em;
 
     /* h3 */
     --max-headings-h3-lh: 1.35em;
-    --max-headings-h3-fs: 1.25em;
+    --max-headings-h3-fs: 1.15em;
 
     /* Page Title */
     /* calc(var(--fs-main__page-title) + 8px)*/
