@@ -54,7 +54,7 @@
     /* Page refs on hover */
     --max-page-ref-hover-fw: 500;
     --max-page-ref-hover-bc: var(--bc-main__date-link);
-    --max-page-ref-hover-bd: 5px;
+    --max-page-ref-hover-bd: 0px;
 
     /* BLOCK REFS */
 

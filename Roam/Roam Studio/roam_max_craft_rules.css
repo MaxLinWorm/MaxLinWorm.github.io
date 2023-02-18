@@ -45,13 +45,33 @@
 
 /* --- USER INTERFACE UI --- 
    ========================= */
-/* BUTTONS */
-button,
-input,
-select,
-textarea {
+
+/* BOTÕES EM GERAL */
+
+button {
     font-family: var(--max-ui-ff);
 }
+
+button {
+    color: var(--co-main__tags--hover);
+    background-color: var(--bc-main__tags--hover);
+}
+button:hover {
+    color: var(--co-main__tags);
+    background-color: var(--bc-main__tags);
+}
+
+/* BOTÕES DE CHAR COUNT */
+button.bp3-button[data-roamjs-smartblock-button="true"] {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    min-width: fit-content;
+    min-height: fit-content;
+    vertical-align: baseline
+}
+
 /* SETTINGS */
 
 /* Tamanho Máximo para Settings */
@@ -138,28 +158,6 @@ div.roam-app:not(.mobile) div.roam-sidebar-container[style='left: 0px; box-shado
 /* Compensa tamanho do container à diminuição do topbar */
 .roam-body .roam-app .roam-body-main {
     flex: 0 0 calc(100% - var(--max-rightsidebar-float-top));
-}
-
-/* BOTÕES DE CHAR COUNT */
-button.bp3-button[data-roamjs-smartblock-button="true"] {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 7px;
-    padding-right: 7px;
-    min-width: fit-content;
-    min-height: fit-content;
-    vertical-align: baseline
-}
-
-/* BOTÕES EM GERAL */
-button {
-    color: var(--co-main__tags);
-    background-color: var(--bc-main__tags);
-}
-
-button:hover {
-    color: var(--co-main__tags--hover);
-    background-color: var(--bc-main__tags--hover);
 }
 
 /* EMBEDS NORMAIS */
@@ -283,8 +281,8 @@ span.rm-page-ref__brackets {
 
 /* Cor dos links no breadcrumb */
 
-.rm-zoom .rm-zoom-item .rm-page-ref,
-.rm-zoom-path .rm-zoom-item .rm-page-ref {
+.rm-zoom .rm-zoom-item .rm-page-ref:not(.rm-page-ref--tag),
+.rm-zoom-path .rm-zoom-item .rm-page-ref:not(.rm-page-ref--tag) {
     color: var(--co-main__zoom-item);
 }
 
