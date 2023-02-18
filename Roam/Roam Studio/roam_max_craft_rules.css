@@ -151,6 +151,17 @@ button.bp3-button[data-roamjs-smartblock-button="true"] {
     vertical-align: baseline
 }
 
+/* BOTÕES EM GERAL */
+button {
+    color: var(--co-main__tags);
+    background-color: var(--bc-main__tags);
+}
+
+button:hover {
+    color: var(--co-main__tags--hover);
+    background-color: var(--bc-main__tags--hover);
+}
+
 /* EMBEDS NORMAIS */
 
 /* Retira espaçamento à direita, 
@@ -279,7 +290,7 @@ span.rm-page-ref__brackets {
 
 /* Page Refs Hover */
 
-.rm-page-ref:hover {
+.rm-page-ref:hover:not(.rm-page-ref--tag) {
     font-weight: var(--max-page-ref-hover-fw);
     background-color: var(--max-page-ref-hover-bc);
     border-radius: var(--max-page-ref-hover-bd);
