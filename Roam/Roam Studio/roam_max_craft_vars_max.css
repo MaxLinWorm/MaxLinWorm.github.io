@@ -92,6 +92,7 @@
     /* h3 */
     --max-headings-h3-lh: 1.35em;
     --max-headings-h3-fs: 1.15em;
+    --max-headings-h3-fw: 600;
 
     /* Page Title */
     /* calc(var(--fs-main__page-title) + 8px)*/
@@ -112,14 +113,14 @@
 /* --- DARK MODE ---
    ================= */
 
-   /* TD Mudar cores */
 @media (prefers-color-scheme:dark) {
     :root {
         --max-arq-co: rgb(128, 128, 128);
         --max-multibar-br-rgb: rgb(79, 79, 79);
         --max-border-light-rgb: rgb(68, 68, 68);
-        /* OK */
         --max-breadcrumbs-co: var(--cl-gray-500);
+        --max-headings-h3-fw: 500;
+
     }
 }
 

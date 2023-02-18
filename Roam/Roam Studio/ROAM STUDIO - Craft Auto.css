@@ -1499,7 +1499,9 @@
     --fs-main__level3: var(--max-headings-h3-fs);
 
     --ft-main__level3: normal;
-    --fw-main__level3: 600;
+
+    --fw-main__level3: var(--max-headings-h3-fw);
+
     --tt-main__level3: none;
     --bd-main__modal-image: 10px;
     --br-main__multibar--hover: 4px solid var(--cl-gray-400);
@@ -3751,7 +3753,9 @@
         --fs-main__level3: var(--max-headings-h3-fs);
         
         --ft-main__level3: normal;
-        --fw-main__level3: 600;
+
+        --fw-main__level3: var(--max-headings-h3-fw);
+
         --tt-main__level3: none;
         --bd-main__modal-image: 10px;
         --br-main__multibar--hover: 4px solid var(--cl-gray-600);
