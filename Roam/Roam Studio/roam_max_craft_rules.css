@@ -138,24 +138,24 @@ div.roam-app:not(.mobile) .rm-topbar {
 
 /* Right Sidebar */
 
-/* Expanded */
+/* Expanded 
 div.roam-app:not(.mobile) #right-sidebar>.flex-h-box {
     height: var(--max-topbar-h);
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
 
-/* Floating */
+/* Floating 
 /* Compensa diminuição do topbar para
    facilitar movimentação do mouse sem 
    que seja dispensado o sidebar por hover
    no vão 
-*/
+
 div.roam-app:not(.mobile) div.roam-sidebar-container[style='left: 0px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; top: 45px;'] {
     top: var(--max-rightsidebar-float-top) !important;
 }
 
-/* Compensa tamanho do container à diminuição do topbar */
+/* Compensa tamanho do container à diminuição do topbar 
 .roam-body .roam-app .roam-body-main {
     flex: 0 0 calc(100% - var(--max-rightsidebar-float-top));
 }
