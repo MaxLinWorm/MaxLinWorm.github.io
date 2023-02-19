@@ -72,6 +72,10 @@
         }
     }
 
+    .rm-dark-theme .rm-find-or-create-wrapper {
+        background-color: var(--bc-popover, #202020) !important;
+    }
+
     .rm-find-or-create__menu,
     .rm-find-or-create__menu .bp3-menu {
         background-color: transparent !important;

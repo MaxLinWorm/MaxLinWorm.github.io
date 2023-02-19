@@ -18,3 +18,8 @@
         --co-main__date-link--hover: var(--cl-gray-400);
     }
 }
+
+:root.rm-dark-theme {
+    --co-main__date-link: var(--cl-gray-400);
+    --co-main__date-link--hover: var(--cl-gray-400);
+}

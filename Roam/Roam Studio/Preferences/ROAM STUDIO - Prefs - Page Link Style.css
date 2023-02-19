@@ -36,3 +36,12 @@
         --bb-main__alias--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
     }
 }
+
+:root.rm-dark-theme {
+    --bb-main__page-link: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+    --bb-main__a: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+    --bb-main__alias: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+    --bb-main__page-link--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+    --bb-main__a--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+    --bb-main__alias--hover: var(--max-pageref-bb-wt) solid var(--cl-gray-525);
+}

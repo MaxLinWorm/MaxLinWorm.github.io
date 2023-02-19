@@ -131,6 +131,15 @@
     }
 }
 
+:root.rm-dark-theme {
+    --max-arq-co: rgb(128, 128, 128);
+    --max-multibar-br-rgb: rgb(79, 79, 79);
+    --max-border-light-rgb: rgb(68, 68, 68);
+    --max-breadcrumbs-co: var(--cl-gray-500);
+    --max-headings-h3-fw: 500;
+
+}
+
 
 /* --- MOBILE ---
    ============== */
