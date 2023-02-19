@@ -1,0 +1,5 @@
+/* Desfaz desabilitação do Toggle Dark Mode */
+
+.dm-toggle {
+    display: flex;
+}
