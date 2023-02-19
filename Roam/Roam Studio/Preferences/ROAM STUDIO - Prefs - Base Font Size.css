@@ -6,6 +6,7 @@
    ":root {"+"--fs-app__html: "+fontSize+"px;};"
 */
 
-:root {
+:root,
+:root.rm-dark-theme {
     --fs-app__html: 15px;
 }
