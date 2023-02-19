@@ -123,15 +123,15 @@ button.bp3-button[data-roamjs-smartblock-button="true"] {
 }
 
 
-/* TOPBAR */
+/* TOPBAR 
 
-/* Igualar altura das toolbars */
-/* Centro */
+/* Igualar altura das toolbars 
+/* Centro 
 div.roam-app:not(.mobile) .rm-topbar {
     height: var(--max-topbar-h);
 }
 
-/* Left Sidebar */
+/* Left Sidebar 
 .roam-body div.roam-app:not(.mobile) .roam-sidebar-container .roam-sidebar-content .top-row {
     height: var(--max-topbar-h);
 }
