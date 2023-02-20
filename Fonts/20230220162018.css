@@ -1,0 +1,33 @@
+/* Medium Soft */
+
+/* Medium */
+
+@font-face {
+    font-family: '20230220163000';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20230220162018/20230220163000.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20230220162018/20230220163012.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20230220162018/20230220163022.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20230128175226';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20230220162018/20230220163029.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
