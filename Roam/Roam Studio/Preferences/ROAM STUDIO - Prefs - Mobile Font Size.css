@@ -9,14 +9,16 @@
 /* CELULAR | ANDROID */
 
 @media screen and (max-device-width: 600px) {
-    :root {
+    :root,
+    :root.rm-dark-theme {
         --fs-app__html: 16px;
     }
 }
 
 /* IPAD */
 @media screen and (min-device-width: 601px) and (max-device-width: 1023px) {
-    :root {
+    :root,
+    :root.rm-dark-theme {
         --fs-app__html: 17px;
     }
 }
