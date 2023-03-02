@@ -472,7 +472,7 @@ input[type=radio]:active,
 }
 
 .rm-g.rm-not-focused.rm-block--open.rm-not-focused>.rm-block__self {
-  display: none;
+  display: flex;
 }
 
 .bp3-datepicker-month-select {
