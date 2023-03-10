@@ -2,7 +2,7 @@
 
 /* Smartblocks */
 [data-path-page-links*='SmartBlock'] {
-    --ff-main: var(--max-code-ff);
+    --ff-main: var(--max_code_ff);
 }
 
 
