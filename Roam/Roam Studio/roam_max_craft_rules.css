@@ -1,7 +1,8 @@
 /* Só para tirar prova real */
 
 
-/* === VARIÁVEIS === */
+/* --- VARIÁVEIS ---
+   ================= */
 
 :root {
     /* UNIVERSAIS */
@@ -343,14 +344,12 @@ span.rm-page-ref__brackets {
     border-radius: 5px;
 }
 
-
 .rm-block__ref-count-footnote:hover {
     background: #EAEAEA;
     padding: 3px;
     border-radius: 5px;
     transition: 0.5s;
 }
-
 
 .rm-reference-footnote .rm-active {
     content: ' \2193 ';
@@ -364,7 +363,6 @@ span.rm-page-ref__brackets {
     padding: 3px;
     border-radius: 5px;
 }
-
 
 /* Original 
 sup
@@ -393,6 +391,76 @@ sup.rm-block__ref-count-footnote {
 
     line-height: 0;
     vertical-align: baseline;
+}
+
+/* SEARCH QUERIES */
+
+/* Search Queries = Queries 
+   Commented out = regras para queries normais */
+
+/*.rm-query */
+.rm-search-query {
+    background-color: var(--bc-main__query);
+    border-top: var(--bt-main__query);
+    border-right: var(--br-main__query);
+    border-bottom: var(--bb-main__query);
+    border-left: var(--bl-main__query);
+    border-radius: var(--bd-main__query);
+    box-shadow: var(--sd-main__query);
+    --webkit-box-shadow: var(--sd-main__query);
+}
+
+/*
+.rm-query .rm-query-title 
+*/
+.rm-search-query .rm-search-query-title {
+    background-color: var(--bc-main__query-title);
+    color: var(--co-main__query-title);
+    font-weight: var(--fw-main__query-title);
+}
+
+/*
+.rm-query .rm-reference-main 
+*/
+.rm-search-query .rm-reference-main {
+    margin-left: 0px;
+}
+
+/* Fix para Results de Páginas Quando Ungrouped*/
+.rm-search-query .rm-search-query-content.rm-reference-main 
+  > div.dont-focus-block {
+    margin-left: 17.5px !important;
+}
+
+.rm-search-query .rm-search-query-content.rm-reference-main
+  > div.dont-focus-block:not(:first-of-type) {
+    margin-top: 12.5px !important;
+}
+
+/* Botões Horizontais de Refresh e Settings */
+.rm-search-query>.rm-search-query-title div:nth-child(3) {
+    flex-direction: row !important;
+}
+
+.rm-search-query>.rm-search-query-title div:nth-child(3) .bp3-popover-wrapper {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+/*
+.rm-query .rm-query-content
+*/
+.rm-search-query .rm-search-query-content {
+    padding-left: 11px;
+}
+
+/*
+.rm-query .rm-query-content 
+*/
+.rm-search-query .rm-search-query-content {
+    background-color: var(--bc-main__query-content);
+    border-top: var(--bt-main__query-content);
 }
 
 /* TAGS ESPECIAIS */
@@ -512,7 +580,8 @@ code {
     font-feature-settings: var(--max_code_ffs);
 }
 
-/* === MOBILE === */
+/* --- MOBILE ---
+   ============== */
 
 /* Diminui search bar para
    tentar aumentar quantidade
