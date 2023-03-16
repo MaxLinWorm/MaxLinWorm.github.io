@@ -563,8 +563,15 @@ div[data-page-links='["@Out"]'].rm-heading-level-3>.rm-block-main.rm-block__self
 }
 
 /* Revogado */
+
 .Revogado >.rm-block-main {
     text-decoration: line-through;
+}
+
+/* Meta Tag Revogado */
+.rm-page-ref[data-tag^="."] {
+    pointer-events: auto;
+    display: inline;
 }
 
 
