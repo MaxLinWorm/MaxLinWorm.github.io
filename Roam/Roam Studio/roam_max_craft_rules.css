@@ -328,9 +328,71 @@ span.rm-page-ref__brackets {
 }
 
 /* INLINE BLOCK REFS */
+
+/* Obtido de https://roamresearch.slack.com/archives/CMZMS7FLJ/p1678119080184899?thread_ts=1678103355.412339&cid=CMZMS7FLJ */
+
+.rm-block__ref-count-footnote {
+    color: grey;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.rm-block__ref-count-footnote::before {
+    content: '\2193 ';
+    margin-right: 3px;
+    border-radius: 5px;
+}
+
+
+.rm-block__ref-count-footnote:hover {
+    background: #EAEAEA;
+    padding: 3px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
 .rm-reference-footnote .rm-active {
+    content: ' \2193 ';
     color: var(--max-blockref-inline-active-co);
     background-color: var(--max-blockref-inline-active-bc);
+
+    /* Original 
+    color: rgb(255, 255, 255);
+    background-color: #0387FF;
+    */
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+/* Original 
+sup
+*/
+sup.rm-block__ref-count-footnote {
+    top: 0 !important;
+}
+
+/* Original 
+sub, sup 
+*/
+sub.rm-block__ref-count-footnote,
+sup.rm-block__ref-count-footnote {
+    position: relative;
+
+    /* Original 
+    margin-left: 3px;
+    */
+
+    margin-left: 0px;
+
+    /* Original 
+    font-size: 80%;
+    */
+    font-size: 95%;
+
+    line-height: 0;
+    vertical-align: baseline;
 }
 
 /* TAGS ESPECIAIS */
