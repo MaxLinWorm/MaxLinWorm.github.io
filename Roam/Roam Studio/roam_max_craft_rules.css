@@ -190,6 +190,15 @@ div.roam-app:not(.mobile) div.roam-sidebar-container[style='left: 0px; box-shado
     padding-left: 2.5px
 }
 
+/* QUICK FIND - FIND OR CREATE SEARCH */
+
+/* Wrap no Find or Create Search */
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-title.bp3-text-overflow-ellipsis {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: unset;
+}
+
 /* EMBED PATHS */
 
 .rm-embed-path {
@@ -297,7 +306,44 @@ span.rm-page-ref__brackets {
 
 /* BLOCK REFS */
 
-/* Realinhar botão de block refs */
+/* Delimitadores */
+
+/* Block Refs */
+.rm-block-ref:before {
+    content: '«'
+}
+
+.rm-block-ref:after {
+    content: '»'
+}
+
+/* Opções de delimitadores 
+
+⟪ e ⟫
+
+⟦ e ⟧
+
+❮ e ❯
+
+⟮ e ⟯
+
+⧼ e ⧽
+
+⟬ e ⟭
+
+❮ e ❯
+
+⟅ e ⟆
+
+《 e 》
+
+「 e 」
+
+« e »
+
+*/
+
+/* Realinhar block refs counter */
 
 /* Normal */
 .bp3-button.bp3-small.block-ref-count-button {
@@ -328,9 +374,20 @@ span.rm-page-ref__brackets {
     margin-top: 4px;
 }
 
+/* Block Refs Search Auto-complete
+   Create as block bellow */
+.rm-autocomplete__results > div.dont-unfocus-block > .rm-autocomplete-result
+  + div.bp3-text-overflow-ellipsis[style="color: rgb(129, 145, 157);"] {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
 /* INLINE BLOCK REFS */
 
-/* Obtido de https://roamresearch.slack.com/archives/CMZMS7FLJ/p1678119080184899?thread_ts=1678103355.412339&cid=CMZMS7FLJ */
+/* Footnotes - Inline Block Ref Counter
+  Obtido de https://roamresearch.slack.com/archives/CMZMS7FLJ/p1678119080184899?thread_ts=1678103355.412339&cid=CMZMS7FLJ 
+*/
 
 .rm-block__ref-count-footnote {
     color: grey;
@@ -391,6 +448,18 @@ sup.rm-block__ref-count-footnote {
 
     line-height: 0;
     vertical-align: baseline;
+}
+
+/* Inline Block Refs References */
+
+/* Fix para primeiro item do inline block refs */
+
+.rm-inline-references>.rm-inline-reference:nth-child(3) {
+    margin-left: -13.5px;
+}
+
+.rm-inline-references>.rm-inline-reference:nth-child(3)>.rm-block {
+    margin-left: 13.5px;
 }
 
 /* SEARCH QUERIES */
@@ -552,6 +621,25 @@ body {
 .rm-bq {
     margin: var(--max-quote-ma);
     padding: var(--max-quote-pa);
+}
+
+/* Mods para Bloquotes dentro de Block Refs */
+.rm-block-ref>.rm-bq {
+    box-sizing: border-box;
+    max-width: none;
+    font-size: var(--fs-main__quote);
+    padding: var(--max-quote-pa);
+    padding-left: 15px;
+    padding-right: 0px;
+    border-radius: 0px;
+    margin-left: -10px;
+}
+
+.rm-spacing--right-sidebar-open .rm-block-ref>.rm-bq,
+.rm-spacing--small .rm-block-ref>.rm-bq,
+.rm-spacing--medium .rm-block-ref>.rm-bq,
+.rm-spacing--left-sidebar-open .rm-block-ref>.rm-bq {
+    max-width: none;
 }
 
 /* CODE BLOCKS */
