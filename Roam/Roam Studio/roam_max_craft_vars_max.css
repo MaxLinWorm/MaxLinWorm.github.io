@@ -111,8 +111,9 @@
     /* BACKLINKS | REFERENCES */
     --max-references-pagetitle-fw: 400;
 
-
-
+    /* --- TAGS ESPECIAIS ---
+       ====================== */
+    --max-arq-co: rgb(176, 176, 176);
 }
 
 
@@ -156,9 +157,3 @@
 
 
 
-/* --- TAGS ESPECIAIS ---
-   ====================== */
-
-[data-page-links*='Status-Arquivado'] {
-    --max-arq-co: rgb(176, 176, 176);
-}

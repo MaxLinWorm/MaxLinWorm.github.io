@@ -562,6 +562,11 @@ div[data-page-links='["@Out"]'].rm-heading-level-3>.rm-block-main.rm-block__self
     text-decoration: none;
 }
 
+/* Revogado */
+.Revogado >.rm-block-main {
+    text-decoration: line-through;
+}
+
 
 
 /* --- TIPOGRAFIA ----
