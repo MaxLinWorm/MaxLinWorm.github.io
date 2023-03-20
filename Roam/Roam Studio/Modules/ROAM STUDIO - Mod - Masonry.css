@@ -2,10 +2,10 @@
 
 @media screen and (min-width: 601px) {
     :root {
-        --masonry-startWidth: 550px;
+        --masonry-startWidth: 650px;
         --masonry-minWidth: 440px;
         --masonry-maxWidth: 1200px;
-        --masonry-startHeight: 234px;
+        --masonry-startHeight: 2000px;
         --masonry-minHeight: 200px;
         /* Retira minhas mods para normal */
         --max-rightsidebar-mw: /* none */;
