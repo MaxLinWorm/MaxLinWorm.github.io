@@ -627,6 +627,68 @@ div[data-page-links='["@Out"]'].rm-heading-level-3>.rm-block-main.rm-block__self
     display: inline;
 }
 
+/* IDEIAS E SUB-TAREFAS */
+
+/* Sub-tarefas */
+
+span[data-link-title="SUB-TFA"]>span.rm-page-ref.rm-page-ref--link {
+    font-size: 0;
+    border-bottom: none;
+    line-height: 0px;
+}
+
+span[data-link-title="SUB-TFA"]>span.rm-page-ref.rm-page-ref--link:before {
+    font-size: var(--fs-app__html);
+    border: var(--bt-main__checkmark);
+    border-radius: 0% 100% 0% 100% / 0% 0% 100% 100%;
+    height: 14px;
+    width: 14px;
+    content: "";
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+}
+
+span[data-link-title="SUB-TFA"]>span.rm-page-ref.rm-page-ref--link:after {
+    content: ""
+}
+
+/* Ideia */
+
+span[data-link-title="IDEIA"]>span.rm-page-ref.rm-page-ref--link {
+    font-size: 0;
+    border-bottom: none;
+    line-height: 0px;
+}
+
+span[data-link-title="IDEIA"]>span.rm-page-ref.rm-page-ref--link:before {
+    font-size: var(--fs-app__html);
+    border: var(--bt-main__checkmark);
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    content: "";
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+}
+
+span[data-link-title="IDEIA"]>span.rm-page-ref.rm-page-ref--link:after {
+    content: ""
+}
+
 
 
 /* --- TIPOGRAFIA ----
