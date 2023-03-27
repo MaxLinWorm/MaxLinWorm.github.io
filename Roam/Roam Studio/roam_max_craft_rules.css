@@ -396,8 +396,10 @@ span.rm-page-ref__brackets {
 }
 
 .rm-block__ref-count-footnote::before {
-    content: '\2193 ';
-    margin-right: 3px;
+    /* content: '\2193 ';*/
+    content: '\2193';
+    /* margin-right: 3px; */
+    margin-right: .5px;
     border-radius: 5px;
 }
 
