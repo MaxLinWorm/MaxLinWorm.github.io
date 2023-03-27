@@ -622,7 +622,7 @@ div[data-page-links='["@Out"]'].rm-heading-level-3>.rm-block-main.rm-block__self
 }
 
 /* Meta Tag Revogado */
-.rm-page-ref[data-tag^="."] {
+.rm-page-ref[data-tag^=".Revogado"] {
     pointer-events: auto;
     display: inline;
 }
