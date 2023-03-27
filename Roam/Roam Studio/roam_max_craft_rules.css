@@ -492,6 +492,14 @@ sup.rm-block__ref-count-footnote {
 
 /* Inline Block Refs References */
 
+.rm-inline-references {
+    border-top: var(--bt-embed);
+    border-right: var(--br-embed);
+    border-bottom: var(--bb-embed);
+    border-left: var(--bl-embed);
+    border-radius: var(--bd-embed);
+}
+
 /* Fix para primeiro item do inline block refs */
 
 .rm-inline-references>.rm-inline-reference:nth-child(3) {
@@ -500,6 +508,11 @@ sup.rm-block__ref-count-footnote {
 
 .rm-inline-references>.rm-inline-reference:nth-child(3)>.rm-block {
     margin-left: 13.5px;
+}
+
+/* Breadcrumbs sempre expandidos */
+.rm-inline-references .rm-inline-reference .bp3-overflow-list.rm-zoom-path {
+    flex-wrap: wrap;
 }
 
 /* SEARCH QUERIES */

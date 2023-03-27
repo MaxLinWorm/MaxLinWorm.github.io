@@ -1460,7 +1460,7 @@
     --bb-main__inline-ref-item: transparent;
     --bl-main__inline-ref-item: transparent;
     --bd-main__inline-ref-item: 0px;
-    --bc-main__inline-references: var(--cl-gray-150);
+    --bc-main__inline-references: var(--bc-embed);
     --bb-main__level1: transparent;
     --co-main__level1: var(--cl-gray-850);
 
@@ -1699,7 +1699,7 @@
 
     --ff-main__zoom-item: var(--max-ui-ff);
 
-    --fs-main__zoom-item: 1rem;
+    --fs-main__zoom-item: .9rem;
     --bc-main__zoom-mask: transparent;
     --bc-main: var(--cl-white);
     --co-main: var(--cl-gray-850);
@@ -3727,7 +3727,7 @@
         --bb-main__inline-ref-item: transparent;
         --bl-main__inline-ref-item: transparent;
         --bd-main__inline-ref-item: 0px;
-        --bc-main__inline-references: var(--cl-gray-800);
+        --bc-main__inline-references: var(--bc-embed);
         --bb-main__level1: transparent;
         --co-main__level1: var(--cl-gray-125);
 
@@ -3941,7 +3941,7 @@
         --co-main__zoom-item: var(--max-breadcrumbs-co);
         --ff-main__zoom-item: var(--max-ui-ff);
 
-        --fs-main__zoom-item: 1rem;
+        --fs-main__zoom-item: .9rem;
         --bc-main__zoom-mask: transparent;
         --bc-main: var(--cl-gray-825);
         --co-main: var(--cl-gray-125);
@@ -5943,7 +5943,7 @@
     --bb-main__inline-ref-item: transparent;
     --bl-main__inline-ref-item: transparent;
     --bd-main__inline-ref-item: 0px;
-    --bc-main__inline-references: var(--cl-gray-800);
+    --bc-main__inline-references: var(--bc-embed);
     --bb-main__level1: transparent;
     --co-main__level1: var(--cl-gray-125);
 
@@ -6157,7 +6157,7 @@
     --co-main__zoom-item: var(--max-breadcrumbs-co);
     --ff-main__zoom-item: var(--max-ui-ff);
 
-    --fs-main__zoom-item: 1rem;
+    --fs-main__zoom-item: .9rem;
     --bc-main__zoom-mask: transparent;
     --bc-main: var(--cl-gray-825);
     --co-main: var(--cl-gray-125);
