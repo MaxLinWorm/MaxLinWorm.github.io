@@ -40,6 +40,26 @@ body[data-theme="Carbon"] {
 
     /* SIDE STRIP */
     --max-sideStrip-wd: 40px;
+
+    /* TAGS */
+
+    /* Private e Shared */
+    
+    /* Ativada */
+    --max-tag--ativada-fw: 700;
+    --max-tag--ativada-bordersize: 1px;
+    
+    /* Normal */
+    --max-tag--normal-fw: 500;
+    
+    /* Private = Cor invertida */
+
+    --max-tag--private--view-co: var(--max-tag--private--edit-co);
+    --max-tag--private--view-bg: var(--max-tag--private--edit-bg);
+    
+    /* Shared = Igual indicador de parents */    
+    --max-tag--shared--view-co: var(--max-tag--shared--edit-co);
+    --max-tag--shared--view-bg: var(--max-tag--shared--edit-bg);
 }
 
 /* LIGHT MODE */
@@ -49,6 +69,42 @@ body[data-theme="Carbon"] {
     body[data-theme="Zinc"],
     body[data-theme="Deuterium"] {
         --max-gray-tertiary: rgb(247, 247, 247);
+
+        /* TAGS */
+
+        /* Private e Shared */
+    
+        /* Ativada */
+        --max-tag--ativada-border: var(--max-tag--ativada-bordersize) solid var(--colors-gray);
+        
+        /* Private = Cor invertida */
+        --max-tag--private--edit-co: var(--colors-base11);
+        --max-tag--private--edit-bg: var(--colors-fore6T);
+        
+        /* Shared = Igual indicador de parents */    
+        --max-tag--shared--edit-co: var(--colors-fore9);
+        --max-tag--shared--edit-bg: var(--colors-base9T);
+    }
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+    :root,
+    body[data-theme="Zinc"],
+    body[data-theme="Carbon"] {
+        /* Private e Shared */
+
+        /* Ativada */
+        --max-tag--ativada-border: var(--max-tag--ativada-bordersize) solid var(--colors-baseContrast);
+
+        /* Private = Cor invertida */
+        --max-tag--private--edit-co: black;
+        --max-tag--private--edit-bg: var(--colors-fore8);
+
+        /* Shared = Igual indicador de parents */
+        --max-tag--shared--edit-co: var(--colors-fore9);
+        --max-tag--shared--edit-bg: var(--colors-base9T);
+
     }
 }
 
@@ -240,6 +296,135 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
         width: 40px;
     }
 }
+
+
+/* TAGS */
+
+/* Private */
+
+/* Edit Mode */
+
+/* Normal e ativada */
+.css-1ki68wf,
+.css-1ujh7pu,
+.css-1ki68wf:hover,
+.css-1ujh7pu:hover {
+    color: var(--max-tag--private--edit-co);
+    background-color: var(--max-tag--private--edit-bg);
+}
+
+.css-1ki68wf:hover,
+.css-1ujh7pu:hover {
+    text-decoration: underline;
+}
+
+/* Normal */
+.css-1ki68wf {
+    font-weight: var(--max-tag--normal-fw);
+}
+
+/* Ativada */
+.css-1ujh7pu {
+    font-weight: var(--max-tag--ativada-fw);
+    border: var(--max-tag--ativada-border) !important;
+    height: calc(20px + var(--max-tag--ativada-bordersize));
+}
+
+/* View Mode */
+
+/* Normal e Ativada */
+.css-6qwi6e,
+.css-skx5jw,
+.css-6qwi6e:hover,
+.css-skx5jw:hover {
+    color: var(--max-tag--private--view-co);
+    background-color: var(--max-tag--private--view-bg);
+}
+
+.css-6qwi6e:hover,
+.css-skx5jw:hover {
+    text-decoration: underline;
+}
+
+/* Normal */
+.css-6qwi6e {
+    font-weight: var(--max-tag--normal-fw);
+}
+
+/* Ativada */
+.css-skx5jw {
+    font-weight: var(--max-tag--ativada-fw);
+    border: var(--max-tag--ativada-border);
+    height: calc(20px + var(--max-tag--ativada-bordersize));
+}
+
+/* Shared */
+
+/* Edit Mode */
+
+/* Normal e Ativada */
+.css-1jvqdmd,
+.css-smejqi,
+.css-1jvqdmd:hover,
+.css-smejqi:hover {
+    color: var(--max-tag--shared--edit-co);
+    background-color: var(--max-tag--shared--edit-bg);
+}
+
+.css-1jvqdmd:hover,
+.css-smejqi:hover {
+    text-decoration: underline;
+}
+
+/* Normal */
+.css-1jvqdmd {
+    font-weight: var(--max-tag--normal-fw);
+}
+
+/* Ativada */
+.css-smejqi {
+    font-weight: var(--max-tag--ativada-fw);
+    border: var(--max-tag--ativada-border);
+    height: calc(20px + var(--max-tag--ativada-bordersize));
+}
+
+/* View Mode */
+
+/* Normal e Ativada */
+.css-18rzvnh,
+.css-1jxy1kj,
+.css-18rzvnh:hover,
+.css-1jxy1kj:hover {
+    color: var(--max-tag--shared--view-co);
+    background-color: var(--max-tag--shared--view-bg);
+}
+
+.css-18rzvnh:hover,
+.css-1jxy1kj:hover {
+    text-decoration: underline;
+}
+
+/* Normal */
+.css-18rzvnh {
+    font-weight: var(--max-tag--normal-fw);
+}
+
+/* Ativada */
+.css-1jxy1kj {
+    font-weight: var(--max-tag--ativada-fw);
+    border: var(--max-tag--ativada-border);
+    height: calc(20px + var(--max-tag--ativada-bordersize));
+
+}
+
+/* Fix para aumento do tamanho com border ativada */
+.css-y5tcnv:has(.css-1jxy1kj, .css-smejqi, .css-skx5jw, .css-1ujh7pu) {
+    max-height: calc(20px + (2 * (var(--max-tag--ativada-bordersize))));
+}
+
+
+
+
 
 /* --- TIPOGRAFIA --- */
 
