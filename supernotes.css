@@ -3,7 +3,7 @@
 
  /* --- UNIVERSAIS --- */
 :root,
-body[data-theme="Zinc"],
+body[data-theme="Hydrogen"],
 body[data-theme="Deuterium"],
 body[data-theme="Zinc"],
 body[data-theme="Carbon"] {
@@ -83,7 +83,7 @@ body[data-theme="Carbon"] {
 
 @media (prefers-color-scheme: light) {
     :root,
-    body[data-theme="Zinc"],
+    body[data-theme="Hydrogen"],
     body[data-theme="Deuterium"] {
         --max-gray-tertiary: rgb(247, 247, 247);
 
