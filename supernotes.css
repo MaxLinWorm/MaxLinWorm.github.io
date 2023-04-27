@@ -1,8 +1,7 @@
 /* === VARIÁVEIS ===
-   -----------------
- */
+   ----------------- */
 
- /* UNIVERSAIS */
+ /* --- UNIVERSAIS --- */
 :root,
 body[data-theme="Zinc"],
 body[data-theme="Deuterium"],
@@ -35,6 +34,12 @@ body[data-theme="Carbon"] {
     --max-card--edit-lh: var(--max-card--view-lh);
 
     /* --max-body-lh: 3; */
+
+    /* MOBILE RESPONSIVE VIEW NO DESKTOP */
+    --max-mobileResponsiveView-diminuicao: 30px;
+
+    /* SIDE STRIP */
+    --max-sideStrip-wd: 40px;
 }
 
 /* LIGHT MODE */
@@ -49,7 +54,6 @@ body[data-theme="Carbon"] {
 
 /* === REGRAS === 
    -------------- */
-
    
 /* --- UI: USER INTERFACE --- */
 
@@ -155,7 +159,6 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
     margin-left: var(--max-card--edit-parents-ml);
 }
 
-
 /* Icon */
 .css-1q5atxv {
     padding-top: var(--max-card--edit-icon-pt);
@@ -188,6 +191,55 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
 }
 
 
+/* MOBILE RESPONSIVE VIEW NO DESKTOP */
+
+@media (max-width: 769px) {
+    /* Botão de search */
+
+    /* Botão de search*/
+   
+    .css-1krbjzp.command-prompt-button {
+        height: calc(36px - var(--max-mobileResponsiveView-diminuicao));
+        width: calc(36px - var(--max-mobileResponsiveView-diminuicao));
+    }
+    
+    .css-1krbjzp {
+        min-width: calc(28px - var(--max-mobileResponsiveView-diminuicao));
+    }
+    
+    /* Botao de outline e pinned e notificações*/
+    .css-gn6562,
+    /* Botão de home */
+    .css-15xdws2 {
+        height: calc(42px - var(--max-mobileResponsiveView-diminuicao));
+        width: calc(42px - var(--max-mobileResponsiveView-diminuicao));
+    }
+
+    /* Container */
+    .css-1xo5yai {
+        height: calc(66px - var(--max-mobileResponsiveView-diminuicao));
+    }
+
+    /* Noteboard Main Area */
+    .css-1jhig1q {
+        /*
+        height: calc(100% - 48px);
+        */
+        height: calc(100% - calc(66px - var(--max-mobileResponsiveView-diminuicao)));
+    }
+}
+
+
+/* SIDESTRIP */
+
+/* Não conflitar com mobile responsive */
+@media (min-width: 770px) {
+
+    .css-1xo5yai {
+        min-width: 40px;
+        width: 40px;
+    }
+}
 
 /* --- TIPOGRAFIA --- */
 
