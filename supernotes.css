@@ -10,6 +10,7 @@ body[data-theme="Carbon"] {
     
     /* 12px */
     --max-gutter-left: 20px;
+
     --max-gutter-right: var(--max-gutter-left);
     --max-gutter-top: 15px;
 
@@ -35,11 +36,14 @@ body[data-theme="Carbon"] {
 
     /* --max-body-lh: 3; */
 
+
     /* MOBILE RESPONSIVE VIEW NO DESKTOP */
     --max-mobileResponsiveView-diminuicao: 30px;
 
+
     /* SIDE STRIP */
     --max-sideStrip-wd: 40px;
+
 
     /* TAGS */
 
@@ -60,9 +64,22 @@ body[data-theme="Carbon"] {
     /* Shared = Igual indicador de parents */    
     --max-tag--shared--view-co: var(--max-tag--shared--edit-co);
     --max-tag--shared--view-bg: var(--max-tag--shared--edit-bg);
+
+
+    /* TABLES */
+    --max-table-fs: 13px ;
+    --max-table-lh: 1.15;
+    --max-table-bd: var(--max-table-cell-pr);
+
+    --max-table-cell-pt: 0.2em;
+    --max-table-cell-pr: 0.4em;
+    --max-table-cell-pb: var(--max-table-cell-pt);
+    --max-table-cell-pl: var(--max-table-cell-pr);
+    --max-table-cell-minw: 55px;
+
 }
 
-/* LIGHT MODE */
+/* --- LIGHT MODE --- */
 
 @media (prefers-color-scheme: light) {
     :root,
@@ -87,11 +104,14 @@ body[data-theme="Carbon"] {
     }
 }
 
-/* DARK MODE */
+/* --- DARK MODE --- */
 @media (prefers-color-scheme: dark) {
     :root,
     body[data-theme="Zinc"],
     body[data-theme="Carbon"] {
+        
+        /* TAGS */
+        
         /* Private e Shared */
 
         /* Ativada */
@@ -423,7 +443,28 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
 }
 
 
+/* TABLES */
 
+.markdown-body table th,
+.markdown-body table td {
+    padding-top: var(--max-table-cell-pt);
+    padding-right: var(--max-table-cell-pr);
+    padding-bottom: var(--max-table-cell-pb);
+    padding-left: var(--max-table-cell-pl);
+    text-align: left;
+    min-width: var(--max-table-cell-minw);
+    width: auto;
+}
+
+.markdown-body table {
+    border-radius: var(--max-table-bd);
+    table-layout: fixed;
+    font-size: var(--max-table-fs);
+    line-height: var(--max-table-lh);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+    letter-spacing: -0.2px
+}
 
 
 /* --- TIPOGRAFIA --- */
