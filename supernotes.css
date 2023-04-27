@@ -1,210 +1,241 @@
-:root {
-    /* 'ProximaSoft' */
-    --max_ff: 'ProximaSoft';
-    /* 500 */
-    --max_fw: 400;
-    /* 28px mas dava bug com source serif, criando scroll 
-       No .css-1mf7bjd (preview), era 1.3. Coloquei 1.33 para Source */
-    --max_title-edit_lh: 1.3;
-    /* 1.3 */
-    --max_title-prev_lh: var(--max_title-edit_lh);
-    --max_fs: 16px; /* 15px, 16px para Proxima, 19 para garamond, */
-    --max_code_ff: 'Cartograph CF';
-    --max_code_lh: 1.3;
-    --max_code_fs: 13px; /* Era 82%, mas pq meu browser limitava a 14,
-                             ficava 14 em relação a 15 
-                             agora, fica 15 em relação a 16 */
-    --max_title_fs: 22px ; /*22px */
-    --max_title-rightsidebar_fs: 18px;
+/* === VARIÁVEIS ===
+   -----------------
+ */
+
+ /* UNIVERSAIS */
+:root,
+body[data-theme="Zinc"],
+body[data-theme="Deuterium"],
+body[data-theme="Zinc"],
+body[data-theme="Carbon"] {
+    
+    /* 12px */
+    --max-gutter-left: 20px;
+    --max-gutter-right: var(--max-gutter-left);
+    --max-gutter-top: 15px;
+
+    --max-card--paragraphSpacing: 12px;
+    --max-card-body-pl: var(--max-gutter-left);
+    --max-card-body-pr: var(--max-gutter-right);
+
+    --max-card--view-lh: 1.4;
+    --max-card--view-headers-ml: var(--max-gutter-left);
+    --max-card--view-content-mt: var(--max-gutter-top);
+    --max-card--view-body-fs: 16px;
+
+    /* 1px */
+    --max-card--edit-line-pt: 0px;
+    /* 1px */
+    --max-card--edit-line-pb: 0px;
+    /* 15px */
+    --max-card--edit-icon-pt: calc(15px + 5px);
+    
+    --max-card--edit-headers-mt: var(--max-gutter-top);
+    --max-card--edit-parents-ml: var(--max-gutter-left);
+    --max-card--edit-lh: var(--max-card--view-lh);
+
+    /* --max-body-lh: 3; */
 }
 
-/* Background do Noteboard */
-body[data-theme="Hydrogen"] .css-g97sdf {
-    --colors-base10: rgb(247, 247, 247);
+/* LIGHT MODE */
+
+@media (prefers-color-scheme: light) {
+    :root,
+    body[data-theme="Zinc"],
+    body[data-theme="Deuterium"] {
+        --max-gray-tertiary: rgb(247, 247, 247);
+    }
 }
 
-/* Body dos cards */
-.markdown-body, body, #root, 
-.ͼ10 .cm-content{
-    font-family: var(--max_ff);
-    letter-spacing: 0px;
-    line-height: 1.5;
-    font-size: var(--max_fs);
+/* === REGRAS === 
+   -------------- */
+
+   
+/* --- UI: USER INTERFACE --- */
+
+/* UNIVERSAL COUPLER */
+
+/* Pop-up de outocomplete */
+.css-1af7qi0 {
+    width: 400px;
 }
 
-.ͼ10 .cm-line {
-    line-height: 1.5;
+/* Link e Title Couplers */
+
+/* Title e Parents */
+.css-1kffngw,
+/*  Com Search */
+.css-1032fps {
+    flex-wrap: wrap;
+    overflow: visible;
 }
 
-/* Bold */
-strong {
-    font-family: var(--max_ff);
-}
-
-/* Quotes */
-.markdown-body blockquote {
-    color: var(--colors-fore10) /*var(--colors-fore8) */
-}
-
-/* CARD TITLES */
-
-/* Card Title */
-.ͼz {
-    letter-spacing: 0;
-    font-family: var(--max_ff);
-}
-
-/* Card Title em edição */
-.ͼz .cm-line {
-    font-family: var(--max_ff);
-    line-height: var(--max_title-edit_lh);
-}
-
-/* Card title preview */
-.css-1mf7bjd {
-    line-height: var(--max_title-prev_lh);
-}
-
-/* No Right Sidebar */
-
-.css-15m2dws .css-1mf7bjd {
-    font-size: var(--max_title-rightsidebar_fs);
-}
-
-/* Botões */
-span, button, input, textarea, .css-108k2xd, .css-1j4sibe {
-    letter-spacing: 0px;
-}
-
-/* Font-weight padrão */
-#root {
-    font-weight: var(--max_fw);
-}
-
-/* BACKLINKS */
-/* Comum tanto a títulos, quanto parent, quanto excerpt */
-.css-1561exq {
-    font-weight: var(--max_fw);
-}
-
-/* Separação entre cards, exceto primeiro */
-.css-1561exq.e10oot7k6:not(:first-of-type) {
-    margin-top: 10px    
-}
-
-/* Título e Parents */
-.css-1jvjrpa {
-    opacity: 1;
-}
-
-/* Título do card */
-.css-1jvjrpa.e10oot7k3 {
-    font-size: 16px;
-    font-weight: calc(var(--max_fw) + 100);
+/* Title */
+.css-1vupe60,
+/* Title com search */
+.css-c7ebff {
+    overflow: visible;
+    white-space: normal
 }
 
 /* Parents */
-.css-1jvjrpa span {
-    font-weight: var(--max_fw);
-    font-size: 12px;
-    color: var(--colors-fore8);
-    -webkit-text-size-adjust: none !important;
-    transform: scale(0.85) !important;
-}
-
-.css-1jvjrpa span *{
-    font-size: 12px;
-    color: var(--colors-fore8);
-    -webkit-text-size-adjust: none !important;
-    transform: scale(0.85) !important;
+.css-1w77rm5 {
+    max-width: 100%;
+    overflow: visible;
+    white-space: normal;
 }
 
 /* Excerpt */
-.css-13egbj1 {
-    color: var(--colors-fore10);
-    line-height: 1.45;
-    opacity: 1;
+.css-1ks0arq {
+    font-size: 13px;
+    overflow: visible;
 }
 
-/* PARENTS do CARD 
-.css-1yi9ayc {
-    transform: scale(0.85);
-    
+/* BACKGROUND DO NOTEBOARD 
+   que não seja seamless */
+body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
+    background-color: var(--max-gray-tertiary);
 }
 
-/* OUTLINE */
-.css-qkygvq {
-    font-weight: var(--max_fw);
+/* MARGENS E ALINHAMENTO DE CARDS */
+
+/* Cards em View Mode */
+
+/* View Mode - Card content (incluindo header) */
+/* .css-rannzy*/
+.css-198pm4l {
+    padding-top: var(--max-card--view-content-mt);
 }
 
-/* CODE */
+/* Header no Noteboard, Sidebar, Zoomed In Card Title */
 
-/* Rendered */
-
-.markdown-body pre, 
-.markdown-body code {
-    font-family: var(--max_code_ff);
+/* o seletor .css-rannzy faz com que só se aplique 
+   aos do noteboard (não incluir o zoomed in title */
+/* .css-198pm4l ERA .css-rannzy*/
+.css-198pm4l .css-1qhmto6 {
+    margin-left: var(--max-card--view-headers-ml);
 }
 
-/* Inline */
-
-.markdown-body code {
-    font-size: var(--max_code_fs);
+/* Card Body */
+.css-6yke1z,
+.css-e4nwal,
+.css-wmhtw7,
+.css-kdadra,
+.css-1vgnp66 {
+    /* 14px */
+    padding-left: var(--max-card-body-pl);
+    padding-right: var(--max-card-body-pr);
 }
 
-/* Block */
+/* Card Footer */
 
-.markdown-body pre>code {
-    font-size: var(--max_code_fs);
-    white-space: pre-wrap;
+/* Multiplayer */
+.multiplayer-block {
+    margin-left: var(--max-gutter-left);
 }
 
-.markdown-body pre code {
-    line-height: var(--max_code_lh);
+/* Tags e More */
+.css-1v0pec7 {
+    margin-right: var(--max-gutter-right);
 }
 
-/* Editing */
 
-/* Codeblocks e inline*/
-.ͼ5 {
-    font-family: var(--max_code_ff);
-    letter-spacing: normal;
-    font-size: var(--max_code_fs);
+
+/* Cards em Edit Mode */
+
+/*  Title */
+.ͼy .cm-line {
+    margin-top: var(--max-card--edit-headers-mt);
 }
 
-/* cm-line que tenha qualquer descendente, mas que não tenha descendente que não seja code */
-.ͼ10 .cm-line:has(*):not(:has(:not(.ͼ5))) {
-    line-height: var(--max_code_lh)
+/* Title */
+.css-xdkp9e,
+/* Parents */
+.css-t3w4rt {
+    margin-left: var(--max-card--edit-parents-ml);
 }
 
-/* Inline */
-.ͼm {
-    font-family: var(--max_code_ff);
-    letter-spacing: normal;
-    
+
+/* Icon */
+.css-1q5atxv {
+    padding-top: var(--max-card--edit-icon-pt);
 }
 
-/* Tables em edição */
-.ͼ8 {
-    font-family: var(--max_code_ff);
-    letter-spacing: normal;
+/* Content */
+.css-4mbm8p {
+    /* 10px */
+    padding-top: var(--max-card--view-content-mt);
 }
 
-/* === UID === */
-/* Pop-over para adicionar links parents e tags */
-
-#floating-ui-root .Popover .css-1af7qi0.e1k3hmgp8 {
-    width: 680px;
+/* Body - Line */
+.ͼz .cm-line {
+    padding-left: var(--max-card-body-pl);
+    padding-right: var(--max-card-body-pr);
+    padding-top: var(--max-card--edit-line-pt);
+    padding-bottom: var(--max-card--edit-line-pb);
 }
 
-/* Destaque para Card selecionado */
-/* em edição */
-.css-i5swy0,
-.css-i5swy0:focus,
-.css-i5swy0:focus-within,
-/* em preview */
-.css-ba6nvo:focus, 
-.css-ba6nvo:focus-within{
-    border-color: var(--colors-fore4T) !important;
-    border: solid 2px var(--colors-fore4T); 
+/* Tags */
+.css-gapdrv {
+    /* 12px */
+    margin-right: var(--max-gutter-right);
+}
+
+/* Footer (cancelar e finish) */
+.css-aj3lhw {
+    margin-left: var(--max-gutter-left);
+    margin-right: var(--max-gutter-right);
+}
+
+
+
+/* --- TIPOGRAFIA --- */
+
+/* CARDS EM VIEW MODE */
+
+/* Body */
+
+.markdown-body {
+    line-height: var(--max-card--view-lh)
+}
+
+.markdown-body p {
+    margin-top: 0px;
+    /* 0.6666em */
+    margin-bottom: calc(var(--max-card--paragraphSpacing) + var(--max-card--edit-line-pt) + var(--max-card--edit-line-pb));
+}
+
+/* Expanded - 16px */
+.css-6yke1z,
+/* Expanded - 15px */
+.css-e4nwal,
+/* Collapsed - 15px */
+.css-wmhtw7,
+/* Collapsed - 16px */
+.css-kdadra,
+/* Zoomed In Note */
+.css-1vgnp66 {
+    font-size: var(--max-card--view-body-fs);
+}
+
+
+/* CARDS EM EDIT MODE */
+
+.ͼz .cm-line {
+    line-height: var(--max-card--edit-lh);
+}
+
+/* Diminui linha em branco de paráragro vazio */
+.cm-line:has(>br:first-child):not(:has(:not(br))) {
+    height: var(--max-card--paragraphSpacing);
+    font-size: var(--max-card--paragraphSpacing);
+    line-height: var(--max-card--paragraphSpacing);
+}
+
+/* Normaliza em parágrafo precedido de parágrafo vazio
+   = Parágrafos vazios consecutivos  */
+.cm-line:has(>br:first-child):not(:has(:not(br))) + .cm-line:has(>br:first-child):not(:has(:not(br))) {
+    height: 1em;
+    font-size: 1em;
+    line-height: 1em;
 }

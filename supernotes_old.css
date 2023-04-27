@@ -1,0 +1,210 @@
+:root {
+    /* 'ProximaSoft' */
+    --max_ff: 'ProximaSoft';
+    /* 500 */
+    --max_fw: 400;
+    /* 28px mas dava bug com source serif, criando scroll 
+       No .css-1mf7bjd (preview), era 1.3. Coloquei 1.33 para Source */
+    --max_title-edit_lh: 1.3;
+    /* 1.3 */
+    --max_title-prev_lh: var(--max_title-edit_lh);
+    --max_fs: 16px; /* 15px, 16px para Proxima, 19 para garamond, */
+    --max_code_ff: 'Cartograph CF';
+    --max_code_lh: 1.3;
+    --max_code_fs: 13px; /* Era 82%, mas pq meu browser limitava a 14,
+                             ficava 14 em relação a 15 
+                             agora, fica 15 em relação a 16 */
+    --max_title_fs: 22px ; /*22px */
+    --max_title-rightsidebar_fs: 18px;
+}
+
+/* Background do Noteboard */
+body[data-theme="Hydrogen"] .css-g97sdf {
+    --colors-base10: rgb(247, 247, 247);
+}
+
+/* Body dos cards */
+.markdown-body, body, #root, 
+.ͼ10 .cm-content{
+    font-family: var(--max_ff);
+    letter-spacing: 0px;
+    line-height: 1.5;
+    font-size: var(--max_fs);
+}
+
+.ͼ10 .cm-line {
+    line-height: 1.5;
+}
+
+/* Bold */
+strong {
+    font-family: var(--max_ff);
+}
+
+/* Quotes */
+.markdown-body blockquote {
+    color: var(--colors-fore10) /*var(--colors-fore8) */
+}
+
+/* CARD TITLES */
+
+/* Card Title */
+.ͼz {
+    letter-spacing: 0;
+    font-family: var(--max_ff);
+}
+
+/* Card Title em edição */
+.ͼz .cm-line {
+    font-family: var(--max_ff);
+    line-height: var(--max_title-edit_lh);
+}
+
+/* Card title preview */
+.css-1mf7bjd {
+    line-height: var(--max_title-prev_lh);
+}
+
+/* No Right Sidebar */
+
+.css-15m2dws .css-1mf7bjd {
+    font-size: var(--max_title-rightsidebar_fs);
+}
+
+/* Botões */
+span, button, input, textarea, .css-108k2xd, .css-1j4sibe {
+    letter-spacing: 0px;
+}
+
+/* Font-weight padrão */
+#root {
+    font-weight: var(--max_fw);
+}
+
+/* BACKLINKS */
+/* Comum tanto a títulos, quanto parent, quanto excerpt */
+.css-1561exq {
+    font-weight: var(--max_fw);
+}
+
+/* Separação entre cards, exceto primeiro */
+.css-1561exq.e10oot7k6:not(:first-of-type) {
+    margin-top: 10px    
+}
+
+/* Título e Parents */
+.css-1jvjrpa {
+    opacity: 1;
+}
+
+/* Título do card */
+.css-1jvjrpa.e10oot7k3 {
+    font-size: 16px;
+    font-weight: calc(var(--max_fw) + 100);
+}
+
+/* Parents */
+.css-1jvjrpa span {
+    font-weight: var(--max_fw);
+    font-size: 12px;
+    color: var(--colors-fore8);
+    -webkit-text-size-adjust: none !important;
+    transform: scale(0.85) !important;
+}
+
+.css-1jvjrpa span *{
+    font-size: 12px;
+    color: var(--colors-fore8);
+    -webkit-text-size-adjust: none !important;
+    transform: scale(0.85) !important;
+}
+
+/* Excerpt */
+.css-13egbj1 {
+    color: var(--colors-fore10);
+    line-height: 1.45;
+    opacity: 1;
+}
+
+/* PARENTS do CARD 
+.css-1yi9ayc {
+    transform: scale(0.85);
+    
+}
+
+/* OUTLINE */
+.css-qkygvq {
+    font-weight: var(--max_fw);
+}
+
+/* CODE */
+
+/* Rendered */
+
+.markdown-body pre, 
+.markdown-body code {
+    font-family: var(--max_code_ff);
+}
+
+/* Inline */
+
+.markdown-body code {
+    font-size: var(--max_code_fs);
+}
+
+/* Block */
+
+.markdown-body pre>code {
+    font-size: var(--max_code_fs);
+    white-space: pre-wrap;
+}
+
+.markdown-body pre code {
+    line-height: var(--max_code_lh);
+}
+
+/* Editing */
+
+/* Codeblocks e inline*/
+.ͼ5 {
+    font-family: var(--max_code_ff);
+    letter-spacing: normal;
+    font-size: var(--max_code_fs);
+}
+
+/* cm-line que tenha qualquer descendente, mas que não tenha descendente que não seja code */
+.ͼ10 .cm-line:has(*):not(:has(:not(.ͼ5))) {
+    line-height: var(--max_code_lh)
+}
+
+/* Inline */
+.ͼm {
+    font-family: var(--max_code_ff);
+    letter-spacing: normal;
+    
+}
+
+/* Tables em edição */
+.ͼ8 {
+    font-family: var(--max_code_ff);
+    letter-spacing: normal;
+}
+
+/* === UID === */
+/* Pop-over para adicionar links parents e tags */
+
+#floating-ui-root .Popover .css-1af7qi0.e1k3hmgp8 {
+    width: 680px;
+}
+
+/* Destaque para Card selecionado */
+/* em edição */
+.css-i5swy0,
+.css-i5swy0:focus,
+.css-i5swy0:focus-within,
+/* em preview */
+.css-ba6nvo:focus, 
+.css-ba6nvo:focus-within{
+    border-color: var(--colors-fore4T) !important;
+    border: solid 2px var(--colors-fore4T); 
+}
