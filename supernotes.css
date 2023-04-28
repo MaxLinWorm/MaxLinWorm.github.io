@@ -1,5 +1,25 @@
+/* === REM === 
+   ----------- */
+
+/* Tudo abaixo foi calculado para desktop
+usando 16px de font-size no body com 110% de zoom. 
+O problema é que este font-size dá bug com o zoom
+O B, 5, R e outras letras tem rendering bugado
+Por isso, tive que usar 15px e recalcular tudo
+Para isso, resolvi simplesmente usar REM
+
+Pelo que eu vi, o tema não tem REM set e mudar para
+120px só mudou o espaçamento superior do título
+    */
+
+:root {
+    font-size: 15px;
+}
+
+
 /* === VARIÁVEIS ===
    ----------------- */
+
 
  /* --- UNIVERSAIS --- */
 :root,
@@ -9,11 +29,12 @@ body[data-theme="Zinc"],
 body[data-theme="Carbon"] {
     
     /* 12px */
-    --max-gutter-left: 20px;
+    --max-gutter-left: 1.25rem;
 
     --max-gutter-right: var(--max-gutter-left);
-    --max-gutter-top: 15px;
+    --max-gutter-top: 0.9375rem;
 
+    --max-card-mw: 40rem;
     --max-card--paragraphSpacing: 12px;
     --max-card-body-pl: var(--max-gutter-left);
     --max-card-body-pr: var(--max-gutter-right);
@@ -21,7 +42,7 @@ body[data-theme="Carbon"] {
     --max-card--view-lh: 1.4;
     --max-card--view-headers-ml: var(--max-gutter-left);
     --max-card--view-content-mt: var(--max-gutter-top);
-    --max-card--view-body-fs: 16px;
+    --max-card--view-body-fs: 1rem;
 
     /* 1px */
     --max-card--edit-line-pt: 0px;
@@ -41,11 +62,11 @@ body[data-theme="Carbon"] {
 
 
     /* MOBILE RESPONSIVE VIEW NO DESKTOP */
-    --max-mobileResponsiveView-diminuicao: 30px;
+    --max-mobileResponsiveView-diminuicao: 1.875rem;
 
 
     /* SIDE STRIP */
-    --max-sideStrip-wd: 40px;
+    --max-sideStrip-wd: 2.5rem;
 
 
     /* TAGS */
@@ -70,7 +91,7 @@ body[data-theme="Carbon"] {
 
 
     /* TABLES */
-    --max-table-fs: 13px ;
+    --max-table-fs: 0.8125rem;
     --max-table-lh: 1.15;
     --max-table-bd: var(--max-table-cell-pr);
 
@@ -78,7 +99,7 @@ body[data-theme="Carbon"] {
     --max-table-cell-pr: 0.4em;
     --max-table-cell-pb: var(--max-table-cell-pt);
     --max-table-cell-pl: var(--max-table-cell-pr);
-    --max-table-cell-minw: 55px;
+    --max-table-cell-minw: 3.4375rem;
 
 }
 
@@ -140,7 +161,7 @@ body[data-theme="Carbon"] {
 
 /* Pop-up de outocomplete */
 .css-1af7qi0 {
-    width: 400px;
+    width: 25rem;
 }
 
 /* Link e Title Couplers */
@@ -170,7 +191,7 @@ body[data-theme="Carbon"] {
 
 /* Excerpt */
 .css-1ks0arq {
-    font-size: 13px;
+    font-size: 0.8125rem;
     overflow: visible;
 }
 
@@ -180,13 +201,36 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
     background-color: var(--max-gray-tertiary);
 }
 
+
+/* CARDS SIZE */
+
+.css-pyhig {
+    max-width: var(--max-card-mw);
+}
+
+/* Noteboard Title e "Body"*/
+.css-1l1hx9w,
+/* Card Number e Pagination */
+.css-mbrjiw,
+/* New note prompt */
+.css-fgusol {
+    max-width: var(--max-card-mw)
+}
+
+
 /* MARGENS E ALINHAMENTO DE CARDS */
 
 /* Cards em View Mode */
 
 /* View Mode - Card content (incluindo header) */
+
 /* .css-rannzy*/
 .css-198pm4l {
+    padding-top: var(--max-card--view-content-mt);
+}
+
+/* Multi Select */
+.css-1b05jxy {
     padding-top: var(--max-card--view-content-mt);
 }
 
@@ -197,6 +241,11 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
 /* .css-198pm4l ERA .css-rannzy*/
 .css-198pm4l .css-1qhmto6 {
     margin-left: var(--max-card--view-headers-ml);
+}
+
+/* Multiselect */
+.css-1qhmto6 {
+    margin-left: var(--max-card--view-headers-ml)
 }
 
 /* Card Body */
@@ -271,6 +320,19 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
 }
 
 
+/* CARD PARENTS */
+
+/* View */
+.css-kk73a9,
+/* Color? */
+.css-m0x5d1,
+/* Edit */
+.css-ftkwsz {
+    max-width: none;
+}
+
+
+
 /* MOBILE RESPONSIVE VIEW NO DESKTOP */
 
 @media (max-width: 769px) {
@@ -320,8 +382,8 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
 @media (min-width: 770px) {
 
     .css-1xo5yai {
-        min-width: 40px;
-        width: 40px;
+        min-width: var(--max-sideStrip-wd);
+        width: var(--max-sideStrip-wd);
     }
 }
 
