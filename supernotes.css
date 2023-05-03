@@ -110,6 +110,8 @@ body[data-theme="Carbon"] {
     body[data-theme="Hydrogen"],
     body[data-theme="Deuterium"] {
         --max-gray-tertiary: rgb(247, 247, 247);
+        /* --colors-fore5T */
+        --max-card--edit-mdTag-co: var(--colors-fore6T);
 
         /* TAGS */
 
@@ -133,6 +135,9 @@ body[data-theme="Carbon"] {
     :root,
     body[data-theme="Zinc"],
     body[data-theme="Carbon"] {
+
+        /* --colors-fore5T */
+        --max-card--edit-mdTag-co: var(--colors-fore6T);
         
         /* TAGS */
         
@@ -586,4 +591,9 @@ body[data-theme="Hydrogen"] .css-g97sdf:not(:has(.css-5fakxf)) {
     height: 1em;
     font-size: 1em;
     line-height: 1em;
+}
+
+/* Markdown Tags */
+.ͼk {
+    color: var(--max-card--edit-mdTag-co);
 }
