@@ -159,8 +159,18 @@ body[data-theme="Carbon"] {
 
 /* === REGRAS === 
    -------------- */
+
    
 /* --- UI: USER INTERFACE --- */
+
+
+/* SEARCH | COMMAND PROMPT */
+
+/* Wrap search results */
+.css-1fwar5t {
+    white-space: normal
+}
+
 
 /* UNIVERSAL COUPLER */
 
