@@ -1,0 +1,13 @@
+/* GMAIL GABRIELA. Com Simplify */
+
+html.simplify.dateGroup.inInbox:not(.inboxy) .ae4 .dateHeader, html.simplify.dateGroup:not(.inInbox) .ae4 .dateHeader {
+    --color-readItemBg: transparent;
+}
+
+html.simplify .zA:not(.aps):not(.x7) {
+    --color-itemBg: rgb(92, 78, 111);
+}
+
+html.simplify .zA:not(.aps):not(.x7).yO {
+    --color-readItemBg: rgb(64, 53, 80);
+}
