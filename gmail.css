@@ -1,4 +1,4 @@
-/* === GMAIL PRINCIPAL - Simplify e Vanilla === 
+/* === GMAIL COMUNS - Simplify e Vanilla === 
    -------------------------------------------- */
 
 @import url(https://maxlinworm.github.io/Fonts/sf-googlesans.css);
@@ -149,4 +149,49 @@ html:not(.simplify) .yO {
 
 html:not(.simplify) .zE {
     background-color: rgba(0, 0, 0, 0.02)
+}
+
+/* === GMAIL SIMPLIFY ===
+   ---------------------- */
+
+:root {
+    --max-cloudHQ-tabs-reducao_altura: 10px;
+}
+
+/* Expande Título de Bundles Abertas */
+.zA.bundle[data-bundle-open='true']>.yX {
+    max-width: 500px;
+    padding-right: 6px;
+}
+
+/* Retira margem que aumenta quando abre bundle 
+Desativei porque removi o espaçamento maior 
+html.simplify.bundleInbox .BltHke .ae4 tbody.bundled tr[data-bundle-open="true"][id^="bundle-"] {
+margin-top: 0px;
+}
+
+/* REMOVE ÍCONE CLOUD HQ */
+.inboxsdk__appButton {
+    display: none;
+}
+
+/* CLOUD HQ TABS */
+
+/* Transparent Tabs (para usar temas com fotos) */
+.cloudHQ__label_tab {
+    background-color: transparent !important;
+}
+
+/* Cores e selecionada */
+
+html.imgTheme.mediumTheme #cloudHQ__label_tabs_wrapper .cloudHQ__label_tab.active>.chq-tab {
+    color: rgb(255, 255, 255) !important;
+}
+
+html.imgTheme.mediumTheme #cloudHQ__label_tabs_wrapper .cloudHQ__label_tab.active {
+    box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 1) !important;
+}
+
+html.imgTheme.mediumTheme #cloudHQ__label_tabs_wrapper .cloudHQ__label_tab>.chq-tab {
+    color: rgba(255, 255, 255, 0.9) !important;
 }
