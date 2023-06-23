@@ -1,6 +1,80 @@
+/* === GMAIL PRINCIPAL - Simplify e Vanilla === 
+   -------------------------------------------- */
+
 @import url(https://maxlinworm.github.io/Fonts/sf-googlesans.css);
 @import url(https://maxlinworm.github.io/Fonts/sf-arial.css);
+@import url(https://maxlinworm.github.io/Fonts/sf-segoe.css);
 
+:root {
+    --max-separador-inbox: rgb(212, 214, 217);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --max-separador-inbox: rgb(135, 136, 138)
+    }
+}
+
+/* Separadores do Inbox 
+.nH.Wg.aAr {
+    border-bottom: solid 2px var(--max-separador-inbox);
+    padding-bottom: 0;
+}
+
+html.simplify.bundleInbox .ae4 .Wr .qh {
+    font-size: 1.2em;
+}
+
+/* Mais espaço para primeira mensagem após separador 
+que não sejam a primeira de um bundle aberto (se não buga fundo 
+que fica branco e não cinza na margem 
+div:has(div.nH.Wg.aAr) + div.Cp.SOFC tr:not([data-bundle-open="true"]):first-of-type {
+    margin-top: 10px;
+}
+
+/* MISC */
+
+/* Dropdown de emails para forward em criação de filtros */
+.J-M.J-M-ayU.ZD[role='listbox'] {
+    width: 75% !important;
+    max-width: 600px;
+}
+
+/* Itens do dropdown */
+.J-M.J-M-ayU.ZD[role='listbox'] .J-N {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* Dropdown de labels em criação de filtros */
+.J-M.J-M-ayU.aeE[role='listbox'] {
+    width: 75% !important;
+    max-width: 600px;
+}
+
+.J-M.J-M-ayU.aeE .J-N {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* Dropdown de Labels em lista de emails */
+.J-M.agd.aYO.jQjAxd.aX1[role="menu"] {
+    width: 600px !important;
+    max-width: 600px !important;
+}
+
+/* Retira background quando split pane */
+html.simplify.vPane.defaultTheme .Nu.S3 {
+    background-color: white;
+}
+
+html.simplify.vPane:not(.inMsg).defaultTheme .Nt,
+html.simplify.defaultTheme.vPane #gb {
+    background-color: white !important;
+}
+
+/* === GMAIL VANILLA === 
+   --------------------- /*
 
 /* SIDEBAR DE APPS */
 
