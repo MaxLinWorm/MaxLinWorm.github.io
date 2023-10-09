@@ -11,7 +11,7 @@
 /* Title = primeiro elemento.
    excluir highlights */
 
-#root>div>div>div.absolute.left-0.top-0.h-full.w-full.touch-none.select-none.overflow-hidden>div.top-0.left-0.origin-top-left.fixed:first-child>div:not([data-object-type="highlightElementInstance"]) .ProseMirror> :first-child:not(._block_1r4bd_1) {
+#root>div>div>div.absolute.left-0.top-0.h-full.w-full.touch-none.select-none.overflow-hidden>div.top-0.left-0.origin-top-left.fixed:first-child>div:not([data-object-type="highlightElementInstance"]) .ProseMirror> :first-child:not([data-object-type="embed"]) {
     font-size: 26px;
     font-weight: 600;
 }
