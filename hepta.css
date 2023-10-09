@@ -8,10 +8,14 @@
     line-height: 1.4;
 }
 
-/* Title = primeiro elemento.
-   excluir highlights */
+/* Title = primeiro elemento,
+   Que seja card (ie não inclui highlights
+  Que seja de primeiro nível (ie não inclui embeds)*/
 
-#root>div>div>div.absolute.left-0.top-0.h-full.w-full.touch-none.select-none.overflow-hidden>div.top-0.left-0.origin-top-left.fixed:first-child>div:not([data-object-type="highlightElementInstance"]) .ProseMirror> :first-child:not([data-object-type="embed"]) {
+  #root>div>div>div.absolute.left-0.top-0.h-full.w-full.touch-none.select-none.overflow-hidden>div.top-0.left-0.origin-top-left.fixed:first-child
+  >div[data-object-type="cardInstance"]
+  >._contentContainer_dodjm_1>._contentScrollableContainer_14p9u_1>div
+  >.ProseMirror> :first-child {
     font-size: 26px;
     font-weight: 600;
 }
