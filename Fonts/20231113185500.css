@@ -1,0 +1,143 @@
+/* Regular */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113185800.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113190200.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113190210.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113190300.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Thin */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113190600.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113190700.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Extra-light */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113190800.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113190900.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Light */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191000.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191100.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Medium */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191200.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191300.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Semi-bold */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191400.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191500.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Heavy */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191600.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191700.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Black */
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191800.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20231113185500';
+    src: url('https://maxlinworm.github.io/Fonts/Sans/20231113185500/20231113191900.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
