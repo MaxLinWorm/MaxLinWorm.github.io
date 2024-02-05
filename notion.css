@@ -1,7 +1,7 @@
 :root {
     /* Fontes */
 
-    --max-ff-sans: 'SF Pro Text';
+    --max-ff-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text';
     --max-ff-mono--body: 'Triplicate T4';
 
     /* Focus Mode */

@@ -3,7 +3,7 @@
 :root {
 
     /* COMUNS */
-    --font-family-default: 'SF Pro Text', 'Roboto', 'Arial' !important;
+    --font-family-default: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Roboto', 'Arial' !important;
     --max-body-ff: 'Triplicate T4', 'Cartograph CF', 'Source Serif Pro', 'Courier';
 
     /* WHITEBOARD */

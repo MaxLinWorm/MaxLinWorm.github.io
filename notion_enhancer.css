@@ -70,11 +70,11 @@
     :root {
     /* UI */
         /** dark **/
-            --theme_dark--font_sans: 'SF Pro Text', 'Segoe UI';
+            --theme_dark--font_sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI';
             --theme_dark--font_code: Consolas, 'Operator Mono', 'Liberation Mono', Menlo, Courier, monospace;
             
         /** light **/
-            --theme_light--font_sans: 'SF Pro Text', 'Segoe UI';
+            --theme_light--font_sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI';
             --theme_light--font_code: Consolas, 'Operator Mono', 'Liberation Mono', Menlo, Courier, monospace;
 
     /* TIPOGRAFIA NAS PÁGINAS */
@@ -84,7 +84,7 @@
         
         /* UNIVERSAIS */
             /* SANS - DEFAULt */
-                    --max-font: 'SF Pro Text';
+                    --max-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text';
                     --max-weight: 400;
                     --max-font-size: var(--orig-font-size);
                     --max-line-height: 1.5rem;
@@ -94,7 +94,7 @@
                 }
                 /* Título da página */
                     .notion-scroller.vertical.horizontal .notion-page-block{
-                        --max-font: 'SF Pro Text';
+                        --max-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text';
                         font-family: var(--max-font) !important;
                     }
 
