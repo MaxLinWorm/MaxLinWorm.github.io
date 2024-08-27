@@ -129,6 +129,7 @@ body {
     .author-prefix, .pub-date-prefix {
         color: var(--max_color_secondary);
         font-size: var(--max_metadata_prefix_fs);
+        font-style: italic;
     }
 }
 
