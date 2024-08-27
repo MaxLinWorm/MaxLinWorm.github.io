@@ -3,6 +3,7 @@
 
 :root {
     --max_article_column: 650px;
+    --max_body_wd: 84%;
     --max_color_bg: #fff;
     --max_color_text: rgb(36, 35, 33);
     --max_color_links: rgb(65, 110, 210);
@@ -49,6 +50,12 @@
     }
 }
 
+@media (max-width: 450px) {
+    :root {
+        --max_body_wd: 90%;
+    }
+}
+
 
 html {
     font-size: 16px;
@@ -78,7 +85,7 @@ body {
 body {
 
     & > * {
-    width: 84%;
+    width: var(--max_body_wd);
     max-width: var(--max_article_column);
     }
 
