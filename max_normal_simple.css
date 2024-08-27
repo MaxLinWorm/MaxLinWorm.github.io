@@ -10,6 +10,10 @@
     --max_color_secondary: hsl(0, 0%, 50%);
     --max_color_tertiary: hsl(0, 0%, 76%);
     --max_color_bg_secondary: hsl(0, 0%, 94%);
+
+    --max_metadata_prefix_fs: 0.85em;
+    --max_figure_caption_fs: 0.65em;
+
     
     --max_body_hifens: auto;
     --max_body_hifens_limit-before: 3;
@@ -125,8 +129,9 @@ body {
         display: inline;
     }
 
-    > .author-prefix, > .pub-date-prefix {
+    .author-prefix, .pub-date-prefix {
         color: var(--max_color_secondary);
+        font-size: var(--max_metadata_prefix_fs);
     }
 }
 
@@ -184,7 +189,9 @@ figure {
 
 figcaption {
     color: var(--max_color_secondary);
+    margin-top: -1.15rem;
     padding-bottom: 1rem;
+    font-size: var(--max_figure_caption_fs);
 }
 
 img {
