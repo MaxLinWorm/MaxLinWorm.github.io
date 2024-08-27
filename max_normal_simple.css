@@ -112,6 +112,17 @@ body {
     }
 }
 
+.metadata {
+
+    & > * {
+        display: inline;
+    }
+
+    > .author-prefix, > .pub-date-prefix {
+        color: var(--max_color_secondary);
+    }
+}
+
 a:link, a:visited, a:active {
     color: var(--max_color_links);
     text-decoration: underline;
