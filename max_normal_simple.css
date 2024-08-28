@@ -248,3 +248,14 @@ pre {
     overflow-x: visible;
     white-space: pre-wrap;
 }
+
+@media print{
+    .feed_article > * {
+        overflow: visible;
+    }
+}
+
+@page {
+    size: 210cm 297cm;
+    margin: 1.5cm 3.5cm;
+}
