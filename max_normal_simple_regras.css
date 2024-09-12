@@ -249,6 +249,7 @@ pre {
     white-space: pre-wrap;
 }
 
+/* Tentando debugar impressão cortando parágrafos 
 @media print{
     .feed_article > * {
         overflow: visible;
@@ -259,3 +260,4 @@ pre {
     size: 210cm 297cm;
     margin: 1.5cm 3.5cm;
 }
+*/
