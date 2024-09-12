@@ -25,7 +25,8 @@
     --max_body_lh: 1.5;
     --max_body_fs: 16px;
 
-    --max_body_p_mb: 1em;
+    --max_body_p_mb_num: 1;
+    --max_body_p_mb: calc(var(--max_body_fs) * var(--max_body_p_mb_num));
 
     --max_body_q_pl: 50px;
     --max_body_q_fs: 14px;
@@ -52,8 +53,8 @@
 
 h1 {
     --max_body_headings_ff: var(--max_body_ff);
-    --max_body_headings_fs: calc(var(--max_body_fs) * 1.35);
-    --max_body_headings_fw: 700;
+    --max_body_headings_fs: calc(var(--max_body_fs) * 1.5);
+    --max_body_headings_fw: 600;
     --max_body_headings_ls: -0.02;
     --max_body_headings_lh: 1.25;
     --max_body_headings_mt: 1em;
@@ -63,60 +64,57 @@ h1 {
 
 h2 {
     --max_body_headings_ff: var(--max_body_ff);
-    --max_body_headings_fs: calc(var(--max_body_fs) * 1.25);
+    --max_body_headings_fs: calc(var(--max_body_fs) * 1.35);
     --max_body_headings_fw: 600;
     --max_body_headings_ls: -0.02;
     --max_body_headings_lh: 1.25;
     --max_body_headings_mt: 1em;
     --max_body_headings_mb: 0.75em;
-    --max_body_headings_fv: common-ligatures discretionary-ligatures
-        historical-ligatures contextual;
+    --max_body_headings_fv: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
 h3 {
     --max_body_headings_ff: var(--max_body_ff);
-    --max_body_headings_fs: calc(var(--max_body_fs) * 1.15);
-    --max_body_headings_fw: 500;
-    --max_body_headings_ls: -0.02;
+    --max_body_headings_fs: calc(var(--max_body_fs) * 1.2);
+    --max_body_headings_fw: 600;
+    --max_body_headings_ls: -0.01;
     --max_body_headings_lh: 1.25;
     --max_body_headings_mt: 1em;
     --max_body_headings_mb: 0.75em;
-    --max_body_headings_fv: common-ligatures discretionary-ligatures
-        historical-ligatures contextual;
+    --max_body_headings_fv: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
 h4 {
     --max_body_headings_ff: var(--max_body_ff);
     --max_body_headings_fs: calc(var(--max_body_fs) * 1.1);
     --max_body_headings_fw: 500;
-    --max_body_headings_ls: -0.02;
+    --max_body_headings_ls: normal;
     --max_body_headings_lh: 1.25;
     --max_body_headings_mt: 1em;
     --max_body_headings_mb: 0.75em;
-    --max_body_headings_fv: small-caps common-ligatures discretionary-ligatures
-        historical-ligatures contextual;
+    --max_body_headings_fv: small-caps common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
 h5 {
     --max_body_headings_ff: var(--max_body_ff);
-    --max_body_headings_fs: calc(var(--max_body_fs) * 1.35);
-    --max_body_headings_ls: -0.02;
+    --max_body_headings_fs: calc(var(--max_body_fs) * 1.15);
+    --max_body_headings_fw: 500;
+    --max_body_headings_ls: normal;
     --max_body_headings_lh: 1.25;
     --max_body_headings_mt: 1em;
     --max_body_headings_mb: 0.75em;
-    --max_body_headings_fv: common-ligatures discretionary-ligatures
-        historical-ligatures contextual;
+    --max_body_headings_fv: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
 h6 {
     --max_body_headings_ff: var(--max_body_ff);
-    --max_body_headings_fs: calc(var(--max_body_fs) * 1.35);
-    --max_body_headings_ls: -0.02;
+    --max_body_headings_fs: calc(var(--max_body_fs) * 1.15);
+    --max_body_headings_fw: 400;
+    --max_body_headings_ls: normal;
     --max_body_headings_lh: 1.25;
     --max_body_headings_mt: 1em;
     --max_body_headings_mb: 0.75em;
-    --max_body_headings_fv: common-ligatures discretionary-ligatures
-        historical-ligatures contextual;
+    --max_body_headings_fv: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
 
