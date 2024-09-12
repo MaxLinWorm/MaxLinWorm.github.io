@@ -1,63 +1,6 @@
 /* Com base em [DEVONthink_RSS_Default.css](hook://file/juSveNvhR?p=REVWT050aGluayAzL1N0eWxlU2hlZXRz&n=DEVONthink%5FRSS%5FDefault%2Ecss)
 */
-
-:root {
-    --max_article_column: 650px;
-    --max_body_wd: 84%;
-    --max_color_bg: #fff;
-    --max_color_text: rgb(36, 35, 33);
-    --max_color_links: rgb(65, 110, 210);
-    --max_color_secondary: hsl(0, 0%, 50%);
-    --max_color_tertiary: hsl(0, 0%, 76%);
-    --max_color_bg_secondary: hsl(0, 0%, 94%);
-
-    --max_metadata_prefix_fs: 0.85em;
-    --max_figure_caption_fs: 0.75em;
-
-    --max_body_hifens: auto;
-    --max_body_hifens_limit-before: 3;
-    --max_body_hifens_limit-after: 3;
-    --max_body_hifens_limit-chars: 6 3 3;
-    --max_body_hifens_limit-lines: 2;
-    --max_body_hifens_limit-last: always;
-    --max_body_hifens_limit-zone: 8%;
-    --max_body_hifens_wrap: break-word;
-
-
-    --max_body_ff: '.SF NS', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Roboto, ui-sans-serif;
-    --max_body_lh: 1.5;
-    --max_body_fs: 16px;
-
-    --max_body_p_mb: 1em;
-
-    --max_body_q_pl: 50px;
-    --max_body_q_fs: 14px;
-    --max_body_q_ff: var(--max_body_ff);
-    --max_body_q_lh: 1.3;
-
-    --max_code_ff: 'Roboto Mono', 'SF Mono', 'Source Code Pro', menlo, monospace;
-    --max_code_fs: 13px;
-    --max_code_lh: 1.3;
-}
-
-@media screen and (prefers-color-scheme: dark) {
-    :root {
-        --max_color_bg:  hsl(0, 0%, 16%);
-        --max_color_text: rgb(238, 236, 233);
-        --max_color_links: hsl(218, 100%, 72%);
-        --max_color_secondary: hsl(0, 0%, 55%);
-        --max_color_tertiary: hsl(0, 0%, 50%);
-        --max_color_bg_secondary: hsl(0, 0%, 10%);
-        --max_color_title: var(--max_color_text);
-    }
-}
-
-@media (max-width: 450px) {
-    :root {
-        --max_body_wd: 90%;
-    }
-}
-
+@import url();
 html {
     font-size: 16px;
     box-sizing: content-box;
