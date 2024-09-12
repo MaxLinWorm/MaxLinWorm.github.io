@@ -11,14 +11,14 @@
     --max_metadata_prefix_fs: 0.85em;
     --max_figure_caption_fs: 0.75em;
 
-    --max_body_hifens: auto;
-    --max_body_hifens_limit-before: 3;
-    --max_body_hifens_limit-after: 3;
-    --max_body_hifens_limit-chars: 6 3 3;
-    --max_body_hifens_limit-lines: 2;
-    --max_body_hifens_limit-last: always;
-    --max_body_hifens_limit-zone: 8%;
-    --max_body_hifens_wrap: break-word;
+    --max_body_hifens: none;
+    --max_body_hifens_limit-before: unset;
+    --max_body_hifens_limit-after: unset;
+    --max_body_hifens_limit-chars: unset;
+    --max_body_hifens_limit-lines: unset;
+    --max_body_hifens_limit-last: unset;
+    --max_body_hifens_limit-zone: unset;
+    --max_body_hifens_wrap: normal;
 
 
     --max_body_ff: '.SF NS', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Roboto, ui-sans-serif;
@@ -52,5 +52,18 @@
 @media (max-width: 450px) {
     :root {
         --max_body_wd: 90%;
+    }
+}
+
+@media only screen {
+    :root {
+        --max_body_hifens: auto;
+        --max_body_hifens_limit-before: 3;
+        --max_body_hifens_limit-after: 3;
+        --max_body_hifens_limit-chars: 6 3 3;
+        --max_body_hifens_limit-lines: 2;
+        --max_body_hifens_limit-last: always;
+        --max_body_hifens_limit-zone: 8%;
+        --max_body_hifens_wrap: break-word;
     }
 }
