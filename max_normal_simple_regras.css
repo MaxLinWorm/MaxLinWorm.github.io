@@ -2,23 +2,25 @@
 */
 @import url(https://maxlinworm.github.io/max_normal_simples_variaveis.css);
 
-
 html {
     font-size: 16px;
     box-sizing: content-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-body, table {
+body,
+table {
     margin: 0;
     color: var(--max_color_text);
     background-color: var(--max_color_bg);
     font-family: var(--max_body_ff);
     font-weight: 400;
-    font-size:  var(--max_body_fs);
+    font-size: var(--max_body_fs);
     line-height: var(--max_body_lh);
 }
 
@@ -29,13 +31,16 @@ body {
 }
 
 body {
-
     & > * {
-    width: var(--max_body_wd);
-    max-width: var(--max_article_column);
+        width: var(--max_body_wd);
+        max-width: var(--max_article_column);
     }
 
-    p, ol, ul, li, blockquote {
+    p,
+    ol,
+    ul,
+    li,
+    blockquote {
         -webkit-hyphens: var(--max_body_hifens);
         -webkit-hyphenate-limit-before: var(--max_body_hifens_limit-before);
         -webkit-hyphenate-limit-after: var(--max_body_hifens_limit-after);
@@ -66,66 +71,50 @@ body {
 }
 
 .metadata {
-
     & > * {
         display: inline;
     }
 
-    .author-prefix, .pub-date-prefix {
+    .author-prefix,
+    .pub-date-prefix {
         color: var(--max_color_secondary);
         font-size: var(--max_metadata_prefix_fs);
         font-style: italic;
     }
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
     color: var(--max_color_links);
     text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+strong,
+b {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--max_body_headings_ff);
-	font-size: var(--max_body_headings_fs);
-	font-weight: var(--max_body_headings_fw);
-	letter-spacing: var(--max_body_headings_ls);
-	line-height: var(--max_body_headings_lh);
-	margin-top: var(--max_body_headings_mt);
-	margin-bottom: var(--max_body_headings_mb);
-	font-variant: var(--max_body_headings_fv);
+    font-size: var(--max_body_headings_fs);
+    font-weight: var(--max_body_headings_fw);
+    letter-spacing: var(--max_body_headings_ls);
+    line-height: var(--max_body_headings_lh);
+    margin-top: var(--max_body_headings_mt);
+    margin-bottom: var(--max_body_headings_mb);
+    font-variant: var(--max_body_headings_fv);
 }
 
 p {
     margin: 0;
     padding-bottom: none;
     margin-bottom: var(--max_body_p_mb);
-}
-
-ol, ul {
-    margin: 0;
-    padding: 0 0 1rem 5rem;
-}
-
-figure {
-    margin: 0;
-}
-
-figcaption {
-    color: var(--max_color_secondary);
-    margin-top: -1.15rem;
-    padding: 0.15rem 0.15rem 1.5rem 0.15rem;
-    padding-bottom: 1rem;
-    font-size: var(--max_figure_caption_fs);
-}
-
-img {
-    padding: 0.15rem 0.15rem 1.5rem 0.15rem;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-strong, b {
-    font-weight: 600;
 }
 
 blockquote {
@@ -142,6 +131,37 @@ blockquote p {
     padding-bottom: 0;
 }
 
+blockquote > :last-child {
+    margin-bottom: var(--max_body_p_mb);
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0 0 1rem 5rem;
+}
+
+figure {
+    margin: 0;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+figcaption {
+    color: var(--max_color_secondary);
+    margin-top: -1.15rem;
+    padding: 0.15rem 0.15rem 1.5rem 0.15rem;
+    padding-bottom: 1rem;
+    font-size: var(--max_figure_caption_fs);
+}
+
+img {
+    padding: 0.15rem 0.15rem 1.5rem 0.15rem;
+    display: block;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
 hr {
     margin: 0 0 1.3rem 0;
     background-color: var(--max_color_tertiary);
@@ -149,7 +169,8 @@ hr {
     height: 1px;
 }
 
-sub, sup {
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -157,7 +178,10 @@ sub, sup {
     vertical-align: baseline;
 }
 
-pre, code {
+/* CODE */
+
+pre,
+code {
     margin: 0;
     font-family: var(--max_code_ff);
     font-size: var(--max_code_fs);
@@ -169,8 +193,20 @@ pre {
     padding: 0.6rem 1.4rem;
     background-color: var(--max_color_bg_secondary);
     border-radius: 4px;
-    overflow-x: visible;
-    white-space: pre-wrap;
+}
+
+/* Com Prism override */
+pre, 
+code[class*="language-"],
+pre[class*="language-"] {
+    overflow-x: visible !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+
+    text-shadow: none !important;
+    font-family: var(--max_code_ff) !important;
+    font-size: var(--max_code_fs) !important;
+    line-height: var(--max_code_lh) !important;
 }
 
 /* Tentando debugar impressão cortando parágrafos 
