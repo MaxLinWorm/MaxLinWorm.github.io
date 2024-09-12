@@ -1,6 +1,8 @@
 /* Com base em [DEVONthink_RSS_Default.css](hook://file/juSveNvhR?p=REVWT050aGluayAzL1N0eWxlU2hlZXRz&n=DEVONthink%5FRSS%5FDefault%2Ecss)
 */
-@import url();
+@import url(https://maxlinworm.github.io/max_normal_simples_variaveis.css);
+
+
 html {
     font-size: 16px;
     box-sizing: content-box;
@@ -81,36 +83,15 @@ a:link, a:visited, a:active {
     text-decoration: underline;
 }
 
-
-h1 {
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-h2 {
-    font-size: 1.35em;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 1.25em;
-    font-weight: 500;
-}
-
-h4 {
-    font-size: 1.05em;
-    font-weight: 600;
-    font-variant: small-caps;
-}
-
-h5 {
-    font-size: 1.15em;
-    font-weight: 500;
-}
-
-h6 {
-    font-size: 1.15em;
-    font-weight: 400;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--max_body_headings_ff);
+	font-size: var(--max_body_headings_fs);
+	font-weight: var(--max_body_headings_fw);
+	letter-spacing: var(--max_body_headings_ls);
+	line-height: var(--max_body_headings_lh);
+	margin-top: var(--max_body_headings_mt);
+	margin-bottom: var(--max_body_headings_mb);
+	font-variant: var(--max_body_headings_fv);
 }
 
 p {
